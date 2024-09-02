@@ -1,0 +1,5502 @@
+[
+    {
+        "PreciousAchiuwa": {
+            "team": "TOR",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "225 lbs",
+            "last_attended": "Memphis",
+            "country": "Nigeria"
+        }
+    },
+    {
+        "StevenAdams": {
+            "team": "MEM",
+            "pos": "C",
+            "height": "6-11",
+            "weight": "265 lbs",
+            "last_attended": "Pittsburgh",
+            "country": "New Zealand"
+        }
+    },
+    {
+        "BamAdebayo": {
+            "team": "MIA",
+            "pos": "C-F",
+            "height": "6-9",
+            "weight": "255 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "OchaiAgbaji": {
+            "team": "UTA",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "215 lbs",
+            "last_attended": "Kansas",
+            "country": "USA"
+        }
+    },
+    {
+        "SantiAldama": {
+            "team": "MEM",
+            "pos": "F-C",
+            "height": "7-0",
+            "weight": "215 lbs",
+            "last_attended": "Loyola-Maryland",
+            "country": "Spain"
+        }
+    },
+    {
+        "NickeilAlexander-Walker": {
+            "team": "MIN",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "205 lbs",
+            "last_attended": "Virginia Tech",
+            "country": "Canada"
+        }
+    },
+    {
+        "GraysonAllen": {
+            "team": "MIL",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "198 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "JarrettAllen": {
+            "team": "CLE",
+            "pos": "C",
+            "height": "6-9",
+            "weight": "243 lbs",
+            "last_attended": "Texas",
+            "country": "USA"
+        }
+    },
+    {
+        "JoseAlvarado": {
+            "team": "NOP",
+            "pos": "G",
+            "height": "6-0",
+            "weight": "179 lbs",
+            "last_attended": "Georgia Tech",
+            "country": "USA"
+        }
+    },
+    {
+        "KyleAnderson": {
+            "team": "MIN",
+            "pos": "F-G",
+            "height": "6-9",
+            "weight": "230 lbs",
+            "last_attended": "UCLA",
+            "country": "USA"
+        }
+    },
+    {
+        "GiannisAntetokounmpo": {
+            "team": "MIL",
+            "pos": "F",
+            "height": "7-0",
+            "weight": "243 lbs",
+            "last_attended": "Filathlitikos",
+            "country": "Greece"
+        }
+    },
+    {
+        "ThanasisAntetokounmpo": {
+            "team": "MIL",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "219 lbs",
+            "last_attended": "Panathinaikos",
+            "country": "Greece"
+        }
+    },
+    {
+        "ColeAnthony": {
+            "team": "ORL",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "185 lbs",
+            "last_attended": "North Carolina",
+            "country": "USA"
+        }
+    },
+    {
+        "O.G.Anunoby": {
+            "team": "TOR",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "232 lbs",
+            "last_attended": "Indiana",
+            "country": "United Kingdom"
+        }
+    },
+    {
+        "RyanArcidiacono": {
+            "team": "",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "195 lbs",
+            "last_attended": "Villanova",
+            "country": "USA"
+        }
+    },
+    {
+        "D.J.Augustin": {
+            "team": "HOU",
+            "pos": "G",
+            "height": "5-11",
+            "weight": "183 lbs",
+            "last_attended": "Texas-Austin",
+            "country": "USA"
+        }
+    },
+    {
+        "DeniAvdija": {
+            "team": "WAS",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "210 lbs",
+            "last_attended": "Maccabi Tel Aviv",
+            "country": "Israel"
+        }
+    },
+    {
+        "DeandreAyton": {
+            "team": "PHX",
+            "pos": "C",
+            "height": "7-0",
+            "weight": "250 lbs",
+            "last_attended": "Arizona",
+            "country": "Bahamas"
+        }
+    },
+    {
+        "UdokaAzubuike": {
+            "team": "UTA",
+            "pos": "C-F",
+            "height": "6-11",
+            "weight": "270 lbs",
+            "last_attended": "Kansas",
+            "country": "Nigeria"
+        }
+    },
+    {
+        "IbouBadji": {
+            "team": "POR",
+            "pos": "C",
+            "height": "7-1",
+            "weight": "240 lbs",
+            "last_attended": "FC Barcelona",
+            "country": "Senegal"
+        }
+    },
+    {
+        "MarvinBagleyIII": {
+            "team": "DET",
+            "pos": "F",
+            "height": "6-10",
+            "weight": "235 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "PatrickBaldwinJr.": {
+            "team": "GSW",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "220 lbs",
+            "last_attended": "Wisconsin-Milwaukee",
+            "country": "USA"
+        }
+    },
+    {
+        "LaMeloBall": {
+            "team": "CHA",
+            "pos": "G",
+            "height": "6-7",
+            "weight": "180 lbs",
+            "last_attended": "Illawarra",
+            "country": "USA"
+        }
+    },
+    {
+        "LonzoBall": {
+            "team": "CHI",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "190 lbs",
+            "last_attended": "UCLA",
+            "country": "USA"
+        }
+    },
+    {
+        "MoBamba": {
+            "team": "LAL",
+            "pos": "C",
+            "height": "7-0",
+            "weight": "231 lbs",
+            "last_attended": "Texas",
+            "country": "USA"
+        }
+    },
+    {
+        "PaoloBanchero": {
+            "team": "ORL",
+            "pos": "F",
+            "height": "6-10",
+            "weight": "250 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "DesmondBane": {
+            "team": "MEM",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "215 lbs",
+            "last_attended": "TCU",
+            "country": "USA"
+        }
+    },
+    {
+        "DalanoBanton": {
+            "team": "TOR",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "204 lbs",
+            "last_attended": "Nebraska",
+            "country": "Canada"
+        }
+    },
+    {
+        "DominickBarlow": {
+            "team": "SAS",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "215 lbs",
+            "last_attended": "                                   ",
+            "country": "USA"
+        }
+    },
+    {
+        "HarrisonBarnes": {
+            "team": "SAC",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "225 lbs",
+            "last_attended": "North Carolina",
+            "country": "USA"
+        }
+    },
+    {
+        "ScottieBarnes": {
+            "team": "TOR",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "225 lbs",
+            "last_attended": "Florida State",
+            "country": "USA"
+        }
+    },
+    {
+        "RJBarrett": {
+            "team": "NYK",
+            "pos": "F-G",
+            "height": "6-6",
+            "weight": "214 lbs",
+            "last_attended": "Duke",
+            "country": "Canada"
+        }
+    },
+    {
+        "WillBarton": {
+            "team": "TOR",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "181 lbs",
+            "last_attended": "Memphis",
+            "country": "USA"
+        }
+    },
+    {
+        "CharlesBassey": {
+            "team": "SAS",
+            "pos": "C-F",
+            "height": "6-9",
+            "weight": "230 lbs",
+            "last_attended": "Western Kentucky",
+            "country": "Nigeria"
+        }
+    },
+    {
+        "KeitaBates-Diop": {
+            "team": "SAS",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "229 lbs",
+            "last_attended": "Ohio State",
+            "country": "USA"
+        }
+    },
+    {
+        "NicolasBatum": {
+            "team": "LAC",
+            "pos": "G-F",
+            "height": "6-8",
+            "weight": "230 lbs",
+            "last_attended": "Le Mans",
+            "country": "France"
+        }
+    },
+    {
+        "DariusBazley": {
+            "team": "PHX",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "216 lbs",
+            "last_attended": "Princeton HS (OH)",
+            "country": "USA"
+        }
+    },
+    {
+        "BradleyBeal": {
+            "team": "WAS",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "207 lbs",
+            "last_attended": "Florida",
+            "country": "USA"
+        }
+    },
+    {
+        "MalikBeasley": {
+            "team": "LAL",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "187 lbs",
+            "last_attended": "Florida State",
+            "country": "USA"
+        }
+    },
+    {
+        "MarJonBeauchamp": {
+            "team": "MIL",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "199 lbs",
+            "last_attended": "NBA G League Ignite",
+            "country": "USA"
+        }
+    },
+    {
+        "DavisBertans": {
+            "team": "DAL",
+            "pos": "F",
+            "height": "6-10",
+            "weight": "225 lbs",
+            "last_attended": "Baskonia",
+            "country": "Latvia"
+        }
+    },
+    {
+        "PatrickBeverley": {
+            "team": "CHI",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "180 lbs",
+            "last_attended": "Arkansas",
+            "country": "USA"
+        }
+    },
+    {
+        "SaddiqBey": {
+            "team": "ATL",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "215 lbs",
+            "last_attended": "Villanova",
+            "country": "USA"
+        }
+    },
+    {
+        "KhemBirch": {
+            "team": "SAS",
+            "pos": "C",
+            "height": "6-8",
+            "weight": "233 lbs",
+            "last_attended": "UNLV",
+            "country": "Canada"
+        }
+    },
+    {
+        "GogaBitadze": {
+            "team": "ORL",
+            "pos": "C-F",
+            "height": "6-11",
+            "weight": "250 lbs",
+            "last_attended": "Mega Basket",
+            "country": "Georgia"
+        }
+    },
+    {
+        "BismackBiyombo": {
+            "team": "PHX",
+            "pos": "C",
+            "height": "6-8",
+            "weight": "255 lbs",
+            "last_attended": "Baloncesto Fuenlabrada",
+            "country": "DRC"
+        }
+    },
+    {
+        "BuddyBoeheim": {
+            "team": "DET",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "205 lbs",
+            "last_attended": "Syracuse",
+            "country": "USA"
+        }
+    },
+    {
+        "BogdanBogdanovic": {
+            "team": "ATL",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "225 lbs",
+            "last_attended": "Fenerbahce",
+            "country": "Serbia"
+        }
+    },
+    {
+        "BojanBogdanovic": {
+            "team": "DET",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "226 lbs",
+            "last_attended": "Fenerbahce",
+            "country": "Croatia"
+        }
+    },
+    {
+        "BolBol": {
+            "team": "ORL",
+            "pos": "C-F",
+            "height": "7-2",
+            "weight": "220 lbs",
+            "last_attended": "Oregon",
+            "country": "Sudan"
+        }
+    },
+    {
+        "LeandroBolmaro": {
+            "team": "",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "200 lbs",
+            "last_attended": "FC Barcelona",
+            "country": "Argentina"
+        }
+    },
+    {
+        "DevinBooker": {
+            "team": "PHX",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "206 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "BrandonBostonJr.": {
+            "team": "LAC",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "188 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "ChrisBoucher": {
+            "team": "TOR",
+            "pos": "F-C",
+            "height": "6-9",
+            "weight": "200 lbs",
+            "last_attended": "Oregon",
+            "country": "Saint Lucia"
+        }
+    },
+    {
+        "JamesBouknight": {
+            "team": "CHA",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "190 lbs",
+            "last_attended": "Connecticut",
+            "country": "USA"
+        }
+    },
+    {
+        "JamareeBouyea": {
+            "team": "",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "180 lbs",
+            "last_attended": "San Francisco",
+            "country": "USA"
+        }
+    },
+    {
+        "TonyBradley": {
+            "team": "",
+            "pos": "C-F",
+            "height": "6-11",
+            "weight": "248 lbs",
+            "last_attended": "North Carolina",
+            "country": "USA"
+        }
+    },
+    {
+        "MalakiBranham": {
+            "team": "SAS",
+            "pos": "F",
+            "height": "6-4",
+            "weight": "180 lbs",
+            "last_attended": "Ohio State",
+            "country": "USA"
+        }
+    },
+    {
+        "JarrellBrantley": {
+            "team": "",
+            "pos": "F",
+            "height": "6-5",
+            "weight": "250 lbs",
+            "last_attended": "College of Charleston",
+            "country": "USA"
+        }
+    },
+    {
+        "ChristianBraun": {
+            "team": "DEN",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "220 lbs",
+            "last_attended": "Kansas",
+            "country": "USA"
+        }
+    },
+    {
+        "MikalBridges": {
+            "team": "BKN",
+            "pos": "G-F",
+            "height": "6-6",
+            "weight": "209 lbs",
+            "last_attended": "Villanova",
+            "country": "USA"
+        }
+    },
+    {
+        "OshaeBrissett": {
+            "team": "IND",
+            "pos": "F-G",
+            "height": "6-7",
+            "weight": "210 lbs",
+            "last_attended": "Syracuse",
+            "country": "Canada"
+        }
+    },
+    {
+        "MalcolmBrogdon": {
+            "team": "BOS",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "229 lbs",
+            "last_attended": "Virginia",
+            "country": "USA"
+        }
+    },
+    {
+        "DillonBrooks": {
+            "team": "MEM",
+            "pos": "G-F",
+            "height": "6-6",
+            "weight": "225 lbs",
+            "last_attended": "Oregon",
+            "country": "Canada"
+        }
+    },
+    {
+        "BruceBrown": {
+            "team": "DEN",
+            "pos": "G-F",
+            "height": "6-4",
+            "weight": "202 lbs",
+            "last_attended": "Miami",
+            "country": "USA"
+        }
+    },
+    {
+        "JaylenBrown": {
+            "team": "BOS",
+            "pos": "G-F",
+            "height": "6-6",
+            "weight": "223 lbs",
+            "last_attended": "California",
+            "country": "USA"
+        }
+    },
+    {
+        "KendallBrown": {
+            "team": "IND",
+            "pos": "G",
+            "height": "6-7",
+            "weight": "205 lbs",
+            "last_attended": "Baylor",
+            "country": "USA"
+        }
+    },
+    {
+        "MosesBrown": {
+            "team": "",
+            "pos": "C",
+            "height": "7-2",
+            "weight": "245 lbs",
+            "last_attended": "UCLA",
+            "country": "USA"
+        }
+    },
+    {
+        "SterlingBrown": {
+            "team": "",
+            "pos": "G-F",
+            "height": "6-5",
+            "weight": "219 lbs",
+            "last_attended": "Southern Methodist",
+            "country": "USA"
+        }
+    },
+    {
+        "GregBrownIII": {
+            "team": "",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "206 lbs",
+            "last_attended": "Texas",
+            "country": "USA"
+        }
+    },
+    {
+        "TroyBrownJr.": {
+            "team": "LAL",
+            "pos": "G-F",
+            "height": "6-7",
+            "weight": "215 lbs",
+            "last_attended": "Oregon",
+            "country": "USA"
+        }
+    },
+    {
+        "JalenBrunson": {
+            "team": "NYK",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "190 lbs",
+            "last_attended": "Villanova",
+            "country": "USA"
+        }
+    },
+    {
+        "ThomasBryant": {
+            "team": "DEN",
+            "pos": "C-F",
+            "height": "6-10",
+            "weight": "248 lbs",
+            "last_attended": "Indiana",
+            "country": "USA"
+        }
+    },
+    {
+        "ReggieBullock": {
+            "team": "DAL",
+            "pos": "G-F",
+            "height": "6-6",
+            "weight": "205 lbs",
+            "last_attended": "North Carolina",
+            "country": "USA"
+        }
+    },
+    {
+        "AlecBurks": {
+            "team": "DET",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "214 lbs",
+            "last_attended": "Colorado",
+            "country": "USA"
+        }
+    },
+    {
+        "DeonteBurton": {
+            "team": "",
+            "pos": "G-F",
+            "height": "6-4",
+            "weight": "240 lbs",
+            "last_attended": "Iowa State",
+            "country": "USA"
+        }
+    },
+    {
+        "JaredButler": {
+            "team": "OKC",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "193 lbs",
+            "last_attended": "Baylor",
+            "country": "USA"
+        }
+    },
+    {
+        "JimmyButler": {
+            "team": "MIA",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "230 lbs",
+            "last_attended": "Marquette",
+            "country": "USA"
+        }
+    },
+    {
+        "JohnButlerJr.": {
+            "team": "POR",
+            "pos": "F",
+            "height": "7-0",
+            "weight": "190 lbs",
+            "last_attended": "Florida State",
+            "country": "USA"
+        }
+    },
+    {
+        "JamalCain": {
+            "team": "MIA",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "191 lbs",
+            "last_attended": "Oakland",
+            "country": "USA"
+        }
+    },
+    {
+        "KentaviousCaldwell-Pope": {
+            "team": "DEN",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "204 lbs",
+            "last_attended": "Georgia",
+            "country": "USA"
+        }
+    },
+    {
+        "FacundoCampazzo": {
+            "team": "",
+            "pos": "G",
+            "height": "5-10",
+            "weight": "195 lbs",
+            "last_attended": "Murcia",
+            "country": "Argentina"
+        }
+    },
+    {
+        "VlatkoCancar": {
+            "team": "DEN",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "236 lbs",
+            "last_attended": "San Pablo Burgos",
+            "country": "Slovenia"
+        }
+    },
+    {
+        "ClintCapela": {
+            "team": "ATL",
+            "pos": "C",
+            "height": "6-10",
+            "weight": "256 lbs",
+            "last_attended": "Elan Chalon",
+            "country": "Switzerland"
+        }
+    },
+    {
+        "VernonCareyJr.": {
+            "team": "UTA",
+            "pos": "C",
+            "height": "6-10",
+            "weight": "270 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "JevonCarter": {
+            "team": "MIL",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "200 lbs",
+            "last_attended": "West Virginia",
+            "country": "USA"
+        }
+    },
+    {
+        "WendellCarterJr.": {
+            "team": "ORL",
+            "pos": "C-F",
+            "height": "6-10",
+            "weight": "270 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "MichaelCarter-Williams": {
+            "team": "ORL",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "190 lbs",
+            "last_attended": "Syracuse",
+            "country": "USA"
+        }
+    },
+    {
+        "AlexCaruso": {
+            "team": "CHI",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "186 lbs",
+            "last_attended": "Texas A&M",
+            "country": "USA"
+        }
+    },
+    {
+        "WillieCauley-Stein": {
+            "team": "HOU",
+            "pos": "C",
+            "height": "7-0",
+            "weight": "240 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "JulianChampagnie": {
+            "team": "SAS",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "217 lbs",
+            "last_attended": "St. John's",
+            "country": "USA"
+        }
+    },
+    {
+        "JustinChampagnie": {
+            "team": "BOS",
+            "pos": "G-F",
+            "height": "6-6",
+            "weight": "206 lbs",
+            "last_attended": "Pittsburgh",
+            "country": "USA"
+        }
+    },
+    {
+        "KennedyChandler": {
+            "team": "",
+            "pos": "G",
+            "height": "5-11",
+            "weight": "170 lbs",
+            "last_attended": "Tennessee",
+            "country": "USA"
+        }
+    },
+    {
+        "MaxChristie": {
+            "team": "LAL",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "190 lbs",
+            "last_attended": "Michigan State",
+            "country": "USA"
+        }
+    },
+    {
+        "JoshChristopher": {
+            "team": "HOU",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "215 lbs",
+            "last_attended": "Arizona State",
+            "country": "USA"
+        }
+    },
+    {
+        "BrandonClarke": {
+            "team": "MEM",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "215 lbs",
+            "last_attended": "Gonzaga",
+            "country": "Canada"
+        }
+    },
+    {
+        "JordanClarkson": {
+            "team": "UTA",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "194 lbs",
+            "last_attended": "Missouri",
+            "country": "USA"
+        }
+    },
+    {
+        "NicClaxton": {
+            "team": "BKN",
+            "pos": "C",
+            "height": "6-11",
+            "weight": "215 lbs",
+            "last_attended": "Georgia",
+            "country": "USA"
+        }
+    },
+    {
+        "AmirCoffey": {
+            "team": "LAC",
+            "pos": "G-F",
+            "height": "6-7",
+            "weight": "210 lbs",
+            "last_attended": "Minnesota",
+            "country": "USA"
+        }
+    },
+    {
+        "JohnCollins": {
+            "team": "ATL",
+            "pos": "F-C",
+            "height": "6-9",
+            "weight": "226 lbs",
+            "last_attended": "Wake Forest",
+            "country": "USA"
+        }
+    },
+    {
+        "ZachCollins": {
+            "team": "SAS",
+            "pos": "F-C",
+            "height": "6-11",
+            "weight": "250 lbs",
+            "last_attended": "Gonzaga",
+            "country": "USA"
+        }
+    },
+    {
+        "ChanceComanche": {
+            "team": "",
+            "pos": "C",
+            "height": "6-10",
+            "weight": "210 lbs",
+            "last_attended": "Arizona",
+            "country": "USA"
+        }
+    },
+    {
+        "MikeConley": {
+            "team": "MIN",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "175 lbs",
+            "last_attended": "Ohio State",
+            "country": "USA"
+        }
+    },
+    {
+        "PatConnaughton": {
+            "team": "MIL",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "209 lbs",
+            "last_attended": "Notre Dame",
+            "country": "USA"
+        }
+    },
+    {
+        "XavierCooks": {
+            "team": "WAS",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "183 lbs",
+            "last_attended": "Winthrop",
+            "country": "Australia"
+        }
+    },
+    {
+        "RobertCovington": {
+            "team": "LAC",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "209 lbs",
+            "last_attended": "Tennessee State",
+            "country": "USA"
+        }
+    },
+    {
+        "TorreyCraig": {
+            "team": "PHX",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "221 lbs",
+            "last_attended": "South Carolina Upstate",
+            "country": "USA"
+        }
+    },
+    {
+        "JaeCrowder": {
+            "team": "MIL",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "235 lbs",
+            "last_attended": "Marquette",
+            "country": "USA"
+        }
+    },
+    {
+        "JarrettCulver": {
+            "team": "",
+            "pos": "G-F",
+            "height": "6-6",
+            "weight": "195 lbs",
+            "last_attended": "Texas Tech",
+            "country": "USA"
+        }
+    },
+    {
+        "CadeCunningham": {
+            "team": "DET",
+            "pos": "G",
+            "height": "6-7",
+            "weight": "220 lbs",
+            "last_attended": "Oklahoma State",
+            "country": "USA"
+        }
+    },
+    {
+        "SethCurry": {
+            "team": "BKN",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "185 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "StephenCurry": {
+            "team": "GSW",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "185 lbs",
+            "last_attended": "Davidson",
+            "country": "USA"
+        }
+    },
+    {
+        "DysonDaniels": {
+            "team": "NOP",
+            "pos": "G",
+            "height": "6-7",
+            "weight": "199 lbs",
+            "last_attended": "NBA G League Ignite",
+            "country": "Australia"
+        }
+    },
+    {
+        "AnthonyDavis": {
+            "team": "LAL",
+            "pos": "F-C",
+            "height": "6-10",
+            "weight": "253 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "JohnnyDavis": {
+            "team": "WAS",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "195 lbs",
+            "last_attended": "Wisconsin",
+            "country": "USA"
+        }
+    },
+    {
+        "TerenceDavis": {
+            "team": "SAC",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "201 lbs",
+            "last_attended": "Mississippi",
+            "country": "USA"
+        }
+    },
+    {
+        "JDDavison": {
+            "team": "BOS",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "195 lbs",
+            "last_attended": "Alabama",
+            "country": "USA"
+        }
+    },
+    {
+        "DariusDays": {
+            "team": "HOU",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "245 lbs",
+            "last_attended": "Louisiana State",
+            "country": "USA"
+        }
+    },
+    {
+        "DeMarDeRozan": {
+            "team": "CHI",
+            "pos": "G-F",
+            "height": "6-6",
+            "weight": "220 lbs",
+            "last_attended": "Southern California",
+            "country": "USA"
+        }
+    },
+    {
+        "DewayneDedmon": {
+            "team": "PHI",
+            "pos": "C",
+            "height": "6-10",
+            "weight": "245 lbs",
+            "last_attended": "Southern California",
+            "country": "USA"
+        }
+    },
+    {
+        "MatthewDellavedova": {
+            "team": "SAC",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "200 lbs",
+            "last_attended": "St. Mary's",
+            "country": "Australia"
+        }
+    },
+    {
+        "DonteDiVincenzo": {
+            "team": "GSW",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "203 lbs",
+            "last_attended": "Villanova",
+            "country": "USA"
+        }
+    },
+    {
+        "MoussaDiabate": {
+            "team": "LAC",
+            "pos": "F",
+            "height": "6-10",
+            "weight": "210 lbs",
+            "last_attended": "Michigan",
+            "country": "France"
+        }
+    },
+    {
+        "MamadiDiakite": {
+            "team": "CLE",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "228 lbs",
+            "last_attended": "Virginia",
+            "country": "Guinea"
+        }
+    },
+    {
+        "HamidouDiallo": {
+            "team": "DET",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "202 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "GorguiDieng": {
+            "team": "SAS",
+            "pos": "C",
+            "height": "6-10",
+            "weight": "248 lbs",
+            "last_attended": "Louisville",
+            "country": "Senegal"
+        }
+    },
+    {
+        "OusmaneDieng": {
+            "team": "OKC",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "185 lbs",
+            "last_attended": "New Zealand Breakers",
+            "country": "France"
+        }
+    },
+    {
+        "SpencerDinwiddie": {
+            "team": "BKN",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "215 lbs",
+            "last_attended": "Colorado",
+            "country": "USA"
+        }
+    },
+    {
+        "LukaDoncic": {
+            "team": "DAL",
+            "pos": "F-G",
+            "height": "6-7",
+            "weight": "230 lbs",
+            "last_attended": "Real Madrid",
+            "country": "Slovenia"
+        }
+    },
+    {
+        "TylerDorsey": {
+            "team": "",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "180 lbs",
+            "last_attended": "Oregon",
+            "country": "USA"
+        }
+    },
+    {
+        "LuguentzDort": {
+            "team": "OKC",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "220 lbs",
+            "last_attended": "Arizona State",
+            "country": "Canada"
+        }
+    },
+    {
+        "AyoDosunmu": {
+            "team": "CHI",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "200 lbs",
+            "last_attended": "Illinois",
+            "country": "USA"
+        }
+    },
+    {
+        "DevonDotson": {
+            "team": "",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "185 lbs",
+            "last_attended": "Kansas",
+            "country": "USA"
+        }
+    },
+    {
+        "JeffDowtinJr.": {
+            "team": "TOR",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "177 lbs",
+            "last_attended": "Rhode Island",
+            "country": "USA"
+        }
+    },
+    {
+        "PJDozier": {
+            "team": "SAC",
+            "pos": "G-F",
+            "height": "6-6",
+            "weight": "205 lbs",
+            "last_attended": "South Carolina",
+            "country": "USA"
+        }
+    },
+    {
+        "GoranDragic": {
+            "team": "MIL",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "190 lbs",
+            "last_attended": "Union Olimpija",
+            "country": "Slovenia"
+        }
+    },
+    {
+        "AndreDrummond": {
+            "team": "CHI",
+            "pos": "C",
+            "height": "6-11",
+            "weight": "279 lbs",
+            "last_attended": "Connecticut",
+            "country": "USA"
+        }
+    },
+    {
+        "ChrisDuarte": {
+            "team": "IND",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "190 lbs",
+            "last_attended": "Oregon",
+            "country": "Dominican Republic"
+        }
+    },
+    {
+        "DavidDukeJr.": {
+            "team": "BKN",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "204 lbs",
+            "last_attended": "Providence",
+            "country": "USA"
+        }
+    },
+    {
+        "KrisDunn": {
+            "team": "UTA",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "205 lbs",
+            "last_attended": "Providence",
+            "country": "USA"
+        }
+    },
+    {
+        "KevinDurant": {
+            "team": "PHX",
+            "pos": "F",
+            "height": "6-10",
+            "weight": "240 lbs",
+            "last_attended": "Texas",
+            "country": "USA"
+        }
+    },
+    {
+        "JalenDuren": {
+            "team": "DET",
+            "pos": "C",
+            "height": "6-11",
+            "weight": "250 lbs",
+            "last_attended": "Memphis",
+            "country": "USA"
+        }
+    },
+    {
+        "TariEason": {
+            "team": "HOU",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "215 lbs",
+            "last_attended": "Louisiana State",
+            "country": "USA"
+        }
+    },
+    {
+        "AnthonyEdwards": {
+            "team": "MIN",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "225 lbs",
+            "last_attended": "Georgia",
+            "country": "USA"
+        }
+    },
+    {
+        "KesslerEdwards": {
+            "team": "SAC",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "203 lbs",
+            "last_attended": "Pepperdine",
+            "country": "USA"
+        }
+    },
+    {
+        "KeonEllis": {
+            "team": "SAC",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "175 lbs",
+            "last_attended": "Alabama",
+            "country": "USA"
+        }
+    },
+    {
+        "JoelEmbiid": {
+            "team": "PHI",
+            "pos": "C-F",
+            "height": "7-0",
+            "weight": "280 lbs",
+            "last_attended": "Kansas",
+            "country": "Cameroon"
+        }
+    },
+    {
+        "DrewEubanks": {
+            "team": "POR",
+            "pos": "F-C",
+            "height": "6-10",
+            "weight": "245 lbs",
+            "last_attended": "Oregon State",
+            "country": "USA"
+        }
+    },
+    {
+        "BrunoFernando": {
+            "team": "ATL",
+            "pos": "F-C",
+            "height": "6-10",
+            "weight": "240 lbs",
+            "last_attended": "Maryland",
+            "country": "Angola"
+        }
+    },
+    {
+        "DorianFinney-Smith": {
+            "team": "BKN",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "220 lbs",
+            "last_attended": "Florida",
+            "country": "USA"
+        }
+    },
+    {
+        "MalachiFlynn": {
+            "team": "TOR",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "175 lbs",
+            "last_attended": "San Diego State",
+            "country": "USA"
+        }
+    },
+    {
+        "SimoneFontecchio": {
+            "team": "UTA",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "209 lbs",
+            "last_attended": "Baskonia",
+            "country": "Italy"
+        }
+    },
+    {
+        "BrynForbes": {
+            "team": "",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "205 lbs",
+            "last_attended": "Michigan State",
+            "country": "USA"
+        }
+    },
+    {
+        "TrentForrest": {
+            "team": "ATL",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "210 lbs",
+            "last_attended": "Florida State",
+            "country": "USA"
+        }
+    },
+    {
+        "MichaelFosterJr.": {
+            "team": "",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "250 lbs",
+            "last_attended": "NBA G League Ignite",
+            "country": "USA"
+        }
+    },
+    {
+        "EvanFournier": {
+            "team": "NYK",
+            "pos": "G-F",
+            "height": "6-6",
+            "weight": "205 lbs",
+            "last_attended": "Poitiers Basket 86",
+            "country": "France"
+        }
+    },
+    {
+        "De'AaronFox": {
+            "team": "SAC",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "185 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "MarkelleFultz": {
+            "team": "ORL",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "209 lbs",
+            "last_attended": "Washington",
+            "country": "USA"
+        }
+    },
+    {
+        "WenyenGabriel": {
+            "team": "LAL",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "205 lbs",
+            "last_attended": "Kentucky",
+            "country": "South Sudan"
+        }
+    },
+    {
+        "DanielGafford": {
+            "team": "WAS",
+            "pos": "F-C",
+            "height": "6-10",
+            "weight": "234 lbs",
+            "last_attended": "Arkansas",
+            "country": "USA"
+        }
+    },
+    {
+        "DaniloGallinari": {
+            "team": "BOS",
+            "pos": "F",
+            "height": "6-10",
+            "weight": "236 lbs",
+            "last_attended": "Olimpia Milano",
+            "country": "Italy"
+        }
+    },
+    {
+        "DariusGarland": {
+            "team": "CLE",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "192 lbs",
+            "last_attended": "Vanderbilt",
+            "country": "USA"
+        }
+    },
+    {
+        "UsmanGaruba": {
+            "team": "HOU",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "229 lbs",
+            "last_attended": "Real Madrid",
+            "country": "Spain"
+        }
+    },
+    {
+        "LukaGarza": {
+            "team": "MIN",
+            "pos": "C",
+            "height": "6-10",
+            "weight": "243 lbs",
+            "last_attended": "Iowa",
+            "country": "USA"
+        }
+    },
+    {
+        "RudyGay": {
+            "team": "UTA",
+            "pos": "F-G",
+            "height": "6-8",
+            "weight": "250 lbs",
+            "last_attended": "Connecticut",
+            "country": "USA"
+        }
+    },
+    {
+        "PaulGeorge": {
+            "team": "LAC",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "220 lbs",
+            "last_attended": "Fresno State",
+            "country": "USA"
+        }
+    },
+    {
+        "TajGibson": {
+            "team": "WAS",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "232 lbs",
+            "last_attended": "Southern California",
+            "country": "USA"
+        }
+    },
+    {
+        "JoshGiddey": {
+            "team": "OKC",
+            "pos": "G",
+            "height": "6-8",
+            "weight": "216 lbs",
+            "last_attended": "NBA Global Academy",
+            "country": "Australia"
+        }
+    },
+    {
+        "ShaiGilgeous-Alexander": {
+            "team": "OKC",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "195 lbs",
+            "last_attended": "Kentucky",
+            "country": "Canada"
+        }
+    },
+    {
+        "AnthonyGill": {
+            "team": "WAS",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "230 lbs",
+            "last_attended": "Virginia",
+            "country": "USA"
+        }
+    },
+    {
+        "CollinGillespie": {
+            "team": "DEN",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "195 lbs",
+            "last_attended": "Villanova",
+            "country": "USA"
+        }
+    },
+    {
+        "JacobGilyard": {
+            "team": "MEM",
+            "pos": "G",
+            "height": "5-9",
+            "weight": "160 lbs",
+            "last_attended": "Richmond",
+            "country": "USA"
+        }
+    },
+    {
+        "RudyGobert": {
+            "team": "MIN",
+            "pos": "C",
+            "height": "7-1",
+            "weight": "258 lbs",
+            "last_attended": "Cholet",
+            "country": "France"
+        }
+    },
+    {
+        "JordanGoodwin": {
+            "team": "WAS",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "200 lbs",
+            "last_attended": "St. Louis",
+            "country": "USA"
+        }
+    },
+    {
+        "AaronGordon": {
+            "team": "DEN",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "235 lbs",
+            "last_attended": "Arizona",
+            "country": "USA"
+        }
+    },
+    {
+        "EricGordon": {
+            "team": "LAC",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "215 lbs",
+            "last_attended": "Indiana",
+            "country": "USA"
+        }
+    },
+    {
+        "Devonte'Graham": {
+            "team": "SAS",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "195 lbs",
+            "last_attended": "Kansas",
+            "country": "USA"
+        }
+    },
+    {
+        "JeramiGrant": {
+            "team": "POR",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "210 lbs",
+            "last_attended": "Syracuse",
+            "country": "USA"
+        }
+    },
+    {
+        "RaiQuanGray": {
+            "team": "BKN",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "269 lbs",
+            "last_attended": "Florida State",
+            "country": "USA"
+        }
+    },
+    {
+        "AJGreen": {
+            "team": "MIL",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "190 lbs",
+            "last_attended": "Northern Iowa",
+            "country": "USA"
+        }
+    },
+    {
+        "DannyGreen": {
+            "team": "CLE",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "215 lbs",
+            "last_attended": "North Carolina",
+            "country": "USA"
+        }
+    },
+    {
+        "DraymondGreen": {
+            "team": "GSW",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "230 lbs",
+            "last_attended": "Michigan State",
+            "country": "USA"
+        }
+    },
+    {
+        "JaMychalGreen": {
+            "team": "GSW",
+            "pos": "F-C",
+            "height": "6-9",
+            "weight": "227 lbs",
+            "last_attended": "Alabama",
+            "country": "USA"
+        }
+    },
+    {
+        "JalenGreen": {
+            "team": "HOU",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "186 lbs",
+            "last_attended": "NBA G League Ignite",
+            "country": "USA"
+        }
+    },
+    {
+        "JavonteGreen": {
+            "team": "CHI",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "205 lbs",
+            "last_attended": "Radford",
+            "country": "USA"
+        }
+    },
+    {
+        "JeffGreen": {
+            "team": "DEN",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "235 lbs",
+            "last_attended": "Georgetown",
+            "country": "USA"
+        }
+    },
+    {
+        "JoshGreen": {
+            "team": "DAL",
+            "pos": "G",
+            "height": "6-7",
+            "weight": "200 lbs",
+            "last_attended": "Arizona",
+            "country": "Australia"
+        }
+    },
+    {
+        "AJGriffin": {
+            "team": "ATL",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "220 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "BlakeGriffin": {
+            "team": "BOS",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "250 lbs",
+            "last_attended": "Oklahoma",
+            "country": "USA"
+        }
+    },
+    {
+        "QuentinGrimes": {
+            "team": "NYK",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "210 lbs",
+            "last_attended": "Houston",
+            "country": "USA"
+        }
+    },
+    {
+        "RuiHachimura": {
+            "team": "LAL",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "230 lbs",
+            "last_attended": "Gonzaga",
+            "country": "Japan"
+        }
+    },
+    {
+        "TyreseHaliburton": {
+            "team": "IND",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "185 lbs",
+            "last_attended": "Iowa State",
+            "country": "USA"
+        }
+    },
+    {
+        "JordanHall": {
+            "team": "",
+            "pos": "G",
+            "height": "6-7",
+            "weight": "215 lbs",
+            "last_attended": "St. Joseph's (PA)",
+            "country": "USA"
+        }
+    },
+    {
+        "R.J.Hampton": {
+            "team": "DET",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "175 lbs",
+            "last_attended": "New Zealand Breakers",
+            "country": "USA"
+        }
+    },
+    {
+        "TimHardawayJr.": {
+            "team": "DAL",
+            "pos": "G-F",
+            "height": "6-5",
+            "weight": "205 lbs",
+            "last_attended": "Michigan",
+            "country": "USA"
+        }
+    },
+    {
+        "JamesHarden": {
+            "team": "PHI",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "220 lbs",
+            "last_attended": "Arizona State",
+            "country": "USA"
+        }
+    },
+    {
+        "JadenHardy": {
+            "team": "DAL",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "198 lbs",
+            "last_attended": "NBA G League Ignite",
+            "country": "USA"
+        }
+    },
+    {
+        "RonHarperJr.": {
+            "team": "TOR",
+            "pos": "F",
+            "height": "6-5",
+            "weight": "245 lbs",
+            "last_attended": "Rutgers",
+            "country": "USA"
+        }
+    },
+    {
+        "MontrezlHarrell": {
+            "team": "PHI",
+            "pos": "F-C",
+            "height": "6-7",
+            "weight": "240 lbs",
+            "last_attended": "Louisville",
+            "country": "USA"
+        }
+    },
+    {
+        "GaryHarris": {
+            "team": "ORL",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "210 lbs",
+            "last_attended": "Michigan State",
+            "country": "USA"
+        }
+    },
+    {
+        "JoeHarris": {
+            "team": "BKN",
+            "pos": "G-F",
+            "height": "6-6",
+            "weight": "220 lbs",
+            "last_attended": "Virginia",
+            "country": "USA"
+        }
+    },
+    {
+        "KevonHarris": {
+            "team": "ORL",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "216 lbs",
+            "last_attended": "Stephen F. Austin",
+            "country": "USA"
+        }
+    },
+    {
+        "TobiasHarris": {
+            "team": "PHI",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "226 lbs",
+            "last_attended": "Tennessee",
+            "country": "USA"
+        }
+    },
+    {
+        "ShaquilleHarrison": {
+            "team": "LAL",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "195 lbs",
+            "last_attended": "Tulsa",
+            "country": "USA"
+        }
+    },
+    {
+        "JoshHart": {
+            "team": "NYK",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "215 lbs",
+            "last_attended": "Villanova",
+            "country": "USA"
+        }
+    },
+    {
+        "IsaiahHartenstein": {
+            "team": "NYK",
+            "pos": "C-F",
+            "height": "7-0",
+            "weight": "250 lbs",
+            "last_attended": "Zalgiris",
+            "country": "Germany"
+        }
+    },
+    {
+        "UdonisHaslem": {
+            "team": "MIA",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "235 lbs",
+            "last_attended": "Florida",
+            "country": "USA"
+        }
+    },
+    {
+        "SamHauser": {
+            "team": "BOS",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "217 lbs",
+            "last_attended": "Virginia",
+            "country": "USA"
+        }
+    },
+    {
+        "JaxsonHayes": {
+            "team": "NOP",
+            "pos": "C-F",
+            "height": "7-0",
+            "weight": "220 lbs",
+            "last_attended": "Texas",
+            "country": "USA"
+        }
+    },
+    {
+        "KillianHayes": {
+            "team": "DET",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "195 lbs",
+            "last_attended": "Ratiopharm Ulm",
+            "country": "France"
+        }
+    },
+    {
+        "GordonHayward": {
+            "team": "CHA",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "225 lbs",
+            "last_attended": "Butler",
+            "country": "USA"
+        }
+    },
+    {
+        "JuanchoHernangomez": {
+            "team": "",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "214 lbs",
+            "last_attended": "Estudiantes",
+            "country": "Spain"
+        }
+    },
+    {
+        "WillyHernangomez": {
+            "team": "NOP",
+            "pos": "C-F",
+            "height": "6-11",
+            "weight": "250 lbs",
+            "last_attended": "Cajasol Sevilla",
+            "country": "Spain"
+        }
+    },
+    {
+        "TylerHerro": {
+            "team": "MIA",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "195 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "BuddyHield": {
+            "team": "IND",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "220 lbs",
+            "last_attended": "Oklahoma",
+            "country": "Bahamas"
+        }
+    },
+    {
+        "HaywoodHighsmith": {
+            "team": "MIA",
+            "pos": "F",
+            "height": "6-5",
+            "weight": "220 lbs",
+            "last_attended": "Wheeling Jesuit",
+            "country": "USA"
+        }
+    },
+    {
+        "GeorgeHill": {
+            "team": "IND",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "188 lbs",
+            "last_attended": "Indiana-Purdue Indianapolis",
+            "country": "USA"
+        }
+    },
+    {
+        "MalcolmHill": {
+            "team": "",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "220 lbs",
+            "last_attended": "Illinois",
+            "country": "USA"
+        }
+    },
+    {
+        "AaronHoliday": {
+            "team": "ATL",
+            "pos": "G",
+            "height": "6-0",
+            "weight": "185 lbs",
+            "last_attended": "UCLA",
+            "country": "USA"
+        }
+    },
+    {
+        "JrueHoliday": {
+            "team": "MIL",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "205 lbs",
+            "last_attended": "UCLA",
+            "country": "USA"
+        }
+    },
+    {
+        "JustinHoliday": {
+            "team": "DAL",
+            "pos": "F-G",
+            "height": "6-6",
+            "weight": "180 lbs",
+            "last_attended": "Washington",
+            "country": "USA"
+        }
+    },
+    {
+        "RichaunHolmes": {
+            "team": "SAC",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "235 lbs",
+            "last_attended": "Bowling Green",
+            "country": "USA"
+        }
+    },
+    {
+        "ChetHolmgren": {
+            "team": "OKC",
+            "pos": "C-F",
+            "height": "7-1",
+            "weight": "195 lbs",
+            "last_attended": "Gonzaga",
+            "country": "USA"
+        }
+    },
+    {
+        "AlHorford": {
+            "team": "BOS",
+            "pos": "C-F",
+            "height": "6-9",
+            "weight": "240 lbs",
+            "last_attended": "Florida",
+            "country": "Dominican Republic"
+        }
+    },
+    {
+        "TalenHorton-Tucker": {
+            "team": "UTA",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "234 lbs",
+            "last_attended": "Iowa State",
+            "country": "USA"
+        }
+    },
+    {
+        "DanuelHouseJr.": {
+            "team": "PHI",
+            "pos": "F-G",
+            "height": "6-6",
+            "weight": "220 lbs",
+            "last_attended": "Texas A&M",
+            "country": "USA"
+        }
+    },
+    {
+        "CalebHoustan": {
+            "team": "ORL",
+            "pos": "G",
+            "height": "6-8",
+            "weight": "205 lbs",
+            "last_attended": "Michigan",
+            "country": "Canada"
+        }
+    },
+    {
+        "TrevorHudgins": {
+            "team": "HOU",
+            "pos": "G",
+            "height": "6-0",
+            "weight": "180 lbs",
+            "last_attended": "Northwest Missouri State",
+            "country": "USA"
+        }
+    },
+    {
+        "KevinHuerter": {
+            "team": "SAC",
+            "pos": "G-F",
+            "height": "6-7",
+            "weight": "198 lbs",
+            "last_attended": "Maryland",
+            "country": "USA"
+        }
+    },
+    {
+        "JayHuff": {
+            "team": "WAS",
+            "pos": "C",
+            "height": "7-1",
+            "weight": "240 lbs",
+            "last_attended": "Virginia",
+            "country": "USA"
+        }
+    },
+    {
+        "De'AndreHunter": {
+            "team": "ATL",
+            "pos": "F-G",
+            "height": "6-8",
+            "weight": "221 lbs",
+            "last_attended": "Virginia",
+            "country": "USA"
+        }
+    },
+    {
+        "BonesHyland": {
+            "team": "LAC",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "169 lbs",
+            "last_attended": "Virginia Commonwealth",
+            "country": "USA"
+        }
+    },
+    {
+        "SergeIbaka": {
+            "team": "",
+            "pos": "F",
+            "height": "6-11",
+            "weight": "235 lbs",
+            "last_attended": "                                   ",
+            "country": "Democratic Republic of the Congo"
+        }
+    },
+    {
+        "AndreIguodala": {
+            "team": "GSW",
+            "pos": "G-F",
+            "height": "6-6",
+            "weight": "215 lbs",
+            "last_attended": "Arizona",
+            "country": "USA"
+        }
+    },
+    {
+        "JoeIngles": {
+            "team": "MIL",
+            "pos": "F-G",
+            "height": "6-9",
+            "weight": "220 lbs",
+            "last_attended": "Maccabi Tel Aviv",
+            "country": "Australia"
+        }
+    },
+    {
+        "BrandonIngram": {
+            "team": "NOP",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "190 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "KyrieIrving": {
+            "team": "DAL",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "195 lbs",
+            "last_attended": "Duke",
+            "country": "Australia"
+        }
+    },
+    {
+        "JonathanIsaac": {
+            "team": "ORL",
+            "pos": "F",
+            "height": "6-10",
+            "weight": "230 lbs",
+            "last_attended": "Florida State",
+            "country": "USA"
+        }
+    },
+    {
+        "JadenIvey": {
+            "team": "DET",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "195 lbs",
+            "last_attended": "Purdue",
+            "country": "USA"
+        }
+    },
+    {
+        "FrankJackson": {
+            "team": "",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "205 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "IsaiahJackson": {
+            "team": "IND",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "205 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "JustinJackson": {
+            "team": "",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "220 lbs",
+            "last_attended": "North Carolina",
+            "country": "USA"
+        }
+    },
+    {
+        "QuentonJackson": {
+            "team": "WAS",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "173 lbs",
+            "last_attended": "Texas A&M",
+            "country": "USA"
+        }
+    },
+    {
+        "ReggieJackson": {
+            "team": "DEN",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "208 lbs",
+            "last_attended": "Boston College",
+            "country": "USA"
+        }
+    },
+    {
+        "JarenJacksonJr.": {
+            "team": "MEM",
+            "pos": "F-C",
+            "height": "6-10",
+            "weight": "242 lbs",
+            "last_attended": "Michigan State",
+            "country": "USA"
+        }
+    },
+    {
+        "LeBronJames": {
+            "team": "LAL",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "250 lbs",
+            "last_attended": "St. Vincent-St. Mary HS (OH)",
+            "country": "USA"
+        }
+    },
+    {
+        "DaQuanJeffries": {
+            "team": "NYK",
+            "pos": "G-F",
+            "height": "6-5",
+            "weight": "222 lbs",
+            "last_attended": "Tulsa",
+            "country": "USA"
+        }
+    },
+    {
+        "TyJerome": {
+            "team": "GSW",
+            "pos": "G-F",
+            "height": "6-5",
+            "weight": "195 lbs",
+            "last_attended": "Virginia",
+            "country": "USA"
+        }
+    },
+    {
+        "IsaiahJoe": {
+            "team": "OKC",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "165 lbs",
+            "last_attended": "Arkansas",
+            "country": "USA"
+        }
+    },
+    {
+        "AlizeJohnson": {
+            "team": "",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "212 lbs",
+            "last_attended": "Missouri State",
+            "country": "USA"
+        }
+    },
+    {
+        "CameronJohnson": {
+            "team": "BKN",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "210 lbs",
+            "last_attended": "North Carolina",
+            "country": "USA"
+        }
+    },
+    {
+        "JalenJohnson": {
+            "team": "ATL",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "219 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "JamesJohnson": {
+            "team": "IND",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "240 lbs",
+            "last_attended": "Wake Forest",
+            "country": "USA"
+        }
+    },
+    {
+        "KeldonJohnson": {
+            "team": "SAS",
+            "pos": "F-G",
+            "height": "6-5",
+            "weight": "220 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "KeonJohnson": {
+            "team": "POR",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "185 lbs",
+            "last_attended": "Tennessee",
+            "country": "USA"
+        }
+    },
+    {
+        "StanleyJohnson": {
+            "team": "",
+            "pos": "F-G",
+            "height": "6-6",
+            "weight": "242 lbs",
+            "last_attended": "Arizona",
+            "country": "USA"
+        }
+    },
+    {
+        "NikolaJokic": {
+            "team": "DEN",
+            "pos": "C",
+            "height": "6-11",
+            "weight": "284 lbs",
+            "last_attended": "Mega Basket",
+            "country": "Serbia"
+        }
+    },
+    {
+        "CarlikJones": {
+            "team": "CHI",
+            "pos": "G",
+            "height": "6-0",
+            "weight": "174 lbs",
+            "last_attended": "Louisville",
+            "country": "USA"
+        }
+    },
+    {
+        "DamianJones": {
+            "team": "UTA",
+            "pos": "C",
+            "height": "6-11",
+            "weight": "245 lbs",
+            "last_attended": "Vanderbilt",
+            "country": "USA"
+        }
+    },
+    {
+        "HerbertJones": {
+            "team": "NOP",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "206 lbs",
+            "last_attended": "Alabama",
+            "country": "USA"
+        }
+    },
+    {
+        "KaiJones": {
+            "team": "CHA",
+            "pos": "C-F",
+            "height": "6-11",
+            "weight": "221 lbs",
+            "last_attended": "Texas",
+            "country": "Bahamas"
+        }
+    },
+    {
+        "TreJones": {
+            "team": "SAS",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "185 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "TyusJones": {
+            "team": "MEM",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "196 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "DerrickJonesJr.": {
+            "team": "CHI",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "210 lbs",
+            "last_attended": "UNLV",
+            "country": "USA"
+        }
+    },
+    {
+        "DeAndreJordan": {
+            "team": "DEN",
+            "pos": "C",
+            "height": "6-11",
+            "weight": "265 lbs",
+            "last_attended": "Texas A&M",
+            "country": "USA"
+        }
+    },
+    {
+        "CoryJoseph": {
+            "team": "DET",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "200 lbs",
+            "last_attended": "Texas",
+            "country": "Canada"
+        }
+    },
+    {
+        "NikolaJovic": {
+            "team": "MIA",
+            "pos": "F",
+            "height": "6-10",
+            "weight": "205 lbs",
+            "last_attended": "                                   ",
+            "country": "Serbia"
+        }
+    },
+    {
+        "JohnnyJuzang": {
+            "team": "UTA",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "209 lbs",
+            "last_attended": "UCLA",
+            "country": "USA"
+        }
+    },
+    {
+        "MfionduKabengele": {
+            "team": "BOS",
+            "pos": "C",
+            "height": "6-10",
+            "weight": "250 lbs",
+            "last_attended": "Florida State",
+            "country": "Canada"
+        }
+    },
+    {
+        "FrankKaminsky": {
+            "team": "HOU",
+            "pos": "F-C",
+            "height": "7-0",
+            "weight": "240 lbs",
+            "last_attended": "Wisconsin",
+            "country": "USA"
+        }
+    },
+    {
+        "TrevorKeels": {
+            "team": "NYK",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "221 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "LukeKennard": {
+            "team": "MEM",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "206 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "WalkerKessler": {
+            "team": "UTA",
+            "pos": "C",
+            "height": "7-0",
+            "weight": "245 lbs",
+            "last_attended": "Auburn",
+            "country": "USA"
+        }
+    },
+    {
+        "BraxtonKey": {
+            "team": "",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "225 lbs",
+            "last_attended": "Virginia",
+            "country": "USA"
+        }
+    },
+    {
+        "LouisKing": {
+            "team": "PHI",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "205 lbs",
+            "last_attended": "Oregon",
+            "country": "USA"
+        }
+    },
+    {
+        "CoreyKispert": {
+            "team": "WAS",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "224 lbs",
+            "last_attended": "Gonzaga",
+            "country": "USA"
+        }
+    },
+    {
+        "MaxiKleber": {
+            "team": "DAL",
+            "pos": "F",
+            "height": "6-10",
+            "weight": "240 lbs",
+            "last_attended": "Bayern Munich",
+            "country": "Germany"
+        }
+    },
+    {
+        "NathanKnight": {
+            "team": "MIN",
+            "pos": "F-C",
+            "height": "6-8",
+            "weight": "253 lbs",
+            "last_attended": "William & Mary",
+            "country": "USA"
+        }
+    },
+    {
+        "KevinKnoxII": {
+            "team": "POR",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "215 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "ChristianKoloko": {
+            "team": "TOR",
+            "pos": "C",
+            "height": "7-0",
+            "weight": "230 lbs",
+            "last_attended": "Arizona",
+            "country": "Cameroon"
+        }
+    },
+    {
+        "JohnKonchar": {
+            "team": "MEM",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "210 lbs",
+            "last_attended": "Indiana-Purdue Fort Wayne",
+            "country": "USA"
+        }
+    },
+    {
+        "FurkanKorkmaz": {
+            "team": "PHI",
+            "pos": "G-F",
+            "height": "6-7",
+            "weight": "202 lbs",
+            "last_attended": "Anadolu Efes",
+            "country": "Turkey"
+        }
+    },
+    {
+        "LukeKornet": {
+            "team": "BOS",
+            "pos": "C-F",
+            "height": "7-2",
+            "weight": "250 lbs",
+            "last_attended": "Vanderbilt",
+            "country": "USA"
+        }
+    },
+    {
+        "VitKrejci": {
+            "team": "ATL",
+            "pos": "G",
+            "height": "6-8",
+            "weight": "195 lbs",
+            "last_attended": "Zaragoza",
+            "country": "Czech Republic"
+        }
+    },
+    {
+        "JonathanKuminga": {
+            "team": "GSW",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "225 lbs",
+            "last_attended": "NBA G League Ignite",
+            "country": "DRC"
+        }
+    },
+    {
+        "KyleKuzma": {
+            "team": "WAS",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "221 lbs",
+            "last_attended": "Utah",
+            "country": "USA"
+        }
+    },
+    {
+        "JakeLaRavia": {
+            "team": "MEM",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "235 lbs",
+            "last_attended": "Wake Forest",
+            "country": "USA"
+        }
+    },
+    {
+        "ZachLaVine": {
+            "team": "CHI",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "200 lbs",
+            "last_attended": "UCLA",
+            "country": "USA"
+        }
+    },
+    {
+        "AnthonyLamb": {
+            "team": "GSW",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "227 lbs",
+            "last_attended": "Vermont",
+            "country": "USA"
+        }
+    },
+    {
+        "JockLandale": {
+            "team": "PHX",
+            "pos": "C",
+            "height": "6-11",
+            "weight": "255 lbs",
+            "last_attended": "St. Mary's",
+            "country": "Australia"
+        }
+    },
+    {
+        "RomeoLangford": {
+            "team": "SAS",
+            "pos": "G-F",
+            "height": "6-5",
+            "weight": "216 lbs",
+            "last_attended": "Indiana",
+            "country": "USA"
+        }
+    },
+    {
+        "A.J.Lawson": {
+            "team": "DAL",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "179 lbs",
+            "last_attended": "South Carolina",
+            "country": "Canada"
+        }
+    },
+    {
+        "CarisLeVert": {
+            "team": "CLE",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "205 lbs",
+            "last_attended": "Michigan",
+            "country": "USA"
+        }
+    },
+    {
+        "DamionLee": {
+            "team": "PHX",
+            "pos": "G-F",
+            "height": "6-5",
+            "weight": "210 lbs",
+            "last_attended": "Drexel",
+            "country": "USA"
+        }
+    },
+    {
+        "SabenLee": {
+            "team": "PHX",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "183 lbs",
+            "last_attended": "Vanderbilt",
+            "country": "USA"
+        }
+    },
+    {
+        "AlexLen": {
+            "team": "SAC",
+            "pos": "C",
+            "height": "7-2",
+            "weight": "250 lbs",
+            "last_attended": "Maryland",
+            "country": "Ukraine"
+        }
+    },
+    {
+        "KawhiLeonard": {
+            "team": "LAC",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "225 lbs",
+            "last_attended": "San Diego State",
+            "country": "USA"
+        }
+    },
+    {
+        "MeyersLeonard": {
+            "team": "MIL",
+            "pos": "F-C",
+            "height": "7-0",
+            "weight": "260 lbs",
+            "last_attended": "Illinois",
+            "country": "USA"
+        }
+    },
+    {
+        "JustinLewis": {
+            "team": "CHI",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "245 lbs",
+            "last_attended": "Marquette",
+            "country": "USA"
+        }
+    },
+    {
+        "KiraLewisJr.": {
+            "team": "NOP",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "170 lbs",
+            "last_attended": "Alabama",
+            "country": "USA"
+        }
+    },
+    {
+        "E.J.Liddell": {
+            "team": "NOP",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "240 lbs",
+            "last_attended": "Ohio State",
+            "country": "USA"
+        }
+    },
+    {
+        "DamianLillard": {
+            "team": "POR",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "195 lbs",
+            "last_attended": "Weber State",
+            "country": "USA"
+        }
+    },
+    {
+        "NassirLittle": {
+            "team": "POR",
+            "pos": "F-G",
+            "height": "6-5",
+            "weight": "220 lbs",
+            "last_attended": "North Carolina",
+            "country": "USA"
+        }
+    },
+    {
+        "IsaiahLivers": {
+            "team": "DET",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "232 lbs",
+            "last_attended": "Michigan",
+            "country": "USA"
+        }
+    },
+    {
+        "KennethLoftonJr.": {
+            "team": "MEM",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "275 lbs",
+            "last_attended": "Louisiana Tech",
+            "country": "USA"
+        }
+    },
+    {
+        "KevonLooney": {
+            "team": "GSW",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "222 lbs",
+            "last_attended": "UCLA",
+            "country": "USA"
+        }
+    },
+    {
+        "BrookLopez": {
+            "team": "MIL",
+            "pos": "C",
+            "height": "7-1",
+            "weight": "282 lbs",
+            "last_attended": "Stanford",
+            "country": "USA"
+        }
+    },
+    {
+        "RobinLopez": {
+            "team": "CLE",
+            "pos": "C",
+            "height": "7-0",
+            "weight": "281 lbs",
+            "last_attended": "Stanford",
+            "country": "USA"
+        }
+    },
+    {
+        "KevinLove": {
+            "team": "MIA",
+            "pos": "F-C",
+            "height": "6-8",
+            "weight": "251 lbs",
+            "last_attended": "UCLA",
+            "country": "USA"
+        }
+    },
+    {
+        "KyleLowry": {
+            "team": "MIA",
+            "pos": "G",
+            "height": "6-0",
+            "weight": "196 lbs",
+            "last_attended": "Villanova",
+            "country": "USA"
+        }
+    },
+    {
+        "TreyLyles": {
+            "team": "SAC",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "234 lbs",
+            "last_attended": "Kentucky",
+            "country": "Canada"
+        }
+    },
+    {
+        "TheoMaledon": {
+            "team": "CHA",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "175 lbs",
+            "last_attended": "Asvel",
+            "country": "France"
+        }
+    },
+    {
+        "SandroMamukelashvili": {
+            "team": "SAS",
+            "pos": "F-C",
+            "height": "6-10",
+            "weight": "240 lbs",
+            "last_attended": "Seton Hall",
+            "country": "Georgia"
+        }
+    },
+    {
+        "TeranceMann": {
+            "team": "LAC",
+            "pos": "G-F",
+            "height": "6-5",
+            "weight": "215 lbs",
+            "last_attended": "Florida State",
+            "country": "USA"
+        }
+    },
+    {
+        "TreMann": {
+            "team": "OKC",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "178 lbs",
+            "last_attended": "Florida",
+            "country": "USA"
+        }
+    },
+    {
+        "BobanMarjanovic": {
+            "team": "HOU",
+            "pos": "C",
+            "height": "7-4",
+            "weight": "290 lbs",
+            "last_attended": "Crvena zvezda",
+            "country": "Serbia"
+        }
+    },
+    {
+        "LauriMarkkanen": {
+            "team": "UTA",
+            "pos": "F-C",
+            "height": "7-0",
+            "weight": "240 lbs",
+            "last_attended": "Arizona",
+            "country": "Finland"
+        }
+    },
+    {
+        "NajiMarshall": {
+            "team": "NOP",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "220 lbs",
+            "last_attended": "Xavier",
+            "country": "USA"
+        }
+    },
+    {
+        "CalebMartin": {
+            "team": "MIA",
+            "pos": "F",
+            "height": "6-5",
+            "weight": "205 lbs",
+            "last_attended": "Nevada",
+            "country": "USA"
+        }
+    },
+    {
+        "CodyMartin": {
+            "team": "CHA",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "205 lbs",
+            "last_attended": "Nevada",
+            "country": "USA"
+        }
+    },
+    {
+        "TyreseMartin": {
+            "team": "ATL",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "215 lbs",
+            "last_attended": "Connecticut",
+            "country": "USA"
+        }
+    },
+    {
+        "KenyonMartinJr.": {
+            "team": "HOU",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "215 lbs",
+            "last_attended": "IMG Academy (FL)",
+            "country": "USA"
+        }
+    },
+    {
+        "GarrisonMathews": {
+            "team": "ATL",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "215 lbs",
+            "last_attended": "Lipscomb",
+            "country": "USA"
+        }
+    },
+    {
+        "BennedictMathurin": {
+            "team": "IND",
+            "pos": "G-F",
+            "height": "6-5",
+            "weight": "210 lbs",
+            "last_attended": "Arizona",
+            "country": "Canada"
+        }
+    },
+    {
+        "WesleyMatthews": {
+            "team": "MIL",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "220 lbs",
+            "last_attended": "Marquette",
+            "country": "USA"
+        }
+    },
+    {
+        "TyreseMaxey": {
+            "team": "PHI",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "200 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "SkylarMays": {
+            "team": "",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "205 lbs",
+            "last_attended": "Louisiana State",
+            "country": "USA"
+        }
+    },
+    {
+        "MilesMcBride": {
+            "team": "NYK",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "195 lbs",
+            "last_attended": "West Virginia",
+            "country": "USA"
+        }
+    },
+    {
+        "MacMcClung": {
+            "team": "PHI",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "185 lbs",
+            "last_attended": "Texas Tech",
+            "country": "USA"
+        }
+    },
+    {
+        "CJMcCollum": {
+            "team": "NOP",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "190 lbs",
+            "last_attended": "Lehigh",
+            "country": "USA"
+        }
+    },
+    {
+        "T.J.McConnell": {
+            "team": "IND",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "190 lbs",
+            "last_attended": "Arizona",
+            "country": "USA"
+        }
+    },
+    {
+        "JadenMcDaniels": {
+            "team": "MIN",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "185 lbs",
+            "last_attended": "Washington",
+            "country": "USA"
+        }
+    },
+    {
+        "JalenMcDaniels": {
+            "team": "PHI",
+            "pos": "F-C",
+            "height": "6-9",
+            "weight": "205 lbs",
+            "last_attended": "San Diego State",
+            "country": "USA"
+        }
+    },
+    {
+        "DougMcDermott": {
+            "team": "SAS",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "225 lbs",
+            "last_attended": "Creighton",
+            "country": "USA"
+        }
+    },
+    {
+        "JaValeMcGee": {
+            "team": "DAL",
+            "pos": "C-F",
+            "height": "7-0",
+            "weight": "270 lbs",
+            "last_attended": "Nevada",
+            "country": "USA"
+        }
+    },
+    {
+        "BryceMcGowens": {
+            "team": "CHA",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "175 lbs",
+            "last_attended": "Nebraska",
+            "country": "USA"
+        }
+    },
+    {
+        "RodneyMcGruder": {
+            "team": "DET",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "205 lbs",
+            "last_attended": "Kansas State",
+            "country": "USA"
+        }
+    },
+    {
+        "JordanMcLaughlin": {
+            "team": "MIN",
+            "pos": "G",
+            "height": "6-0",
+            "weight": "185 lbs",
+            "last_attended": "Southern California",
+            "country": "USA"
+        }
+    },
+    {
+        "De'AnthonyMelton": {
+            "team": "PHI",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "200 lbs",
+            "last_attended": "Southern California",
+            "country": "USA"
+        }
+    },
+    {
+        "SamMerrill": {
+            "team": "CLE",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "205 lbs",
+            "last_attended": "Utah State",
+            "country": "USA"
+        }
+    },
+    {
+        "ChimezieMetu": {
+            "team": "SAC",
+            "pos": "F-C",
+            "height": "6-9",
+            "weight": "225 lbs",
+            "last_attended": "Southern California",
+            "country": "USA"
+        }
+    },
+    {
+        "KhrisMiddleton": {
+            "team": "MIL",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "222 lbs",
+            "last_attended": "Texas A&M",
+            "country": "USA"
+        }
+    },
+    {
+        "PattyMills": {
+            "team": "BKN",
+            "pos": "G",
+            "height": "6-0",
+            "weight": "180 lbs",
+            "last_attended": "St. Mary's",
+            "country": "Australia"
+        }
+    },
+    {
+        "ShakeMilton": {
+            "team": "PHI",
+            "pos": "G-F",
+            "height": "6-5",
+            "weight": "205 lbs",
+            "last_attended": "Southern Methodist",
+            "country": "USA"
+        }
+    },
+    {
+        "JustinMinaya": {
+            "team": "",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "210 lbs",
+            "last_attended": "Providence",
+            "country": "USA"
+        }
+    },
+    {
+        "JoshMinott": {
+            "team": "MIN",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "205 lbs",
+            "last_attended": "Memphis",
+            "country": "USA"
+        }
+    },
+    {
+        "DavionMitchell": {
+            "team": "SAC",
+            "pos": "G",
+            "height": "6-0",
+            "weight": "202 lbs",
+            "last_attended": "Baylor",
+            "country": "USA"
+        }
+    },
+    {
+        "DonovanMitchell": {
+            "team": "CLE",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "215 lbs",
+            "last_attended": "Louisville",
+            "country": "USA"
+        }
+    },
+    {
+        "EvanMobley": {
+            "team": "CLE",
+            "pos": "C",
+            "height": "6-11",
+            "weight": "215 lbs",
+            "last_attended": "Southern California",
+            "country": "USA"
+        }
+    },
+    {
+        "IsaiahMobley": {
+            "team": "CLE",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "238 lbs",
+            "last_attended": "Southern California",
+            "country": "USA"
+        }
+    },
+    {
+        "ChimaMoneke": {
+            "team": "",
+            "pos": "F",
+            "height": "6-5",
+            "weight": "223 lbs",
+            "last_attended": "Cal-Davis",
+            "country": "Nigeria"
+        }
+    },
+    {
+        "MalikMonk": {
+            "team": "SAC",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "200 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "MosesMoody": {
+            "team": "GSW",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "211 lbs",
+            "last_attended": "Arkansas",
+            "country": "USA"
+        }
+    },
+    {
+        "XavierMoon": {
+            "team": "LAC",
+            "pos": "G",
+            "height": "6-0",
+            "weight": "165 lbs",
+            "last_attended": "Morehead State",
+            "country": "USA"
+        }
+    },
+    {
+        "WendellMooreJr.": {
+            "team": "MIN",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "215 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "JaMorant": {
+            "team": "MEM",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "174 lbs",
+            "last_attended": "Murray State",
+            "country": "USA"
+        }
+    },
+    {
+        "MarkieffMorris": {
+            "team": "DAL",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "245 lbs",
+            "last_attended": "Kansas",
+            "country": "USA"
+        }
+    },
+    {
+        "MonteMorris": {
+            "team": "WAS",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "183 lbs",
+            "last_attended": "Iowa State",
+            "country": "USA"
+        }
+    },
+    {
+        "MarcusMorrisSr.": {
+            "team": "LAC",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "218 lbs",
+            "last_attended": "Kansas",
+            "country": "USA"
+        }
+    },
+    {
+        "TreyMurphyIII": {
+            "team": "NOP",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "206 lbs",
+            "last_attended": "Virginia",
+            "country": "USA"
+        }
+    },
+    {
+        "DejounteMurray": {
+            "team": "ATL",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "180 lbs",
+            "last_attended": "Washington",
+            "country": "USA"
+        }
+    },
+    {
+        "JamalMurray": {
+            "team": "DEN",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "215 lbs",
+            "last_attended": "Kentucky",
+            "country": "Canada"
+        }
+    },
+    {
+        "KeeganMurray": {
+            "team": "SAC",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "225 lbs",
+            "last_attended": "Iowa",
+            "country": "USA"
+        }
+    },
+    {
+        "MikeMuscala": {
+            "team": "BOS",
+            "pos": "F-C",
+            "height": "6-11",
+            "weight": "240 lbs",
+            "last_attended": "Bucknell",
+            "country": "USA"
+        }
+    },
+    {
+        "SviMykhailiuk": {
+            "team": "CHA",
+            "pos": "G-F",
+            "height": "6-7",
+            "weight": "205 lbs",
+            "last_attended": "Kansas",
+            "country": "Ukraine"
+        }
+    },
+    {
+        "LarryNanceJr.": {
+            "team": "NOP",
+            "pos": "F-C",
+            "height": "6-8",
+            "weight": "245 lbs",
+            "last_attended": "Wyoming",
+            "country": "USA"
+        }
+    },
+    {
+        "AndrewNembhard": {
+            "team": "IND",
+            "pos": "G-F",
+            "height": "6-3",
+            "weight": "191 lbs",
+            "last_attended": "Gonzaga",
+            "country": "Canada"
+        }
+    },
+    {
+        "AaronNesmith": {
+            "team": "IND",
+            "pos": "G-F",
+            "height": "6-5",
+            "weight": "215 lbs",
+            "last_attended": "Vanderbilt",
+            "country": "USA"
+        }
+    },
+    {
+        "RaulNeto": {
+            "team": "CLE",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "180 lbs",
+            "last_attended": "Murcia",
+            "country": "Brazil"
+        }
+    },
+    {
+        "GeorgesNiang": {
+            "team": "PHI",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "230 lbs",
+            "last_attended": "Iowa State",
+            "country": "USA"
+        }
+    },
+    {
+        "DaishenNix": {
+            "team": "HOU",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "226 lbs",
+            "last_attended": "NBA G League Ignite",
+            "country": "USA"
+        }
+    },
+    {
+        "ZekeNnaji": {
+            "team": "DEN",
+            "pos": "F-C",
+            "height": "6-9",
+            "weight": "240 lbs",
+            "last_attended": "Arizona",
+            "country": "USA"
+        }
+    },
+    {
+        "NerlensNoel": {
+            "team": "",
+            "pos": "C-F",
+            "height": "6-10",
+            "weight": "220 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "JaylenNowell": {
+            "team": "MIN",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "201 lbs",
+            "last_attended": "Washington",
+            "country": "USA"
+        }
+    },
+    {
+        "FrankNtilikina": {
+            "team": "DAL",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "200 lbs",
+            "last_attended": "Strasbourg IG",
+            "country": "France"
+        }
+    },
+    {
+        "KendrickNunn": {
+            "team": "WAS",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "190 lbs",
+            "last_attended": "Oakland",
+            "country": "USA"
+        }
+    },
+    {
+        "JusufNurkic": {
+            "team": "POR",
+            "pos": "C",
+            "height": "7-0",
+            "weight": "290 lbs",
+            "last_attended": "Cedevita",
+            "country": "Bosnia and Herzegovina"
+        }
+    },
+    {
+        "JordanNwora": {
+            "team": "IND",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "225 lbs",
+            "last_attended": "Louisville",
+            "country": "USA"
+        }
+    },
+    {
+        "RoyceO'Neale": {
+            "team": "BKN",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "226 lbs",
+            "last_attended": "Baylor",
+            "country": "USA"
+        }
+    },
+    {
+        "ChumaOkeke": {
+            "team": "ORL",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "229 lbs",
+            "last_attended": "Auburn",
+            "country": "USA"
+        }
+    },
+    {
+        "JoshOkogie": {
+            "team": "PHX",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "213 lbs",
+            "last_attended": "Georgia Tech",
+            "country": "Nigeria"
+        }
+    },
+    {
+        "OnyekaOkongwu": {
+            "team": "ATL",
+            "pos": "F-C",
+            "height": "6-9",
+            "weight": "240 lbs",
+            "last_attended": "Southern California",
+            "country": "USA"
+        }
+    },
+    {
+        "IsaacOkoro": {
+            "team": "CLE",
+            "pos": "F-G",
+            "height": "6-5",
+            "weight": "225 lbs",
+            "last_attended": "Auburn",
+            "country": "USA"
+        }
+    },
+    {
+        "KZOkpala": {
+            "team": "",
+            "pos": "F-G",
+            "height": "6-8",
+            "weight": "215 lbs",
+            "last_attended": "Stanford",
+            "country": "USA"
+        }
+    },
+    {
+        "VictorOladipo": {
+            "team": "MIA",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "213 lbs",
+            "last_attended": "Indiana",
+            "country": "USA"
+        }
+    },
+    {
+        "KellyOlynyk": {
+            "team": "UTA",
+            "pos": "F-C",
+            "height": "6-11",
+            "weight": "240 lbs",
+            "last_attended": "Gonzaga",
+            "country": "Canada"
+        }
+    },
+    {
+        "EugeneOmoruyi": {
+            "team": "DET",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "235 lbs",
+            "last_attended": "Oregon",
+            "country": "Nigeria"
+        }
+    },
+    {
+        "CediOsman": {
+            "team": "CLE",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "230 lbs",
+            "last_attended": "Anadolu Efes",
+            "country": "Turkey"
+        }
+    },
+    {
+        "KellyOubreJr.": {
+            "team": "CHA",
+            "pos": "F-G",
+            "height": "6-6",
+            "weight": "203 lbs",
+            "last_attended": "Kansas",
+            "country": "USA"
+        }
+    },
+    {
+        "ChrisPaul": {
+            "team": "PHX",
+            "pos": "G",
+            "height": "6-0",
+            "weight": "175 lbs",
+            "last_attended": "Wake Forest",
+            "country": "USA"
+        }
+    },
+    {
+        "CameronPayne": {
+            "team": "PHX",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "183 lbs",
+            "last_attended": "Murray State",
+            "country": "USA"
+        }
+    },
+    {
+        "GaryPaytonII": {
+            "team": "GSW",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "195 lbs",
+            "last_attended": "Oregon State",
+            "country": "USA"
+        }
+    },
+    {
+        "TheoPinson": {
+            "team": "DAL",
+            "pos": "G-F",
+            "height": "6-7",
+            "weight": "212 lbs",
+            "last_attended": "North Carolina",
+            "country": "USA"
+        }
+    },
+    {
+        "ScottyPippenJr.": {
+            "team": "LAL",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "170 lbs",
+            "last_attended": "Vanderbilt",
+            "country": "USA"
+        }
+    },
+    {
+        "MasonPlumlee": {
+            "team": "LAC",
+            "pos": "F-C",
+            "height": "7-0",
+            "weight": "254 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "JakobPoeltl": {
+            "team": "TOR",
+            "pos": "C",
+            "height": "7-1",
+            "weight": "245 lbs",
+            "last_attended": "Utah",
+            "country": "Austria"
+        }
+    },
+    {
+        "AleksejPokusevski": {
+            "team": "OKC",
+            "pos": "F",
+            "height": "7-0",
+            "weight": "210 lbs",
+            "last_attended": "Olympiacos",
+            "country": "Serbia"
+        }
+    },
+    {
+        "JordanPoole": {
+            "team": "GSW",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "194 lbs",
+            "last_attended": "Michigan",
+            "country": "USA"
+        }
+    },
+    {
+        "KevinPorterJr.": {
+            "team": "HOU",
+            "pos": "G-F",
+            "height": "6-4",
+            "weight": "203 lbs",
+            "last_attended": "Southern California",
+            "country": "USA"
+        }
+    },
+    {
+        "MichaelPorterJr.": {
+            "team": "DEN",
+            "pos": "F",
+            "height": "6-10",
+            "weight": "218 lbs",
+            "last_attended": "Missouri",
+            "country": "USA"
+        }
+    },
+    {
+        "OttoPorterJr.": {
+            "team": "TOR",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "198 lbs",
+            "last_attended": "Georgetown",
+            "country": "USA"
+        }
+    },
+    {
+        "BobbyPortis": {
+            "team": "MIL",
+            "pos": "F",
+            "height": "6-11",
+            "weight": "250 lbs",
+            "last_attended": "Arkansas",
+            "country": "USA"
+        }
+    },
+    {
+        "KristapsPorzingis": {
+            "team": "WAS",
+            "pos": "F-C",
+            "height": "7-3",
+            "weight": "240 lbs",
+            "last_attended": "Cajasol Sevilla",
+            "country": "Latvia"
+        }
+    },
+    {
+        "MicahPotter": {
+            "team": "UTA",
+            "pos": "C",
+            "height": "6-8",
+            "weight": "248 lbs",
+            "last_attended": "Wisconsin",
+            "country": "USA"
+        }
+    },
+    {
+        "DwightPowell": {
+            "team": "DAL",
+            "pos": "F-C",
+            "height": "6-10",
+            "weight": "240 lbs",
+            "last_attended": "Stanford",
+            "country": "Canada"
+        }
+    },
+    {
+        "NormanPowell": {
+            "team": "LAC",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "215 lbs",
+            "last_attended": "UCLA",
+            "country": "USA"
+        }
+    },
+    {
+        "JasonPreston": {
+            "team": "LAC",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "181 lbs",
+            "last_attended": "Ohio",
+            "country": "USA"
+        }
+    },
+    {
+        "JoshuaPrimo": {
+            "team": "",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "189 lbs",
+            "last_attended": "Alabama",
+            "country": "Canada"
+        }
+    },
+    {
+        "TaureanPrince": {
+            "team": "MIN",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "218 lbs",
+            "last_attended": "Baylor",
+            "country": "USA"
+        }
+    },
+    {
+        "PaytonPritchard": {
+            "team": "BOS",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "195 lbs",
+            "last_attended": "Oregon",
+            "country": "USA"
+        }
+    },
+    {
+        "TrevelinQueen": {
+            "team": "",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "190 lbs",
+            "last_attended": "New Mexico State",
+            "country": "USA"
+        }
+    },
+    {
+        "NeemiasQueta": {
+            "team": "SAC",
+            "pos": "C",
+            "height": "7-0",
+            "weight": "248 lbs",
+            "last_attended": "Utah State",
+            "country": "Portugal"
+        }
+    },
+    {
+        "ImmanuelQuickley": {
+            "team": "NYK",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "190 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "LesterQuinones": {
+            "team": "GSW",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "208 lbs",
+            "last_attended": "Memphis",
+            "country": "USA"
+        }
+    },
+    {
+        "JuliusRandle": {
+            "team": "NYK",
+            "pos": "F-C",
+            "height": "6-8",
+            "weight": "250 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "AustinReaves": {
+            "team": "LAL",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "197 lbs",
+            "last_attended": "Oklahoma",
+            "country": "USA"
+        }
+    },
+    {
+        "CamReddish": {
+            "team": "POR",
+            "pos": "F-G",
+            "height": "6-7",
+            "weight": "217 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "DavonReed": {
+            "team": "",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "206 lbs",
+            "last_attended": "Miami",
+            "country": "USA"
+        }
+    },
+    {
+        "PaulReed": {
+            "team": "PHI",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "210 lbs",
+            "last_attended": "DePaul",
+            "country": "USA"
+        }
+    },
+    {
+        "NazReid": {
+            "team": "MIN",
+            "pos": "C-F",
+            "height": "6-9",
+            "weight": "264 lbs",
+            "last_attended": "Louisiana State",
+            "country": "USA"
+        }
+    },
+    {
+        "JaredRhoden": {
+            "team": "DET",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "210 lbs",
+            "last_attended": "Seton Hall",
+            "country": "USA"
+        }
+    },
+    {
+        "NickRichards": {
+            "team": "CHA",
+            "pos": "C",
+            "height": "7-0",
+            "weight": "245 lbs",
+            "last_attended": "Kentucky",
+            "country": "Jamaica"
+        }
+    },
+    {
+        "JoshRichardson": {
+            "team": "NOP",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "200 lbs",
+            "last_attended": "Tennessee",
+            "country": "USA"
+        }
+    },
+    {
+        "AustinRivers": {
+            "team": "MIN",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "200 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "DuncanRobinson": {
+            "team": "MIA",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "215 lbs",
+            "last_attended": "Michigan",
+            "country": "USA"
+        }
+    },
+    {
+        "MitchellRobinson": {
+            "team": "NYK",
+            "pos": "C-F",
+            "height": "7-0",
+            "weight": "240 lbs",
+            "last_attended": "Western Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "OrlandoRobinson": {
+            "team": "MIA",
+            "pos": "C",
+            "height": "6-10",
+            "weight": "235 lbs",
+            "last_attended": "Fresno State",
+            "country": "USA"
+        }
+    },
+    {
+        "JeremiahRobinson-Earl": {
+            "team": "OKC",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "240 lbs",
+            "last_attended": "Villanova",
+            "country": "USA"
+        }
+    },
+    {
+        "IsaiahRoby": {
+            "team": "NYK",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "230 lbs",
+            "last_attended": "Nebraska",
+            "country": "USA"
+        }
+    },
+    {
+        "DavidRoddy": {
+            "team": "MEM",
+            "pos": "F",
+            "height": "6-4",
+            "weight": "255 lbs",
+            "last_attended": "Colorado State",
+            "country": "USA"
+        }
+    },
+    {
+        "RyanRollins": {
+            "team": "GSW",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "180 lbs",
+            "last_attended": "Toledo",
+            "country": "USA"
+        }
+    },
+    {
+        "DerrickRose": {
+            "team": "NYK",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "200 lbs",
+            "last_attended": "Memphis",
+            "country": "USA"
+        }
+    },
+    {
+        "TerrenceRoss": {
+            "team": "PHX",
+            "pos": "G-F",
+            "height": "6-7",
+            "weight": "206 lbs",
+            "last_attended": "Washington",
+            "country": "USA"
+        }
+    },
+    {
+        "TerryRozier": {
+            "team": "CHA",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "190 lbs",
+            "last_attended": "Louisville",
+            "country": "USA"
+        }
+    },
+    {
+        "RickyRubio": {
+            "team": "CLE",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "190 lbs",
+            "last_attended": "FC Barcelona",
+            "country": "Spain"
+        }
+    },
+    {
+        "D'AngeloRussell": {
+            "team": "LAL",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "193 lbs",
+            "last_attended": "Ohio State",
+            "country": "USA"
+        }
+    },
+    {
+        "MattRyan": {
+            "team": "MIN",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "215 lbs",
+            "last_attended": "Tennessee-Chattanooga",
+            "country": "USA"
+        }
+    },
+    {
+        "DomantasSabonis": {
+            "team": "SAC",
+            "pos": "F-C",
+            "height": "7-1",
+            "weight": "240 lbs",
+            "last_attended": "Gonzaga",
+            "country": "Lithuania"
+        }
+    },
+    {
+        "LukaSamanic": {
+            "team": "UTA",
+            "pos": "F",
+            "height": "6-10",
+            "weight": "227 lbs",
+            "last_attended": "Union Olimpija",
+            "country": "Croatia"
+        }
+    },
+    {
+        "DarioSaric": {
+            "team": "OKC",
+            "pos": "F-C",
+            "height": "6-10",
+            "weight": "225 lbs",
+            "last_attended": "Anadolu Efes",
+            "country": "Croatia"
+        }
+    },
+    {
+        "OlivierSarr": {
+            "team": "OKC",
+            "pos": "C",
+            "height": "6-11",
+            "weight": "240 lbs",
+            "last_attended": "Kentucky",
+            "country": "France"
+        }
+    },
+    {
+        "JordanSchakel": {
+            "team": "",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "200 lbs",
+            "last_attended": "San Diego State",
+            "country": "USA"
+        }
+    },
+    {
+        "AdmiralSchofield": {
+            "team": "ORL",
+            "pos": "F",
+            "height": "6-5",
+            "weight": "241 lbs",
+            "last_attended": "Tennessee",
+            "country": "United Kingdom"
+        }
+    },
+    {
+        "DennisSchroder": {
+            "team": "LAL",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "172 lbs",
+            "last_attended": "Braunschweig",
+            "country": "Germany"
+        }
+    },
+    {
+        "JayScrubb": {
+            "team": "ORL",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "220 lbs",
+            "last_attended": "John A. Logan",
+            "country": "USA"
+        }
+    },
+    {
+        "DereonSeabron": {
+            "team": "NOP",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "180 lbs",
+            "last_attended": "North Carolina State",
+            "country": "USA"
+        }
+    },
+    {
+        "AlperenSengun": {
+            "team": "HOU",
+            "pos": "C",
+            "height": "6-11",
+            "weight": "243 lbs",
+            "last_attended": "Besiktas",
+            "country": "Turkey"
+        }
+    },
+    {
+        "CollinSexton": {
+            "team": "UTA",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "190 lbs",
+            "last_attended": "Alabama",
+            "country": "USA"
+        }
+    },
+    {
+        "LandryShamet": {
+            "team": "PHX",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "190 lbs",
+            "last_attended": "Wichita State",
+            "country": "USA"
+        }
+    },
+    {
+        "Day'RonSharpe": {
+            "team": "BKN",
+            "pos": "C",
+            "height": "6-9",
+            "weight": "265 lbs",
+            "last_attended": "North Carolina",
+            "country": "USA"
+        }
+    },
+    {
+        "ShaedonSharpe": {
+            "team": "POR",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "200 lbs",
+            "last_attended": "Kentucky",
+            "country": "Canada"
+        }
+    },
+    {
+        "PascalSiakam": {
+            "team": "TOR",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "230 lbs",
+            "last_attended": "New Mexico State",
+            "country": "Cameroon"
+        }
+    },
+    {
+        "ChrisSilva": {
+            "team": "",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "234 lbs",
+            "last_attended": "South Carolina",
+            "country": "Gabon"
+        }
+    },
+    {
+        "BenSimmons": {
+            "team": "BKN",
+            "pos": "G-F",
+            "height": "6-10",
+            "weight": "240 lbs",
+            "last_attended": "Louisiana State",
+            "country": "Australia"
+        }
+    },
+    {
+        "KobiSimmons": {
+            "team": "CHA",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "180 lbs",
+            "last_attended": "Arizona",
+            "country": "USA"
+        }
+    },
+    {
+        "MarkoSimonovic": {
+            "team": "CHI",
+            "pos": "C",
+            "height": "7-0",
+            "weight": "220 lbs",
+            "last_attended": "Mega Basket",
+            "country": "Montenegro"
+        }
+    },
+    {
+        "AnferneeSimons": {
+            "team": "POR",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "181 lbs",
+            "last_attended": "Edgewater HS (FL)",
+            "country": "USA"
+        }
+    },
+    {
+        "JerichoSims": {
+            "team": "NYK",
+            "pos": "C",
+            "height": "6-10",
+            "weight": "250 lbs",
+            "last_attended": "Texas",
+            "country": "USA"
+        }
+    },
+    {
+        "MarcusSmart": {
+            "team": "BOS",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "220 lbs",
+            "last_attended": "Oklahoma State",
+            "country": "USA"
+        }
+    },
+    {
+        "DruSmith": {
+            "team": "BKN",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "203 lbs",
+            "last_attended": "Missouri",
+            "country": "USA"
+        }
+    },
+    {
+        "IshSmith": {
+            "team": "DEN",
+            "pos": "G",
+            "height": "6-0",
+            "weight": "175 lbs",
+            "last_attended": "Wake Forest",
+            "country": "USA"
+        }
+    },
+    {
+        "JalenSmith": {
+            "team": "IND",
+            "pos": "F-C",
+            "height": "6-9",
+            "weight": "215 lbs",
+            "last_attended": "Maryland",
+            "country": "USA"
+        }
+    },
+    {
+        "DennisSmithJr.": {
+            "team": "CHA",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "205 lbs",
+            "last_attended": "North Carolina State",
+            "country": "USA"
+        }
+    },
+    {
+        "JabariSmithJr.": {
+            "team": "HOU",
+            "pos": "F",
+            "height": "6-11",
+            "weight": "220 lbs",
+            "last_attended": "Auburn",
+            "country": "USA"
+        }
+    },
+    {
+        "XavierSneed": {
+            "team": "CHA",
+            "pos": "F",
+            "height": "6-5",
+            "weight": "215 lbs",
+            "last_attended": "Kansas State",
+            "country": "USA"
+        }
+    },
+    {
+        "JeremySochan": {
+            "team": "SAS",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "230 lbs",
+            "last_attended": "Baylor",
+            "country": "Poland"
+        }
+    },
+    {
+        "JadenSpringer": {
+            "team": "PHI",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "202 lbs",
+            "last_attended": "Tennessee",
+            "country": "USA"
+        }
+    },
+    {
+        "LamarStevens": {
+            "team": "CLE",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "230 lbs",
+            "last_attended": "Penn State",
+            "country": "USA"
+        }
+    },
+    {
+        "IsaiahStewart": {
+            "team": "DET",
+            "pos": "F-C",
+            "height": "6-8",
+            "weight": "250 lbs",
+            "last_attended": "Washington",
+            "country": "USA"
+        }
+    },
+    {
+        "MaxStrus": {
+            "team": "MIA",
+            "pos": "G-F",
+            "height": "6-5",
+            "weight": "215 lbs",
+            "last_attended": "DePaul",
+            "country": "USA"
+        }
+    },
+    {
+        "JalenSuggs": {
+            "team": "ORL",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "205 lbs",
+            "last_attended": "Gonzaga",
+            "country": "USA"
+        }
+    },
+    {
+        "EdmondSumner": {
+            "team": "BKN",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "196 lbs",
+            "last_attended": "Xavier",
+            "country": "USA"
+        }
+    },
+    {
+        "ColeSwider": {
+            "team": "LAL",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "220 lbs",
+            "last_attended": "Syracuse",
+            "country": "USA"
+        }
+    },
+    {
+        "Jae'SeanTate": {
+            "team": "HOU",
+            "pos": "F",
+            "height": "6-5",
+            "weight": "230 lbs",
+            "last_attended": "Ohio State",
+            "country": "USA"
+        }
+    },
+    {
+        "JaysonTatum": {
+            "team": "BOS",
+            "pos": "F-G",
+            "height": "6-8",
+            "weight": "210 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "TerryTaylor": {
+            "team": "CHI",
+            "pos": "F",
+            "height": "6-4",
+            "weight": "230 lbs",
+            "last_attended": "Austin Peay",
+            "country": "USA"
+        }
+    },
+    {
+        "GarrettTemple": {
+            "team": "NOP",
+            "pos": "G-F",
+            "height": "6-6",
+            "weight": "195 lbs",
+            "last_attended": "Louisiana State",
+            "country": "USA"
+        }
+    },
+    {
+        "DalenTerry": {
+            "team": "CHI",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "195 lbs",
+            "last_attended": "Arizona",
+            "country": "USA"
+        }
+    },
+    {
+        "DanielTheis": {
+            "team": "IND",
+            "pos": "F-C",
+            "height": "6-8",
+            "weight": "245 lbs",
+            "last_attended": "Brose Bamberg",
+            "country": "Germany"
+        }
+    },
+    {
+        "CamThomas": {
+            "team": "BKN",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "210 lbs",
+            "last_attended": "Louisiana State",
+            "country": "Japan"
+        }
+    },
+    {
+        "KlayThompson": {
+            "team": "GSW",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "220 lbs",
+            "last_attended": "Washington State",
+            "country": "USA"
+        }
+    },
+    {
+        "TristanThompson": {
+            "team": "LAL",
+            "pos": "C-F",
+            "height": "6-9",
+            "weight": "254 lbs",
+            "last_attended": "Texas-Austin",
+            "country": "Canada"
+        }
+    },
+    {
+        "JTThor": {
+            "team": "CHA",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "203 lbs",
+            "last_attended": "Auburn",
+            "country": "USA"
+        }
+    },
+    {
+        "MatisseThybulle": {
+            "team": "POR",
+            "pos": "G-F",
+            "height": "6-5",
+            "weight": "201 lbs",
+            "last_attended": "Washington",
+            "country": "USA"
+        }
+    },
+    {
+        "XavierTillman": {
+            "team": "MEM",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "245 lbs",
+            "last_attended": "Michigan State",
+            "country": "USA"
+        }
+    },
+    {
+        "IsaiahTodd": {
+            "team": "WAS",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "219 lbs",
+            "last_attended": "NBA G League Ignite",
+            "country": "USA"
+        }
+    },
+    {
+        "ObiToppin": {
+            "team": "NYK",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "220 lbs",
+            "last_attended": "Dayton",
+            "country": "USA"
+        }
+    },
+    {
+        "JuanToscano-Anderson": {
+            "team": "UTA",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "209 lbs",
+            "last_attended": "Marquette",
+            "country": "USA"
+        }
+    },
+    {
+        "Karl-AnthonyTowns": {
+            "team": "MIN",
+            "pos": "C-F",
+            "height": "7-0",
+            "weight": "248 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "GaryTrentJr.": {
+            "team": "TOR",
+            "pos": "G-F",
+            "height": "6-5",
+            "weight": "209 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "P.J.Tucker": {
+            "team": "PHI",
+            "pos": "F",
+            "height": "6-5",
+            "weight": "245 lbs",
+            "last_attended": "Texas",
+            "country": "USA"
+        }
+    },
+    {
+        "MylesTurner": {
+            "team": "IND",
+            "pos": "C-F",
+            "height": "6-11",
+            "weight": "250 lbs",
+            "last_attended": "Texas",
+            "country": "USA"
+        }
+    },
+    {
+        "StanleyUmude": {
+            "team": "",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "210 lbs",
+            "last_attended": "Arkansas",
+            "country": "USA"
+        }
+    },
+    {
+        "JonasValanciunas": {
+            "team": "NOP",
+            "pos": "C",
+            "height": "6-11",
+            "weight": "265 lbs",
+            "last_attended": "Lietuvos rytas Vilnius",
+            "country": "Lithuania"
+        }
+    },
+    {
+        "FredVanVleet": {
+            "team": "TOR",
+            "pos": "G",
+            "height": "6-0",
+            "weight": "197 lbs",
+            "last_attended": "Wichita State",
+            "country": "USA"
+        }
+    },
+    {
+        "JarredVanderbilt": {
+            "team": "LAL",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "214 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "DevinVassell": {
+            "team": "SAS",
+            "pos": "G-F",
+            "height": "6-5",
+            "weight": "200 lbs",
+            "last_attended": "Florida State",
+            "country": "USA"
+        }
+    },
+    {
+        "GabeVincent": {
+            "team": "MIA",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "200 lbs",
+            "last_attended": "California-Santa Barbara",
+            "country": "USA"
+        }
+    },
+    {
+        "NoahVonleh": {
+            "team": "",
+            "pos": "F",
+            "height": "6-10",
+            "weight": "257 lbs",
+            "last_attended": "Indiana",
+            "country": "USA"
+        }
+    },
+    {
+        "NikolaVucevic": {
+            "team": "CHI",
+            "pos": "C",
+            "height": "6-10",
+            "weight": "260 lbs",
+            "last_attended": "Southern California",
+            "country": "Montenegro"
+        }
+    },
+    {
+        "DeanWade": {
+            "team": "CLE",
+            "pos": "F-C",
+            "height": "6-9",
+            "weight": "228 lbs",
+            "last_attended": "Kansas State",
+            "country": "USA"
+        }
+    },
+    {
+        "FranzWagner": {
+            "team": "ORL",
+            "pos": "F",
+            "height": "6-10",
+            "weight": "220 lbs",
+            "last_attended": "Michigan",
+            "country": "Germany"
+        }
+    },
+    {
+        "MoritzWagner": {
+            "team": "ORL",
+            "pos": "F-C",
+            "height": "6-11",
+            "weight": "245 lbs",
+            "last_attended": "Michigan",
+            "country": "Germany"
+        }
+    },
+    {
+        "IshWainright": {
+            "team": "PHX",
+            "pos": "F",
+            "height": "6-5",
+            "weight": "250 lbs",
+            "last_attended": "Baylor",
+            "country": "USA"
+        }
+    },
+    {
+        "JabariWalker": {
+            "team": "POR",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "200 lbs",
+            "last_attended": "Colorado",
+            "country": "USA"
+        }
+    },
+    {
+        "KembaWalker": {
+            "team": "",
+            "pos": "G",
+            "height": "6-0",
+            "weight": "184 lbs",
+            "last_attended": "Connecticut",
+            "country": "USA"
+        }
+    },
+    {
+        "LonnieWalkerIV": {
+            "team": "LAL",
+            "pos": "G-F",
+            "height": "6-4",
+            "weight": "204 lbs",
+            "last_attended": "Miami",
+            "country": "USA"
+        }
+    },
+    {
+        "JohnWall": {
+            "team": "",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "210 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "T.J.Warren": {
+            "team": "PHX",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "220 lbs",
+            "last_attended": "North Carolina State",
+            "country": "USA"
+        }
+    },
+    {
+        "P.J.Washington": {
+            "team": "CHA",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "230 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "DuaneWashingtonJr.": {
+            "team": "NYK",
+            "pos": "G",
+            "height": "6-2",
+            "weight": "197 lbs",
+            "last_attended": "Ohio State",
+            "country": "Germany"
+        }
+    },
+    {
+        "TyTyWashingtonJr.": {
+            "team": "HOU",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "195 lbs",
+            "last_attended": "Kentucky",
+            "country": "USA"
+        }
+    },
+    {
+        "YutaWatanabe": {
+            "team": "BKN",
+            "pos": "G-F",
+            "height": "6-8",
+            "weight": "215 lbs",
+            "last_attended": "George Washington",
+            "country": "Japan"
+        }
+    },
+    {
+        "LindyWatersIII": {
+            "team": "OKC",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "210 lbs",
+            "last_attended": "Oklahoma State",
+            "country": "USA"
+        }
+    },
+    {
+        "TrendonWatford": {
+            "team": "POR",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "237 lbs",
+            "last_attended": "Louisiana State",
+            "country": "USA"
+        }
+    },
+    {
+        "PeytonWatson": {
+            "team": "DEN",
+            "pos": "G",
+            "height": "6-7",
+            "weight": "200 lbs",
+            "last_attended": "UCLA",
+            "country": "USA"
+        }
+    },
+    {
+        "BlakeWesley": {
+            "team": "SAS",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "185 lbs",
+            "last_attended": "Notre Dame",
+            "country": "USA"
+        }
+    },
+    {
+        "RussellWestbrook": {
+            "team": "LAC",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "200 lbs",
+            "last_attended": "UCLA",
+            "country": "USA"
+        }
+    },
+    {
+        "CobyWhite": {
+            "team": "CHI",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "195 lbs",
+            "last_attended": "North Carolina",
+            "country": "USA"
+        }
+    },
+    {
+        "DerrickWhite": {
+            "team": "BOS",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "190 lbs",
+            "last_attended": "Colorado",
+            "country": "USA"
+        }
+    },
+    {
+        "JackWhite": {
+            "team": "DEN",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "225 lbs",
+            "last_attended": "Duke",
+            "country": "Australia"
+        }
+    },
+    {
+        "JoeWieskamp": {
+            "team": "TOR",
+            "pos": "G-F",
+            "height": "6-6",
+            "weight": "205 lbs",
+            "last_attended": "Iowa",
+            "country": "USA"
+        }
+    },
+    {
+        "AaronWiggins": {
+            "team": "OKC",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "190 lbs",
+            "last_attended": "Maryland",
+            "country": "USA"
+        }
+    },
+    {
+        "AndrewWiggins": {
+            "team": "GSW",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "197 lbs",
+            "last_attended": "Kansas",
+            "country": "Canada"
+        }
+    },
+    {
+        "LindellWigginton": {
+            "team": "MIL",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "189 lbs",
+            "last_attended": "Iowa State",
+            "country": "Canada"
+        }
+    },
+    {
+        "AlondesWilliams": {
+            "team": "",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "210 lbs",
+            "last_attended": "Wake Forest",
+            "country": "USA"
+        }
+    },
+    {
+        "DonovanWilliams": {
+            "team": "ATL",
+            "pos": "G",
+            "height": "6-6",
+            "weight": "190 lbs",
+            "last_attended": "UNLV",
+            "country": "USA"
+        }
+    },
+    {
+        "GrantWilliams": {
+            "team": "BOS",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "236 lbs",
+            "last_attended": "Tennessee",
+            "country": "USA"
+        }
+    },
+    {
+        "JalenWilliams": {
+            "team": "OKC",
+            "pos": "G-F",
+            "height": "6-5",
+            "weight": "211 lbs",
+            "last_attended": "Santa Clara",
+            "country": "USA"
+        }
+    },
+    {
+        "JaylinWilliams": {
+            "team": "OKC",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "240 lbs",
+            "last_attended": "Arkansas",
+            "country": "USA"
+        }
+    },
+    {
+        "JeenathanWilliams": {
+            "team": "POR",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "205 lbs",
+            "last_attended": "Buffalo",
+            "country": "USA"
+        }
+    },
+    {
+        "KenrichWilliams": {
+            "team": "OKC",
+            "pos": "G-F",
+            "height": "6-6",
+            "weight": "210 lbs",
+            "last_attended": "TCU",
+            "country": "USA"
+        }
+    },
+    {
+        "MarkWilliams": {
+            "team": "CHA",
+            "pos": "C",
+            "height": "7-0",
+            "weight": "240 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "PatrickWilliams": {
+            "team": "CHI",
+            "pos": "F",
+            "height": "6-7",
+            "weight": "215 lbs",
+            "last_attended": "Florida State",
+            "country": "USA"
+        }
+    },
+    {
+        "ZiaireWilliams": {
+            "team": "MEM",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "185 lbs",
+            "last_attended": "Stanford",
+            "country": "USA"
+        }
+    },
+    {
+        "RobertWilliamsIII": {
+            "team": "BOS",
+            "pos": "C-F",
+            "height": "6-9",
+            "weight": "237 lbs",
+            "last_attended": "Texas A&M",
+            "country": "USA"
+        }
+    },
+    {
+        "VinceWilliamsJr.": {
+            "team": "MEM",
+            "pos": "G",
+            "height": "6-4",
+            "weight": "205 lbs",
+            "last_attended": "Virginia Commonwealth",
+            "country": "USA"
+        }
+    },
+    {
+        "ZionWilliamson": {
+            "team": "NOP",
+            "pos": "F",
+            "height": "6-6",
+            "weight": "284 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "DylanWindler": {
+            "team": "CLE",
+            "pos": "G-F",
+            "height": "6-7",
+            "weight": "196 lbs",
+            "last_attended": "Belmont",
+            "country": "USA"
+        }
+    },
+    {
+        "JustiseWinslow": {
+            "team": "POR",
+            "pos": "F-G",
+            "height": "6-6",
+            "weight": "222 lbs",
+            "last_attended": "Duke",
+            "country": "USA"
+        }
+    },
+    {
+        "JamesWiseman": {
+            "team": "DET",
+            "pos": "C",
+            "height": "7-0",
+            "weight": "240 lbs",
+            "last_attended": "Memphis",
+            "country": "USA"
+        }
+    },
+    {
+        "ChristianWood": {
+            "team": "DAL",
+            "pos": "F",
+            "height": "6-9",
+            "weight": "214 lbs",
+            "last_attended": "UNLV",
+            "country": "USA"
+        }
+    },
+    {
+        "DelonWright": {
+            "team": "WAS",
+            "pos": "G",
+            "height": "6-5",
+            "weight": "185 lbs",
+            "last_attended": "Utah",
+            "country": "USA"
+        }
+    },
+    {
+        "McKinleyWrightIV": {
+            "team": "DAL",
+            "pos": "G",
+            "height": "5-11",
+            "weight": "192 lbs",
+            "last_attended": "Colorado",
+            "country": "USA"
+        }
+    },
+    {
+        "GabeYork": {
+            "team": "IND",
+            "pos": "G",
+            "height": "6-3",
+            "weight": "190 lbs",
+            "last_attended": "Arizona",
+            "country": "USA"
+        }
+    },
+    {
+        "ThaddeusYoung": {
+            "team": "TOR",
+            "pos": "F",
+            "height": "6-8",
+            "weight": "235 lbs",
+            "last_attended": "Georgia Tech",
+            "country": "USA"
+        }
+    },
+    {
+        "TraeYoung": {
+            "team": "ATL",
+            "pos": "G",
+            "height": "6-1",
+            "weight": "164 lbs",
+            "last_attended": "Oklahoma",
+            "country": "USA"
+        }
+    },
+    {
+        "OmerYurtseven": {
+            "team": "MIA",
+            "pos": "C",
+            "height": "6-11",
+            "weight": "275 lbs",
+            "last_attended": "Georgetown",
+            "country": "Turkey"
+        }
+    },
+    {
+        "CodyZeller": {
+            "team": "MIA",
+            "pos": "F-C",
+            "height": "6-11",
+            "weight": "240 lbs",
+            "last_attended": "Indiana",
+            "country": "USA"
+        }
+    },
+    {
+        "IvicaZubac": {
+            "team": "LAC",
+            "pos": "C",
+            "height": "7-0",
+            "weight": "240 lbs",
+            "last_attended": "Mega Basket",
+            "country": "Croatia"
+        }
+    }
+]
