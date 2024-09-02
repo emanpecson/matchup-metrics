@@ -31,8 +31,8 @@ export async function GET(req: NextRequest) {
         fantasyPpg: 'desc',
       },
     });
-    console.log('got players');
-    return NextResponse.json({ players }, { status: 200 });
+    console.log('got players:', players);
+    return NextResponse.json(players, { status: 200 });
   } catch (error) {
     console.error('Error:', error);
     return NextResponse.json(null, { status: 500 });
@@ -42,13 +42,13 @@ export async function GET(req: NextRequest) {
 export async function POST(req: NextRequest) {
   try {
     const players: Player[] = await req.json();
-    console.log(players);
+    console.log('data count:', players.length);
     const createdPlayers = await prisma.player.createMany({
       data: players,
     });
 
     console.log('Success:', createdPlayers);
-    return NextResponse.json({ createdPlayers }, { status: 200 });
+    return NextResponse.json(createdPlayers, { status: 200 });
   } catch (error) {
     console.error('Error:', error);
     return NextResponse.json(null, { status: 500 });

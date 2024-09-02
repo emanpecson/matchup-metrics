@@ -38,3 +38,6 @@ next-env.d.ts
 
 # pycache
 *.pyc
+
+# script logs
+/scripts/*/log

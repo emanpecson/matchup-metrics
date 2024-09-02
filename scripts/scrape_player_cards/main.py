@@ -1,3 +1,9 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.ui import Select
+
 from lib import parse_nba_table
 from lib import filter_stats_and_bios
 from lib import player_card
@@ -12,7 +18,7 @@ import os
 
 SCRIPT_PATH = f'{os.getcwd()}/scripts/scrape_player_cards'
 
-WEBSCRAPE = False
+WEBSCRAPE = True
 POST_DATA = True
 SERVER_PORT = 3000
 SERVER_URL = f'http://localhost:{SERVER_PORT}/api/player'
@@ -29,8 +35,16 @@ BIO_DROPDOWN_XPATH = '//*[@id="__next"]/div[2]/div[2]/main/div[2]/section/div/di
 # MAIN
 
 if WEBSCRAPE:
-	raw_stats, name_keys1 = parse_nba_table(STAT_LINK, STAT_TABLE_XPATH, STAT_DROPDOWN_XPATH)
-	raw_bios, name_keys2 = parse_nba_table(BIO_LINK, BIO_TABLE_XPATH, BIO_DROPDOWN_XPATH)
+	driver = webdriver.Safari()
+	# driver.get(link)
+	# driver.maximize_window() # for now, safari doesn't support headless? try server or chrome
+	# wait = WebDriverWait(driver, timeout)
+
+	raw_stats, name_keys1 = parse_nba_table(driver, STAT_LINK, STAT_TABLE_XPATH, STAT_DROPDOWN_XPATH, True)
+	raw_bios, name_keys2 = parse_nba_table(driver, BIO_LINK, BIO_TABLE_XPATH, BIO_DROPDOWN_XPATH, False)
+
+	driver.quit()
+	print('Closing driver... Please wait')
 
 	# go by set of less set of names
 	name_keys = 0
@@ -45,7 +59,9 @@ if WEBSCRAPE:
 	# create card by merging stat/bio data into an obj (card)
 	player_cards = []
 	for name in name_keys:
-		player_cards.append(player_card(stats, bios, name))
+		x = player_card(stats, bios, name)
+		if (x != -1):
+			player_cards.append(x)
 
 	# write to json file
 	with open(f'{SCRIPT_PATH}/player_cards.json', 'w') as file:
@@ -75,7 +91,7 @@ if POST_DATA:
 		# post updated docs to collection
 		response = requests.post(SERVER_URL, data=player_cards_json)
 		if(response.status_code != 200):
-			raise ApiError('Could not post data')
+			raise ApiError('Could not post data:', response)
 		
 		success('Success: Data updated!')
 		

@@ -15,6 +15,7 @@ datasource db {
 
 model Player {
   id           String @id @default(auto()) @map("_id") @db.ObjectId
+	nbaId				 String
   name         String
   age          Int
   team         String

@@ -6,9 +6,13 @@ from selenium.webdriver.support.ui import Select
 
 import json
 import csv
+import os
+import time
 
 ###############################################################################
 # CONSTANTS
+
+LOG_PATH = f'{os.getcwd()}/scripts/scrape_player_cards/log'
 
 GREEN = '\033[92m'
 YELLOW = '\033[93m'
@@ -31,14 +35,14 @@ def fail(msg):
 # PARSE FUNC
 
 # Parse table from given link and return the raw body of the table as obj
-def parse_nba_table(link, table_xpath, dropdown_xpath) -> list[list[dict], list[str]]:
+def parse_nba_table(driver: webdriver, link: str, table_xpath: str, dropdown_xpath: str, get_nba_id: bool) -> list[list[dict], list[str]]:
 	headers: list[str] = []
 	body: list[dict] = []
 	name_keys: list[str] = []
 	count = 0
 	timeout = 10
 
-	driver = webdriver.Safari()
+	# driver = webdriver.Safari()
 	driver.get(link)
 	driver.maximize_window() # for now, safari doesn't support headless? try server or chrome
 	wait = WebDriverWait(driver, timeout)
@@ -58,8 +62,11 @@ def parse_nba_table(link, table_xpath, dropdown_xpath) -> list[list[dict], list[
 		headers.append(col.text)
 
 	alert('Getting table body\n')
+	file = open(f'{LOG_PATH}/table.txt', 'w')
 	body_rows = table.find_element(By.TAG_NAME, 'tbody').find_elements(By.TAG_NAME, 'tr')
+
 	for row in body_rows:
+		nba_id = 'n/a'
 		cols = row.find_elements(By.TAG_NAME, 'td')
 		row_data: dict = {}
 
@@ -67,15 +74,28 @@ def parse_nba_table(link, table_xpath, dropdown_xpath) -> list[list[dict], list[
 			col_key: str = headers[index]
 			col_val: dict = col.text
 
+			if get_nba_id and col_key == "Player":
+				a_tag = col.find_element(By.TAG_NAME, 'a')
+				href = a_tag.get_attribute('href')
+
+				# remove rightmost slash, convert href to array delimited by '/', get last elem as id
+				nba_id = href.rstrip('/').split('/')[-1]
+				row_data['NBA_ID'] = str(nba_id)
+
 			row_data[col_key] = col_val
 
 		body.append(row_data)
 		name_keys.append(row_data['Player'].replace(' ',''))
 
 		count += 1
-		print(f'[{count}/{len(body_rows)}]', row_data['Player'])
+		print(f'[{count}/{len(body_rows)}]', row_data['Player'], nba_id)
+		file.write(f'[{count}/{len(body_rows)}]: {row_data['Player']}, {nba_id}\n')
 	
-	driver.quit()
+	file.close()
+	# driver.quit()
+
+	# alert('Closing driver... Please wait')
+	# time.sleep(post_delay)
 	return body, name_keys
 
 ###############################################################################
@@ -96,6 +116,7 @@ def filter_stat(rstat: dict) -> dict:
 
 	return {
 		name_key: {
+			'nbaId': rstat['NBA_ID'],
 			'name': rstat['Player'],
 			'fantasyPpg': round(ftsy_pts, 2),
 			'ppg': float(rstat['PTS']),
@@ -141,7 +162,11 @@ def filter_stats_and_bios(raw_stats: list[dict], raw_bios: list[dict]) -> list[d
 	return stats, bios
 
 # Join stat/bio data by the passed name_key and return as obj
-def player_card(stats: dict, bios: dict, name_key: list[str]) -> dict:
+def player_card(stats: dict, bios: dict, name_key: str) -> dict:
+	if name_key not in stats or name_key not in bios:
+		alert(f'name_key, {name_key}, not found in stats/bios')
+		return -1
+
 	card: dict = {}
 	stat: dict = stats[name_key]
 	bio: dict = bios[name_key]
