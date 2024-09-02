@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { Card, Prisma, PrismaClient } from '@prisma/client';
+import { Player, Prisma, PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
@@ -12,7 +12,7 @@ export async function GET(req: NextRequest) {
     };
     console.log('query:', query);
 
-    const where = {} as Prisma.CardWhereInput;
+    const where = {} as Prisma.PlayerWhereInput;
 
     // stack where conditions
     if (query.searchInput) {
@@ -25,14 +25,14 @@ export async function GET(req: NextRequest) {
       where.position = { contains: query.position };
     }
 
-    const cards = await prisma.card.findMany({
+    const players = await prisma.player.findMany({
       where,
       orderBy: {
         fantasyPpg: 'desc',
       },
     });
-    console.log('got cards:');
-    return NextResponse.json({ cards }, { status: 200 });
+    console.log('got players');
+    return NextResponse.json({ players }, { status: 200 });
   } catch (error) {
     console.error('Error:', error);
     return NextResponse.json(null, { status: 500 });
@@ -41,14 +41,14 @@ export async function GET(req: NextRequest) {
 
 export async function POST(req: NextRequest) {
   try {
-    const cards: Card[] = await req.json();
-    console.log(cards);
-    const createdCards = await prisma.card.createMany({
-      data: cards,
+    const players: Player[] = await req.json();
+    console.log(players);
+    const createdPlayers = await prisma.player.createMany({
+      data: players,
     });
 
-    console.log('Success:', createdCards);
-    return NextResponse.json({ createdCards }, { status: 200 });
+    console.log('Success:', createdPlayers);
+    return NextResponse.json({ createdPlayers }, { status: 200 });
   } catch (error) {
     console.error('Error:', error);
     return NextResponse.json(null, { status: 500 });
@@ -58,7 +58,7 @@ export async function POST(req: NextRequest) {
 // may need some typa security arg to prevent delete access from public
 export async function DELETE() {
   try {
-    const res = await prisma.card.deleteMany({});
+    const res = await prisma.player.deleteMany({});
 
     console.log('Success:', res);
     return NextResponse.json(null, { status: 200 }); // correct status code? 204?
