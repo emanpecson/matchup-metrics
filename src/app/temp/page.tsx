@@ -9,7 +9,7 @@ export default function Temp() {
   const [tempPlayer, setTempPlayer] = useState<Player | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   useLoadData({
-    apiEndpoint: '/api/player?searchInput=curry',
+    apiEndpoint: '/api/player?searchInput=jalen green',
     onDataLoaded: (data: Player[]) => setTempPlayer(data[0]),
     setIsLoading,
   });
