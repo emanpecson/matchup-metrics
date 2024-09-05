@@ -2,29 +2,32 @@
 
 import { Dispatch, SetStateAction, useEffect } from 'react';
 
-export type useLoadDataParams = {
+export type useLoadDataProps = {
   onDataLoaded: (data: any) => void;
   apiEndpoint: string;
   setIsLoading?: Dispatch<SetStateAction<boolean>>;
   delay?: number;
+  halt?: boolean;
 };
 
-export async function useLoadData(params: useLoadDataParams) {
+export async function useLoadData(props: useLoadDataProps) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        if (params.setIsLoading) params.setIsLoading(true);
-        const res = await fetch(params.apiEndpoint, { method: 'GET' });
+        if (props.setIsLoading) props.setIsLoading(true);
+        const res = await fetch(props.apiEndpoint, { method: 'GET' });
         const data = await res.json();
-        params.onDataLoaded(data);
+        props.onDataLoaded(data);
       } catch (err) {
         console.error('Error:', err);
       } finally {
         setTimeout(() => {
-          if (params.setIsLoading) params.setIsLoading(false);
-        }, params.delay ?? 0);
+          if (props.setIsLoading) props.setIsLoading(false);
+        }, props.delay ?? 0);
       }
     };
-    fetchData();
+
+    if (props.halt === undefined) fetchData();
+    else if (!props.halt) fetchData();
   }, []);
 }
