@@ -10,6 +10,8 @@
     "scraper": "python3 scripts/scrape_player_cards/main.py"
   },
   "dependencies": {
+    "@heroicons/react": "^2.1.5",
+    "@radix-ui/react-select": "^2.1.1",
     "@radix-ui/react-slot": "^1.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
