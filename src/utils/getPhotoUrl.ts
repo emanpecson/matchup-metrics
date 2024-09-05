@@ -1,10 +1,10 @@
 import { useTheme } from 'next-themes';
 
-export const getPlayerPhotoUrl = (nbaId: string) => {
-  return `https://cdn.nba.com/headshots/nba/latest/1040x760/${nbaId}.png`;
+export const getPlayerPhotoUrl = (playerNbaId: string) => {
+  return `https://cdn.nba.com/headshots/nba/latest/1040x760/${playerNbaId}.png`;
 };
 
-export const getTeamLogoUrl = (teamId: string, useDark?: boolean) => {
+export const getTeamLogoUrl = (teamNbaId: string, useDark?: boolean) => {
   const { resolvedTheme } = useTheme();
 
   let logoTheme = '';
@@ -14,5 +14,5 @@ export const getTeamLogoUrl = (teamId: string, useDark?: boolean) => {
     logoTheme = useDark ? 'D' : 'L';
   }
 
-  return `https://cdn.nba.com/logos/nba/${teamId}/primary/${logoTheme}/logo.svg`;
+  return `https://cdn.nba.com/logos/nba/${teamNbaId}/primary/${logoTheme}/logo.svg`;
 };
