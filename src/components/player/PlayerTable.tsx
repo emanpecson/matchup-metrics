@@ -4,16 +4,15 @@ import { useLoadData } from '@/hooks/useLoadData';
 import { Player } from '@prisma/client';
 import { useState } from 'react';
 
-export default function PlayerTable() {
-  const [players, setPlayers] = useState<Player[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
+export default function PlayerTable({ players, isLoading }: { players: Player[]; isLoading: boolean }) {
+  // const [isLoading, setIsLoading] = useState(false);
 
-  useLoadData({
-    apiEndpoint: `/api/player?team=GSW`,
-    onDataLoaded: setPlayers,
-    delay: 100,
-    setIsLoading,
-  });
+  // useLoadData({
+  //   apiEndpoint: `/api/player?team=GSW`,
+  //   onDataLoaded: setPlayers,
+  //   delay: 100,
+  //   setIsLoading,
+  // });
 
   return (
     <div className="border rounded-xl p-6">

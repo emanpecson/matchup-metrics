@@ -1,7 +1,7 @@
 import { Player } from '@prisma/client';
 import Image from 'next/image';
 import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
-import { teamIds } from '@/data/teamIds';
+import teams from '@/data/teams';
 
 export default function PlayerCard({ player }: { player: Player }) {
   return (
@@ -38,7 +38,7 @@ export default function PlayerCard({ player }: { player: Player }) {
 
       {/* team logo */}
       <Image
-        src={getTeamLogoUrl(teamIds[player.team as keyof typeof teamIds])}
+        src={getTeamLogoUrl(teams[player.team as keyof typeof teams].nbaId)}
         alt={player.team}
         height={24}
         width={24}

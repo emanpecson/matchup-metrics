@@ -6,7 +6,7 @@ const prisma = new PrismaClient();
 export async function GET(req: NextRequest) {
   try {
     const query = {
-      searchInput: req.nextUrl.searchParams.get('searchInput'),
+      name: req.nextUrl.searchParams.get('name'),
       team: req.nextUrl.searchParams.get('team'),
       position: req.nextUrl.searchParams.get('position'),
     };
@@ -15,8 +15,8 @@ export async function GET(req: NextRequest) {
     const where = {} as Prisma.PlayerWhereInput;
 
     // stack where conditions
-    if (query.searchInput) {
-      where.name = { contains: query.searchInput, mode: 'insensitive' };
+    if (query.name) {
+      where.name = { contains: query.name, mode: 'insensitive' };
     }
     if (query.team) {
       where.team = { contains: query.team };
@@ -31,7 +31,7 @@ export async function GET(req: NextRequest) {
         fantasyPpg: 'desc',
       },
     });
-    console.log('got players:', players);
+    // console.log('got players:', players);
     return NextResponse.json(players, { status: 200 });
   } catch (error) {
     console.error('Error:', error);

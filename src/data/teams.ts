@@ -1,3 +1,10 @@
+export interface TeamInfo {
+  nbaId: string;
+  abbreviation: string;
+  city: string;
+  name: string;
+}
+
 const teams = {
   ATL: { nbaId: '1610612737', abbreviation: 'ATL', city: 'Atlanta', name: 'Hawks' },
   BOS: { nbaId: '1610612738', abbreviation: 'BOS', city: 'Boston', name: 'Celtics' },

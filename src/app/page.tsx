@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 export default function Home() {
   const [players, setPlayers] = useState<Player[]>([]);
-  useLoadData({ apiEndpoint: '/api/player', onDataLoaded: setPlayers });
+  useLoadData({ endpoint: '/api/player', onDataLoaded: setPlayers });
 
   return (
     <div className="h-screen w-screen flex justify-center place-items-center">
