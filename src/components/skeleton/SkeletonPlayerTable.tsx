@@ -25,7 +25,7 @@ export default function SkeletonPlayerTable() {
               const isFirst = j === 0;
               const isLast = j === playerTableColumns.length - 1;
               return (
-                <td className="h-9">
+                <td className="h-[37px]">
                   <div className={cn('flex', isFirst ? 'justify-start' : isLast ? 'justify-end' : 'justify-center')}>
                     <Skeleton className="w-full mx-2 h-5" />
                   </div>
