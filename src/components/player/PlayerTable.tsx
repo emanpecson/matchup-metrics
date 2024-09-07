@@ -5,7 +5,7 @@ import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
 import teams from '@/data/teams';
 import InlineImage from '../InlineImage';
 
-export const playerTableColumns = ['name', 'fantasy', 'pts', 'ast', 'reb', 'stl', 'blk', 'to', 'team', 'pos'];
+export const playerTableColumns = ['player', 'fantasy', 'pts', 'ast', 'reb', 'stl', 'blk', 'to', 'team', 'pos'];
 export interface PlayerTableProps {
   players: Player[];
   isLoading: boolean;

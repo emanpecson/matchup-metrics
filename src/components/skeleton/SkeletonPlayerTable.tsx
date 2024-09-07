@@ -60,7 +60,7 @@ export default function SkeletonPlayerTable({ rowCount }: { rowCount: number }) 
               //     </div>
               //   </td>
               // );
-              return col === 'name' || col === 'team'
+              return col === 'player' || col === 'team'
                 ? inlineImageSkeleton(isFirst, isLast)
                 : defaultSkeleton(isFirst, isLast);
             })}
