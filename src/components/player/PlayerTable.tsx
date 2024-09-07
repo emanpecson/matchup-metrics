@@ -2,7 +2,6 @@ import { cn } from '@/lib/utils';
 import { Player } from '@prisma/client';
 import SkeletonPlayerTable from '../skeleton/SkeletonPlayerTable';
 import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
-import Image from 'next/image';
 import teams from '@/data/teams';
 import InlineImage from '../InlineImage';
 
@@ -39,14 +38,14 @@ export default function PlayerTable({ players, isLoading }: { players: Player[];
                     <p>{player.name}</p>
                   </InlineImage>
                 </td>
-                <td className="px-4 py-1.5 text-center">{player.fantasyPpg}</td>
-                <td className="px-4 py-1.5 text-center">{player.ppg}</td>
-                <td className="px-4 py-1.5 text-center">{player.apg}</td>
-                <td className="px-4 py-1.5 text-center">{player.rpg}</td>
-                <td className="px-4 py-1.5 text-center">{player.spg}</td>
-                <td className="px-4 py-1.5 text-center">{player.bpg}</td>
-                <td className="px-4 py-1.5 text-center">{player.tpg}</td>
-                <td className="px-4 py-1.5 text-center">
+                <td className="px-4 py-1.5 text-center text-wrap">{player.fantasyPpg}</td>
+                <td className="px-4 py-1.5 text-center text-nowrap">{player.ppg}</td>
+                <td className="px-4 py-1.5 text-center text-nowrap">{player.apg}</td>
+                <td className="px-4 py-1.5 text-center text-nowrap">{player.rpg}</td>
+                <td className="px-4 py-1.5 text-center text-nowrap">{player.spg}</td>
+                <td className="px-4 py-1.5 text-center text-nowrap">{player.bpg}</td>
+                <td className="px-4 py-1.5 text-center text-nowrap">{player.tpg}</td>
+                <td className="px-4 py-1.5 text-center text-nowrap">
                   <InlineImage src={getTeamLogoUrl(teams[player.team as keyof typeof teams].nbaId)} alt={player.team}>
                     <p>{player.team}</p>
                   </InlineImage>
