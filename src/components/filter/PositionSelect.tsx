@@ -71,7 +71,15 @@ export default function PositionSelect({
               className="flex h-10 w-full items-center rounded-md bg-background px-3 text-sm dark:hover:bg-neutral-800 hover:bg-neutral-100"
             >
               {isSelected && <CheckIcon size={16} />}
-              <p className={cn(isSelected ? 'pl-[10px]' : 'pl-[26px]')}>{entry[1]}</p>
+              <p
+                className={cn(
+                  isSelected
+                    ? 'pl-[10px] font-semibold dark:text-white'
+                    : 'pl-[26px] dark:text-neutral-400 text-neutral-600'
+                )}
+              >
+                {entry[1]}
+              </p>
             </button>
           );
         })}
