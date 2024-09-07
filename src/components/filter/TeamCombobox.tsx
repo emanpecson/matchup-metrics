@@ -13,21 +13,26 @@ import { UserGroupIcon } from '@heroicons/react/24/outline';
 import { getTeamLogoUrl } from '@/utils/getPhotoUrl';
 import InlineImage from '../InlineImage';
 
-export function TeamCombobox({ onValueChange }: { onValueChange: (teamAbbreviation: string) => void }) {
+export function TeamCombobox({
+  value,
+  onValueChange,
+}: {
+  value: string;
+  onValueChange: (teamAbbreviation: string) => void;
+}) {
   const [open, setOpen] = useState(false);
-  const [selectedTeam, setSelectedTeam] = useState<{ key: keyof typeof teams; info: TeamInfo } | null>();
   const [isHovering, setIsHovering] = useState(false);
 
   const handleReset = () => {
-    setSelectedTeam(null);
     onValueChange('');
+    setOpen(false);
   };
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <div className="relative" onMouseOver={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)}>
         <div className="absolute left-2 top-2 pointer-events-none">
-          {selectedTeam ? (
+          {value ? (
             <CloseButton onClick={handleReset} className="pointer-events-auto" />
           ) : (
             <UserGroupIcon
@@ -42,9 +47,9 @@ export function TeamCombobox({ onValueChange }: { onValueChange: (teamAbbreviati
         <PopoverTrigger asChild>
           <Button variant="outline" role="combobox" aria-expanded={open} className="min-w-[18rem] text-neutral-500">
             <div className="flex w-full place-items-center pl-7">
-              {selectedTeam ? (
-                <InlineImage src={getTeamLogoUrl(selectedTeam.info.nbaId)} alt={selectedTeam.info.abbreviation}>
-                  <p className="dark:text-white text-neutral-800">{`${selectedTeam.info.city} ${selectedTeam.info.name} (${selectedTeam.info.abbreviation})`}</p>
+              {value ? (
+                <InlineImage src={getTeamLogoUrl(teams[value as keyof typeof teams].nbaId)} alt={value}>
+                  <p className="dark:text-white text-neutral-800">{`${teams[value as keyof typeof teams].city} ${teams[value as keyof typeof teams].name} (${value})`}</p>
                 </InlineImage>
               ) : (
                 <p>Filter Team</p>
@@ -63,20 +68,15 @@ export function TeamCombobox({ onValueChange }: { onValueChange: (teamAbbreviati
               {Object.entries(teams).map((entry, i) => {
                 const thisTeam = entry[1];
                 const displayName = `${thisTeam.city} ${thisTeam.name} (${thisTeam.abbreviation})`;
-                const isSelected = selectedTeam?.info.abbreviation === thisTeam.abbreviation;
+                const isSelected = value && value === thisTeam.abbreviation;
 
                 return (
                   <CommandItem
                     key={i}
                     value={displayName}
                     onSelect={() => {
-                      if (thisTeam.abbreviation === selectedTeam?.info.abbreviation) {
-                        onValueChange('');
-                        setSelectedTeam(null);
-                      } else {
-                        onValueChange(thisTeam.abbreviation);
-                        setSelectedTeam({ key: thisTeam.name as keyof typeof teams, info: thisTeam });
-                      }
+                      if (isSelected) onValueChange('');
+                      else onValueChange(thisTeam.abbreviation);
                       setOpen(false);
                     }}
                     className="cursor-pointer"

@@ -50,8 +50,8 @@ export default function Temp() {
           totalCount={playersCount}
         />
         <div className="flex space-x-2 justify-center w-5/6">
-          <SearchBar onValueChange={setFilterName} />
-          <TeamCombobox onValueChange={setFilterTeam} />
+          <SearchBar onValueChange={setFilterName} value={filterName} />
+          <TeamCombobox onValueChange={setFilterTeam} value={filterTeam} />
           <PositionSelect onValueChange={setFilterPosition} value={filterPosition} />
           <ResetFilters disabled={!filterTeam && !filterName && !filterPosition} onClick={handleFilterReset} />
         </div>

@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, useEffect, useState } from 'react';
 import { useDebounceCallback } from 'usehooks-ts';
 import { Input } from '../ui/input';
 import { SearchIcon, XIcon } from 'lucide-react';
@@ -6,6 +6,7 @@ import CloseButton from '../button/CloseButton';
 import { cn } from '@/lib/utils';
 
 interface SearchBarProps {
+  value: string;
   onValueChange: (x: string) => void;
   label?: string;
 }
@@ -14,6 +15,10 @@ export default function SearchBar(props: SearchBarProps) {
   const [tempValue, setTempValue] = useState('');
   const [isFocussing, setIsFocussing] = useState(false);
   const debounced = useDebounceCallback(props.onValueChange, 300);
+
+  useEffect(() => {
+    if (props.value === '') setTempValue('');
+  }, [props.value]);
 
   const handleChange = (ev: ChangeEvent<HTMLInputElement>) => {
     debounced(ev.target.value);
