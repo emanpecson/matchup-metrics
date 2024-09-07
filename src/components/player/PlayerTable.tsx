@@ -1,6 +1,9 @@
 import { cn } from '@/lib/utils';
 import { Player } from '@prisma/client';
 import SkeletonPlayerTable from '../skeleton/SkeletonPlayerTable';
+import { getTeamLogoUrl } from '@/utils/getPhotoUrl';
+import Image from 'next/image';
+import teams from '@/data/teams';
 
 export const playerTableColumns = ['name', 'fantasy', 'pts', 'ast', 'reb', 'stl', 'blk', 'to', 'team', 'pos'];
 
@@ -38,7 +41,18 @@ export default function PlayerTable({ players, isLoading }: { players: Player[];
                 <td className="px-4 py-1.5 text-center">{player.spg}</td>
                 <td className="px-4 py-1.5 text-center">{player.bpg}</td>
                 <td className="px-4 py-1.5 text-center">{player.tpg}</td>
-                <td className="px-4 py-1.5 text-center">{player.team}</td>
+                <td className="px-4 py-1.5 text-center">
+                  <div className="flex space-x-1.5 place-items-center">
+                    <Image
+                      src={getTeamLogoUrl(teams[player.team as keyof typeof teams].nbaId)}
+                      alt={player.team}
+                      width={24}
+                      height={24}
+                      className="w-[26px] h-[26px] object-cover"
+                    />
+                    <p>{player.team}</p>
+                  </div>
+                </td>
                 <td className="px-4 py-1.5 text-right">{player.position}</td>
               </tr>
             ))}
