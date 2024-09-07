@@ -5,6 +5,7 @@ import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
 import teams from '@/data/teams';
 import InlineImage from '../InlineImage';
 import { TriangleAlertIcon } from 'lucide-react';
+import { useState } from 'react';
 
 export const playerTableColumns = ['player', 'fantasy', 'pts', 'ast', 'reb', 'stl', 'blk', 'to', 'team', 'pos'];
 export interface PlayerTableProps {
@@ -13,10 +14,12 @@ export interface PlayerTableProps {
   page: number;
   rowCount: number; // count of players currently displayed
   playersCount: number; // total players
+  onRowClick: (player: Player) => void;
 }
 
 export default function PlayerTable(props: PlayerTableProps) {
   const loadCount = props.playersCount - props.page * props.rowCount;
+  const [hoverIndex, setHoverIndex] = useState<number | null>(null);
 
   return (
     <div className="border rounded-xl p-6 min-w-[60rem]">
@@ -41,28 +44,38 @@ export default function PlayerTable(props: PlayerTableProps) {
             </tr>
           </thead>
           <tbody className="divide-y relative">
-            {props.players.map((player: Player, i: number) => (
-              <tr key={i} className="sm:text-base text-sm text-neutral-600 dark:text-neutral-200">
-                <td className="px-4 py-1.5 text-left font-medium">
-                  <InlineImage src={getPlayerPhotoUrl(player.nbaId)} alt={'plyr-img'} rounded>
-                    <p>{player.name}</p>
-                  </InlineImage>
-                </td>
-                <td className="px-4 py-1.5 text-center text-wrap">{player.fantasyPpg}</td>
-                <td className="px-4 py-1.5 text-center text-nowrap">{player.ppg}</td>
-                <td className="px-4 py-1.5 text-center text-nowrap">{player.apg}</td>
-                <td className="px-4 py-1.5 text-center text-nowrap">{player.rpg}</td>
-                <td className="px-4 py-1.5 text-center text-nowrap">{player.spg}</td>
-                <td className="px-4 py-1.5 text-center text-nowrap">{player.bpg}</td>
-                <td className="px-4 py-1.5 text-center text-nowrap">{player.tpg}</td>
-                <td className="px-4 py-1.5 text-center text-nowrap">
-                  <InlineImage src={getTeamLogoUrl(teams[player.team as keyof typeof teams].nbaId)} alt={player.team}>
-                    <p>{player.team}</p>
-                  </InlineImage>
-                </td>
-                <td className="px-4 py-1.5 text-right">{player.position}</td>
-              </tr>
-            ))}
+            {props.players.map((player: Player, i: number) => {
+              const highlight =
+                hoverIndex === i && 'bg-neutral-200 dark:bg-neutral-800 transition-colors duration-150 cursor-pointer';
+              return (
+                <tr
+                  key={i}
+                  className="sm:text-base text-sm text-neutral-600 dark:text-neutral-200"
+                  onClick={() => props.onRowClick(player)}
+                  onMouseOver={() => setHoverIndex(i)}
+                  onMouseLeave={() => setHoverIndex(null)}
+                >
+                  <td className={cn(highlight, 'px-4 py-1.5 text-left font-medium rounded-l-lg')}>
+                    <InlineImage src={getPlayerPhotoUrl(player.nbaId)} alt={'plyr-img'} rounded>
+                      <p>{player.name}</p>
+                    </InlineImage>
+                  </td>
+                  <td className={cn(highlight, 'px-4 py-1.5 text-center text-wrap')}>{player.fantasyPpg}</td>
+                  <td className={cn(highlight, 'px-4 py-1.5 text-center text-nowrap')}>{player.ppg}</td>
+                  <td className={cn(highlight, 'px-4 py-1.5 text-center text-nowrap')}>{player.apg}</td>
+                  <td className={cn(highlight, 'px-4 py-1.5 text-center text-nowrap')}>{player.rpg}</td>
+                  <td className={cn(highlight, 'px-4 py-1.5 text-center text-nowrap')}>{player.spg}</td>
+                  <td className={cn(highlight, 'px-4 py-1.5 text-center text-nowrap')}>{player.bpg}</td>
+                  <td className={cn(highlight, 'px-4 py-1.5 text-center text-nowrap')}>{player.tpg}</td>
+                  <td className={cn(highlight, 'px-4 py-1.5 text-center text-nowrap')}>
+                    <InlineImage src={getTeamLogoUrl(teams[player.team as keyof typeof teams].nbaId)} alt={player.team}>
+                      <p>{player.team}</p>
+                    </InlineImage>
+                  </td>
+                  <td className={cn(highlight, 'px-4 py-1.5 text-right rounded-r-lg')}>{player.position}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       ) : (

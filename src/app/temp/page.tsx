@@ -5,6 +5,7 @@ import PositionSelect from '@/components/filter/PositionSelect';
 import ResetFilters from '@/components/filter/ResetFilters';
 import SearchBar from '@/components/filter/SearchBar';
 import { TeamCombobox } from '@/components/filter/TeamCombobox';
+import PlayerDialog from '@/components/player/PlayerDialog';
 import PlayerTable from '@/components/player/PlayerTable';
 import { useLoadData } from '@/hooks/useLoadData';
 import { Player } from '@prisma/client';
@@ -20,11 +21,16 @@ export default function Temp() {
   const [filterPosition, setFilterPosition] = useState('');
   const [filterName, setFilterName] = useState('');
   const [page, setPage] = useState(0);
+  const [focusPlayer, setFocusPlayer] = useState<Player | null>(null);
 
   const handleFilterReset = () => {
     setFilterTeam('');
     setFilterName('');
     setFilterPosition('');
+  };
+
+  const handleRowClick = (player: Player) => {
+    setFocusPlayer(player);
   };
 
   useLoadData({
@@ -61,8 +67,11 @@ export default function Temp() {
           rowCount={rowCount}
           page={page}
           playersCount={playersCount}
+          onRowClick={handleRowClick}
         />
       </div>
+
+      <PlayerDialog player={focusPlayer} setPlayer={setFocusPlayer} />
     </div>
   );
 }
