@@ -11,27 +11,17 @@ import teams, { TeamInfo } from '@/data/teams';
 import CloseButton from '../button/CloseButton';
 import { UserGroupIcon } from '@heroicons/react/24/outline';
 import { getTeamLogoUrl } from '@/utils/getPhotoUrl';
-import Image from 'next/image';
+import InlineImage from '../InlineImage';
 
 export function TeamCombobox({ onValueChange }: { onValueChange: (teamAbbreviation: string) => void }) {
   const [open, setOpen] = useState(false);
-  const [selectedTeam, setSelectedTeam] = useState<{ name: keyof typeof teams; info: TeamInfo } | null>();
+  const [selectedTeam, setSelectedTeam] = useState<{ key: keyof typeof teams; info: TeamInfo } | null>();
   const [isHovering, setIsHovering] = useState(false);
 
   const handleReset = () => {
     setSelectedTeam(null);
     onValueChange('');
   };
-
-  const TeamLogo = (team: TeamInfo) => (
-    <Image
-      src={getTeamLogoUrl(team.nbaId)}
-      alt={team.abbreviation}
-      width={24}
-      height={24}
-      className="w-[26px] h-[26px] object-cover"
-    />
-  );
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -54,7 +44,7 @@ export function TeamCombobox({ onValueChange }: { onValueChange: (teamAbbreviati
             <div className="flex w-full place-items-center pl-7">
               {selectedTeam ? (
                 <div className="flex space-x-1.5 place-items-center">
-                  {TeamLogo(selectedTeam.info)}
+                  <InlineImage src={getTeamLogoUrl(selectedTeam.info.nbaId)} alt={selectedTeam.info.abbreviation} />
                   <p className="dark:text-white text-neutral-800">{`${selectedTeam.info.city} ${selectedTeam.info.name} (${selectedTeam.info.abbreviation})`}</p>
                 </div>
               ) : (
@@ -86,7 +76,7 @@ export function TeamCombobox({ onValueChange }: { onValueChange: (teamAbbreviati
                         setSelectedTeam(null);
                       } else {
                         onValueChange(thisTeam.abbreviation);
-                        setSelectedTeam({ name: thisTeam.name as keyof typeof teams, info: thisTeam });
+                        setSelectedTeam({ key: thisTeam.name as keyof typeof teams, info: thisTeam });
                       }
                       setOpen(false);
                     }}
@@ -94,7 +84,7 @@ export function TeamCombobox({ onValueChange }: { onValueChange: (teamAbbreviati
                   >
                     <Check className={cn('mr-2 h-4 w-4', isSelected ? 'opacity-100' : 'opacity-0')} />
                     <div className="flex space-x-1.5 place-items-center">
-                      {TeamLogo(thisTeam)}
+                      <InlineImage src={getTeamLogoUrl(thisTeam.nbaId)} alt={thisTeam.abbreviation} />
                       <p
                         className={cn(
                           isSelected
