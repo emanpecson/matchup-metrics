@@ -9,30 +9,27 @@ export async function GET(req: NextRequest) {
       name: req.nextUrl.searchParams.get('name'),
       team: req.nextUrl.searchParams.get('team'),
       position: req.nextUrl.searchParams.get('position'),
+      skip: req.nextUrl.searchParams.get('skip'),
+      take: req.nextUrl.searchParams.get('take'),
     };
     console.log('query:', query);
-
     const where = {} as Prisma.PlayerWhereInput;
 
     // stack where conditions
-    if (query.name) {
-      where.name = { contains: query.name, mode: 'insensitive' };
-    }
-    if (query.team) {
-      where.team = { contains: query.team };
-    }
-    if (query.position) {
-      where.position = { contains: query.position };
-    }
+    if (query.name) where.name = { contains: query.name, mode: 'insensitive' };
+    if (query.team) where.team = { contains: query.team };
+    if (query.position) where.position = { contains: query.position };
 
     const players = await prisma.player.findMany({
       where,
-      orderBy: {
-        fantasyPpg: 'desc',
-      },
+      orderBy: { fantasyPpg: 'desc' },
+      skip: Number(query.skip),
+      take: Number(query.take),
     });
-    // console.log('got players:', players);
-    return NextResponse.json(players, { status: 200 });
+
+    const playersCount = await prisma.player.count({ where });
+
+    return NextResponse.json({ players, playersCount }, { status: 200 });
   } catch (error) {
     console.error('Error:', error);
     return NextResponse.json(null, { status: 500 });

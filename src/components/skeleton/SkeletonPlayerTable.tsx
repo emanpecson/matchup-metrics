@@ -2,9 +2,7 @@ import { cn } from '@/lib/utils';
 import { playerTableColumns } from '../player/PlayerTable';
 import { Skeleton } from '../ui/skeleton';
 
-export default function SkeletonPlayerTable() {
-  const rowCount = 10;
-
+export default function SkeletonPlayerTable({ rowCount }: { rowCount: number }) {
   const defaultSkeleton = (isFirst: boolean, isLast: boolean) => {
     return (
       <td className="h-[39px]">

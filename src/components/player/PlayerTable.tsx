@@ -4,14 +4,20 @@ import SkeletonPlayerTable from '../skeleton/SkeletonPlayerTable';
 import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
 import teams from '@/data/teams';
 import InlineImage from '../InlineImage';
+import { useState } from 'react';
 
 export const playerTableColumns = ['name', 'fantasy', 'pts', 'ast', 'reb', 'stl', 'blk', 'to', 'team', 'pos'];
+export interface PlayerTableProps {
+  players: Player[];
+  isLoading: boolean;
+  rowCount: number;
+}
 
-export default function PlayerTable({ players, isLoading }: { players: Player[]; isLoading: boolean }) {
+export default function PlayerTable(props: PlayerTableProps) {
   return (
     <div className="border rounded-xl p-6 min-w-[60rem]">
-      {isLoading ? (
-        <SkeletonPlayerTable />
+      {props.isLoading ? (
+        <SkeletonPlayerTable rowCount={props.rowCount} />
       ) : (
         <table className="w-full">
           <thead>
@@ -31,7 +37,7 @@ export default function PlayerTable({ players, isLoading }: { players: Player[];
             </tr>
           </thead>
           <tbody className="divide-y">
-            {players.map((player: Player, i: number) => (
+            {props.players.map((player: Player, i: number) => (
               <tr key={i} className="sm:text-base text-sm text-neutral-600 dark:text-neutral-200">
                 <td className="px-4 py-1.5 text-left font-medium">
                   <InlineImage src={getPlayerPhotoUrl(player.nbaId)} alt={'plyr-img'} rounded>
