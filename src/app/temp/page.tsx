@@ -2,6 +2,7 @@
 
 import Paginator from '@/components/filter/Paginator';
 import PositionSelect from '@/components/filter/PositionSelect';
+import ResetFilters from '@/components/filter/ResetFilters';
 import SearchBar from '@/components/filter/SearchBar';
 import { TeamCombobox } from '@/components/filter/TeamCombobox';
 import PlayerTable from '@/components/player/PlayerTable';
@@ -19,6 +20,12 @@ export default function Temp() {
   const [filterPosition, setFilterPosition] = useState('');
   const [filterName, setFilterName] = useState('');
   const [page, setPage] = useState(0);
+
+  const handleFilterReset = () => {
+    setFilterTeam('');
+    setFilterName('');
+    setFilterPosition('');
+  };
 
   useLoadData({
     endpoint: `/api/player?name=${filterName}&team=${filterTeam}&position=${filterPosition}&skip=${page * rowCount}&take=${rowCount}`,
@@ -46,6 +53,7 @@ export default function Temp() {
           <SearchBar onValueChange={setFilterName} />
           <TeamCombobox onValueChange={setFilterTeam} />
           <PositionSelect onValueChange={setFilterPosition} value={filterPosition} />
+          <ResetFilters disabled={!filterTeam && !filterName && !filterPosition} onClick={handleFilterReset} />
         </div>
         <PlayerTable
           players={players}
