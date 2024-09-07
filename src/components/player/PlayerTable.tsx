@@ -4,20 +4,23 @@ import SkeletonPlayerTable from '../skeleton/SkeletonPlayerTable';
 import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
 import teams from '@/data/teams';
 import InlineImage from '../InlineImage';
-import { useState } from 'react';
 
 export const playerTableColumns = ['name', 'fantasy', 'pts', 'ast', 'reb', 'stl', 'blk', 'to', 'team', 'pos'];
 export interface PlayerTableProps {
   players: Player[];
   isLoading: boolean;
   rowCount: number;
+  page: number;
+  playersCount: number;
 }
 
 export default function PlayerTable(props: PlayerTableProps) {
+  const loadCount = props.playersCount - props.page * props.rowCount;
+
   return (
     <div className="border rounded-xl p-6 min-w-[60rem]">
       {props.isLoading ? (
-        <SkeletonPlayerTable rowCount={props.rowCount} />
+        <SkeletonPlayerTable rowCount={loadCount <= props.rowCount ? loadCount : props.rowCount} />
       ) : (
         <table className="w-full">
           <thead>

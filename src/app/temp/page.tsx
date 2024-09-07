@@ -7,7 +7,7 @@ import { TeamCombobox } from '@/components/filter/TeamCombobox';
 import PlayerTable from '@/components/player/PlayerTable';
 import { useLoadData } from '@/hooks/useLoadData';
 import { Player } from '@prisma/client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Temp() {
   const rowCount = 12;
@@ -30,13 +30,14 @@ export default function Temp() {
     setIsLoading: setIsLoadingPlayers,
   });
 
+  useEffect(() => setPage(0), [filterTeam, filterPosition, filterName]);
+
   return (
     <div>
       <div className="pt-28 flex place-items-center flex-col w-full">
         <Paginator
           onPrev={() => setPage((prev) => prev - 1)}
           onNext={() => setPage((prev) => prev + 1)}
-          // skip={skip}
           rowCount={rowCount}
           page={page}
           totalCount={playersCount}
@@ -46,7 +47,13 @@ export default function Temp() {
           <TeamCombobox onValueChange={setFilterTeam} />
           <PositionSelect onValueChange={setFilterPosition} value={filterPosition} />
         </div>
-        <PlayerTable players={players} isLoading={isLoadingPlayers} rowCount={rowCount} />
+        <PlayerTable
+          players={players}
+          isLoading={isLoadingPlayers}
+          rowCount={rowCount}
+          page={page}
+          playersCount={playersCount}
+        />
       </div>
     </div>
   );
