@@ -1,9 +1,10 @@
 import { cn } from '@/lib/utils';
 import { Player } from '@prisma/client';
 import SkeletonPlayerTable from '../skeleton/SkeletonPlayerTable';
-import { getTeamLogoUrl } from '@/utils/getPhotoUrl';
+import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
 import Image from 'next/image';
 import teams from '@/data/teams';
+import InlineImage from '../InlineImage';
 
 export const playerTableColumns = ['name', 'fantasy', 'pts', 'ast', 'reb', 'stl', 'blk', 'to', 'team', 'pos'];
 
@@ -33,7 +34,11 @@ export default function PlayerTable({ players, isLoading }: { players: Player[];
           <tbody className="divide-y">
             {players.map((player: Player, i: number) => (
               <tr key={i} className="sm:text-base text-sm text-neutral-600 dark:text-neutral-200">
-                <td className="px-4 py-1.5 text-left font-medium">{player.name}</td>
+                <td className="px-4 py-1.5 text-left font-medium">
+                  <InlineImage src={getPlayerPhotoUrl(player.nbaId)} alt={'plyr-img'} rounded>
+                    <p>{player.name}</p>
+                  </InlineImage>
+                </td>
                 <td className="px-4 py-1.5 text-center">{player.fantasyPpg}</td>
                 <td className="px-4 py-1.5 text-center">{player.ppg}</td>
                 <td className="px-4 py-1.5 text-center">{player.apg}</td>
@@ -42,16 +47,9 @@ export default function PlayerTable({ players, isLoading }: { players: Player[];
                 <td className="px-4 py-1.5 text-center">{player.bpg}</td>
                 <td className="px-4 py-1.5 text-center">{player.tpg}</td>
                 <td className="px-4 py-1.5 text-center">
-                  <div className="flex space-x-1.5 place-items-center">
-                    <Image
-                      src={getTeamLogoUrl(teams[player.team as keyof typeof teams].nbaId)}
-                      alt={player.team}
-                      width={24}
-                      height={24}
-                      className="w-[26px] h-[26px] object-cover"
-                    />
+                  <InlineImage src={getTeamLogoUrl(teams[player.team as keyof typeof teams].nbaId)} alt={player.team}>
                     <p>{player.team}</p>
-                  </div>
+                  </InlineImage>
                 </td>
                 <td className="px-4 py-1.5 text-right">{player.position}</td>
               </tr>
