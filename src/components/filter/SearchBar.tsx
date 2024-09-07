@@ -45,7 +45,7 @@ export default function SearchBar(props: SearchBarProps) {
         onChange={handleChange}
         type="text"
         value={tempValue}
-        className="rounded-lg pl-10 text-sm placeholder:text-neutral-500 placeholder:font-medium"
+        className="rounded-md pl-10 text-sm placeholder:text-neutral-500 placeholder:font-medium"
         placeholder={props.label ?? 'Search'}
         onFocus={() => setIsFocussing(true)}
         onBlur={() => setIsFocussing(false)}
