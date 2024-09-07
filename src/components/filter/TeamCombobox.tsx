@@ -43,10 +43,9 @@ export function TeamCombobox({ onValueChange }: { onValueChange: (teamAbbreviati
           <Button variant="outline" role="combobox" aria-expanded={open} className="min-w-[18rem] text-neutral-500">
             <div className="flex w-full place-items-center pl-7">
               {selectedTeam ? (
-                <div className="flex space-x-1.5 place-items-center">
-                  <InlineImage src={getTeamLogoUrl(selectedTeam.info.nbaId)} alt={selectedTeam.info.abbreviation} />
+                <InlineImage src={getTeamLogoUrl(selectedTeam.info.nbaId)} alt={selectedTeam.info.abbreviation}>
                   <p className="dark:text-white text-neutral-800">{`${selectedTeam.info.city} ${selectedTeam.info.name} (${selectedTeam.info.abbreviation})`}</p>
-                </div>
+                </InlineImage>
               ) : (
                 <p>Filter Team</p>
               )}
@@ -83,8 +82,7 @@ export function TeamCombobox({ onValueChange }: { onValueChange: (teamAbbreviati
                     className="cursor-pointer"
                   >
                     <Check className={cn('mr-2 h-4 w-4', isSelected ? 'opacity-100' : 'opacity-0')} />
-                    <div className="flex space-x-1.5 place-items-center">
-                      <InlineImage src={getTeamLogoUrl(thisTeam.nbaId)} alt={thisTeam.abbreviation} />
+                    <InlineImage src={getTeamLogoUrl(thisTeam.nbaId)} alt={thisTeam.abbreviation}>
                       <p
                         className={cn(
                           isSelected
@@ -94,7 +92,7 @@ export function TeamCombobox({ onValueChange }: { onValueChange: (teamAbbreviati
                       >
                         {displayName}
                       </p>
-                    </div>
+                    </InlineImage>
                   </CommandItem>
                 );
               })}
