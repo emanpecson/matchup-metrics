@@ -19,7 +19,7 @@ export default function Paginator(props: PaginatorProps) {
         <p className="text-neutral-600 dark:text-neutral-400">{`${props.totalCount} rows`}</p>
       </div>
       <div className="rounded-md border px-4 flex place-items-center min-w-[9rem] justify-center">
-        <p className="text-neutral-600 dark:text-neutral-400">{`Page ${props.page + 1} of ${Math.ceil(props.totalCount / props.rowCount)}`}</p>
+        <p className="text-neutral-600 dark:text-neutral-400">{`Page ${props.totalCount > 0 ? props.page + 1 : 0} of ${Math.ceil(props.totalCount / props.rowCount)}`}</p>
       </div>
       <Button
         size={'icon'}
