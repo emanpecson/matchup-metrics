@@ -13,7 +13,7 @@ interface SearchBarProps {
 export default function SearchBar(props: SearchBarProps) {
   const [tempValue, setTempValue] = useState('');
   const [isFocussing, setIsFocussing] = useState(false);
-  const debounced = useDebounceCallback(props.onValueChange, 500);
+  const debounced = useDebounceCallback(props.onValueChange, 300);
 
   const handleChange = (ev: ChangeEvent<HTMLInputElement>) => {
     debounced(ev.target.value);
