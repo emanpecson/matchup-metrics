@@ -15,7 +15,7 @@ datasource db {
 
 model Player {
   id           String @id @default(auto()) @map("_id") @db.ObjectId
-	nbaId				 String
+  nbaId        String
   name         String
   age          Int
   team         String
@@ -35,4 +35,5 @@ model Player {
   fgPct        Float
   fg3Pct       Float
   ftPct        Float
+  jersey       String
 }

@@ -35,12 +35,12 @@ def fail(msg):
 # PARSE FUNC
 
 # Parse table from given link and return the raw body of the table as obj
-def parse_nba_table(driver: webdriver, link: str, table_xpath: str, dropdown_xpath: str, get_nba_id: bool) -> list[list[dict], list[str]]:
+def parse_nba_table(driver: webdriver, link: str, table_xpath: str, dropdown_xpath: str, get_nba_id: bool, is_stats_table: bool) -> list[list[dict], list[str]]:
 	headers: list[str] = []
 	body: list[dict] = []
 	name_keys: list[str] = []
 	count = 0
-	timeout = 10
+	timeout = 20
 
 	# driver = webdriver.Safari()
 	driver.get(link)
@@ -52,7 +52,11 @@ def parse_nba_table(driver: webdriver, link: str, table_xpath: str, dropdown_xpa
 
 	alert('Selecting "All" from dropdown')
 	dropdown = wait.until(EC.element_to_be_clickable((By.XPATH, dropdown_xpath)))
-	dropdown.click()
+	if is_stats_table:
+		driver.execute_script("arguments[0].click();", dropdown)
+	else:
+		dropdown.click()
+
 	Select(dropdown).select_by_visible_text('All')
 
 	alert('Getting table headers')
@@ -143,7 +147,8 @@ def filter_bio(rbio: dict) -> dict:
 			'height': rbio['Height'],
 			'weight': rbio['Weight'],
 			'lastAttended': rbio['Last Attended'],
-			'country': rbio['Country']
+			'country': rbio['Country'],
+			'jersey': rbio['Number'],
 		}
 	}
 

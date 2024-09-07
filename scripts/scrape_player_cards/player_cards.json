@@ -19,7 +19,8 @@
         "height": "7-0",
         "weight": "280 lbs",
         "lastAttended": "Kansas",
-        "country": "Cameroon"
+        "country": "Cameroon",
+        "jersey": "21"
     },
     {
         "nbaId": "1629029",
@@ -41,7 +42,8 @@
         "height": "6-7",
         "weight": "230 lbs",
         "lastAttended": "Real Madrid",
-        "country": "Slovenia"
+        "country": "Slovenia",
+        "jersey": "77"
     },
     {
         "nbaId": "203507",
@@ -63,7 +65,8 @@
         "height": "6-11",
         "weight": "243 lbs",
         "lastAttended": "Filathlitikos",
-        "country": "Greece"
+        "country": "Greece",
+        "jersey": "34"
     },
     {
         "nbaId": "1628983",
@@ -85,7 +88,8 @@
         "height": "6-6",
         "weight": "195 lbs",
         "lastAttended": "Kentucky",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "2"
     },
     {
         "nbaId": "1628973",
@@ -107,7 +111,8 @@
         "height": "6-2",
         "weight": "190 lbs",
         "lastAttended": "Villanova",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "11"
     },
     {
         "nbaId": "201142",
@@ -129,7 +134,8 @@
         "height": "6-11",
         "weight": "240 lbs",
         "lastAttended": "Texas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "35"
     },
     {
         "nbaId": "1626164",
@@ -151,7 +157,8 @@
         "height": "6-6",
         "weight": "206 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "1"
     },
     {
         "nbaId": "1628369",
@@ -173,7 +180,8 @@
         "height": "6-8",
         "weight": "210 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "1628378",
@@ -195,7 +203,8 @@
         "height": "6-3",
         "weight": "215 lbs",
         "lastAttended": "Louisville",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "45"
     },
     {
         "nbaId": "1628368",
@@ -217,7 +226,8 @@
         "height": "6-3",
         "weight": "185 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "201939",
@@ -239,7 +249,8 @@
         "height": "6-2",
         "weight": "185 lbs",
         "lastAttended": "Davidson",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "30"
     },
     {
         "nbaId": "203999",
@@ -261,7 +272,8 @@
         "height": "6-11",
         "weight": "284 lbs",
         "lastAttended": "Mega Basket",
-        "country": "Serbia"
+        "country": "Serbia",
+        "jersey": "15"
     },
     {
         "nbaId": "1630178",
@@ -283,7 +295,8 @@
         "height": "6-2",
         "weight": "200 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "1630162",
@@ -305,7 +318,8 @@
         "height": "6-4",
         "weight": "225 lbs",
         "lastAttended": "Georgia",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "1629027",
@@ -327,7 +341,8 @@
         "height": "6-1",
         "weight": "164 lbs",
         "lastAttended": "Oklahoma",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "11"
     },
     {
         "nbaId": "2544",
@@ -349,7 +364,8 @@
         "height": "6-9",
         "weight": "250 lbs",
         "lastAttended": "St. Vincent-St. Mary HS (OH)",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "23"
     },
     {
         "nbaId": "202681",
@@ -371,7 +387,8 @@
         "height": "6-2",
         "weight": "195 lbs",
         "lastAttended": "Duke",
-        "country": "Australia"
+        "country": "Australia",
+        "jersey": "11"
     },
     {
         "nbaId": "1629630",
@@ -393,7 +410,8 @@
         "height": "6-2",
         "weight": "174 lbs",
         "lastAttended": "Murray State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "12"
     },
     {
         "nbaId": "203076",
@@ -415,7 +433,8 @@
         "height": "6-10",
         "weight": "253 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "3"
     },
     {
         "nbaId": "203081",
@@ -437,7 +456,8 @@
         "height": "6-2",
         "weight": "195 lbs",
         "lastAttended": "Weber State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "201942",
@@ -459,7 +479,8 @@
         "height": "6-6",
         "weight": "220 lbs",
         "lastAttended": "Southern California",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "10"
     },
     {
         "nbaId": "203944",
@@ -481,7 +502,8 @@
         "height": "6-8",
         "weight": "250 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "30"
     },
     {
         "nbaId": "1630163",
@@ -503,7 +525,8 @@
         "height": "6-7",
         "weight": "180 lbs",
         "lastAttended": "Illawarra",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "1"
     },
     {
         "nbaId": "1630217",
@@ -525,7 +548,8 @@
         "height": "6-5",
         "weight": "215 lbs",
         "lastAttended": "TCU",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "22"
     },
     {
         "nbaId": "202695",
@@ -547,7 +571,8 @@
         "height": "6-7",
         "weight": "225 lbs",
         "lastAttended": "San Diego State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "2"
     },
     {
         "nbaId": "1628374",
@@ -569,7 +594,8 @@
         "height": "7-0",
         "weight": "240 lbs",
         "lastAttended": "Arizona",
-        "country": "Finland"
+        "country": "Finland",
+        "jersey": "23"
     },
     {
         "nbaId": "1627759",
@@ -591,7 +617,8 @@
         "height": "6-6",
         "weight": "223 lbs",
         "lastAttended": "California",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "7"
     },
     {
         "nbaId": "1629627",
@@ -613,7 +640,8 @@
         "height": "6-6",
         "weight": "284 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "1"
     },
     {
         "nbaId": "1630595",
@@ -635,7 +663,8 @@
         "height": "6-6",
         "weight": "220 lbs",
         "lastAttended": "Oklahoma State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "2"
     },
     {
         "nbaId": "1629014",
@@ -657,7 +686,8 @@
         "height": "6-3",
         "weight": "193 lbs",
         "lastAttended": "Edgewater HS (FL)",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "1"
     },
     {
         "nbaId": "202331",
@@ -679,7 +709,8 @@
         "height": "6-8",
         "weight": "220 lbs",
         "lastAttended": "Fresno State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "8"
     },
     {
         "nbaId": "1631094",
@@ -701,7 +732,8 @@
         "height": "6-10",
         "weight": "250 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "1628991",
@@ -723,7 +755,8 @@
         "height": "6-10",
         "weight": "242 lbs",
         "lastAttended": "Michigan State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "13"
     },
     {
         "nbaId": "1627749",
@@ -745,7 +778,8 @@
         "height": "6-5",
         "weight": "180 lbs",
         "lastAttended": "Washington",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "1630560",
@@ -767,7 +801,8 @@
         "height": "6-3",
         "weight": "210 lbs",
         "lastAttended": "Louisiana State",
-        "country": "Japan"
+        "country": "Japan",
+        "jersey": "24"
     },
     {
         "nbaId": "1628398",
@@ -789,7 +824,8 @@
         "height": "6-9",
         "weight": "221 lbs",
         "lastAttended": "Utah",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "33"
     },
     {
         "nbaId": "1626157",
@@ -811,7 +847,8 @@
         "height": "7-0",
         "weight": "248 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "32"
     },
     {
         "nbaId": "1627783",
@@ -833,7 +870,8 @@
         "height": "6-8",
         "weight": "245 lbs",
         "lastAttended": "New Mexico State",
-        "country": "Cameroon"
+        "country": "Cameroon",
+        "jersey": "43"
     },
     {
         "nbaId": "1641705",
@@ -855,7 +893,8 @@
         "height": "7-4",
         "weight": "210 lbs",
         "lastAttended": "Metropolitans 92",
-        "country": "France"
+        "country": "France",
+        "jersey": "1"
     },
     {
         "nbaId": "1627750",
@@ -877,7 +916,8 @@
         "height": "6-4",
         "weight": "215 lbs",
         "lastAttended": "Kentucky",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "27"
     },
     {
         "nbaId": "1630578",
@@ -899,7 +939,8 @@
         "height": "6-11",
         "weight": "243 lbs",
         "lastAttended": "Besiktas",
-        "country": "Turkey"
+        "country": "Turkey",
+        "jersey": "28"
     },
     {
         "nbaId": "1628970",
@@ -921,7 +962,8 @@
         "height": "6-7",
         "weight": "225 lbs",
         "lastAttended": "Michigan State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "203924",
@@ -943,7 +985,8 @@
         "height": "6-7",
         "weight": "210 lbs",
         "lastAttended": "Syracuse",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "9"
     },
     {
         "nbaId": "1629639",
@@ -965,7 +1008,8 @@
         "height": "6-5",
         "weight": "195 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "14"
     },
     {
         "nbaId": "1627742",
@@ -987,7 +1031,8 @@
         "height": "6-8",
         "weight": "190 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "14"
     },
     {
         "nbaId": "202710",
@@ -1009,7 +1054,8 @@
         "height": "6-7",
         "weight": "230 lbs",
         "lastAttended": "Marquette",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "22"
     },
     {
         "nbaId": "1629628",
@@ -1031,7 +1077,8 @@
         "height": "6-6",
         "weight": "214 lbs",
         "lastAttended": "Duke",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "9"
     },
     {
         "nbaId": "1630169",
@@ -1053,7 +1100,8 @@
         "height": "6-5",
         "weight": "185 lbs",
         "lastAttended": "Iowa State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "204001",
@@ -1075,7 +1123,8 @@
         "height": "7-2",
         "weight": "240 lbs",
         "lastAttended": "Cajasol Sevilla",
-        "country": "Latvia"
+        "country": "Latvia",
+        "jersey": "8"
     },
     {
         "nbaId": "203468",
@@ -1097,7 +1146,8 @@
         "height": "6-3",
         "weight": "190 lbs",
         "lastAttended": "Lehigh",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "3"
     },
     {
         "nbaId": "1630567",
@@ -1119,7 +1169,8 @@
         "height": "6-7",
         "weight": "237 lbs",
         "lastAttended": "Florida State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "4"
     },
     {
         "nbaId": "1626179",
@@ -1141,7 +1192,8 @@
         "height": "6-1",
         "weight": "190 lbs",
         "lastAttended": "Louisville",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "2"
     },
     {
         "nbaId": "1630532",
@@ -1163,7 +1215,8 @@
         "height": "6-10",
         "weight": "220 lbs",
         "lastAttended": "Michigan",
-        "country": "Germany"
+        "country": "Germany",
+        "jersey": "22"
     },
     {
         "nbaId": "1630224",
@@ -1185,7 +1238,8 @@
         "height": "6-4",
         "weight": "186 lbs",
         "lastAttended": "NBA G League Ignite",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "4"
     },
     {
         "nbaId": "1628969",
@@ -1207,7 +1261,8 @@
         "height": "6-6",
         "weight": "209 lbs",
         "lastAttended": "Villanova",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "25"
     },
     {
         "nbaId": "203897",
@@ -1229,7 +1284,8 @@
         "height": "6-5",
         "weight": "200 lbs",
         "lastAttended": "UCLA",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "8"
     },
     {
         "nbaId": "1630170",
@@ -1251,7 +1307,8 @@
         "height": "6-5",
         "weight": "200 lbs",
         "lastAttended": "Florida State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "24"
     },
     {
         "nbaId": "1627734",
@@ -1273,7 +1330,8 @@
         "height": "6-10",
         "weight": "240 lbs",
         "lastAttended": "Gonzaga",
-        "country": "Lithuania"
+        "country": "Lithuania",
+        "jersey": "11"
     },
     {
         "nbaId": "1628389",
@@ -1295,7 +1353,8 @@
         "height": "6-9",
         "weight": "255 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "13"
     },
     {
         "nbaId": "1629632",
@@ -1317,7 +1376,8 @@
         "height": "6-5",
         "weight": "195 lbs",
         "lastAttended": "North Carolina",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "1631114",
@@ -1339,7 +1399,8 @@
         "height": "6-5",
         "weight": "211 lbs",
         "lastAttended": "Santa Clara",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "8"
     },
     {
         "nbaId": "1629012",
@@ -1361,7 +1422,8 @@
         "height": "6-3",
         "weight": "190 lbs",
         "lastAttended": "Alabama",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "2"
     },
     {
         "nbaId": "203078",
@@ -1383,7 +1445,8 @@
         "height": "6-4",
         "weight": "207 lbs",
         "lastAttended": "Florida",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "3"
     },
     {
         "nbaId": "1629636",
@@ -1405,7 +1468,8 @@
         "height": "6-1",
         "weight": "192 lbs",
         "lastAttended": "Vanderbilt",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "10"
     },
     {
         "nbaId": "202696",
@@ -1427,7 +1491,8 @@
         "height": "6-10",
         "weight": "260 lbs",
         "lastAttended": "Southern California",
-        "country": "Montenegro"
+        "country": "Montenegro",
+        "jersey": "9"
     },
     {
         "nbaId": "1626156",
@@ -1449,7 +1514,8 @@
         "height": "6-3",
         "weight": "193 lbs",
         "lastAttended": "Ohio State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "1"
     },
     {
         "nbaId": "202691",
@@ -1471,7 +1537,8 @@
         "height": "6-6",
         "weight": "220 lbs",
         "lastAttended": "Washington State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "31"
     },
     {
         "nbaId": "1627832",
@@ -1493,7 +1560,8 @@
         "height": "6-0",
         "weight": "197 lbs",
         "lastAttended": "Wichita State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "1629673",
@@ -1515,7 +1583,8 @@
         "height": "6-4",
         "weight": "194 lbs",
         "lastAttended": "Michigan",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "13"
     },
     {
         "nbaId": "1641706",
@@ -1537,7 +1606,8 @@
         "height": "6-7",
         "weight": "200 lbs",
         "lastAttended": "Alabama",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "24"
     },
     {
         "nbaId": "202699",
@@ -1559,7 +1629,8 @@
         "height": "6-8",
         "weight": "226 lbs",
         "lastAttended": "Tennessee",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "12"
     },
     {
         "nbaId": "203903",
@@ -1581,7 +1652,8 @@
         "height": "6-3",
         "weight": "194 lbs",
         "lastAttended": "Missouri",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "00"
     },
     {
         "nbaId": "1626167",
@@ -1603,7 +1675,8 @@
         "height": "6-11",
         "weight": "250 lbs",
         "lastAttended": "Texas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "33"
     },
     {
         "nbaId": "1630193",
@@ -1625,7 +1698,8 @@
         "height": "6-2",
         "weight": "190 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "203992",
@@ -1647,7 +1721,8 @@
         "height": "6-5",
         "weight": "225 lbs",
         "lastAttended": "Fenerbahce",
-        "country": "Serbia"
+        "country": "Serbia",
+        "jersey": "13"
     },
     {
         "nbaId": "1629008",
@@ -1669,7 +1744,8 @@
         "height": "6-10",
         "weight": "218 lbs",
         "lastAttended": "Missouri",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "1"
     },
     {
         "nbaId": "1629028",
@@ -1691,7 +1767,8 @@
         "height": "7-0",
         "weight": "247 lbs",
         "lastAttended": "Arizona",
-        "country": "Bahamas"
+        "country": "Bahamas",
+        "jersey": "2"
     },
     {
         "nbaId": "201935",
@@ -1713,7 +1790,8 @@
         "height": "6-5",
         "weight": "220 lbs",
         "lastAttended": "Arizona State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "1"
     },
     {
         "nbaId": "1631096",
@@ -1735,7 +1813,8 @@
         "height": "7-1",
         "weight": "208 lbs",
         "lastAttended": "Gonzaga",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "7"
     },
     {
         "nbaId": "1628386",
@@ -1757,7 +1836,8 @@
         "height": "6-9",
         "weight": "243 lbs",
         "lastAttended": "Texas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "31"
     },
     {
         "nbaId": "1630228",
@@ -1779,7 +1859,8 @@
         "height": "6-7",
         "weight": "225 lbs",
         "lastAttended": "NBA G League Ignite",
-        "country": "DRC"
+        "country": "DRC",
+        "jersey": "00"
     },
     {
         "nbaId": "1630552",
@@ -1801,7 +1882,8 @@
         "height": "6-8",
         "weight": "219 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "1"
     },
     {
         "nbaId": "1631101",
@@ -1823,7 +1905,8 @@
         "height": "6-5",
         "weight": "205 lbs",
         "lastAttended": "Kentucky",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "17"
     },
     {
         "nbaId": "1630559",
@@ -1845,7 +1928,8 @@
         "height": "6-5",
         "weight": "197 lbs",
         "lastAttended": "Oklahoma",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "15"
     },
     {
         "nbaId": "1627763",
@@ -1867,7 +1951,8 @@
         "height": "6-4",
         "weight": "229 lbs",
         "lastAttended": "Virginia",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "11"
     },
     {
         "nbaId": "1629640",
@@ -1889,7 +1974,8 @@
         "height": "6-5",
         "weight": "220 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "1630596",
@@ -1911,7 +1997,8 @@
         "height": "6-11",
         "weight": "215 lbs",
         "lastAttended": "Southern California",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "4"
     },
     {
         "nbaId": "1629631",
@@ -1933,7 +2020,8 @@
         "height": "6-8",
         "weight": "221 lbs",
         "lastAttended": "Virginia",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "12"
     },
     {
         "nbaId": "1628978",
@@ -1955,7 +2043,8 @@
         "height": "6-4",
         "weight": "203 lbs",
         "lastAttended": "Villanova",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "1626162",
@@ -1977,7 +2066,8 @@
         "height": "6-7",
         "weight": "203 lbs",
         "lastAttended": "Kansas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "9"
     },
     {
         "nbaId": "1628370",
@@ -1999,7 +2089,8 @@
         "height": "6-3",
         "weight": "200 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "1631093",
@@ -2021,7 +2112,8 @@
         "height": "6-4",
         "weight": "195 lbs",
         "lastAttended": "Purdue",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "23"
     },
     {
         "nbaId": "202711",
@@ -2043,7 +2135,8 @@
         "height": "6-7",
         "weight": "226 lbs",
         "lastAttended": "Fenerbahce",
-        "country": "Croatia"
+        "country": "Croatia",
+        "jersey": "44"
     },
     {
         "nbaId": "1631099",
@@ -2065,7 +2158,8 @@
         "height": "6-8",
         "weight": "225 lbs",
         "lastAttended": "Iowa",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "13"
     },
     {
         "nbaId": "1628401",
@@ -2087,7 +2181,8 @@
         "height": "6-4",
         "weight": "190 lbs",
         "lastAttended": "Colorado",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "9"
     },
     {
         "nbaId": "1628381",
@@ -2109,7 +2204,8 @@
         "height": "6-9",
         "weight": "226 lbs",
         "lastAttended": "Wake Forest",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "20"
     },
     {
         "nbaId": "203114",
@@ -2131,7 +2227,8 @@
         "height": "6-7",
         "weight": "222 lbs",
         "lastAttended": "Texas A&M",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "22"
     },
     {
         "nbaId": "1630530",
@@ -2153,7 +2250,8 @@
         "height": "6-8",
         "weight": "206 lbs",
         "lastAttended": "Virginia",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "25"
     },
     {
         "nbaId": "1630166",
@@ -2175,7 +2273,8 @@
         "height": "6-9",
         "weight": "210 lbs",
         "lastAttended": "Maccabi Tel Aviv",
-        "country": "Israel"
+        "country": "Israel",
+        "jersey": "8"
     },
     {
         "nbaId": "1628384",
@@ -2197,7 +2296,8 @@
         "height": "6-7",
         "weight": "240 lbs",
         "lastAttended": "Indiana",
-        "country": "United Kingdom"
+        "country": "United Kingdom",
+        "jersey": "8"
     },
     {
         "nbaId": "1641713",
@@ -2219,7 +2319,8 @@
         "height": "6-9",
         "weight": "210 lbs",
         "lastAttended": "South Carolina",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "45"
     },
     {
         "nbaId": "1631097",
@@ -2241,7 +2342,8 @@
         "height": "6-5",
         "weight": "210 lbs",
         "lastAttended": "Arizona",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "00"
     },
     {
         "nbaId": "203935",
@@ -2263,7 +2365,8 @@
         "height": "6-3",
         "weight": "220 lbs",
         "lastAttended": "Oklahoma State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "36"
     },
     {
         "nbaId": "203501",
@@ -2285,7 +2388,8 @@
         "height": "6-5",
         "weight": "205 lbs",
         "lastAttended": "Michigan",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "10"
     },
     {
         "nbaId": "203471",
@@ -2307,7 +2411,8 @@
         "height": "6-1",
         "weight": "175 lbs",
         "lastAttended": "Braunschweig",
-        "country": "Germany"
+        "country": "Germany",
+        "jersey": "17"
     },
     {
         "nbaId": "1627747",
@@ -2329,7 +2434,8 @@
         "height": "6-6",
         "weight": "205 lbs",
         "lastAttended": "Michigan",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "3"
     },
     {
         "nbaId": "1630703",
@@ -2351,7 +2457,8 @@
         "height": "6-3",
         "weight": "202 lbs",
         "lastAttended": "NBA G League Ignite",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "00"
     },
     {
         "nbaId": "203497",
@@ -2373,7 +2480,8 @@
         "height": "7-1",
         "weight": "258 lbs",
         "lastAttended": "Cholet",
-        "country": "France"
+        "country": "France",
+        "jersey": "27"
     },
     {
         "nbaId": "1626181",
@@ -2395,7 +2503,8 @@
         "height": "6-4",
         "weight": "215 lbs",
         "lastAttended": "UCLA",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "24"
     },
     {
         "nbaId": "203932",
@@ -2417,7 +2526,8 @@
         "height": "6-8",
         "weight": "235 lbs",
         "lastAttended": "Arizona",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "32"
     },
     {
         "nbaId": "1631105",
@@ -2439,7 +2549,8 @@
         "height": "6-10",
         "weight": "250 lbs",
         "lastAttended": "Memphis",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "1626171",
@@ -2461,7 +2572,8 @@
         "height": "6-10",
         "weight": "250 lbs",
         "lastAttended": "Arkansas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "9"
     },
     {
         "nbaId": "1631095",
@@ -2483,7 +2595,8 @@
         "height": "6-11",
         "weight": "220 lbs",
         "lastAttended": "Auburn",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "10"
     },
     {
         "nbaId": "1629018",
@@ -2505,7 +2618,8 @@
         "height": "6-5",
         "weight": "204 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "33"
     },
     {
         "nbaId": "1630180",
@@ -2527,7 +2641,8 @@
         "height": "6-7",
         "weight": "215 lbs",
         "lastAttended": "Villanova",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "41"
     },
     {
         "nbaId": "1629060",
@@ -2549,7 +2664,8 @@
         "height": "6-8",
         "weight": "230 lbs",
         "lastAttended": "Gonzaga",
-        "country": "Japan"
+        "country": "Japan",
+        "jersey": "28"
     },
     {
         "nbaId": "1628960",
@@ -2571,7 +2687,8 @@
         "height": "6-4",
         "weight": "198 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "8"
     },
     {
         "nbaId": "1629675",
@@ -2593,7 +2710,8 @@
         "height": "6-9",
         "weight": "264 lbs",
         "lastAttended": "Louisiana State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "11"
     },
     {
         "nbaId": "1629661",
@@ -2615,7 +2733,8 @@
         "height": "6-8",
         "weight": "210 lbs",
         "lastAttended": "North Carolina",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "2"
     },
     {
         "nbaId": "1630557",
@@ -2637,7 +2756,8 @@
         "height": "6-6",
         "weight": "224 lbs",
         "lastAttended": "Gonzaga",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "24"
     },
     {
         "nbaId": "203952",
@@ -2659,7 +2779,8 @@
         "height": "6-7",
         "weight": "197 lbs",
         "lastAttended": "Kansas",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "22"
     },
     {
         "nbaId": "1641718",
@@ -2681,7 +2802,8 @@
         "height": "6-4",
         "weight": "185 lbs",
         "lastAttended": "Baylor",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "3"
     },
     {
         "nbaId": "1630590",
@@ -2703,7 +2825,8 @@
         "height": "6-1",
         "weight": "170 lbs",
         "lastAttended": "Vanderbilt",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "1"
     },
     {
         "nbaId": "1629130",
@@ -2725,7 +2848,8 @@
         "height": "6-7",
         "weight": "215 lbs",
         "lastAttended": "Michigan",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "55"
     },
     {
         "nbaId": "1629023",
@@ -2747,7 +2871,8 @@
         "height": "6-7",
         "weight": "230 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "25"
     },
     {
         "nbaId": "1631109",
@@ -2769,7 +2894,8 @@
         "height": "7-0",
         "weight": "240 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "1628415",
@@ -2791,7 +2917,8 @@
         "height": "6-6",
         "weight": "225 lbs",
         "lastAttended": "Oregon",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "9"
     },
     {
         "nbaId": "1630591",
@@ -2813,7 +2940,8 @@
         "height": "6-5",
         "weight": "205 lbs",
         "lastAttended": "Gonzaga",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "4"
     },
     {
         "nbaId": "201572",
@@ -2835,7 +2963,8 @@
         "height": "7-1",
         "weight": "282 lbs",
         "lastAttended": "Stanford",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "11"
     },
     {
         "nbaId": "201950",
@@ -2857,7 +2986,8 @@
         "height": "6-4",
         "weight": "205 lbs",
         "lastAttended": "UCLA",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "4"
     },
     {
         "nbaId": "1630581",
@@ -2879,7 +3009,8 @@
         "height": "6-8",
         "weight": "216 lbs",
         "lastAttended": "NBA Global Academy",
-        "country": "Australia"
+        "country": "Australia",
+        "jersey": "3"
     },
     {
         "nbaId": "1641715",
@@ -2901,7 +3032,8 @@
         "height": "6-7",
         "weight": "230 lbs",
         "lastAttended": "Villanova",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "7"
     },
     {
         "nbaId": "1629750",
@@ -2923,7 +3055,8 @@
         "height": "6-5",
         "weight": "205 lbs",
         "lastAttended": "Radford",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "24"
     },
     {
         "nbaId": "202685",
@@ -2945,7 +3078,8 @@
         "height": "6-11",
         "weight": "265 lbs",
         "lastAttended": "Lietuvos rytas Vilnius",
-        "country": "Lithuania"
+        "country": "Lithuania",
+        "jersey": "17"
     },
     {
         "nbaId": "203084",
@@ -2967,7 +3101,8 @@
         "height": "6-8",
         "weight": "225 lbs",
         "lastAttended": "North Carolina",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "40"
     },
     {
         "nbaId": "1629622",
@@ -2989,7 +3124,8 @@
         "height": "6-5",
         "weight": "215 lbs",
         "lastAttended": "DePaul",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "1"
     },
     {
         "nbaId": "1630174",
@@ -3011,7 +3147,8 @@
         "height": "6-6",
         "weight": "215 lbs",
         "lastAttended": "Vanderbilt",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "23"
     },
     {
         "nbaId": "1630245",
@@ -3033,7 +3170,8 @@
         "height": "6-5",
         "weight": "200 lbs",
         "lastAttended": "Illinois",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "11"
     },
     {
         "nbaId": "1627741",
@@ -3055,7 +3193,8 @@
         "height": "6-4",
         "weight": "220 lbs",
         "lastAttended": "Oklahoma",
-        "country": "Bahamas"
+        "country": "Bahamas",
+        "jersey": "7"
     },
     {
         "nbaId": "1626145",
@@ -3077,7 +3216,8 @@
         "height": "6-1",
         "weight": "196 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "1631170",
@@ -3099,7 +3239,8 @@
         "height": "6-6",
         "weight": "225 lbs",
         "lastAttended": "UCLA",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "11"
     },
     {
         "nbaId": "1629651",
@@ -3121,7 +3262,8 @@
         "height": "6-11",
         "weight": "215 lbs",
         "lastAttended": "Georgia",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "33"
     },
     {
         "nbaId": "1627826",
@@ -3143,7 +3285,8 @@
         "height": "7-0",
         "weight": "240 lbs",
         "lastAttended": "Mega Basket",
-        "country": "Croatia"
+        "country": "Croatia",
+        "jersey": "40"
     },
     {
         "nbaId": "1628963",
@@ -3165,7 +3308,8 @@
         "height": "6-10",
         "weight": "235 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "35"
     },
     {
         "nbaId": "1631110",
@@ -3187,7 +3331,8 @@
         "height": "6-8",
         "weight": "230 lbs",
         "lastAttended": "Baylor",
-        "country": "Poland"
+        "country": "Poland",
+        "jersey": "10"
     },
     {
         "nbaId": "1630175",
@@ -3209,7 +3354,8 @@
         "height": "6-2",
         "weight": "185 lbs",
         "lastAttended": "North Carolina",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "50"
     },
     {
         "nbaId": "203991",
@@ -3231,7 +3377,8 @@
         "height": "6-10",
         "weight": "256 lbs",
         "lastAttended": "Elan Chalon",
-        "country": "Switzerland"
+        "country": "Switzerland",
+        "jersey": "15"
     },
     {
         "nbaId": "201144",
@@ -3253,7 +3400,8 @@
         "height": "6-0",
         "weight": "175 lbs",
         "lastAttended": "Ohio State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "10"
     },
     {
         "nbaId": "1629634",
@@ -3275,7 +3423,8 @@
         "height": "6-8",
         "weight": "215 lbs",
         "lastAttended": "Gonzaga",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "15"
     },
     {
         "nbaId": "1627736",
@@ -3297,7 +3446,8 @@
         "height": "6-4",
         "weight": "187 lbs",
         "lastAttended": "Florida State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "1628380",
@@ -3319,7 +3469,8 @@
         "height": "6-11",
         "weight": "250 lbs",
         "lastAttended": "Gonzaga",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "23"
     },
     {
         "nbaId": "1627751",
@@ -3341,7 +3492,8 @@
         "height": "7-0",
         "weight": "260 lbs",
         "lastAttended": "Utah",
-        "country": "Austria"
+        "country": "Austria",
+        "jersey": "19"
     },
     {
         "nbaId": "201566",
@@ -3363,7 +3515,8 @@
         "height": "6-4",
         "weight": "200 lbs",
         "lastAttended": "UCLA",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "1629001",
@@ -3385,7 +3538,8 @@
         "height": "6-3",
         "weight": "200 lbs",
         "lastAttended": "Southern California",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "8"
     },
     {
         "nbaId": "201569",
@@ -3407,7 +3561,8 @@
         "height": "6-3",
         "weight": "215 lbs",
         "lastAttended": "Indiana",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "23"
     },
     {
         "nbaId": "1630529",
@@ -3429,7 +3584,8 @@
         "height": "6-7",
         "weight": "206 lbs",
         "lastAttended": "Alabama",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "2"
     },
     {
         "nbaId": "1629655",
@@ -3451,7 +3607,8 @@
         "height": "6-10",
         "weight": "234 lbs",
         "lastAttended": "Arkansas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "21"
     },
     {
         "nbaId": "1628379",
@@ -3473,7 +3630,8 @@
         "height": "6-5",
         "weight": "206 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "10"
     },
     {
         "nbaId": "1628976",
@@ -3495,7 +3653,8 @@
         "height": "6-10",
         "weight": "270 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "34"
     },
     {
         "nbaId": "1630191",
@@ -3517,7 +3676,8 @@
         "height": "6-8",
         "weight": "250 lbs",
         "lastAttended": "Washington",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "28"
     },
     {
         "nbaId": "203994",
@@ -3539,7 +3699,8 @@
         "height": "7-0",
         "weight": "290 lbs",
         "lastAttended": "Cedevita",
-        "country": "Bosnia and Herzegovina"
+        "country": "Bosnia and Herzegovina",
+        "jersey": "20"
     },
     {
         "nbaId": "1629652",
@@ -3561,7 +3722,8 @@
         "height": "6-4",
         "weight": "220 lbs",
         "lastAttended": "Arizona State",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "5"
     },
     {
         "nbaId": "1629021",
@@ -3583,7 +3745,8 @@
         "height": "6-11",
         "weight": "245 lbs",
         "lastAttended": "Michigan",
-        "country": "Germany"
+        "country": "Germany",
+        "jersey": "21"
     },
     {
         "nbaId": "1628971",
@@ -3605,7 +3768,8 @@
         "height": "6-4",
         "weight": "202 lbs",
         "lastAttended": "Miami",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "11"
     },
     {
         "nbaId": "1631222",
@@ -3627,7 +3791,8 @@
         "height": "6-7",
         "weight": "235 lbs",
         "lastAttended": "Wake Forest",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "3"
     },
     {
         "nbaId": "1630583",
@@ -3649,7 +3814,8 @@
         "height": "7-0",
         "weight": "215 lbs",
         "lastAttended": "Loyola-Maryland",
-        "country": "Spain"
+        "country": "Spain",
+        "jersey": "7"
     },
     {
         "nbaId": "1630183",
@@ -3671,7 +3837,8 @@
         "height": "6-9",
         "weight": "185 lbs",
         "lastAttended": "Washington",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "3"
     },
     {
         "nbaId": "1631323",
@@ -3693,7 +3860,8 @@
         "height": "6-7",
         "weight": "209 lbs",
         "lastAttended": "Baskonia",
-        "country": "Italy"
+        "country": "Italy",
+        "jersey": "19"
     },
     {
         "nbaId": "203915",
@@ -3715,7 +3883,8 @@
         "height": "6-5",
         "weight": "215 lbs",
         "lastAttended": "Colorado",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "26"
     },
     {
         "nbaId": "202692",
@@ -3737,7 +3906,8 @@
         "height": "6-5",
         "weight": "214 lbs",
         "lastAttended": "Colorado",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "18"
     },
     {
         "nbaId": "1629684",
@@ -3759,7 +3929,8 @@
         "height": "6-6",
         "weight": "236 lbs",
         "lastAttended": "Tennessee",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "2"
     },
     {
         "nbaId": "1630625",
@@ -3781,7 +3952,8 @@
         "height": "6-8",
         "weight": "204 lbs",
         "lastAttended": "Nebraska",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "5"
     },
     {
         "nbaId": "1630167",
@@ -3803,7 +3975,8 @@
         "height": "6-9",
         "weight": "220 lbs",
         "lastAttended": "Dayton",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "1"
     },
     {
         "nbaId": "204456",
@@ -3825,7 +3998,8 @@
         "height": "6-1",
         "weight": "190 lbs",
         "lastAttended": "Arizona",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "9"
     },
     {
         "nbaId": "1628989",
@@ -3847,7 +4021,8 @@
         "height": "6-7",
         "weight": "198 lbs",
         "lastAttended": "Maryland",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "9"
     },
     {
         "nbaId": "1630168",
@@ -3869,7 +4044,8 @@
         "height": "6-10",
         "weight": "240 lbs",
         "lastAttended": "Southern California",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "17"
     },
     {
         "nbaId": "202704",
@@ -3891,7 +4067,31 @@
         "height": "6-2",
         "weight": "208 lbs",
         "lastAttended": "Boston College",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "7"
+    },
+    {
+        "nbaId": "1629659",
+        "name": "Talen Horton-Tucker",
+        "fantasyPpg": 20.83,
+        "ppg": 10.1,
+        "apg": 3.5,
+        "rpg": 2.4,
+        "fgPct": 39.6,
+        "fg3Pct": 33.0,
+        "ftPct": 80.7,
+        "spg": 0.9,
+        "bpg": 0.4,
+        "tpg": 1.3,
+        "mpg": 19.8,
+        "age": 23,
+        "team": "CHI",
+        "position": "G",
+        "height": "6-4",
+        "weight": "234 lbs",
+        "lastAttended": "Iowa State",
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "203484",
@@ -3913,7 +4113,8 @@
         "height": "6-5",
         "weight": "204 lbs",
         "lastAttended": "Georgia",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "1627936",
@@ -3935,7 +4136,8 @@
         "height": "6-5",
         "weight": "186 lbs",
         "lastAttended": "Texas A&M",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "9"
     },
     {
         "nbaId": "1631246",
@@ -3957,7 +4159,8 @@
         "height": "6-4",
         "weight": "205 lbs",
         "lastAttended": "Virginia Commonwealth",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "1630200",
@@ -3979,7 +4182,8 @@
         "height": "6-1",
         "weight": "185 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "33"
     },
     {
         "nbaId": "1628997",
@@ -4001,7 +4205,8 @@
         "height": "6-5",
         "weight": "205 lbs",
         "lastAttended": "Nevada",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "16"
     },
     {
         "nbaId": "1630172",
@@ -4023,7 +4228,8 @@
         "height": "6-7",
         "weight": "215 lbs",
         "lastAttended": "Florida State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "44"
     },
     {
         "nbaId": "1626196",
@@ -4045,7 +4251,8 @@
         "height": "6-5",
         "weight": "200 lbs",
         "lastAttended": "Tennessee",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "1630188",
@@ -4067,7 +4274,8 @@
         "height": "6-9",
         "weight": "215 lbs",
         "lastAttended": "Maryland",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "25"
     },
     {
         "nbaId": "1631106",
@@ -4089,7 +4297,8 @@
         "height": "6-8",
         "weight": "215 lbs",
         "lastAttended": "Louisiana State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "17"
     },
     {
         "nbaId": "203482",
@@ -4111,7 +4320,8 @@
         "height": "6-11",
         "weight": "240 lbs",
         "lastAttended": "Gonzaga",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "41"
     },
     {
         "nbaId": "1629022",
@@ -4133,7 +4343,8 @@
         "height": "6-4",
         "weight": "204 lbs",
         "lastAttended": "Miami",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "8"
     },
     {
         "nbaId": "1630208",
@@ -4155,7 +4366,8 @@
         "height": "7-0",
         "weight": "245 lbs",
         "lastAttended": "Kentucky",
-        "country": "Jamaica"
+        "country": "Jamaica",
+        "jersey": "4"
     },
     {
         "nbaId": "1630202",
@@ -4177,7 +4389,8 @@
         "height": "6-1",
         "weight": "195 lbs",
         "lastAttended": "Oregon",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "11"
     },
     {
         "nbaId": "1641708",
@@ -4199,7 +4412,8 @@
         "height": "6-7",
         "weight": "200 lbs",
         "lastAttended": "Overtime Elite",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "1"
     },
     {
         "nbaId": "1628404",
@@ -4221,7 +4435,8 @@
         "height": "6-4",
         "weight": "215 lbs",
         "lastAttended": "Villanova",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "3"
     },
     {
         "nbaId": "1630171",
@@ -4243,7 +4458,8 @@
         "height": "6-5",
         "weight": "225 lbs",
         "lastAttended": "Auburn",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "35"
     },
     {
         "nbaId": "1627777",
@@ -4265,7 +4481,8 @@
         "height": "6-7",
         "weight": "230 lbs",
         "lastAttended": "Iowa State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "20"
     },
     {
         "nbaId": "1630544",
@@ -4287,7 +4504,8 @@
         "height": "6-3",
         "weight": "178 lbs",
         "lastAttended": "Florida",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "23"
     },
     {
         "nbaId": "1641764",
@@ -4309,7 +4527,8 @@
         "height": "6-4",
         "weight": "205 lbs",
         "lastAttended": "Santa Clara",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "2"
     },
     {
         "nbaId": "1629614",
@@ -4331,7 +4550,8 @@
         "height": "6-4",
         "weight": "191 lbs",
         "lastAttended": "Gonzaga",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "2"
     },
     {
         "nbaId": "1631103",
@@ -4353,7 +4573,8 @@
         "height": "6-4",
         "weight": "180 lbs",
         "lastAttended": "Ohio State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "22"
     },
     {
         "nbaId": "101108",
@@ -4375,7 +4596,8 @@
         "height": "6-0",
         "weight": "175 lbs",
         "lastAttended": "Wake Forest",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "3"
     },
     {
         "nbaId": "1641871",
@@ -4397,7 +4619,8 @@
         "height": "6-9",
         "weight": "245 lbs",
         "lastAttended": "Louisiana State",
-        "country": "South Sudan"
+        "country": "South Sudan",
+        "jersey": "26"
     },
     {
         "nbaId": "1630573",
@@ -4419,7 +4642,8 @@
         "height": "6-7",
         "weight": "217 lbs",
         "lastAttended": "Virginia",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "30"
     },
     {
         "nbaId": "1627752",
@@ -4441,7 +4665,8 @@
         "height": "6-6",
         "weight": "218 lbs",
         "lastAttended": "Baylor",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "12"
     },
     {
         "nbaId": "1631133",
@@ -4463,7 +4688,8 @@
         "height": "6-7",
         "weight": "227 lbs",
         "lastAttended": "Colorado",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "34"
     },
     {
         "nbaId": "1641709",
@@ -4485,7 +4711,8 @@
         "height": "6-6",
         "weight": "205 lbs",
         "lastAttended": "Overtime Elite",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "9"
     },
     {
         "nbaId": "201567",
@@ -4507,7 +4734,8 @@
         "height": "6-8",
         "weight": "251 lbs",
         "lastAttended": "UCLA",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "42"
     },
     {
         "nbaId": "1641726",
@@ -4529,7 +4757,8 @@
         "height": "7-1",
         "weight": "230 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "2"
     },
     {
         "nbaId": "1629611",
@@ -4551,7 +4780,8 @@
         "height": "6-5",
         "weight": "215 lbs",
         "lastAttended": "Florida State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "14"
     },
     {
         "nbaId": "201143",
@@ -4573,7 +4803,8 @@
         "height": "6-9",
         "weight": "240 lbs",
         "lastAttended": "Florida",
-        "country": "Dominican Republic"
+        "country": "Dominican Republic",
+        "jersey": "42"
     },
     {
         "nbaId": "1627884",
@@ -4595,7 +4826,8 @@
         "height": "6-6",
         "weight": "210 lbs",
         "lastAttended": "UNLV",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "55"
     },
     {
         "nbaId": "203110",
@@ -4617,7 +4849,8 @@
         "height": "6-6",
         "weight": "230 lbs",
         "lastAttended": "Michigan State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "23"
     },
     {
         "nbaId": "1627827",
@@ -4639,7 +4872,8 @@
         "height": "6-7",
         "weight": "220 lbs",
         "lastAttended": "Florida",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "28"
     },
     {
         "nbaId": "1641711",
@@ -4661,7 +4895,8 @@
         "height": "6-6",
         "weight": "200 lbs",
         "lastAttended": "Kansas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "1"
     },
     {
         "nbaId": "1641774",
@@ -4683,7 +4918,8 @@
         "height": "6-10",
         "weight": "220 lbs",
         "lastAttended": "Real Madrid",
-        "country": "Italy"
+        "country": "Italy",
+        "jersey": "00"
     },
     {
         "nbaId": "1641731",
@@ -4705,7 +4941,8 @@
         "height": "6-8",
         "weight": "195 lbs",
         "lastAttended": "Metropolitans 92",
-        "country": "France"
+        "country": "France",
+        "jersey": "0"
     },
     {
         "nbaId": "203083",
@@ -4727,7 +4964,8 @@
         "height": "6-11",
         "weight": "279 lbs",
         "lastAttended": "Connecticut",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "1630540",
@@ -4749,7 +4987,8 @@
         "height": "6-1",
         "weight": "195 lbs",
         "lastAttended": "West Virginia",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "2"
     },
     {
         "nbaId": "1631204",
@@ -4771,7 +5010,8 @@
         "height": "6-2",
         "weight": "195 lbs",
         "lastAttended": "Houston",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "25"
     },
     {
         "nbaId": "1630533",
@@ -4793,7 +5033,8 @@
         "height": "6-9",
         "weight": "185 lbs",
         "lastAttended": "Stanford",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "1"
     },
     {
         "nbaId": "1630182",
@@ -4815,7 +5056,8 @@
         "height": "6-5",
         "weight": "200 lbs",
         "lastAttended": "Arizona",
-        "country": "Australia"
+        "country": "Australia",
+        "jersey": "8"
     },
     {
         "nbaId": "1630198",
@@ -4837,7 +5079,8 @@
         "height": "6-3",
         "weight": "165 lbs",
         "lastAttended": "Arkansas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "11"
     },
     {
         "nbaId": "200768",
@@ -4859,7 +5102,8 @@
         "height": "6-0",
         "weight": "196 lbs",
         "lastAttended": "Villanova",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "7"
     },
     {
         "nbaId": "1631117",
@@ -4881,7 +5125,8 @@
         "height": "7-0",
         "weight": "245 lbs",
         "lastAttended": "Auburn",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "24"
     },
     {
         "nbaId": "1630541",
@@ -4903,7 +5148,8 @@
         "height": "6-5",
         "weight": "211 lbs",
         "lastAttended": "Arkansas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "4"
     },
     {
         "nbaId": "203967",
@@ -4925,7 +5171,8 @@
         "height": "6-10",
         "weight": "225 lbs",
         "lastAttended": "Anadolu Efes",
-        "country": "Croatia"
+        "country": "Croatia",
+        "jersey": "20"
     },
     {
         "nbaId": "1629638",
@@ -4947,7 +5194,8 @@
         "height": "6-5",
         "weight": "205 lbs",
         "lastAttended": "Virginia Tech",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "9"
     },
     {
         "nbaId": "201565",
@@ -4969,7 +5217,8 @@
         "height": "6-3",
         "weight": "200 lbs",
         "lastAttended": "Memphis",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "23"
     },
     {
         "nbaId": "1630241",
@@ -4991,7 +5240,8 @@
         "height": "6-4",
         "weight": "205 lbs",
         "lastAttended": "Utah State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "1631218",
@@ -5013,7 +5263,8 @@
         "height": "6-9",
         "weight": "245 lbs",
         "lastAttended": "Indiana",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "32"
     },
     {
         "nbaId": "1641722",
@@ -5035,7 +5286,8 @@
         "height": "6-5",
         "weight": "190 lbs",
         "lastAttended": "Connecticut",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "24"
     },
     {
         "nbaId": "203957",
@@ -5057,7 +5309,8 @@
         "height": "6-5",
         "weight": "214 lbs",
         "lastAttended": "Australian Institute of Sport",
-        "country": "Australia"
+        "country": "Australia",
+        "jersey": "0"
     },
     {
         "nbaId": "1628392",
@@ -5079,7 +5332,8 @@
         "height": "7-0",
         "weight": "250 lbs",
         "lastAttended": "Zalgiris",
-        "country": "Germany"
+        "country": "Germany",
+        "jersey": "55"
     },
     {
         "nbaId": "1626220",
@@ -5101,7 +5355,8 @@
         "height": "6-6",
         "weight": "226 lbs",
         "lastAttended": "Baylor",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "00"
     },
     {
         "nbaId": "1631107",
@@ -5123,7 +5378,8 @@
         "height": "6-10",
         "weight": "205 lbs",
         "lastAttended": "Mega Basket",
-        "country": "Serbia"
+        "country": "Serbia",
+        "jersey": "5"
     },
     {
         "nbaId": "1630173",
@@ -5145,7 +5401,8 @@
         "height": "6-8",
         "weight": "243 lbs",
         "lastAttended": "Memphis",
-        "country": "Nigeria"
+        "country": "Nigeria",
+        "jersey": "5"
     },
     {
         "nbaId": "1628998",
@@ -5167,7 +5424,8 @@
         "height": "6-6",
         "weight": "205 lbs",
         "lastAttended": "Nevada",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "11"
     },
     {
         "nbaId": "1641729",
@@ -5189,7 +5447,8 @@
         "height": "6-5",
         "weight": "235 lbs",
         "lastAttended": "Ohio State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "8"
     },
     {
         "nbaId": "1641739",
@@ -5211,7 +5470,8 @@
         "height": "6-7",
         "weight": "226 lbs",
         "lastAttended": "Dayton",
-        "country": "Belgium"
+        "country": "Belgium",
+        "jersey": "33"
     },
     {
         "nbaId": "1626166",
@@ -5233,7 +5493,8 @@
         "height": "6-3",
         "weight": "183 lbs",
         "lastAttended": "Murray State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "22"
     },
     {
         "nbaId": "1631128",
@@ -5255,7 +5516,8 @@
         "height": "6-6",
         "weight": "220 lbs",
         "lastAttended": "Kansas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "1630194",
@@ -5277,7 +5539,8 @@
         "height": "6-9",
         "weight": "210 lbs",
         "lastAttended": "DePaul",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "44"
     },
     {
         "nbaId": "1641707",
@@ -5299,7 +5562,8 @@
         "height": "6-9",
         "weight": "215 lbs",
         "lastAttended": "Central Florida",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "1630702",
@@ -5321,7 +5585,8 @@
         "height": "6-3",
         "weight": "198 lbs",
         "lastAttended": "NBA G League Ignite",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "1"
     },
     {
         "nbaId": "1626168",
@@ -5343,7 +5608,8 @@
         "height": "6-9",
         "weight": "234 lbs",
         "lastAttended": "Kentucky",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "41"
     },
     {
         "nbaId": "1630548",
@@ -5365,7 +5631,8 @@
         "height": "6-5",
         "weight": "209 lbs",
         "lastAttended": "UCLA",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "33"
     },
     {
         "nbaId": "1630205",
@@ -5387,7 +5654,8 @@
         "height": "6-7",
         "weight": "230 lbs",
         "lastAttended": "Penn State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "24"
     },
     {
         "nbaId": "1630631",
@@ -5409,7 +5677,8 @@
         "height": "6-0",
         "weight": "179 lbs",
         "lastAttended": "Georgia Tech",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "15"
     },
     {
         "nbaId": "1630164",
@@ -5431,7 +5700,8 @@
         "height": "6-11",
         "weight": "240 lbs",
         "lastAttended": "Memphis",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "13"
     },
     {
         "nbaId": "1630230",
@@ -5453,7 +5723,8 @@
         "height": "6-6",
         "weight": "220 lbs",
         "lastAttended": "Xavier",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "13"
     },
     {
         "nbaId": "1629656",
@@ -5475,7 +5746,8 @@
         "height": "6-5",
         "weight": "210 lbs",
         "lastAttended": "Houston",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "203995",
@@ -5497,7 +5769,8 @@
         "height": "6-3",
         "weight": "188 lbs",
         "lastAttended": "Serbia",
-        "country": "Serbia"
+        "country": "Serbia",
+        "jersey": "22"
     },
     {
         "nbaId": "1629670",
@@ -5519,7 +5792,8 @@
         "height": "6-8",
         "weight": "225 lbs",
         "lastAttended": "Louisville",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "13"
     },
     {
         "nbaId": "1630598",
@@ -5541,7 +5815,8 @@
         "height": "6-5",
         "weight": "190 lbs",
         "lastAttended": "Maryland",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "21"
     },
     {
         "nbaId": "1626174",
@@ -5563,7 +5838,8 @@
         "height": "6-8",
         "weight": "214 lbs",
         "lastAttended": "UNLV",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "35"
     },
     {
         "nbaId": "1630538",
@@ -5585,7 +5861,8 @@
         "height": "6-2",
         "weight": "169 lbs",
         "lastAttended": "Virginia Commonwealth",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "203914",
@@ -5607,7 +5884,31 @@
         "height": "6-4",
         "weight": "210 lbs",
         "lastAttended": "Michigan State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "14"
+    },
+    {
+        "nbaId": "1641970",
+        "name": "Maozinha Pereira",
+        "fantasyPpg": 17.51,
+        "ppg": 6.9,
+        "apg": 0.3,
+        "rpg": 5.3,
+        "fgPct": 51.4,
+        "fg3Pct": 38.5,
+        "ftPct": 70.0,
+        "spg": 0.9,
+        "bpg": 0.6,
+        "tpg": 0.7,
+        "mpg": 17.4,
+        "age": 23,
+        "team": "MEM",
+        "position": "F",
+        "height": "6-8",
+        "weight": "177 lbs",
+        "lastAttended": "                                   ",
+        "country": "Brazil",
+        "jersey": ""
     },
     {
         "nbaId": "1630570",
@@ -5629,7 +5930,8 @@
         "height": "6-8",
         "weight": "237 lbs",
         "lastAttended": "Louisiana State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "9"
     },
     {
         "nbaId": "1641717",
@@ -5651,7 +5953,8 @@
         "height": "6-3",
         "weight": "195 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "22"
     },
     {
         "nbaId": "1641998",
@@ -5673,7 +5976,8 @@
         "height": "6-10",
         "weight": "260 lbs",
         "lastAttended": "Alabama-Birmingham",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "55"
     },
     {
         "nbaId": "1629057",
@@ -5695,7 +5999,8 @@
         "height": "6-9",
         "weight": "249 lbs",
         "lastAttended": "Texas A&M",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "35"
     },
     {
         "nbaId": "1630577",
@@ -5717,7 +6022,8 @@
         "height": "6-7",
         "weight": "217 lbs",
         "lastAttended": "St. John's",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "30"
     },
     {
         "nbaId": "1630549",
@@ -5739,7 +6045,8 @@
         "height": "6-9",
         "weight": "265 lbs",
         "lastAttended": "North Carolina",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "20"
     },
     {
         "nbaId": "1628371",
@@ -5761,7 +6068,8 @@
         "height": "6-10",
         "weight": "230 lbs",
         "lastAttended": "Florida State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "1"
     },
     {
         "nbaId": "1631212",
@@ -5783,7 +6091,8 @@
         "height": "6-7",
         "weight": "200 lbs",
         "lastAttended": "UCLA",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "8"
     },
     {
         "nbaId": "1629599",
@@ -5805,7 +6114,8 @@
         "height": "6-7",
         "weight": "210 lbs",
         "lastAttended": "Minnesota",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "7"
     },
     {
         "nbaId": "1628988",
@@ -5827,7 +6137,8 @@
         "height": "6-0",
         "weight": "185 lbs",
         "lastAttended": "UCLA",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "1631223",
@@ -5849,7 +6160,8 @@
         "height": "6-4",
         "weight": "255 lbs",
         "lastAttended": "Colorado State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "21"
     },
     {
         "nbaId": "201145",
@@ -5871,7 +6183,8 @@
         "height": "6-8",
         "weight": "235 lbs",
         "lastAttended": "Georgetown",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "32"
     },
     {
         "nbaId": "1630561",
@@ -5893,7 +6206,8 @@
         "height": "6-4",
         "weight": "204 lbs",
         "lastAttended": "Providence",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "28"
     },
     {
         "nbaId": "1630692",
@@ -5910,12 +6224,13 @@
         "tpg": 1.0,
         "mpg": 18.5,
         "age": 25,
-        "team": "MEM",
+        "team": "LAL",
         "position": "G",
         "height": "6-4",
         "weight": "200 lbs",
         "lastAttended": "St. Louis",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "202694",
@@ -5937,7 +6252,8 @@
         "height": "6-8",
         "weight": "218 lbs",
         "lastAttended": "Kansas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "24"
     },
     {
         "nbaId": "1628449",
@@ -5959,7 +6275,8 @@
         "height": "6-9",
         "weight": "200 lbs",
         "lastAttended": "Oregon",
-        "country": "Saint Lucia"
+        "country": "Saint Lucia",
+        "jersey": "25"
     },
     {
         "nbaId": "203937",
@@ -5981,7 +6298,8 @@
         "height": "6-9",
         "weight": "230 lbs",
         "lastAttended": "UCLA",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "1"
     },
     {
         "nbaId": "1630543",
@@ -6003,7 +6321,8 @@
         "height": "6-9",
         "weight": "205 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "22"
     },
     {
         "nbaId": "1630215",
@@ -6025,7 +6344,8 @@
         "height": "6-3",
         "weight": "193 lbs",
         "lastAttended": "Baylor",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "4"
     },
     {
         "nbaId": "1628981",
@@ -6047,7 +6367,8 @@
         "height": "6-9",
         "weight": "240 lbs",
         "lastAttended": "Maryland",
-        "country": "Angola"
+        "country": "Angola",
+        "jersey": "24"
     },
     {
         "nbaId": "1628464",
@@ -6069,7 +6390,8 @@
         "height": "6-8",
         "weight": "245 lbs",
         "lastAttended": "Brose Bamberg",
-        "country": "Germany"
+        "country": "Germany",
+        "jersey": "10"
     },
     {
         "nbaId": "203109",
@@ -6091,7 +6413,8 @@
         "height": "6-6",
         "weight": "235 lbs",
         "lastAttended": "Marquette",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "99"
     },
     {
         "nbaId": "1630553",
@@ -6113,7 +6436,8 @@
         "height": "6-5",
         "weight": "185 lbs",
         "lastAttended": "Tennessee",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "45"
     },
     {
         "nbaId": "201976",
@@ -6135,7 +6459,8 @@
         "height": "6-2",
         "weight": "180 lbs",
         "lastAttended": "Arkansas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "21"
     },
     {
         "nbaId": "1629312",
@@ -6157,7 +6482,8 @@
         "height": "6-5",
         "weight": "220 lbs",
         "lastAttended": "Wheeling Jesuit",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "24"
     },
     {
         "nbaId": "1630249",
@@ -6179,7 +6505,8 @@
         "height": "6-8",
         "weight": "195 lbs",
         "lastAttended": "Zaragoza",
-        "country": "Czech Republic"
+        "country": "Czech Republic",
+        "jersey": "27"
     },
     {
         "nbaId": "1627732",
@@ -6201,7 +6528,8 @@
         "height": "6-10",
         "weight": "240 lbs",
         "lastAttended": "Louisiana State",
-        "country": "Australia"
+        "country": "Australia",
+        "jersey": "10"
     },
     {
         "nbaId": "1631200",
@@ -6223,7 +6551,8 @@
         "height": "6-8",
         "weight": "210 lbs",
         "lastAttended": "Iowa",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "24"
     },
     {
         "nbaId": "1641787",
@@ -6245,7 +6574,8 @@
         "height": "6-7",
         "weight": "217 lbs",
         "lastAttended": "Princeton",
-        "country": "United Kingdom"
+        "country": "United Kingdom",
+        "jersey": "18"
     },
     {
         "nbaId": "1630551",
@@ -6267,7 +6597,8 @@
         "height": "6-6",
         "weight": "206 lbs",
         "lastAttended": "Pittsburgh",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "9"
     },
     {
         "nbaId": "1641733",
@@ -6289,7 +6620,8 @@
         "height": "6-2",
         "weight": "185 lbs",
         "lastAttended": "Arkansas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "8"
     },
     {
         "nbaId": "1630534",
@@ -6311,7 +6643,8 @@
         "height": "6-5",
         "weight": "215 lbs",
         "lastAttended": "Kansas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "30"
     },
     {
         "nbaId": "1630700",
@@ -6333,7 +6666,8 @@
         "height": "6-7",
         "weight": "199 lbs",
         "lastAttended": "NBA G League Ignite",
-        "country": "Australia"
+        "country": "Australia",
+        "jersey": "11"
     },
     {
         "nbaId": "1641730",
@@ -6355,7 +6689,8 @@
         "height": "6-9",
         "weight": "210 lbs",
         "lastAttended": "Alabama",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "21"
     },
     {
         "nbaId": "1626204",
@@ -6377,7 +6712,8 @@
         "height": "6-8",
         "weight": "245 lbs",
         "lastAttended": "Wyoming",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "22"
     },
     {
         "nbaId": "1628470",
@@ -6399,7 +6735,8 @@
         "height": "6-5",
         "weight": "221 lbs",
         "lastAttended": "South Carolina Upstate",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "13"
     },
     {
         "nbaId": "201568",
@@ -6421,7 +6758,8 @@
         "height": "6-10",
         "weight": "236 lbs",
         "lastAttended": "Olimpia Milano",
-        "country": "Italy"
+        "country": "Italy",
+        "jersey": "12"
     },
     {
         "nbaId": "1628418",
@@ -6443,7 +6781,8 @@
         "height": "6-10",
         "weight": "248 lbs",
         "lastAttended": "Indiana",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "31"
     },
     {
         "nbaId": "1626192",
@@ -6465,7 +6804,8 @@
         "height": "6-5",
         "weight": "209 lbs",
         "lastAttended": "Notre Dame",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "24"
     },
     {
         "nbaId": "1641854",
@@ -6487,7 +6827,8 @@
         "height": "6-1",
         "weight": "180 lbs",
         "lastAttended": "Wichita State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "9"
     },
     {
         "nbaId": "1629011",
@@ -6509,7 +6850,8 @@
         "height": "7-0",
         "weight": "240 lbs",
         "lastAttended": "Western Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "23"
     },
     {
         "nbaId": "1630201",
@@ -6531,7 +6873,8 @@
         "height": "6-1",
         "weight": "185 lbs",
         "lastAttended": "San Diego State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "18"
     },
     {
         "nbaId": "1629674",
@@ -6553,7 +6896,8 @@
         "height": "7-0",
         "weight": "248 lbs",
         "lastAttended": "Utah State",
-        "country": "Portugal"
+        "country": "Portugal",
+        "jersey": "88"
     },
     {
         "nbaId": "203926",
@@ -6575,7 +6919,8 @@
         "height": "6-6",
         "weight": "225 lbs",
         "lastAttended": "Creighton",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "20"
     },
     {
         "nbaId": "1627780",
@@ -6597,7 +6942,8 @@
         "height": "6-2",
         "weight": "195 lbs",
         "lastAttended": "Oregon State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "1629680",
@@ -6619,7 +6965,8 @@
         "height": "6-5",
         "weight": "201 lbs",
         "lastAttended": "Washington",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "4"
     },
     {
         "nbaId": "1631165",
@@ -6641,7 +6988,8 @@
         "height": "6-3",
         "weight": "175 lbs",
         "lastAttended": "Alabama",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "23"
     },
     {
         "nbaId": "1630346",
@@ -6663,7 +7011,8 @@
         "height": "6-6",
         "weight": "215 lbs",
         "lastAttended": "Tennessee-Chattanooga",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "37"
     },
     {
         "nbaId": "1629629",
@@ -6685,7 +7034,8 @@
         "height": "6-7",
         "weight": "217 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "1627739",
@@ -6707,7 +7057,8 @@
         "height": "6-3",
         "weight": "205 lbs",
         "lastAttended": "Providence",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "8"
     },
     {
         "nbaId": "1641741",
@@ -6729,7 +7080,8 @@
         "height": "6-6",
         "weight": "207 lbs",
         "lastAttended": "Arkansas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "14"
     },
     {
         "nbaId": "1629731",
@@ -6751,7 +7103,8 @@
         "height": "6-9",
         "weight": "228 lbs",
         "lastAttended": "Kansas State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "32"
     },
     {
         "nbaId": "201587",
@@ -6773,7 +7126,8 @@
         "height": "6-8",
         "weight": "230 lbs",
         "lastAttended": "Le Mans",
-        "country": "France"
+        "country": "France",
+        "jersey": "33"
     },
     {
         "nbaId": "203486",
@@ -6795,7 +7149,8 @@
         "height": "6-10",
         "weight": "254 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "44"
     },
     {
         "nbaId": "1628436",
@@ -6817,7 +7172,8 @@
         "height": "7-1",
         "weight": "250 lbs",
         "lastAttended": "Vanderbilt",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "40"
     },
     {
         "nbaId": "1630649",
@@ -6839,7 +7195,8 @@
         "height": "6-6",
         "weight": "210 lbs",
         "lastAttended": "Arkansas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "17"
     },
     {
         "nbaId": "1630558",
@@ -6861,7 +7218,8 @@
         "height": "6-0",
         "weight": "202 lbs",
         "lastAttended": "Baylor",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "15"
     },
     {
         "nbaId": "1630214",
@@ -6883,7 +7241,8 @@
         "height": "6-7",
         "weight": "245 lbs",
         "lastAttended": "Michigan State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "26"
     },
     {
         "nbaId": "1630527",
@@ -6905,7 +7264,8 @@
         "height": "6-6",
         "weight": "188 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "4"
     },
     {
         "nbaId": "1629626",
@@ -6927,7 +7287,8 @@
         "height": "7-3",
         "weight": "220 lbs",
         "lastAttended": "Oregon",
-        "country": "Sudan"
+        "country": "Sudan",
+        "jersey": "11"
     },
     {
         "nbaId": "1629020",
@@ -6949,7 +7310,8 @@
         "height": "6-8",
         "weight": "214 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "2"
     },
     {
         "nbaId": "203552",
@@ -6971,7 +7333,8 @@
         "height": "6-1",
         "weight": "185 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "30"
     },
     {
         "nbaId": "1631121",
@@ -6993,7 +7356,8 @@
         "height": "6-6",
         "weight": "175 lbs",
         "lastAttended": "Nebraska",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "7"
     },
     {
         "nbaId": "1629234",
@@ -7015,7 +7379,8 @@
         "height": "6-10",
         "weight": "245 lbs",
         "lastAttended": "Oregon State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "14"
     },
     {
         "nbaId": "1629048",
@@ -7037,7 +7402,8 @@
         "height": "6-10",
         "weight": "250 lbs",
         "lastAttended": "Mega Basket",
-        "country": "Georgia"
+        "country": "Georgia",
+        "jersey": "35"
     },
     {
         "nbaId": "1630592",
@@ -7059,7 +7425,8 @@
         "height": "6-6",
         "weight": "220 lbs",
         "lastAttended": "Kansas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "22"
     },
     {
         "nbaId": "1626158",
@@ -7081,7 +7448,8 @@
         "height": "6-9",
         "weight": "235 lbs",
         "lastAttended": "Bowling Green",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "22"
     },
     {
         "nbaId": "1628420",
@@ -7103,7 +7471,8 @@
         "height": "6-2",
         "weight": "183 lbs",
         "lastAttended": "Iowa State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "23"
     },
     {
         "nbaId": "1628975",
@@ -7125,7 +7494,8 @@
         "height": "6-1",
         "weight": "200 lbs",
         "lastAttended": "West Virginia",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "1628984",
@@ -7147,7 +7517,8 @@
         "height": "6-1",
         "weight": "195 lbs",
         "lastAttended": "Kansas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "4"
     },
     {
         "nbaId": "1629726",
@@ -7169,7 +7540,8 @@
         "height": "6-6",
         "weight": "215 lbs",
         "lastAttended": "Lipscomb",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "24"
     },
     {
         "nbaId": "1629111",
@@ -7191,7 +7563,8 @@
         "height": "6-11",
         "weight": "255 lbs",
         "lastAttended": "St. Mary's",
-        "country": "Australia"
+        "country": "Australia",
+        "jersey": "2"
     },
     {
         "nbaId": "1631197",
@@ -7213,7 +7586,8 @@
         "height": "6-5",
         "weight": "210 lbs",
         "lastAttended": "Seton Hall",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "8"
     },
     {
         "nbaId": "1641723",
@@ -7235,7 +7609,8 @@
         "height": "6-5",
         "weight": "195 lbs",
         "lastAttended": "Michigan",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "4"
     },
     {
         "nbaId": "1629026",
@@ -7257,7 +7632,8 @@
         "height": "6-6",
         "weight": "210 lbs",
         "lastAttended": "TCU",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "34"
     },
     {
         "nbaId": "1629006",
@@ -7279,7 +7655,8 @@
         "height": "6-4",
         "weight": "213 lbs",
         "lastAttended": "Georgia Tech",
-        "country": "Nigeria"
+        "country": "Nigeria",
+        "jersey": "2"
     },
     {
         "nbaId": "1641710",
@@ -7301,7 +7678,8 @@
         "height": "6-7",
         "weight": "200 lbs",
         "lastAttended": "Arkansas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "1631254",
@@ -7323,7 +7701,8 @@
         "height": "6-6",
         "weight": "275 lbs",
         "lastAttended": "Louisiana Tech",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "35"
     },
     {
         "nbaId": "1631124",
@@ -7345,7 +7724,8 @@
         "height": "6-6",
         "weight": "205 lbs",
         "lastAttended": "Gonzaga",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "3"
     },
     {
         "nbaId": "1626172",
@@ -7367,7 +7747,8 @@
         "height": "6-9",
         "weight": "222 lbs",
         "lastAttended": "UCLA",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "1631260",
@@ -7389,7 +7770,8 @@
         "height": "6-4",
         "weight": "190 lbs",
         "lastAttended": "Northern Iowa",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "20"
     },
     {
         "nbaId": "1629003",
@@ -7411,7 +7793,8 @@
         "height": "6-5",
         "weight": "205 lbs",
         "lastAttended": "Southern Methodist",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "13"
     },
     {
         "nbaId": "1626153",
@@ -7433,7 +7816,8 @@
         "height": "6-5",
         "weight": "185 lbs",
         "lastAttended": "Utah",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "4"
     },
     {
         "nbaId": "1628467",
@@ -7455,7 +7839,8 @@
         "height": "6-10",
         "weight": "240 lbs",
         "lastAttended": "Bayern Munich",
-        "country": "Germany"
+        "country": "Germany",
+        "jersey": "42"
     },
     {
         "nbaId": "1628964",
@@ -7477,7 +7862,8 @@
         "height": "7-0",
         "weight": "231 lbs",
         "lastAttended": "Texas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "4"
     },
     {
         "nbaId": "1631311",
@@ -7499,7 +7885,8 @@
         "height": "6-4",
         "weight": "208 lbs",
         "lastAttended": "Memphis",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "25"
     },
     {
         "nbaId": "1641767",
@@ -7521,7 +7908,8 @@
         "height": "6-6",
         "weight": "190 lbs",
         "lastAttended": "Belmont",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "26"
     },
     {
         "nbaId": "1631116",
@@ -7543,7 +7931,8 @@
         "height": "6-9",
         "weight": "220 lbs",
         "lastAttended": "Wisconsin-Milwaukee",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "7"
     },
     {
         "nbaId": "1630699",
@@ -7565,7 +7954,8 @@
         "height": "6-7",
         "weight": "199 lbs",
         "lastAttended": "NBA G League Ignite",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "3"
     },
     {
         "nbaId": "1631104",
@@ -7587,7 +7977,8 @@
         "height": "6-3",
         "weight": "185 lbs",
         "lastAttended": "Notre Dame",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "14"
     },
     {
         "nbaId": "1631230",
@@ -7609,7 +8000,8 @@
         "height": "6-9",
         "weight": "215 lbs",
         "lastAttended": "Overtime Elite",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "26"
     },
     {
         "nbaId": "204060",
@@ -7631,7 +8023,8 @@
         "height": "6-9",
         "weight": "220 lbs",
         "lastAttended": "Maccabi Tel Aviv",
-        "country": "Australia"
+        "country": "Australia",
+        "jersey": "7"
     },
     {
         "nbaId": "1630696",
@@ -7653,7 +8046,8 @@
         "height": "6-2",
         "weight": "203 lbs",
         "lastAttended": "Missouri",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "9"
     },
     {
         "nbaId": "1630288",
@@ -7675,7 +8069,8 @@
         "height": "6-3",
         "weight": "177 lbs",
         "lastAttended": "Rhode Island",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "11"
     },
     {
         "nbaId": "1629637",
@@ -7697,7 +8092,8 @@
         "height": "7-0",
         "weight": "220 lbs",
         "lastAttended": "Texas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "11"
     },
     {
         "nbaId": "1631216",
@@ -7719,7 +8115,8 @@
         "height": "6-8",
         "weight": "205 lbs",
         "lastAttended": "Michigan",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "2"
     },
     {
         "nbaId": "1629723",
@@ -7741,7 +8138,8 @@
         "height": "6-5",
         "weight": "210 lbs",
         "lastAttended": "Indiana-Purdue Fort Wayne",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "46"
     },
     {
         "nbaId": "1631108",
@@ -7763,7 +8161,8 @@
         "height": "6-5",
         "weight": "190 lbs",
         "lastAttended": "Michigan State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "12"
     },
     {
         "nbaId": "1630204",
@@ -7785,7 +8184,8 @@
         "height": "6-3",
         "weight": "190 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "19"
     },
     {
         "nbaId": "201152",
@@ -7807,7 +8207,8 @@
         "height": "6-8",
         "weight": "225 lbs",
         "lastAttended": "Georgia Tech",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "30"
     },
     {
         "nbaId": "1630572",
@@ -7829,7 +8230,8 @@
         "height": "6-9",
         "weight": "240 lbs",
         "lastAttended": "Seton Hall",
-        "country": "Georgia"
+        "country": "Georgia",
+        "jersey": "54"
     },
     {
         "nbaId": "1630219",
@@ -7851,7 +8253,8 @@
         "height": "6-3",
         "weight": "205 lbs",
         "lastAttended": "Louisiana State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "4"
     },
     {
         "nbaId": "1630256",
@@ -7873,7 +8276,8 @@
         "height": "6-4",
         "weight": "230 lbs",
         "lastAttended": "Ohio State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "8"
     },
     {
         "nbaId": "203200",
@@ -7895,7 +8299,8 @@
         "height": "6-6",
         "weight": "180 lbs",
         "lastAttended": "Washington",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "9"
     },
     {
         "nbaId": "1631172",
@@ -7917,7 +8322,8 @@
         "height": "6-9",
         "weight": "185 lbs",
         "lastAttended": "New Zealand Breakers",
-        "country": "France"
+        "country": "France",
+        "jersey": "13"
     },
     {
         "nbaId": "201580",
@@ -7939,7 +8345,8 @@
         "height": "7-0",
         "weight": "270 lbs",
         "lastAttended": "Nevada",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "00"
     },
     {
         "nbaId": "1641766",
@@ -7961,7 +8368,8 @@
         "height": "6-9",
         "weight": "245 lbs",
         "lastAttended": "Connecticut",
-        "country": "Mali"
+        "country": "Mali",
+        "jersey": "21"
     },
     {
         "nbaId": "1631119",
@@ -7983,7 +8391,8 @@
         "height": "6-8",
         "weight": "245 lbs",
         "lastAttended": "Auburn",
-        "country": "USA"
+        "country": "USA",
+        "jersey": ""
     },
     {
         "nbaId": "1631243",
@@ -8005,7 +8414,8 @@
         "height": "6-10",
         "weight": "210 lbs",
         "lastAttended": "Washington State",
-        "country": "Senegal"
+        "country": "Senegal",
+        "jersey": "18"
     },
     {
         "nbaId": "1641712",
@@ -8027,7 +8437,8 @@
         "height": "6-6",
         "weight": "185 lbs",
         "lastAttended": "New Zealand Breakers",
-        "country": "France"
+        "country": "France",
+        "jersey": "21"
     },
     {
         "nbaId": "201988",
@@ -8044,12 +8455,13 @@
         "tpg": 0.5,
         "mpg": 13.0,
         "age": 35,
-        "team": "MIA",
+        "team": "UTA",
         "position": "G",
         "height": "6-2",
         "weight": "180 lbs",
         "lastAttended": "St. Mary's",
-        "country": "Australia"
+        "country": "Australia",
+        "jersey": "8"
     },
     {
         "nbaId": "1630568",
@@ -8071,7 +8483,8 @@
         "height": "6-10",
         "weight": "243 lbs",
         "lastAttended": "Iowa",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "55"
     },
     {
         "nbaId": "1629004",
@@ -8093,7 +8506,8 @@
         "height": "6-7",
         "weight": "205 lbs",
         "lastAttended": "Kansas",
-        "country": "Ukraine"
+        "country": "Ukraine",
+        "jersey": "50"
     },
     {
         "nbaId": "201599",
@@ -8115,7 +8529,8 @@
         "height": "6-11",
         "weight": "265 lbs",
         "lastAttended": "Texas A&M",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "6"
     },
     {
         "nbaId": "1630537",
@@ -8137,7 +8552,8 @@
         "height": "6-5",
         "weight": "190 lbs",
         "lastAttended": "Oregon",
-        "country": "Dominican Republic"
+        "country": "Dominican Republic",
+        "jersey": "3"
     },
     {
         "nbaId": "1631262",
@@ -8159,7 +8575,8 @@
         "height": "6-6",
         "weight": "210 lbs",
         "lastAttended": "UCLA",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "14"
     },
     {
         "nbaId": "1630264",
@@ -8181,7 +8598,8 @@
         "height": "6-8",
         "weight": "230 lbs",
         "lastAttended": "Virginia",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "16"
     },
     {
         "nbaId": "1631321",
@@ -8203,7 +8621,8 @@
         "height": "6-6",
         "weight": "200 lbs",
         "lastAttended": "NBA G League Ignite",
-        "country": "France"
+        "country": "France",
+        "jersey": "25"
     },
     {
         "nbaId": "1630231",
@@ -8225,7 +8644,8 @@
         "height": "6-6",
         "weight": "215 lbs",
         "lastAttended": "IMG Academy (FL)",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "1"
     },
     {
         "nbaId": "1631288",
@@ -8247,7 +8667,8 @@
         "height": "6-6",
         "weight": "191 lbs",
         "lastAttended": "Oakland",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "8"
     },
     {
         "nbaId": "203933",
@@ -8269,7 +8690,8 @@
         "height": "6-8",
         "weight": "220 lbs",
         "lastAttended": "North Carolina State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "24"
     },
     {
         "nbaId": "1628966",
@@ -8291,7 +8713,8 @@
         "height": "6-8",
         "weight": "229 lbs",
         "lastAttended": "Ohio State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "13"
     },
     {
         "nbaId": "1641809",
@@ -8313,7 +8736,8 @@
         "height": "6-9",
         "weight": "205 lbs",
         "lastAttended": "Southern California",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "13"
     },
     {
         "nbaId": "1629052",
@@ -8335,7 +8759,8 @@
         "height": "6-7",
         "weight": "210 lbs",
         "lastAttended": "Syracuse",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "12"
     },
     {
         "nbaId": "1641716",
@@ -8357,7 +8782,8 @@
         "height": "6-7",
         "weight": "235 lbs",
         "lastAttended": "Houston",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "1631221",
@@ -8379,7 +8805,8 @@
         "height": "6-1",
         "weight": "195 lbs",
         "lastAttended": "Villanova",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "21"
     },
     {
         "nbaId": "1630322",
@@ -8401,7 +8828,8 @@
         "height": "6-6",
         "weight": "210 lbs",
         "lastAttended": "Oklahoma State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "43"
     },
     {
         "nbaId": "1630611",
@@ -8423,7 +8851,8 @@
         "height": "6-6",
         "weight": "185 lbs",
         "lastAttended": "Minas",
-        "country": "Brazil"
+        "country": "Brazil",
+        "jersey": "15"
     },
     {
         "nbaId": "1629162",
@@ -8445,7 +8874,8 @@
         "height": "6-0",
         "weight": "185 lbs",
         "lastAttended": "Southern California",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "6"
     },
     {
         "nbaId": "1641931",
@@ -8467,7 +8897,8 @@
         "height": "6-6",
         "weight": "215 lbs",
         "lastAttended": "Bursaspor",
-        "country": "Turkey"
+        "country": "Turkey",
+        "jersey": "17"
     },
     {
         "nbaId": "1629139",
@@ -8489,7 +8920,8 @@
         "height": "6-9",
         "weight": "215 lbs",
         "lastAttended": "George Washington",
-        "country": "Japan"
+        "country": "Japan",
+        "jersey": "18"
     },
     {
         "nbaId": "1629650",
@@ -8511,7 +8943,8 @@
         "height": "7-2",
         "weight": "258 lbs",
         "lastAttended": "UCLA",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "10"
     },
     {
         "nbaId": "1631157",
@@ -8533,7 +8966,8 @@
         "height": "6-3",
         "weight": "180 lbs",
         "lastAttended": "Toledo",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "13"
     },
     {
         "nbaId": "1629667",
@@ -8555,7 +8989,8 @@
         "height": "6-9",
         "weight": "190 lbs",
         "lastAttended": "San Diego State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "2"
     },
     {
         "nbaId": "1630531",
@@ -8577,7 +9012,8 @@
         "height": "6-4",
         "weight": "202 lbs",
         "lastAttended": "Tennessee",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "44"
     },
     {
         "nbaId": "1629646",
@@ -8599,7 +9035,8 @@
         "height": "6-10",
         "weight": "230 lbs",
         "lastAttended": "Western Kentucky",
-        "country": "Nigeria"
+        "country": "Nigeria",
+        "jersey": "28"
     },
     {
         "nbaId": "1630695",
@@ -8621,7 +9058,8 @@
         "height": "6-9",
         "weight": "248 lbs",
         "lastAttended": "Wisconsin",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "25"
     },
     {
         "nbaId": "203939",
@@ -8643,7 +9081,8 @@
         "height": "6-10",
         "weight": "240 lbs",
         "lastAttended": "Stanford",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "7"
     },
     {
         "nbaId": "202684",
@@ -8665,7 +9104,8 @@
         "height": "6-9",
         "weight": "254 lbs",
         "lastAttended": "Texas-Austin",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "13"
     },
     {
         "nbaId": "202066",
@@ -8687,7 +9127,8 @@
         "height": "6-5",
         "weight": "195 lbs",
         "lastAttended": "Louisiana State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "17"
     },
     {
         "nbaId": "1631131",
@@ -8709,7 +9150,8 @@
         "height": "6-8",
         "weight": "255 lbs",
         "lastAttended": "Kentucky",
-        "country": "DRC"
+        "country": "DRC",
+        "jersey": "44"
     },
     {
         "nbaId": "1630639",
@@ -8731,7 +9173,8 @@
         "height": "6-6",
         "weight": "179 lbs",
         "lastAttended": "South Carolina",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "9"
     },
     {
         "nbaId": "1626246",
@@ -8753,7 +9196,8 @@
         "height": "7-4",
         "weight": "290 lbs",
         "lastAttended": "Crvena zvezda",
-        "country": "Serbia"
+        "country": "Serbia",
+        "jersey": "51"
     },
     {
         "nbaId": "1630192",
@@ -8775,7 +9219,8 @@
         "height": "6-9",
         "weight": "240 lbs",
         "lastAttended": "Arizona",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "22"
     },
     {
         "nbaId": "1630314",
@@ -8797,7 +9242,8 @@
         "height": "6-1",
         "weight": "190 lbs",
         "lastAttended": "Arizona",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "00"
     },
     {
         "nbaId": "1629216",
@@ -8819,7 +9265,8 @@
         "height": "6-2",
         "weight": "200 lbs",
         "lastAttended": "California-Santa Barbara",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "7"
     },
     {
         "nbaId": "202083",
@@ -8841,7 +9288,8 @@
         "height": "6-5",
         "weight": "220 lbs",
         "lastAttended": "Marquette",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "32"
     },
     {
         "nbaId": "1631207",
@@ -8863,7 +9311,8 @@
         "height": "6-7",
         "weight": "195 lbs",
         "lastAttended": "Arizona",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "25"
     },
     {
         "nbaId": "1631098",
@@ -8885,7 +9334,8 @@
         "height": "6-4",
         "weight": "195 lbs",
         "lastAttended": "Wisconsin",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "1"
     },
     {
         "nbaId": "1641765",
@@ -8907,7 +9357,8 @@
         "height": "6-7",
         "weight": "230 lbs",
         "lastAttended": "Marquette",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "8"
     },
     {
         "nbaId": "1630240",
@@ -8929,7 +9380,8 @@
         "height": "6-2",
         "weight": "183 lbs",
         "lastAttended": "Vanderbilt",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "38"
     },
     {
         "nbaId": "1630526",
@@ -8951,7 +9403,8 @@
         "height": "6-8",
         "weight": "240 lbs",
         "lastAttended": "Villanova",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "50"
     },
     {
         "nbaId": "1631466",
@@ -8973,7 +9426,8 @@
         "height": "6-5",
         "weight": "205 lbs",
         "lastAttended": "Buffalo",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "19"
     },
     {
         "nbaId": "1630243",
@@ -8995,7 +9449,8 @@
         "height": "6-5",
         "weight": "190 lbs",
         "lastAttended": "New Mexico State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "12"
     },
     {
         "nbaId": "1630618",
@@ -9017,7 +9472,8 @@
         "height": "6-3",
         "weight": "200 lbs",
         "lastAttended": "Marquette",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "3"
     },
     {
         "nbaId": "1630929",
@@ -9039,7 +9495,8 @@
         "height": "6-9",
         "weight": "220 lbs",
         "lastAttended": "Victoria Libertas",
-        "country": "Estonia"
+        "country": "Estonia",
+        "jersey": "77"
     },
     {
         "nbaId": "1631115",
@@ -9061,7 +9518,8 @@
         "height": "6-10",
         "weight": "235 lbs",
         "lastAttended": "Fresno State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "25"
     },
     {
         "nbaId": "1627745",
@@ -9083,7 +9541,8 @@
         "height": "6-10",
         "weight": "245 lbs",
         "lastAttended": "Vanderbilt",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "30"
     },
     {
         "nbaId": "1641734",
@@ -9105,7 +9564,8 @@
         "height": "6-8",
         "weight": "170 lbs",
         "lastAttended": "Eastern Michigan",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "21"
     },
     {
         "nbaId": "1642013",
@@ -9127,7 +9587,8 @@
         "height": "6-11",
         "weight": "250 lbs",
         "lastAttended": "Louisville",
-        "country": "USA"
+        "country": "USA",
+        "jersey": ""
     },
     {
         "nbaId": "1631217",
@@ -9149,7 +9610,8 @@
         "height": "6-9",
         "weight": "210 lbs",
         "lastAttended": "Michigan",
-        "country": "France"
+        "country": "France",
+        "jersey": "25"
     },
     {
         "nbaId": "202693",
@@ -9171,7 +9633,8 @@
         "height": "6-9",
         "weight": "245 lbs",
         "lastAttended": "Kansas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "88"
     },
     {
         "nbaId": "1629685",
@@ -9193,7 +9656,8 @@
         "height": "6-7",
         "weight": "196 lbs",
         "lastAttended": "Belmont",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "20"
     },
     {
         "nbaId": "203458",
@@ -9215,7 +9679,8 @@
         "height": "7-0",
         "weight": "250 lbs",
         "lastAttended": "Maryland",
-        "country": "Ukraine"
+        "country": "Ukraine",
+        "jersey": "25"
     },
     {
         "nbaId": "1630535",
@@ -9237,7 +9702,8 @@
         "height": "6-7",
         "weight": "206 lbs",
         "lastAttended": "Texas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "36"
     },
     {
         "nbaId": "1628385",
@@ -9259,7 +9725,8 @@
         "height": "6-10",
         "weight": "240 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "20"
     },
     {
         "nbaId": "202709",
@@ -9281,7 +9748,8 @@
         "height": "6-2",
         "weight": "200 lbs",
         "lastAttended": "Texas",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "1"
     },
     {
         "nbaId": "1631100",
@@ -9303,7 +9771,8 @@
         "height": "6-6",
         "weight": "220 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "14"
     },
     {
         "nbaId": "1631306",
@@ -9325,7 +9794,8 @@
         "height": "6-8",
         "weight": "220 lbs",
         "lastAttended": "Syracuse",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "21"
     },
     {
         "nbaId": "1631220",
@@ -9347,7 +9817,8 @@
         "height": "6-5",
         "weight": "180 lbs",
         "lastAttended": "North Carolina State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "1631123",
@@ -9369,7 +9840,8 @@
         "height": "6-2",
         "weight": "180 lbs",
         "lastAttended": "San Francisco",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "21"
     },
     {
         "nbaId": "1630600",
@@ -9391,7 +9863,8 @@
         "height": "6-8",
         "weight": "238 lbs",
         "lastAttended": "Southern California",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "15"
     },
     {
         "nbaId": "1629643",
@@ -9413,7 +9886,8 @@
         "height": "6-7",
         "weight": "229 lbs",
         "lastAttended": "Auburn",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "3"
     },
     {
         "nbaId": "1641763",
@@ -9435,7 +9909,8 @@
         "height": "6-8",
         "weight": "198 lbs",
         "lastAttended": "Tennessee",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "15"
     },
     {
         "nbaId": "1630207",
@@ -9457,7 +9932,8 @@
         "height": "6-5",
         "weight": "210 lbs",
         "lastAttended": "Houston",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "14"
     },
     {
         "nbaId": "1641748",
@@ -9479,7 +9955,8 @@
         "height": "6-6",
         "weight": "209 lbs",
         "lastAttended": "Connecticut",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "44"
     },
     {
         "nbaId": "1628962",
@@ -9501,7 +9978,8 @@
         "height": "6-11",
         "weight": "270 lbs",
         "lastAttended": "Kansas",
-        "country": "Nigeria"
+        "country": "Nigeria",
+        "jersey": "27"
     },
     {
         "nbaId": "1630235",
@@ -9523,7 +10001,8 @@
         "height": "6-4",
         "weight": "210 lbs",
         "lastAttended": "Florida State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "2"
     },
     {
         "nbaId": "203493",
@@ -9545,7 +10024,8 @@
         "height": "6-6",
         "weight": "205 lbs",
         "lastAttended": "North Carolina",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "25"
     },
     {
         "nbaId": "1641732",
@@ -9567,7 +10047,8 @@
         "height": "6-6",
         "weight": "207 lbs",
         "lastAttended": "Xavier",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "20"
     },
     {
         "nbaId": "1630688",
@@ -9589,7 +10070,8 @@
         "height": "6-5",
         "weight": "250 lbs",
         "lastAttended": "Baylor",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "12"
     },
     {
         "nbaId": "1630579",
@@ -9611,7 +10093,8 @@
         "height": "6-10",
         "weight": "250 lbs",
         "lastAttended": "Texas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "20"
     },
     {
         "nbaId": "1641738",
@@ -9633,7 +10116,8 @@
         "height": "6-7",
         "weight": "250 lbs",
         "lastAttended": "Missouri",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "21"
     },
     {
         "nbaId": "1631209",
@@ -9655,7 +10139,8 @@
         "height": "6-3",
         "weight": "185 lbs",
         "lastAttended": "Miami",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "21"
     },
     {
         "nbaId": "1631120",
@@ -9677,7 +10162,8 @@
         "height": "6-1",
         "weight": "195 lbs",
         "lastAttended": "Alabama",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "20"
     },
     {
         "nbaId": "1630259",
@@ -9699,7 +10185,8 @@
         "height": "6-1",
         "weight": "175 lbs",
         "lastAttended": "St. Mary's College",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "31"
     },
     {
         "nbaId": "1629660",
@@ -9721,7 +10208,8 @@
         "height": "6-5",
         "weight": "195 lbs",
         "lastAttended": "Virginia",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "2"
     },
     {
         "nbaId": "1630227",
@@ -9743,7 +10231,8 @@
         "height": "6-3",
         "weight": "226 lbs",
         "lastAttended": "NBA G League Ignite",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "12"
     },
     {
         "nbaId": "1631303",
@@ -9765,7 +10254,8 @@
         "height": "6-5",
         "weight": "205 lbs",
         "lastAttended": "Providence",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "10"
     },
     {
         "nbaId": "203469",
@@ -9787,7 +10277,8 @@
         "height": "6-11",
         "weight": "240 lbs",
         "lastAttended": "Indiana",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "40"
     },
     {
         "nbaId": "1630556",
@@ -9809,7 +10300,8 @@
         "height": "6-7",
         "weight": "203 lbs",
         "lastAttended": "Pepperdine",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "17"
     },
     {
         "nbaId": "1630554",
@@ -9831,7 +10323,8 @@
         "height": "6-3",
         "weight": "181 lbs",
         "lastAttended": "Ohio",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "10"
     },
     {
         "nbaId": "1631159",
@@ -9853,7 +10346,8 @@
         "height": "6-10",
         "weight": "210 lbs",
         "lastAttended": "NBA G League Ignite",
-        "country": "Canada"
+        "country": "Canada",
+        "jersey": "33"
     },
     {
         "nbaId": "201959",
@@ -9875,7 +10369,8 @@
         "height": "6-9",
         "weight": "232 lbs",
         "lastAttended": "Southern California",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "67"
     },
     {
         "nbaId": "200782",
@@ -9897,7 +10392,8 @@
         "height": "6-5",
         "weight": "245 lbs",
         "lastAttended": "Texas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "17"
     },
     {
         "nbaId": "1641775",
@@ -9919,7 +10415,8 @@
         "height": "6-6",
         "weight": "205 lbs",
         "lastAttended": "Arkansas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "27"
     },
     {
         "nbaId": "1641757",
@@ -9941,7 +10438,8 @@
         "height": "6-5",
         "weight": "194 lbs",
         "lastAttended": "Miami",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "11"
     },
     {
         "nbaId": "1641720",
@@ -9963,7 +10461,8 @@
         "height": "6-5",
         "weight": "215 lbs",
         "lastAttended": "Indiana",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "1641724",
@@ -9985,7 +10484,8 @@
         "height": "6-6",
         "weight": "215 lbs",
         "lastAttended": "Michigan",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "13"
     },
     {
         "nbaId": "1631169",
@@ -10007,7 +10507,8 @@
         "height": "6-8",
         "weight": "205 lbs",
         "lastAttended": "Memphis",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "8"
     },
     {
         "nbaId": "1629618",
@@ -10029,7 +10530,8 @@
         "height": "6-2",
         "weight": "202 lbs",
         "lastAttended": "Penn State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "24"
     },
     {
         "nbaId": "1641754",
@@ -10051,7 +10553,8 @@
         "height": "6-4",
         "weight": "220 lbs",
         "lastAttended": "Penn State",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "3"
     },
     {
         "nbaId": "1630641",
@@ -10073,7 +10576,8 @@
         "height": "7-0",
         "weight": "240 lbs",
         "lastAttended": "FC Barcelona",
-        "country": "Senegal"
+        "country": "Senegal",
+        "jersey": "41"
     },
     {
         "nbaId": "1641745",
@@ -10095,7 +10599,8 @@
         "height": "6-3",
         "weight": "180 lbs",
         "lastAttended": "Baylor",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "14"
     },
     {
         "nbaId": "1630658",
@@ -10117,7 +10622,8 @@
         "height": "6-10",
         "weight": "250 lbs",
         "lastAttended": "Florida",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "14"
     },
     {
         "nbaId": "1641727",
@@ -10139,7 +10645,8 @@
         "height": "6-6",
         "weight": "220 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "0"
     },
     {
         "nbaId": "1631210",
@@ -10161,7 +10668,8 @@
         "height": "6-8",
         "weight": "200 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "00"
     },
     {
         "nbaId": "1631257",
@@ -10183,7 +10691,8 @@
         "height": "6-6",
         "weight": "230 lbs",
         "lastAttended": "Villanova",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "00"
     },
     {
         "nbaId": "1629010",
@@ -10205,7 +10714,8 @@
         "height": "6-5",
         "weight": "190 lbs",
         "lastAttended": "Boston College",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "18"
     },
     {
         "nbaId": "1631112",
@@ -10227,7 +10737,8 @@
         "height": "6-7",
         "weight": "205 lbs",
         "lastAttended": "Baylor",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "10"
     },
     {
         "nbaId": "1630222",
@@ -10249,7 +10760,8 @@
         "height": "6-4",
         "weight": "200 lbs",
         "lastAttended": "Arkansas",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "8"
     },
     {
         "nbaId": "202738",
@@ -10271,7 +10783,8 @@
         "height": "5-9",
         "weight": "185 lbs",
         "lastAttended": "Washington",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "4"
     },
     {
         "nbaId": "1631102",
@@ -10293,7 +10806,8 @@
         "height": "6-3",
         "weight": "195 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "23"
     },
     {
         "nbaId": "1641753",
@@ -10315,7 +10829,31 @@
         "height": "6-6",
         "weight": "220 lbs",
         "lastAttended": "Kentucky",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "7"
+    },
+    {
+        "nbaId": "1641749",
+        "name": "Keyontae Johnson",
+        "fantasyPpg": 3.02,
+        "ppg": 1.2,
+        "apg": 0.4,
+        "rpg": 1.1,
+        "fgPct": 31.3,
+        "fg3Pct": 33.3,
+        "ftPct": 0.0,
+        "spg": 0.1,
+        "bpg": 0.0,
+        "tpg": 0.4,
+        "mpg": 7.4,
+        "age": 24,
+        "team": "CHA",
+        "position": "F",
+        "height": "6-4",
+        "weight": "230 lbs",
+        "lastAttended": "Kansas State",
+        "country": "USA",
+        "jersey": "18"
     },
     {
         "nbaId": "1630643",
@@ -10337,7 +10875,8 @@
         "height": "7-1",
         "weight": "240 lbs",
         "lastAttended": "Virginia",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "30"
     },
     {
         "nbaId": "1641816",
@@ -10359,7 +10898,8 @@
         "height": "6-8",
         "weight": "215 lbs",
         "lastAttended": "Clemson",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "5"
     },
     {
         "nbaId": "1630296",
@@ -10381,7 +10921,8 @@
         "height": "6-8",
         "weight": "225 lbs",
         "lastAttended": "Virginia",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "11"
     },
     {
         "nbaId": "203648",
@@ -10403,7 +10944,8 @@
         "height": "6-7",
         "weight": "219 lbs",
         "lastAttended": "Panathinaikos",
-        "country": "Greece"
+        "country": "Greece",
+        "jersey": "43"
     },
     {
         "nbaId": "201949",
@@ -10425,7 +10967,8 @@
         "height": "6-7",
         "weight": "240 lbs",
         "lastAttended": "Wake Forest",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "16"
     },
     {
         "nbaId": "1629610",
@@ -10447,7 +10990,8 @@
         "height": "6-5",
         "weight": "222 lbs",
         "lastAttended": "Tulsa",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "8"
     },
     {
         "nbaId": "1629718",
@@ -10469,7 +11013,8 @@
         "height": "6-6",
         "weight": "199 lbs",
         "lastAttended": "St. Joseph's (PA)",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "4"
     },
     {
         "nbaId": "1631111",
@@ -10491,7 +11036,8 @@
         "height": "6-5",
         "weight": "215 lbs",
         "lastAttended": "Duke",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "14"
     },
     {
         "nbaId": "1631214",
@@ -10513,7 +11059,8 @@
         "height": "6-4",
         "weight": "210 lbs",
         "lastAttended": "Wake Forest",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "15"
     },
     {
         "nbaId": "1641771",
@@ -10535,7 +11082,8 @@
         "height": "6-7",
         "weight": "215 lbs",
         "lastAttended": "Furman",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "18"
     },
     {
         "nbaId": "1630311",
@@ -10557,7 +11105,8 @@
         "height": "6-3",
         "weight": "205 lbs",
         "lastAttended": "Northwestern",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "61"
     },
     {
         "nbaId": "1631245",
@@ -10579,7 +11128,31 @@
         "height": "6-5",
         "weight": "173 lbs",
         "lastAttended": "Texas A&M",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "29"
+    },
+    {
+        "nbaId": "1630604",
+        "name": "E.J. Liddell",
+        "fantasyPpg": 2.87,
+        "ppg": 0.5,
+        "apg": 0.1,
+        "rpg": 0.6,
+        "fgPct": 16.7,
+        "fg3Pct": 0.0,
+        "ftPct": 100.0,
+        "spg": 0.3,
+        "bpg": 0.3,
+        "tpg": 0.3,
+        "mpg": 2.9,
+        "age": 23,
+        "team": "CHI",
+        "position": "F",
+        "height": "6-6",
+        "weight": "240 lbs",
+        "lastAttended": "Ohio State",
+        "country": "USA",
+        "jersey": "32"
     },
     {
         "nbaId": "1630586",
@@ -10601,7 +11174,8 @@
         "height": "6-8",
         "weight": "229 lbs",
         "lastAttended": "Real Madrid",
-        "country": "Spain"
+        "country": "Spain",
+        "jersey": "12"
     },
     {
         "nbaId": "1631250",
@@ -10623,7 +11197,8 @@
         "height": "6-10",
         "weight": "225 lbs",
         "lastAttended": "North Carolina",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "8"
     },
     {
         "nbaId": "1641721",
@@ -10645,7 +11220,8 @@
         "height": "6-7",
         "weight": "195 lbs",
         "lastAttended": "Pepperdine",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "21"
     },
     {
         "nbaId": "1631199",
@@ -10667,6 +11243,7 @@
         "height": "6-4",
         "weight": "233 lbs",
         "lastAttended": "Rutgers",
-        "country": "USA"
+        "country": "USA",
+        "jersey": "8"
     }
 ]

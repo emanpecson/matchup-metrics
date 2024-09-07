@@ -18,7 +18,7 @@ import os
 
 SCRIPT_PATH = f'{os.getcwd()}/scripts/scrape_player_cards'
 
-WEBSCRAPE = True
+WEBSCRAPE = False
 POST_DATA = True
 SERVER_PORT = 3000
 SERVER_URL = f'http://localhost:{SERVER_PORT}/api/player'
@@ -40,8 +40,8 @@ if WEBSCRAPE:
 	# driver.maximize_window() # for now, safari doesn't support headless? try server or chrome
 	# wait = WebDriverWait(driver, timeout)
 
-	raw_stats, name_keys1 = parse_nba_table(driver, STAT_LINK, STAT_TABLE_XPATH, STAT_DROPDOWN_XPATH, True)
-	raw_bios, name_keys2 = parse_nba_table(driver, BIO_LINK, BIO_TABLE_XPATH, BIO_DROPDOWN_XPATH, False)
+	raw_stats, name_keys1 = parse_nba_table(driver, STAT_LINK, STAT_TABLE_XPATH, STAT_DROPDOWN_XPATH, True, True)
+	raw_bios, name_keys2 = parse_nba_table(driver, BIO_LINK, BIO_TABLE_XPATH, BIO_DROPDOWN_XPATH, False, False)
 
 	driver.quit()
 	print('Closing driver... Please wait')
