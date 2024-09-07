@@ -4,6 +4,7 @@ import SkeletonPlayerTable from '../skeleton/SkeletonPlayerTable';
 import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
 import teams from '@/data/teams';
 import InlineImage from '../InlineImage';
+import { TriangleAlertIcon } from 'lucide-react';
 
 export const playerTableColumns = ['player', 'fantasy', 'pts', 'ast', 'reb', 'stl', 'blk', 'to', 'team', 'pos'];
 export interface PlayerTableProps {
@@ -21,7 +22,7 @@ export default function PlayerTable(props: PlayerTableProps) {
     <div className="border rounded-xl p-6 min-w-[60rem]">
       {props.isLoading ? (
         <SkeletonPlayerTable rowCount={loadCount <= props.rowCount ? loadCount : props.rowCount} />
-      ) : (
+      ) : props.playersCount > 0 ? (
         <table className="w-full">
           <thead>
             <tr className="sm:text-sm text-xs uppercase text-neutral-500">
@@ -39,7 +40,7 @@ export default function PlayerTable(props: PlayerTableProps) {
               })}
             </tr>
           </thead>
-          <tbody className="divide-y">
+          <tbody className="divide-y relative">
             {props.players.map((player: Player, i: number) => (
               <tr key={i} className="sm:text-base text-sm text-neutral-600 dark:text-neutral-200">
                 <td className="px-4 py-1.5 text-left font-medium">
@@ -64,6 +65,13 @@ export default function PlayerTable(props: PlayerTableProps) {
             ))}
           </tbody>
         </table>
+      ) : (
+        <div className="flex justify-center w-full">
+          <div className="flex space-x-1.5 place-items-center text-neutral-600 dark:text-neutral-400">
+            <TriangleAlertIcon size={20} />
+            <p className="font-semibold">No data</p>
+          </div>
+        </div>
       )}
     </div>
   );
