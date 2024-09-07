@@ -19,10 +19,12 @@ export default function SkeletonPlayerTable({ rowCount }: { rowCount: number }) 
       <tbody className="divide-y">
         {new Array(rowCount).fill(0).map((_, i: number) => (
           <tr key={i} className="sm:text-base text-sm text-neutral-600 dark:text-neutral-200">
-            <td className="h-[39px]">
-              <div className={cn('flex space-x-1 place-items-center justify-center')}>
+            <td className="h-[39px] pl-4">
+              <div className={cn('flex space-x-1 place-items-center justify-start')}>
                 <Skeleton className="rounded-full w-6 h-6" />
-                <Skeleton className="w-[12rem] mx-2 h-4" />
+                <Skeleton
+                  className={cn(i % 3 === 0 ? 'w-[12rem]' : i % 2 === 0 ? 'w-[10rem]' : 'w-[8rem]', 'mx-2 h-4')}
+                />
               </div>
             </td>
             <td className="h-[39px]">
