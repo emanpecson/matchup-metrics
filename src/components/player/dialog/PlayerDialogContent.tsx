@@ -25,6 +25,7 @@ export default function PlayerDialogContent(props: PlayerDialogContentProps) {
             <Stat label="Steals (SPG)" stat={props.player.spg} />
             <Stat label="Blocks (BPG)" stat={props.player.bpg} />
             <Stat label="Turnovers (TPG)" stat={props.player.tpg} />
+            <Stat label="Minutes (MPG)" stat={props.player.mpg} />
             <Stat label="Field Goal Pct. (FG%)" stat={props.player.mpg} />
             <Stat label="Three Point Pct. (3P%)" stat={props.player.mpg} />
             <Stat label="Free Throw Pct. (FT%)" stat={props.player.mpg} />
