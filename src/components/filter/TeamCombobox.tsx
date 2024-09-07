@@ -10,6 +10,8 @@ import { useState } from 'react';
 import teams, { TeamInfo } from '@/data/teams';
 import CloseButton from '../button/CloseButton';
 import { UserGroupIcon } from '@heroicons/react/24/outline';
+import { getTeamLogoUrl } from '@/utils/getPhotoUrl';
+import Image from 'next/image';
 
 export function TeamCombobox({ onValueChange }: { onValueChange: (teamAbbreviation: string) => void }) {
   const [open, setOpen] = useState(false);
@@ -20,6 +22,16 @@ export function TeamCombobox({ onValueChange }: { onValueChange: (teamAbbreviati
     setSelectedTeam(null);
     onValueChange('');
   };
+
+  const TeamLogo = (team: TeamInfo) => (
+    <Image
+      src={getTeamLogoUrl(team.nbaId)}
+      alt={team.abbreviation}
+      width={24}
+      height={24}
+      className="w-[26px] h-[26px] object-cover"
+    />
+  );
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -41,7 +53,10 @@ export function TeamCombobox({ onValueChange }: { onValueChange: (teamAbbreviati
           <Button variant="outline" role="combobox" aria-expanded={open} className="min-w-[18rem] text-neutral-500">
             <div className="flex w-full place-items-center pl-7">
               {selectedTeam ? (
-                <p className="dark:text-white text-neutral-800">{`${selectedTeam.info.city} ${selectedTeam.info.name} (${selectedTeam.info.abbreviation})`}</p>
+                <div className="flex space-x-1.5 place-items-center">
+                  {TeamLogo(selectedTeam.info)}
+                  <p className="dark:text-white text-neutral-800">{`${selectedTeam.info.city} ${selectedTeam.info.name} (${selectedTeam.info.abbreviation})`}</p>
+                </div>
               ) : (
                 <p>Filter Team</p>
               )}
@@ -50,7 +65,7 @@ export function TeamCombobox({ onValueChange }: { onValueChange: (teamAbbreviati
           </Button>
         </PopoverTrigger>
       </div>
-      <PopoverContent className="w-[18rem] p-0">
+      <PopoverContent className="w-[19rem] p-0">
         <Command>
           <CommandInput placeholder="Filter team..." />
           <CommandList>
@@ -59,6 +74,7 @@ export function TeamCombobox({ onValueChange }: { onValueChange: (teamAbbreviati
               {Object.entries(teams).map((entry, i) => {
                 const thisTeam = entry[1];
                 const displayName = `${thisTeam.city} ${thisTeam.name} (${thisTeam.abbreviation})`;
+                const isSelected = selectedTeam?.info.abbreviation === thisTeam.abbreviation;
 
                 return (
                   <CommandItem
@@ -76,13 +92,19 @@ export function TeamCombobox({ onValueChange }: { onValueChange: (teamAbbreviati
                     }}
                     className="cursor-pointer"
                   >
-                    <Check
-                      className={cn(
-                        'mr-2 h-4 w-4',
-                        selectedTeam?.info.abbreviation === thisTeam.abbreviation ? 'opacity-100' : 'opacity-0'
-                      )}
-                    />
-                    <p>{displayName}</p>
+                    <Check className={cn('mr-2 h-4 w-4', isSelected ? 'opacity-100' : 'opacity-0')} />
+                    <div className="flex space-x-1.5 place-items-center">
+                      {TeamLogo(thisTeam)}
+                      <p
+                        className={cn(
+                          isSelected
+                            ? 'font-semibold dark:text-white text-neutral-800'
+                            : 'dark:text-neutral-300 text-neutral-600'
+                        )}
+                      >
+                        {displayName}
+                      </p>
+                    </div>
                   </CommandItem>
                 );
               })}
