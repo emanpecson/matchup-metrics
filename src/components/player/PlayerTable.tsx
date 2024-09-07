@@ -8,11 +8,11 @@ import { TriangleAlertIcon } from 'lucide-react';
 
 export const playerTableColumns = ['player', 'fantasy', 'pts', 'ast', 'reb', 'stl', 'blk', 'to', 'team', 'pos'];
 export interface PlayerTableProps {
-  players: Player[];
+  players: Player[]; // arr of players currently displayed
   isLoading: boolean;
-  rowCount: number;
   page: number;
-  playersCount: number;
+  rowCount: number; // count of players currently displayed
+  playersCount: number; // total players
 }
 
 export default function PlayerTable(props: PlayerTableProps) {
