@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Header />
-          <div className="px-8 max-w-[70rem] mx-auto">{children}</div>
+          <div className="px-8 max-w-[70rem] mx-auto pt-28">{children}</div>
         </ThemeProvider>
       </body>
     </html>
