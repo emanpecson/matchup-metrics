@@ -1,4 +1,6 @@
-export const reformatPosition = (pos: string) => {
+import positions from '@/data/positions';
+
+export const reformatPosition = (pos: keyof typeof positions | '-') => {
   let fullPosition = '';
   for (const ch of pos) {
     if (ch === 'G') fullPosition += 'Guard';
@@ -12,4 +14,9 @@ export const reformatPosition = (pos: string) => {
 export const reformatHeight = (h: string) => {
   const [feet, inches] = h.split('-');
   return `${feet}'${inches}"`;
+};
+
+export const shortName = (name: string) => {
+  const [firstName, lastName] = name.split(' ');
+  return `${firstName[0]}. ${lastName}`;
 };
