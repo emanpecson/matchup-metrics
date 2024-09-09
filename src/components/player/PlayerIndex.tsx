@@ -50,7 +50,7 @@ export default function PlayerIndex(props: PlayerIndexProps) {
 
   return (
     <div>
-      <div className="pt-28 flex place-items-center flex-col w-full">
+      <div className="pt-28 flex place-items-center flex-col w-full space-y-1">
         <SearchBar onValueChange={setFilterName} value={filterName} />
         <div className="flex space-x-2 justify-between place-items-center w-full">
           <Paginator
