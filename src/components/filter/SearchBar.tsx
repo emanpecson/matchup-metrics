@@ -31,7 +31,7 @@ export default function SearchBar(props: SearchBarProps) {
   };
 
   return (
-    <div className="relative w-full max-w-[18rem]">
+    <div className="relative w-full">
       <div>
         {tempValue ? (
           <CloseButton onClick={handleReset} className="absolute left-[7px] top-1.5" />

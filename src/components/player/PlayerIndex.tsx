@@ -11,8 +11,11 @@ import { useLoadData } from '@/hooks/useLoadData';
 import { Player } from '@prisma/client';
 import { useEffect, useState } from 'react';
 
-export default function Temp() {
-  const rowCount = 12;
+interface PlayerIndexProps {
+  rowCount: number;
+}
+
+export default function PlayerIndex(props: PlayerIndexProps) {
   const [players, setPlayers] = useState<Player[]>([]);
   const [playersCount, setPlayersCount] = useState(0);
   const [isLoadingPlayers, setIsLoadingPlayers] = useState(false);
@@ -34,7 +37,7 @@ export default function Temp() {
   };
 
   useLoadData({
-    endpoint: `/api/player?name=${filterName}&team=${filterTeam}&position=${filterPosition}&skip=${page * rowCount}&take=${rowCount}`,
+    endpoint: `/api/player?name=${filterName}&team=${filterTeam}&position=${filterPosition}&skip=${page * props.rowCount}&take=${props.rowCount}`,
     onDataLoaded: ({ players, playersCount }) => {
       setPlayers(players);
       setPlayersCount(playersCount);
@@ -48,15 +51,15 @@ export default function Temp() {
   return (
     <div>
       <div className="pt-28 flex place-items-center flex-col w-full">
-        <Paginator
-          onPrev={() => setPage((prev) => prev - 1)}
-          onNext={() => setPage((prev) => prev + 1)}
-          rowCount={rowCount}
-          page={page}
-          totalCount={playersCount}
-        />
-        <div className="flex space-x-2 justify-center w-5/6">
-          <SearchBar onValueChange={setFilterName} value={filterName} />
+        <SearchBar onValueChange={setFilterName} value={filterName} />
+        <div className="flex space-x-2 justify-between place-items-center w-full">
+          <Paginator
+            onPrev={() => setPage((prev) => prev - 1)}
+            onNext={() => setPage((prev) => prev + 1)}
+            rowCount={props.rowCount}
+            page={page}
+            totalCount={playersCount}
+          />
           <TeamCombobox onValueChange={setFilterTeam} value={filterTeam} />
           <PositionSelect onValueChange={setFilterPosition} value={filterPosition} />
           <ResetFilters disabled={!filterTeam && !filterName && !filterPosition} onClick={handleFilterReset} />
@@ -64,7 +67,7 @@ export default function Temp() {
         <PlayerTable
           players={players}
           isLoading={isLoadingPlayers}
-          rowCount={rowCount}
+          rowCount={props.rowCount}
           page={page}
           playersCount={playersCount}
           onRowClick={handleRowClick}

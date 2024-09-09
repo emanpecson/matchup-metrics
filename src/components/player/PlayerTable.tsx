@@ -22,7 +22,7 @@ export default function PlayerTable(props: PlayerTableProps) {
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
 
   return (
-    <div className="border rounded-xl p-6 min-w-[60rem]">
+    <div className="border rounded-xl p-6 min-w-[60rem] w-full">
       {props.isLoading ? (
         <SkeletonPlayerTable rowCount={loadCount <= props.rowCount ? loadCount : props.rowCount} />
       ) : props.playersCount > 0 ? (
