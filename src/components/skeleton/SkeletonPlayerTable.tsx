@@ -11,7 +11,9 @@ export default function SkeletonPlayerTable({ rowCount }: { rowCount: number }) 
             const isFirst = i === 0;
             const isLast = i === playerTableColumns.length - 1;
             return (
-              <th className={cn(isFirst ? 'text-left' : isLast ? 'text-right' : 'text-center', 'px-4 pb-2')}>{col}</th>
+              <th key={i} className={cn(isFirst ? 'text-left' : isLast ? 'text-right' : 'text-center', 'px-4 pb-2')}>
+                {col}
+              </th>
             );
           })}
         </tr>
