@@ -9,6 +9,7 @@ import PlayerDialogContent from './PlayerDialogContent';
 interface PlayerDialogProps {
   player: Player | null;
   setPlayer: Dispatch<SetStateAction<Player | null>>;
+  FooterElement?: () => JSX.Element;
 }
 
 export default function PlayerDialog(props: PlayerDialogProps) {
@@ -38,7 +39,11 @@ export default function PlayerDialog(props: PlayerDialogProps) {
 
             <PlayerDialogContent player={props.player} headerHeight={headerHeight} footerHeight={footerHeight} />
 
-            <PlayerDialogFooter footerHeight={footerHeight} primaryColor={primaryColor} />
+            <PlayerDialogFooter
+              footerHeight={footerHeight}
+              primaryColor={primaryColor}
+              FooterElement={props.FooterElement}
+            />
           </div>
         ) : (
           <div>Error: No data</div>

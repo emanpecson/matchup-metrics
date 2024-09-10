@@ -5,19 +5,35 @@ import { Player } from '@prisma/client';
 import Image from 'next/image';
 import teams from '@/data/teams';
 import { cn } from '@/lib/utils';
+import { useState } from 'react';
+import { BanIcon, MinusIcon, PlusIcon } from 'lucide-react';
 
 interface RosterItemProps {
   player: Player | null;
   position: keyof typeof positions;
+  onAdd?: () => void;
+  onRemove: () => void;
+  invalidPosition?: boolean;
 }
 
 export default function RosterItem(props: RosterItemProps) {
+  const [isHovering, setIsHovering] = useState(false);
+
   const p = props.player;
   const teamLogoUrl = p ? getTeamLogoUrl(teams[p.team as keyof typeof teams].nbaId) : '';
 
   return (
     <div className="space-y-1 w-fit">
-      <div className="relative">
+      <button
+        className="relative"
+        disabled={props.invalidPosition && !props.onAdd}
+        onMouseOver={() => setIsHovering(true)}
+        onMouseLeave={() => setIsHovering(false)}
+        onClick={() => {
+          if (!!props.onAdd) props.onAdd();
+          else if (props.player) props.onRemove();
+        }}
+      >
         <div className="rounded-2xl bg-neutral-200 dark:bg-neutral-800 h-28 w-32">
           <Image
             src={getPlayerPhotoUrl(p?.nbaId ?? '')}
@@ -41,7 +57,24 @@ export default function RosterItem(props: RosterItemProps) {
             />
           </div>
         )}
-      </div>
+
+        {(props.player || props.onAdd) && !props.invalidPosition && (
+          <div
+            className={cn(
+              isHovering ? 'opacity-100' : 'opacity-0',
+              'rounded-full bg-neutral-100 dark:bg-neutral-900 p-3 absolute top-8 left-10 duration-150 transition-opacity shadow-lg'
+            )}
+          >
+            {props.onAdd ? <PlusIcon className="text-neutral-500" /> : <MinusIcon className="text-neutral-500" />}
+          </div>
+        )}
+
+        {props.invalidPosition && (
+          <div className="absolute top-5 left-7 p-1 bg-red-400 opacity-70 rounded-full">
+            <BanIcon size={64} className="text-red-800" />
+          </div>
+        )}
+      </button>
 
       <div className="flex flex-col place-items-center text-center">
         <p className="font-medium text-sm text-neutral-500 dark:text-neutral-400">{reformatPosition(props.position)}</p>
@@ -51,7 +84,9 @@ export default function RosterItem(props: RosterItemProps) {
               <p className="font-semibold text-sm">{shortName(p.name)}</p>
             </div>
           ) : (
-            <p className="text-neutral-500 dark:text-neutral-400 font-medium text-sm">Add player</p>
+            <p className="text-neutral-500 dark:text-neutral-400 font-medium text-sm">
+              {props.invalidPosition ? 'Invalid position' : 'Add player'}
+            </p>
           )}
         </div>
       </div>

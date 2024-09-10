@@ -1,32 +1,64 @@
 'use client';
 
 import PlayerIndex from '@/components/player/PlayerIndex';
+import RosterDialog from '@/components/roster/RosterDialog';
 import RosterItem from '@/components/roster/RosterItem';
-import { useLoadData } from '@/hooks/useLoadData';
+import { Button } from '@/components/ui/button';
+import { DialogClose } from '@/components/ui/dialog';
+import { RosterBuilder, RosterSlot } from '@/types/RosterBuilder';
 import { Player } from '@prisma/client';
 import { useState } from 'react';
 
 export default function RosterBuilderPage() {
-  const [player, setPlayer] = useState<Player | null>(null);
-  const [player2, setPlayer2] = useState<Player | null>(null);
-  useLoadData({
-    endpoint: '/api/player?name=russell&take=10',
-    onDataLoaded: (data) => {
-      setPlayer(data.players[0]);
-      setPlayer2(data.players[1]);
-    },
-  });
+  const [rosterInstance, setRosterInstance] = useState(new RosterBuilder());
+  const [playerToAdd, setPlayerToAdd] = useState<Player | null>(null);
+  const [rosterDialogIsOpen, setRosterDialogIsOpen] = useState(false);
+
+  const addToRoster = () => {
+    return (
+      <DialogClose>
+        <Button
+          variant={'outline'}
+          onClick={() => {
+            setRosterDialogIsOpen(true);
+            setPlayerToAdd;
+          }}
+        >
+          <p>Add to roster</p>
+        </Button>
+      </DialogClose>
+    );
+  };
+
+  const handleRosterSlotRemove = (slotId: number) => {
+    setRosterInstance(() => {
+      return rosterInstance.updateBySlotId(slotId, null);
+    });
+  };
 
   return (
-    <div className="space-y-8">
-      <div className="flex space-x-6 justify-center">
-        <RosterItem player={player} position="G" />
-        <RosterItem player={player2} position="G" />
-        <RosterItem player={null} position="F" />
-        <RosterItem player={null} position="F" />
-        <RosterItem player={null} position="C" />
+    <>
+      <div className="space-y-8">
+        <div className="flex space-x-6 justify-center">
+          {rosterInstance.getRoster().map((slot: RosterSlot) => (
+            <RosterItem
+              key={slot.id}
+              player={slot.player}
+              position={slot.rosterPosition}
+              onRemove={() => handleRosterSlotRemove(slot.id)}
+            />
+          ))}
+        </div>
+        <PlayerIndex rowCount={6} FooterElement={addToRoster} setFocusPlayer={setPlayerToAdd} />
       </div>
-      <PlayerIndex rowCount={6} />
-    </div>
+
+      <RosterDialog
+        roster={rosterInstance}
+        setRoster={setRosterInstance}
+        isOpen={rosterDialogIsOpen}
+        setIsOpen={setRosterDialogIsOpen}
+        playerToAdd={playerToAdd as Player}
+      />
+    </>
   );
 }

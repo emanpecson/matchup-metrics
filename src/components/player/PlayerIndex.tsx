@@ -9,10 +9,12 @@ import PlayerDialog from '@/components/player/dialog/PlayerDialog';
 import PlayerTable from '@/components/player/PlayerTable';
 import { useLoadData } from '@/hooks/useLoadData';
 import { Player } from '@prisma/client';
-import { useEffect, useState } from 'react';
+import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 
 interface PlayerIndexProps {
   rowCount: number;
+  FooterElement?: () => JSX.Element;
+  setFocusPlayer?: Dispatch<SetStateAction<Player | null>>;
 }
 
 export default function PlayerIndex(props: PlayerIndexProps) {
@@ -34,6 +36,7 @@ export default function PlayerIndex(props: PlayerIndexProps) {
 
   const handleRowClick = (player: Player) => {
     setFocusPlayer(player);
+    if (!!props.setFocusPlayer) props.setFocusPlayer(player);
   };
 
   useLoadData({
@@ -74,7 +77,7 @@ export default function PlayerIndex(props: PlayerIndexProps) {
         />
       </div>
 
-      <PlayerDialog player={focusPlayer} setPlayer={setFocusPlayer} />
+      <PlayerDialog player={focusPlayer} setPlayer={setFocusPlayer} FooterElement={props.FooterElement} />
     </div>
   );
 }
