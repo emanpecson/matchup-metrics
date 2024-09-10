@@ -2,6 +2,7 @@ import { Player } from '@prisma/client';
 import MainStat from './MainStat';
 import Stat from './Stat';
 import { reformatHeight, reformatPosition } from '@/utils/reformatString';
+import positions from '@/data/positions';
 
 export interface PlayerDialogContentProps {
   headerHeight: string;
@@ -34,7 +35,7 @@ export default function PlayerDialogContent(props: PlayerDialogContentProps) {
         {/* bio info */}
         <div className="pt-4 space-y-4">
           <div className="flex space-x-3">
-            <MainStat label={'Position'} stat={reformatPosition(props.player.position)} />
+            <MainStat label={'Position'} stat={reformatPosition(props.player.position as keyof typeof positions)} />
             <MainStat label={'Height'} stat={reformatHeight(props.player.height)} />
             <MainStat label={'Weight'} stat={props.player.weight} />
           </div>
