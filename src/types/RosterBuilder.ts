@@ -8,11 +8,11 @@ export interface RosterSlot {
 }
 
 export class RosterBuilder {
-  public guard1: RosterSlot;
-  public guard2: RosterSlot;
-  public forward1: RosterSlot;
-  public forward2: RosterSlot;
-  public center: RosterSlot;
+  private guard1: RosterSlot;
+  private guard2: RosterSlot;
+  private forward1: RosterSlot;
+  private forward2: RosterSlot;
+  private center: RosterSlot;
 
   constructor(roster?: RosterBuilder) {
     this.guard1 = roster?.guard1 ?? { player: null, rosterPosition: 'G', id: 1 };
