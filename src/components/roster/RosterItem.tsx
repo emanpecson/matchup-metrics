@@ -61,8 +61,8 @@ export default function RosterItem(props: RosterItemProps) {
         {(props.player || props.onAdd) && !props.invalidPosition && (
           <div
             className={cn(
-              isHovering ? 'opacity-100' : 'opacity-0',
-              'rounded-full bg-neutral-100 dark:bg-neutral-900 p-3 absolute top-8 left-10 duration-150 transition-opacity shadow-lg'
+              isHovering ? 'opacity-100 scale-125' : 'opacity-0 scale-100',
+              'rounded-full bg-neutral-100 dark:bg-neutral-900 p-3 absolute top-8 left-10 duration-200 transition-all shadow-lg'
             )}
           >
             {props.onAdd ? <PlusIcon className="text-neutral-500" /> : <MinusIcon className="text-neutral-500" />}
