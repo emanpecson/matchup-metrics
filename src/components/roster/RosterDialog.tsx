@@ -16,14 +16,15 @@ interface RosterDialogProps {
 
 export default function RosterDialog(props: RosterDialogProps) {
   const handleAdd = (slotId: number) => {
-    props.setRoster(() => {
-      return props.roster.updateBySlotId(slotId, props.playerToAdd as Player);
-    });
+    const tempRoster = new RosterBuilder(props.roster);
+    tempRoster.updateBySlotId(slotId, props.playerToAdd);
+    props.setRoster(tempRoster);
     props.setIsOpen(false);
   };
 
   const handleRemove = (slotId: number) => {
-    const tempRoster = props.roster.updateBySlotId(slotId, null);
+    const tempRoster = new RosterBuilder(props.roster);
+    tempRoster.updateBySlotId(slotId, null);
     props.setRoster(tempRoster);
   };
 

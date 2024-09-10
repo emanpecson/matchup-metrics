@@ -31,9 +31,9 @@ export default function RosterBuilderPage() {
   };
 
   const handleRosterSlotRemove = (slotId: number) => {
-    setRosterInstance(() => {
-      return rosterInstance.updateBySlotId(slotId, null);
-    });
+    const tempRoster = new RosterBuilder(rosterInstance);
+    tempRoster.updateBySlotId(slotId, null);
+    setRosterInstance(tempRoster);
   };
 
   return (

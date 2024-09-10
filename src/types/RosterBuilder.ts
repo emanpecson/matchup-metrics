@@ -14,12 +14,12 @@ export class RosterBuilder {
   public forward2: RosterSlot;
   public center: RosterSlot;
 
-  constructor() {
-    this.guard1 = { player: null, rosterPosition: 'G', id: 1 };
-    this.guard2 = { player: null, rosterPosition: 'G', id: 2 };
-    this.forward1 = { player: null, rosterPosition: 'F', id: 3 };
-    this.forward2 = { player: null, rosterPosition: 'F', id: 4 };
-    this.center = { player: null, rosterPosition: 'C', id: 5 };
+  constructor(roster?: RosterBuilder) {
+    this.guard1 = roster?.guard1 ?? { player: null, rosterPosition: 'G', id: 1 };
+    this.guard2 = roster?.guard2 ?? { player: null, rosterPosition: 'G', id: 2 };
+    this.forward1 = roster?.forward1 ?? { player: null, rosterPosition: 'F', id: 3 };
+    this.forward2 = roster?.forward2 ?? { player: null, rosterPosition: 'F', id: 4 };
+    this.center = roster?.center ?? { player: null, rosterPosition: 'C', id: 5 };
   }
 
   public getRoster = () => {

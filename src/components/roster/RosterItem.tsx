@@ -26,7 +26,7 @@ export default function RosterItem(props: RosterItemProps) {
     <div className="space-y-1 w-fit">
       <button
         className="relative"
-        disabled={props.invalidPosition && !props.onAdd}
+        disabled={!props.onAdd && props.invalidPosition}
         onMouseOver={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
         onClick={() => {
