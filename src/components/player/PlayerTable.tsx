@@ -24,7 +24,7 @@ export default function PlayerTable(props: PlayerTableProps) {
   return (
     <div className="border rounded-xl p-6 min-w-[60rem] w-full">
       {props.isLoading ? (
-        <SkeletonPlayerTable rowCount={loadCount <= props.rowCount ? loadCount : props.rowCount} />
+        <SkeletonPlayerTable rowCount={loadCount <= props.rowCount && loadCount != 0 ? loadCount : props.rowCount} />
       ) : props.playersCount > 0 ? (
         <table className="w-full">
           <thead>
