@@ -49,7 +49,7 @@ export default function RosterBuilderPage() {
             />
           ))}
         </div>
-        <PlayerIndex rowCount={6} FooterElement={addToRoster} setFocusPlayer={setPlayerToAdd} />
+        <PlayerIndex rowCount={8} FooterElement={addToRoster} setFocusPlayer={setPlayerToAdd} />
       </div>
 
       <RosterDialog
