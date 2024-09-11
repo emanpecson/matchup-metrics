@@ -1,7 +1,7 @@
 import { Player } from '@prisma/client';
-import { Dialog, DialogContent } from '../ui/dialog';
-import RosterItem from './RosterItem';
-import { RosterBuilder, RosterSlot } from '@/types/RosterBuilder';
+import { Dialog, DialogContent, DialogTitle } from '../ui/dialog';
+import RosterSlot, { RosterSlotState } from './slot/RosterSlot';
+import { RosterBuilder, RosterBuilderSlot } from '@/types/RosterBuilder';
 import { Dispatch, SetStateAction, useState } from 'react';
 import Image from 'next/image';
 import { getPlayerPhotoUrl } from '@/utils/getPhotoUrl';
@@ -15,17 +15,12 @@ interface RosterDialogProps {
 }
 
 export default function RosterDialog(props: RosterDialogProps) {
-  const handleAdd = (slotId: number) => {
+  const handleOverwrite = (slotId: number) => {
+    console.log('slotid:', slotId);
     const tempRoster = new RosterBuilder(props.roster);
     tempRoster.updateBySlotId(slotId, props.playerToAdd);
     props.setRoster(tempRoster);
     props.setIsOpen(false);
-  };
-
-  const handleRemove = (slotId: number) => {
-    const tempRoster = new RosterBuilder(props.roster);
-    tempRoster.updateBySlotId(slotId, null);
-    props.setRoster(tempRoster);
   };
 
   return (
@@ -43,17 +38,19 @@ export default function RosterDialog(props: RosterDialogProps) {
             />
 
             <div className="flex space-x-6">
-              {props.roster.getRoster().map((slot: RosterSlot) => {
+              {props.roster.getRoster().map((slot: RosterBuilderSlot) => {
                 const isValidPosition = props.playerToAdd && props.playerToAdd.position.includes(slot.rosterPosition);
+                let state = RosterSlotState.ADD;
+                if (!isValidPosition) state = RosterSlotState.DISABLE;
+                else if (slot.player) state = RosterSlotState.SWAP;
 
                 return (
-                  <RosterItem
+                  <RosterSlot
                     key={slot.id}
                     player={slot.player}
                     position={slot.rosterPosition}
-                    onAdd={!slot.player && isValidPosition ? () => handleAdd(slot.id) : undefined}
-                    onRemove={() => handleRemove(slot.id)}
-                    invalidPosition={!isValidPosition}
+                    state={state}
+                    onClick={state === RosterSlotState.DISABLE ? undefined : () => handleOverwrite(slot.id)}
                   />
                 );
               })}

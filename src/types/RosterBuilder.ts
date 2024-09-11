@@ -1,18 +1,18 @@
 import positions from '@/data/positions';
 import { Player } from '@prisma/client';
 
-export interface RosterSlot {
+export interface RosterBuilderSlot {
   player: Player | null;
   rosterPosition: keyof typeof positions;
   id: number;
 }
 
 export class RosterBuilder {
-  private guard1: RosterSlot;
-  private guard2: RosterSlot;
-  private forward1: RosterSlot;
-  private forward2: RosterSlot;
-  private center: RosterSlot;
+  private guard1: RosterBuilderSlot;
+  private guard2: RosterBuilderSlot;
+  private forward1: RosterBuilderSlot;
+  private forward2: RosterBuilderSlot;
+  private center: RosterBuilderSlot;
 
   constructor(roster?: RosterBuilder) {
     this.guard1 = roster?.guard1 ?? { player: null, rosterPosition: 'G', id: 1 };

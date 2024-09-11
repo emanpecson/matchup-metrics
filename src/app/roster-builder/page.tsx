@@ -2,10 +2,10 @@
 
 import PlayerIndex from '@/components/player/PlayerIndex';
 import RosterDialog from '@/components/roster/RosterDialog';
-import RosterItem from '@/components/roster/RosterItem';
+import RosterSlot, { RosterSlotState } from '@/components/roster/slot/RosterSlot';
 import { Button } from '@/components/ui/button';
 import { DialogClose } from '@/components/ui/dialog';
-import { RosterBuilder, RosterSlot } from '@/types/RosterBuilder';
+import { RosterBuilder, RosterBuilderSlot } from '@/types/RosterBuilder';
 import { Player } from '@prisma/client';
 import { useState } from 'react';
 
@@ -40,12 +40,13 @@ export default function RosterBuilderPage() {
     <>
       <div className="space-y-8">
         <div className="flex space-x-6 justify-center">
-          {rosterInstance.getRoster().map((slot: RosterSlot) => (
-            <RosterItem
+          {rosterInstance.getRoster().map((slot: RosterBuilderSlot) => (
+            <RosterSlot
               key={slot.id}
               player={slot.player}
               position={slot.rosterPosition}
-              onRemove={() => handleRosterSlotRemove(slot.id)}
+              state={slot.player ? RosterSlotState.REMOVE : RosterSlotState.STATIC}
+              onClick={slot.player ? () => handleRosterSlotRemove(slot.id) : undefined}
             />
           ))}
         </div>

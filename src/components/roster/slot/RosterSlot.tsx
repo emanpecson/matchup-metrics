@@ -6,17 +6,24 @@ import Image from 'next/image';
 import teams from '@/data/teams';
 import { cn } from '@/lib/utils';
 import { useState } from 'react';
-import { BanIcon, MinusIcon, PlusIcon } from 'lucide-react';
+import ActionPrompt from './ActionPrompt';
 
-interface RosterItemProps {
+interface RosterSlotProps {
   player: Player | null;
   position: keyof typeof positions;
-  onAdd?: () => void;
-  onRemove: () => void;
-  invalidPosition?: boolean;
+  onClick?: () => void;
+  state: RosterSlotState;
 }
 
-export default function RosterItem(props: RosterItemProps) {
+export enum RosterSlotState {
+  STATIC,
+  ADD,
+  REMOVE,
+  SWAP,
+  DISABLE,
+}
+
+export default function RosterSlot(props: RosterSlotProps) {
   const [isHovering, setIsHovering] = useState(false);
 
   const p = props.player;
@@ -26,14 +33,14 @@ export default function RosterItem(props: RosterItemProps) {
     <div className="space-y-1 w-fit">
       <button
         className="relative"
-        disabled={!props.onAdd && props.invalidPosition}
+        disabled={props.state === RosterSlotState.DISABLE || props.state === RosterSlotState.STATIC}
         onMouseOver={() => setIsHovering(true)}
         onMouseLeave={() => setIsHovering(false)}
         onClick={() => {
-          if (!!props.onAdd) props.onAdd();
-          else if (props.player) props.onRemove();
+          if (!!props.onClick) props.onClick();
         }}
       >
+        {/* player headshot */}
         <div className="rounded-2xl bg-neutral-200 dark:bg-neutral-800 h-28 w-32">
           <Image
             src={getPlayerPhotoUrl(p?.nbaId ?? '')}
@@ -45,6 +52,7 @@ export default function RosterItem(props: RosterItemProps) {
           />
         </div>
 
+        {/* team logo */}
         {p && (
           <div className="absolute rounded-full bg-neutral-300 dark:bg-neutral-700 -bottom-3 -left-3 bg-opacity-70 backdrop-blur-lg">
             <Image
@@ -58,24 +66,10 @@ export default function RosterItem(props: RosterItemProps) {
           </div>
         )}
 
-        {(props.player || props.onAdd) && !props.invalidPosition && (
-          <div
-            className={cn(
-              isHovering ? 'opacity-100 scale-125' : 'opacity-0 scale-100',
-              'rounded-full bg-neutral-100 dark:bg-neutral-900 p-3 absolute top-8 left-10 duration-200 transition-all shadow-lg'
-            )}
-          >
-            {props.onAdd ? <PlusIcon className="text-neutral-500" /> : <MinusIcon className="text-neutral-500" />}
-          </div>
-        )}
-
-        {props.invalidPosition && (
-          <div className="absolute top-5 left-7 p-1 bg-red-400 opacity-70 rounded-full">
-            <BanIcon size={64} className="text-red-800" />
-          </div>
-        )}
+        <ActionPrompt state={props.state} isHovering={isHovering} />
       </button>
 
+      {/* bottom text */}
       <div className="flex flex-col place-items-center text-center">
         <p className="font-medium text-sm text-neutral-500 dark:text-neutral-400">{reformatPosition(props.position)}</p>
         <div>
@@ -85,7 +79,7 @@ export default function RosterItem(props: RosterItemProps) {
             </div>
           ) : (
             <p className="text-neutral-500 dark:text-neutral-400 font-medium text-sm">
-              {props.invalidPosition ? 'Invalid position' : 'Add player'}
+              {props.state === RosterSlotState.DISABLE ? 'Invalid position' : 'Add player'}
             </p>
           )}
         </div>
