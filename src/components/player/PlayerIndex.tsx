@@ -56,6 +56,9 @@ export default function PlayerIndex(props: PlayerIndexProps) {
       <div className="flex place-items-center flex-col w-full space-y-1">
         <SearchBar onValueChange={setFilterName} value={filterName} />
         <div className="flex space-x-2 justify-between place-items-center w-full">
+          <TeamCombobox onValueChange={setFilterTeam} value={filterTeam} />
+          <PositionSelect onValueChange={setFilterPosition} value={filterPosition} />
+          <ResetFilters disabled={!filterTeam && !filterName && !filterPosition} onClick={handleFilterReset} />
           <Paginator
             onPrev={() => setPage((prev) => prev - 1)}
             onNext={() => setPage((prev) => prev + 1)}
@@ -63,9 +66,6 @@ export default function PlayerIndex(props: PlayerIndexProps) {
             page={page}
             totalCount={playersCount}
           />
-          <TeamCombobox onValueChange={setFilterTeam} value={filterTeam} />
-          <PositionSelect onValueChange={setFilterPosition} value={filterPosition} />
-          <ResetFilters disabled={!filterTeam && !filterName && !filterPosition} onClick={handleFilterReset} />
         </div>
         <PlayerTable
           players={players}
