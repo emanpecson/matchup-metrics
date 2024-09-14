@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from '@/components/ui/command';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { useState } from 'react';
-import teams, { TeamInfo } from '@/data/teams';
+import teams from '@/data/teams';
 import CloseButton from '../button/CloseButton';
 import { UserGroupIcon } from '@heroicons/react/24/outline';
 import { getTeamLogoUrl } from '@/utils/getPhotoUrl';
@@ -48,7 +48,7 @@ export function TeamCombobox({
           <Button variant="outline" role="combobox" aria-expanded={open} className="min-w-[18rem] text-neutral-500">
             <div className="flex w-full place-items-center pl-7">
               {value ? (
-                <InlineImage src={getTeamLogoUrl(teams[value as keyof typeof teams].nbaId)} alt={value}>
+                <InlineImage src={getTeamLogoUrl(value)} alt={value}>
                   <p className="dark:text-white text-neutral-800">{`${teams[value as keyof typeof teams].city} ${teams[value as keyof typeof teams].name} (${value})`}</p>
                 </InlineImage>
               ) : (
@@ -82,7 +82,7 @@ export function TeamCombobox({
                     className="cursor-pointer"
                   >
                     <Check className={cn('mr-2 h-4 w-4', isSelected ? 'opacity-100' : 'opacity-0')} />
-                    <InlineImage src={getTeamLogoUrl(thisTeam.nbaId)} alt={thisTeam.abbreviation}>
+                    <InlineImage src={getTeamLogoUrl(thisTeam.abbreviation)} alt={thisTeam.abbreviation}>
                       <p
                         className={cn(
                           isSelected

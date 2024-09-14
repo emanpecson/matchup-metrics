@@ -1,7 +1,7 @@
 'use client';
 
 import PlayerIndex from '@/components/player/PlayerIndex';
-import RosterDialog from '@/components/roster/RosterDialog';
+import RosterDialog from '@/components/roster/dialog/RosterDialog';
 import RosterSlot, { RosterSlotState } from '@/components/roster/slot/RosterSlot';
 import { Button } from '@/components/ui/button';
 import { DialogClose } from '@/components/ui/dialog';

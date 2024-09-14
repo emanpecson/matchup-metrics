@@ -38,7 +38,7 @@ export default function PlayerDialogHeader(props: PlayerDialogHeaderProps) {
             </div>
 
             <Image
-              src={getTeamLogoUrl(props.teamInfo.nbaId, true)}
+              src={getTeamLogoUrl(props.teamInfo.abbreviation, true)}
               alt={`${props.teamInfo.abbreviation}-logo`}
               height={24}
               width={24}

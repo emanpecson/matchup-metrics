@@ -38,7 +38,7 @@ export default function PlayerCard({ player }: { player: Player }) {
 
       {/* team logo */}
       <Image
-        src={getTeamLogoUrl(teams[player.team as keyof typeof teams].nbaId)}
+        src={getTeamLogoUrl(player.team)}
         alt={player.team}
         height={24}
         width={24}

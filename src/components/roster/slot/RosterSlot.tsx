@@ -11,8 +11,9 @@ import ActionPrompt from './ActionPrompt';
 interface RosterSlotProps {
   player: Player | null;
   position: keyof typeof positions;
-  onClick?: () => void;
   state: RosterSlotState;
+  onClick?: () => void;
+  showStats?: boolean;
 }
 
 export enum RosterSlotState {
@@ -27,7 +28,7 @@ export default function RosterSlot(props: RosterSlotProps) {
   const [isHovering, setIsHovering] = useState(false);
 
   const p = props.player;
-  const teamLogoUrl = p ? getTeamLogoUrl(teams[p.team as keyof typeof teams].nbaId) : '';
+  const teamLogoUrl = p ? getTeamLogoUrl(p.team) : '';
 
   return (
     <div className="space-y-1 w-fit">

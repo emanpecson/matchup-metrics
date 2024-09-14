@@ -1,10 +1,10 @@
 import { Player } from '@prisma/client';
-import { Dialog, DialogContent, DialogTitle } from '../ui/dialog';
-import RosterSlot, { RosterSlotState } from './slot/RosterSlot';
+import { Dialog, DialogContent } from '../../ui/dialog';
+import RosterSlot, { RosterSlotState } from '../slot/RosterSlot';
 import { RosterBuilder, RosterBuilderSlot } from '@/types/RosterBuilder';
-import { Dispatch, SetStateAction, useState } from 'react';
-import Image from 'next/image';
-import { getPlayerPhotoUrl } from '@/utils/getPhotoUrl';
+import { Dispatch, SetStateAction } from 'react';
+import PlayerComparePopup from '@/components/player/compare/PlayerComparePopup';
+import StagedPlayer from '../../player/PlayerStaged';
 
 interface RosterDialogProps {
   roster: RosterBuilder;
@@ -16,7 +16,6 @@ interface RosterDialogProps {
 
 export default function RosterDialog(props: RosterDialogProps) {
   const handleOverwrite = (slotId: number) => {
-    console.log('slotid:', slotId);
     const tempRoster = new RosterBuilder(props.roster);
     tempRoster.updateBySlotId(slotId, props.playerToAdd);
     props.setRoster(tempRoster);
@@ -28,14 +27,7 @@ export default function RosterDialog(props: RosterDialogProps) {
       <DialogContent className="max-w-4xl" hideClose>
         {props.playerToAdd && (
           <div className="space-y-24 flex flex-col place-items-center">
-            <Image
-              src={getPlayerPhotoUrl(props.playerToAdd.nbaId)}
-              alt={props.playerToAdd.name}
-              height={24}
-              width={24}
-              className="rounded-full object-cover h-24 w-24"
-              unoptimized
-            />
+            <StagedPlayer player={props.playerToAdd} />
 
             <div className="flex space-x-6">
               {props.roster.getRoster().map((slot: RosterBuilderSlot) => {
@@ -44,15 +36,27 @@ export default function RosterDialog(props: RosterDialogProps) {
                 if (!isValidPosition) state = RosterSlotState.DISABLE;
                 else if (slot.player) state = RosterSlotState.SWAP;
 
-                return (
-                  <RosterSlot
-                    key={slot.id}
-                    player={slot.player}
-                    position={slot.rosterPosition}
-                    state={state}
-                    onClick={state === RosterSlotState.DISABLE ? undefined : () => handleOverwrite(slot.id)}
-                  />
-                );
+                const Slot = () => {
+                  return (
+                    <RosterSlot
+                      key={slot.id}
+                      player={slot.player}
+                      position={slot.rosterPosition}
+                      state={state}
+                      onClick={state === RosterSlotState.DISABLE ? undefined : () => handleOverwrite(slot.id)}
+                    />
+                  );
+                };
+
+                if (slot.player && props.playerToAdd && state !== RosterSlotState.DISABLE) {
+                  return (
+                    <PlayerComparePopup thisPlayer={slot.player} thatPlayer={props.playerToAdd}>
+                      <div>{Slot()}</div>
+                    </PlayerComparePopup>
+                  );
+                } else {
+                  return Slot();
+                }
               })}
             </div>
           </div>

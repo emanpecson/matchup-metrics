@@ -1,4 +1,5 @@
 import positions from '@/data/positions';
+import teams from '@/data/teams';
 
 export const reformatPosition = (pos: keyof typeof positions | '-') => {
   let fullPosition = '';
@@ -19,4 +20,9 @@ export const reformatHeight = (h: string) => {
 export const shortName = (name: string) => {
   const [firstName, lastName] = name.split(' ');
   return `${firstName[0]}. ${lastName}`;
+};
+
+export const fullTeamName = (abbreviation: string) => {
+  const team = teams[abbreviation as keyof typeof teams];
+  return `${team.city} ${team.name}`;
 };

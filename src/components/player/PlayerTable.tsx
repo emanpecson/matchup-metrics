@@ -68,7 +68,7 @@ export default function PlayerTable(props: PlayerTableProps) {
                   <td className={cn(highlight, 'px-4 py-1.5 text-center text-nowrap')}>{player.bpg}</td>
                   <td className={cn(highlight, 'px-4 py-1.5 text-center text-nowrap')}>{player.tpg}</td>
                   <td className={cn(highlight, 'px-4 py-1.5 text-center text-nowrap')}>
-                    <InlineImage src={getTeamLogoUrl(teams[player.team as keyof typeof teams].nbaId)} alt={player.team}>
+                    <InlineImage src={getTeamLogoUrl(player.team)} alt={player.team}>
                       <p>{player.team}</p>
                     </InlineImage>
                   </td>
