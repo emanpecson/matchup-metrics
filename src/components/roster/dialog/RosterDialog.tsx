@@ -25,7 +25,7 @@ export default function RosterDialog(props: RosterDialogProps) {
 
   const tip =
     `Choose a roster spot for ${props.playerToAdd?.name}. ` +
-    `You can select an open spot or replace a currently-filled slot. ` +
+    `You can select an empty slot or replace a currently-filled slot. ` +
     `Note that the player position and roster position must match.`;
 
   return (
