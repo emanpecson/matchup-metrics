@@ -6,7 +6,7 @@ import positions from '@/data/positions';
 
 export default function PlayerStaged({ player }: { player: Player }) {
   return (
-    <div className="border rounded-2xl p-2">
+    <div className="border rounded-2xl p-3.5 shadow-md dark:shadow-neutral-800 dark:border-neutral-700 w-fit bg-white dark:bg-neutral-900">
       <div className="flex space-x-1 place-items-center">
         <div className="relative border h-32 w-32 rounded-2xl">
           <Image
@@ -18,7 +18,7 @@ export default function PlayerStaged({ player }: { player: Player }) {
             unoptimized
           />
 
-          <div className="absolute rounded-full bg-neutral-300 dark:bg-neutral-700 -bottom-3 -left-3 bg-opacity-70 backdrop-blur-lg">
+          <div className="absolute rounded-full bg-neutral-300 dark:bg-neutral-700 -bottom-6 -left-6 bg-opacity-70 backdrop-blur-lg">
             <Image
               src={getTeamLogoUrl(player.team)}
               alt={player.team}

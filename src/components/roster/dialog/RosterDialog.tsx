@@ -5,6 +5,7 @@ import { RosterBuilder, RosterBuilderSlot } from '@/types/RosterBuilder';
 import { Dispatch, SetStateAction } from 'react';
 import PlayerComparePopup from '@/components/player/compare/PlayerComparePopup';
 import StagedPlayer from '../../player/PlayerStaged';
+import Tip from '@/components/Tip';
 
 interface RosterDialogProps {
   roster: RosterBuilder;
@@ -22,14 +23,22 @@ export default function RosterDialog(props: RosterDialogProps) {
     props.setIsOpen(false);
   };
 
+  const tip =
+    `Choose a roster spot for ${props.playerToAdd?.name}. ` +
+    `You can select an open spot or replace a currently-filled slot. ` +
+    `Note that the player position and roster position must match.`;
+
   return (
     <Dialog open={props.isOpen} onOpenChange={props.setIsOpen}>
       <DialogContent className="max-w-4xl" hideClose>
         {props.playerToAdd && (
-          <div className="space-y-24 flex flex-col place-items-center">
-            <StagedPlayer player={props.playerToAdd} />
+          <div className="flex flex-col place-items-center">
+            <div className="absolute -top-[11.5rem]">
+              <StagedPlayer player={props.playerToAdd} />
+            </div>
+            <Tip content={tip} />
 
-            <div className="flex space-x-6">
+            <div className="flex space-x-6 pt-10">
               {props.roster.getRoster().map((slot: RosterBuilderSlot) => {
                 const isValidPosition = props.playerToAdd && props.playerToAdd.position.includes(slot.rosterPosition);
                 let state = RosterSlotState.ADD;

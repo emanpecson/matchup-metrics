@@ -3,7 +3,6 @@ import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
 import { reformatPosition, shortName } from '@/utils/reformatString';
 import { Player } from '@prisma/client';
 import Image from 'next/image';
-import teams from '@/data/teams';
 import { cn } from '@/lib/utils';
 import { useState } from 'react';
 import ActionPrompt from './ActionPrompt';
