@@ -8,6 +8,7 @@ import { TeamCombobox } from '@/components/filter/TeamCombobox';
 import PlayerDialog from '@/components/player/dialog/PlayerDialog';
 import PlayerTable from '@/components/player/PlayerTable';
 import { useLoadData } from '@/hooks/useLoadData';
+import { RosterBuilder } from '@/types/RosterBuilder';
 import { Player } from '@prisma/client';
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 
@@ -15,6 +16,7 @@ interface PlayerIndexProps {
   rowCount: number;
   FooterElement?: () => JSX.Element;
   setFocusPlayer?: Dispatch<SetStateAction<Player | null>>;
+  roster?: RosterBuilder;
 }
 
 export default function PlayerIndex(props: PlayerIndexProps) {
@@ -74,6 +76,7 @@ export default function PlayerIndex(props: PlayerIndexProps) {
           page={page}
           playersCount={playersCount}
           onRowClick={handleRowClick}
+          roster={props.roster}
         />
       </div>
 
