@@ -1,7 +1,9 @@
+'use client';
+
 import StatCompare from '@/components/player/compare/StatCompare';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import { Player } from '@prisma/client';
-import React from 'react';
+import React, { useState } from 'react';
 
 interface PlayerComparePopupProps {
   children: React.ReactNode;
@@ -10,10 +12,14 @@ interface PlayerComparePopupProps {
 }
 
 export default function PlayerComparePopup(props: PlayerComparePopupProps) {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <TooltipProvider>
-      <Tooltip delayDuration={0}>
-        <TooltipTrigger asChild>{props.children}</TooltipTrigger>
+      <Tooltip delayDuration={0} open={isOpen}>
+        <TooltipTrigger onMouseOver={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)} asChild>
+          {props.children}
+        </TooltipTrigger>
         <TooltipContent className="mr-12 mb-6">
           <div className="flex space-x-4">
             <table>
