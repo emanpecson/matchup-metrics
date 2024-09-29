@@ -7,12 +7,14 @@ import { Button } from '@/components/ui/button';
 import { DialogClose } from '@/components/ui/dialog';
 import { RosterBuilder, RosterBuilderSlot } from '@/types/RosterBuilder';
 import { Player } from '@prisma/client';
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 export default function RosterBuilderPage() {
   const [rosterInstance, setRosterInstance] = useState(new RosterBuilder());
   const [playerToAdd, setPlayerToAdd] = useState<Player | null>(null);
   const [rosterDialogIsOpen, setRosterDialogIsOpen] = useState(false);
+  const router = useRouter();
 
   const addToRoster = () => {
     return (
@@ -36,6 +38,18 @@ export default function RosterBuilderPage() {
     setRosterInstance(tempRoster);
   };
 
+  const handleCreateRoster = async () => {
+    const playerIds: string[] = [];
+    for (const slot of rosterInstance.getRoster()) if (slot.player) playerIds.push(slot.player.id);
+
+    const res = await fetch('/api/roster', { method: 'POST', body: JSON.stringify(playerIds) });
+    if (!res.ok) {
+      console.log('Error');
+    } else {
+      router.push('/');
+    }
+  };
+
   return (
     <>
       <div className="space-y-8">
@@ -50,7 +64,13 @@ export default function RosterBuilderPage() {
             />
           ))}
         </div>
-        <PlayerIndex rowCount={8} FooterElement={addToRoster} setFocusPlayer={setPlayerToAdd} roster={rosterInstance} />
+        <PlayerIndex
+          rowCount={8}
+          FooterElement={addToRoster}
+          setFocusPlayer={setPlayerToAdd}
+          roster={rosterInstance}
+          handleCreateRoster={handleCreateRoster}
+        />
       </div>
 
       <RosterDialog

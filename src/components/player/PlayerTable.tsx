@@ -2,7 +2,6 @@ import { cn } from '@/lib/utils';
 import { Player } from '@prisma/client';
 import SkeletonPlayerTable from '../skeleton/SkeletonPlayerTable';
 import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
-import teams from '@/data/teams';
 import InlineImage from '../InlineImage';
 import { TriangleAlertIcon } from 'lucide-react';
 import { useState } from 'react';
@@ -60,14 +59,10 @@ export default function PlayerTable(props: PlayerTableProps) {
           <tbody className="divide-y relative">
             {props.players.map((player: Player, i: number) => {
               let onRoster = false;
-              if (props.roster) {
-                console.log(i);
-                for (const slot of props.roster.getRoster()) {
-                  if (slot.player && slot.player.id === player.id) {
-                    onRoster = true;
-                  }
-                }
-              }
+              if (props.roster)
+                for (const slot of props.roster.getRoster())
+                  if (slot.player && slot.player.id === player.id) onRoster = true;
+
               const disabledStyle = onRoster && 'opacity-40 dark:opacity-20';
               const highlightStyle =
                 hoverIndex === i && 'bg-neutral-200 dark:bg-neutral-800 transition-colors duration-150 cursor-pointer';

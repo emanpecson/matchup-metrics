@@ -35,4 +35,13 @@ export class RosterBuilder {
     }
     return this;
   };
+
+  public isFull = () => {
+    if (!this.guard1.player) return false;
+    if (!this.guard2.player) return false;
+    if (!this.forward1.player) return false;
+    if (!this.forward2.player) return false;
+    if (!this.center.player) return false;
+    return true;
+  };
 }

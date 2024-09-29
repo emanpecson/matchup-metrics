@@ -11,19 +11,20 @@ import { useLoadData } from '@/hooks/useLoadData';
 import { RosterBuilder } from '@/types/RosterBuilder';
 import { Player } from '@prisma/client';
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
+import CreateButton from '../button/CreateButton';
 
 interface PlayerIndexProps {
   rowCount: number;
   FooterElement?: () => JSX.Element;
   setFocusPlayer?: Dispatch<SetStateAction<Player | null>>;
   roster?: RosterBuilder;
+  handleCreateRoster?: () => void;
 }
 
 export default function PlayerIndex(props: PlayerIndexProps) {
   const [players, setPlayers] = useState<Player[]>([]);
   const [playersCount, setPlayersCount] = useState(0);
   const [isLoadingPlayers, setIsLoadingPlayers] = useState(false);
-
   const [filterTeam, setFilterTeam] = useState('');
   const [filterPosition, setFilterPosition] = useState('');
   const [filterName, setFilterName] = useState('');
@@ -56,7 +57,18 @@ export default function PlayerIndex(props: PlayerIndexProps) {
   return (
     <div>
       <div className="flex place-items-center flex-col w-full space-y-1">
-        <SearchBar onValueChange={setFilterName} value={filterName} />
+        <div className="flex space-1 w-full">
+          <SearchBar onValueChange={setFilterName} value={filterName} />
+          {props.roster && (
+            <CreateButton
+              label="Complete roster"
+              dialogTitle="Submit roster?"
+              dialogDescription="Confirm that your roster is complete."
+              disabled={!props.roster.isFull()}
+              onConfirm={() => props.handleCreateRoster && props.handleCreateRoster()}
+            />
+          )}
+        </div>
         <div className="flex space-x-2 justify-between place-items-center w-full">
           <TeamCombobox onValueChange={setFilterTeam} value={filterTeam} />
           <PositionSelect onValueChange={setFilterPosition} value={filterPosition} />
