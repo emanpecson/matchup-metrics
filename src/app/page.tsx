@@ -1,16 +1,11 @@
 'use client';
 
-import { useLoadData } from '@/hooks/useLoadData';
-import { Player } from '@prisma/client';
-import { useState } from 'react';
+import RosterPreviews from '@/components/roster/preview/RosterPreviews';
 
 export default function Home() {
-  const [players, setPlayers] = useState<Player[]>([]);
-  useLoadData({ endpoint: '/api/player', onDataLoaded: setPlayers });
-
   return (
-    <div className="h-screen w-screen flex justify-center place-items-center">
-      <div className="text-center">{JSON.stringify(players)}</div>
+    <div className="flex justify-center place-items-center">
+      <RosterPreviews />
     </div>
   );
 }
