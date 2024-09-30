@@ -9,7 +9,7 @@ datasource db {
 
 model Player {
   id           String   @id @default(auto()) @map("_id") @db.ObjectId
-  nbaId        String
+  nbaId        String   @unique
   name         String
   age          Int
   team         String
@@ -41,9 +41,11 @@ model Roster {
 }
 
 model Game {
-  id       String   @id @default(auto()) @map("_id") @db.ObjectId
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
   day      String
-	time		 String
+  // gameDay  GameDay @relation(fields: [gameDayId], references: [id])
+  // gameDayId String @db.ObjectId
+  time     String
   awayTeam String
   homeTeam String
 }
