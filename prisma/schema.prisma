@@ -52,6 +52,7 @@ model Game {
 model GameDay {
   id    String   @id @default(auto()) @map("_id") @db.ObjectId
   day   String
-  date  DateTime
+  date  DateTime @unique
   games Game[]
 }
+
