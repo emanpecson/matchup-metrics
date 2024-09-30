@@ -7,12 +7,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Roster {
-  id        String   @id @default(auto()) @map("_id") @db.ObjectId
-  playerIds String[] @db.ObjectId
-  players   Player[] @relation(fields: [playerIds], references: [id])
-}
-
 model Player {
   id           String   @id @default(auto()) @map("_id") @db.ObjectId
   nbaId        String
@@ -38,4 +32,17 @@ model Player {
   jersey       String
   rosterIds    String[] @db.ObjectId
   rosters      Roster[] @relation(fields: [rosterIds], references: [id])
+}
+
+model Roster {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  playerIds String[] @db.ObjectId
+  players   Player[] @relation(fields: [playerIds], references: [id])
+}
+
+model Game {
+  id       String   @id @default(auto()) @map("_id") @db.ObjectId
+  date     DateTime
+  awayTeam String
+  homeTeam String
 }
