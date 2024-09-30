@@ -7,11 +7,12 @@ from selenium.webdriver.support.ui import Select
 from lib import parse_nba_table
 from lib import filter_stats_and_bios
 from lib import player_card
-from lib import success, fail
 
 import requests
 import json
 import os
+
+from scripts.print import fail, success
 
 ###############################################################################
 # CONSTANTS
