@@ -41,11 +41,17 @@ model Roster {
 }
 
 model Game {
-  id       String @id @default(auto()) @map("_id") @db.ObjectId
-  day      String
-  // gameDay  GameDay @relation(fields: [gameDayId], references: [id])
-  // gameDayId String @db.ObjectId
-  time     String
-  awayTeam String
-  homeTeam String
+  id        String  @id @default(auto()) @map("_id") @db.ObjectId
+  gameDay   GameDay @relation(fields: [gameDayId], references: [id])
+  gameDayId String  @db.ObjectId
+  time      String
+  awayTeam  String
+  homeTeam  String
+}
+
+model GameDay {
+  id    String   @id @default(auto()) @map("_id") @db.ObjectId
+  day   String
+  date  DateTime
+  games Game[]
 }
