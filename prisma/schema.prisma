@@ -56,3 +56,12 @@ model GameDay {
   games Game[]
 }
 
+model Team {
+  id             String @id @default(auto()) @map("_id") @db.ObjectId
+  nbaId          String @unique
+  abbreviation   String @unique
+  city           String
+  name           String @unique
+  primaryColor   String
+  secondaryColor String
+}
