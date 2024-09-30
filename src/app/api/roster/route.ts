@@ -1,8 +1,7 @@
+import prisma from '@/lib/prisma';
 import { RosterIncludePlayers } from '@/types/response/roster/RosterIncludePlayers';
 import { PrismaClient } from '@prisma/client';
 import { NextRequest, NextResponse } from 'next/server';
-
-const prisma = new PrismaClient();
 
 export async function GET(req: NextRequest) {
   try {

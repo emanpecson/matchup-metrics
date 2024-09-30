@@ -42,7 +42,8 @@ model Roster {
 
 model Game {
   id       String   @id @default(auto()) @map("_id") @db.ObjectId
-  date     DateTime
+  day      String
+	time		 String
   awayTeam String
   homeTeam String
 }
