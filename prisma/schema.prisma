@@ -8,30 +8,41 @@ datasource db {
 }
 
 model Player {
-  id           String   @id @default(auto()) @map("_id") @db.ObjectId
-  nbaId        String   @unique
+  id           String       @id @default(auto()) @map("_id") @db.ObjectId
+  nbaId        String       @unique
   name         String
   age          Int
-  team         String
+  team         Team         @relation(fields: [teamAbbreviation], references: [abbreviation])
+  teamAbbreviation       String
   height       String
   weight       String
   position     String
   country      String
   lastAttended String
-  fantasyPpg   Float
-  ppg          Float
-  apg          Float
-  rpg          Float
-  spg          Float
-  bpg          Float
-  tpg          Float
-  mpg          Float
-  fgPct        Float
-  fg3Pct       Float
-  ftPct        Float
-  jersey       String
-  rosterIds    String[] @db.ObjectId
-  rosters      Roster[] @relation(fields: [rosterIds], references: [id])
+  regularStats PlayerStats?
+  // last7DaysStats PlayerStats?
+  jersey       String?
+  rosterIds    String[]     @db.ObjectId
+  rosters      Roster[]     @relation(fields: [rosterIds], references: [id])
+}
+
+model PlayerStats {
+  id        String @id @default(auto()) @map("_id") @db.ObjectId
+  player    Player @relation(fields: [playerId], references: [id])
+  playerId  String @unique @db.ObjectId
+  type      String
+  gp        Int
+  ppg       Float
+  apg       Float
+  rpg       Float
+  spg       Float
+  bpg       Float
+  tpg       Float
+  mpg       Float
+  fgPct     Float
+  fg3Pct    Float
+  ftPct     Float
+  plusMinus Float
 }
 
 model Roster {
@@ -41,12 +52,14 @@ model Roster {
 }
 
 model Game {
-  id        String  @id @default(auto()) @map("_id") @db.ObjectId
-  gameDay   GameDay @relation(fields: [gameDayId], references: [id])
-  gameDayId String  @db.ObjectId
-  time      String
-  awayTeam  String
-  homeTeam  String
+  id            String  @id @default(auto()) @map("_id") @db.ObjectId
+  gameDay       GameDay @relation(fields: [gameDayId], references: [id])
+  gameDayId     String  @db.ObjectId
+  time          String
+  awayTeam      Team?   @relation("away", fields: [awayTeamNbaId], references: [nbaId])
+  awayTeamNbaId String?
+  homeTeam      Team?   @relation("home", fields: [homeTeamNbaId], references: [nbaId])
+  homeTeamNbaId String?
 }
 
 model GameDay {
@@ -57,11 +70,14 @@ model GameDay {
 }
 
 model Team {
-  id             String @id @default(auto()) @map("_id") @db.ObjectId
-  nbaId          String @unique
-  abbreviation   String @unique
+  id             String   @id @default(auto()) @map("_id") @db.ObjectId
+  nbaId          String   @unique
+  abbreviation   String   @unique
   city           String
-  name           String @unique
+  name           String   @unique
   primaryColor   String
   secondaryColor String
+  players        Player[]
+  awayGames      Game[]   @relation("away")
+  homeGames      Game[]   @relation("home")
 }

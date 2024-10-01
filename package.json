@@ -7,7 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "scraper": "python3 scripts/scrape_player_cards/main.py"
+    "scrape-players -s": "python3 scripts/scrape_players/main.py -scrape",
+    "scrape-players -p": "python3 scripts/scrape_players/main.py -post",
+    "scrape-players -s -p": "python3 scripts/scrape_players/main.py -scrape -post",
+    "scrape-games -s": "python3 scripts/scrape_games/main.py -scrape",
+    "scrape-games -p": "python3 scripts/scrape_games/main.py -post",
+    "scrape-games -s -p": "python3 scripts/scrape_games/main.py -scrape -post"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.5",

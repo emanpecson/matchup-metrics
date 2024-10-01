@@ -2,14 +2,18 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+from datetime import datetime
 
 ###############################################################################
 # CONSTANTS
 
+BLUE = '\033[34m'
 GREEN = '\033[92m'
-YELLOW = '\033[93m'
 RED = '\033[91m'
 RESET = '\033[0m'
+
+PREFIX = BLUE + f'[scrape-games]: ' + RESET
+TIMEOUT = 10
 
 # xpath: div that encapsulates every week schedule
 SCHEDULE_PARENT_DIV_XPATH = '/html/body/div[1]/div[2]/div[2]/main/div[2]/section/div/div[3]'
@@ -17,22 +21,20 @@ SCHEDULE_PARENT_DIV_XPATH = '/html/body/div[1]/div[2]/div[2]/main/div[2]/section
 # xpath: button to show more weeks
 LOAD_MORE_BUTTON_XPATH = '/html/body/div[1]/div[2]/div[2]/main/div[2]/div/button'
 
-TIMEOUT = 10
-
 ###############################################################################
 # PRINT MESSAGES
 
-def alert(msg):
-	print(YELLOW + msg + RESET)
+def log(msg):
+	print(PREFIX + msg)
 
 def success(msg):
-	print(GREEN + msg + RESET)
+	print(PREFIX + GREEN + msg + RESET)
 
 def fail(msg):
-	print(RED + msg + RESET)
+	print(PREFIX + RED + msg + RESET)
 
 ###############################################################################
-# PARSE FUNCS
+# LOAD BUTTON
 
 def keep_loading_more(DRIVER: webdriver):
 	# define timeout obj
@@ -40,54 +42,60 @@ def keep_loading_more(DRIVER: webdriver):
 
 	# get "Load More button"
 	try:
-		alert('Waiting for "Load More" button to become visible')
+		log('Waiting for "Load More" button to become visible')
 		load_more_button = wait.until(EC.element_to_be_clickable((By.XPATH, LOAD_MORE_BUTTON_XPATH)))
 	except Exception as err:
-		fail('Error: Could not find "Load More" button')
-		print(err)
-		exit(1)
+		fail(f'Error: Could not find "Load More" button\n{err}')
+		exit(-1)
 
 	# scroll into "Load More" button view
 	try: 
-		alert('Scrolling into button view')
+		log('Scrolling into button view')
 		DRIVER.execute_script("arguments[0].scrollIntoView();", load_more_button)
 	except Exception as err:
-		fail('Error: Could not scroll into button view')
-		print(err)
-		exit(1)
+		fail(f'Error: Could not scroll into button view\n{err}')
+		exit(-1)
 
 	# keep clicking "Load More" until exhausted
 	try:
 		while load_more_button != None:
-			alert('Clicking "Load More" button')
+			log('Clicking "Load More" button')
 			load_more_button.click()
 	except:
-		alert('"Load More" button click exhausted')
+		log('"Load More" button click exhausted')
 
-def parse_schedule_weeks(DRIVER: webdriver):
-	data = []
+###############################################################################
+# PARSE FUNC
 
-	# wait = WebDriverWait(DRIVER, TIMEOUT)
+def parse_schedule_weeks(DRIVER: webdriver) -> list[dict]:
+	game_days: list[dict] = []
 
 	parent_elem = DRIVER.find_element(By.CLASS_NAME, "Block_blockContent__6iJ_n")
 	parent_elem = parent_elem.find_elements(By.XPATH, "./*")[2]
 	weeks = parent_elem.find_elements(By.XPATH, "./*")
 
-	alert("Getting weeks:")
+	log("Getting weeks:")
 	for wk_num, week in enumerate(weeks):
-		alert(f"\tWeek: {wk_num+1}")
+		log(f"  Week: {wk_num+1}")
 		# ignore "ScheduleWeek_swHeader_..." header elem
 		days = week.find_elements(By.XPATH, "./*")[1:]
 
-		alert("\n\tGetting days:")
+		log("\n  Getting days:")
 		for day in days:
 			day_children_elems = day.find_elements(By.XPATH, "./*")
 			# process date
 			date_elem = day_children_elems[0]
-			date = date_elem.find_element(By.CLASS_NAME, "ScheduleDay_sdDay__3s2Xt").text
+			date_raw = date_elem.find_element(By.CLASS_NAME, "ScheduleDay_sdDay__3s2Xt").text
 
 			games = day_children_elems[1].find_elements(By.XPATH, "./*")
-			alert(f"\t\tDate: {date} ({len(games)} games)")
+			log(f"    Date: {date_raw} ({len(games)} games)")
+
+			day_of_week = date_raw.split(',')[0]
+
+			game_day: dict = {}
+			game_day["day"] = day_of_week.capitalize()
+			game_day["date"] = convert_nba_date(date_raw)
+			game_day["games"] = []
 
 			# process games
 			for game_num, game in enumerate(games):
@@ -101,8 +109,8 @@ def parse_schedule_weeks(DRIVER: webdriver):
 
 				time = ""
 				broadcasters_img_src = ""
-				away_team = ""
-				home_team = ""
+				away_team_id = ""
+				home_team_id = ""
 
 				# regular game
 				if len(status_child_elems) == 2:
@@ -115,26 +123,46 @@ def parse_schedule_weeks(DRIVER: webdriver):
 
 					# access matchup: away vs home
 					teams = matchup.find_elements(By.TAG_NAME, "div")
-					away_team = teams[0].find_element(By.TAG_NAME, "a").text
-					home_team = teams[1].find_element(By.TAG_NAME, "a").text
+					
+					away_team_href = teams[0].find_element(By.TAG_NAME, "a").get_attribute('href')
+					home_team_href = teams[1].find_element(By.TAG_NAME, "a").get_attribute('href')
 
-				# tbd?
+					away_team_id = away_team_href.rstrip('/').split('/')[-2]
+					home_team_id = home_team_href.rstrip('/').split('/')[-2]
+
+				# tbd
 				elif status_child_elems[0].text == "TBD":
 					time = "TBD"
-					away_team = "TBD"
-					home_team = "TBD"
+					away_team_id = ""
+					home_team_id = ""
 
-				success(f"\t\t\tGame ({game_num+1}/{len(games)}): { date, time, away_team, home_team }")
+				success(f"      Game ({game_num+1}/{len(games)}): {day_of_week, time, away_team_id, home_team_id}")
 
-				data.append(game_data(date, time, away_team, home_team))
+				game_day["games"].append({
+					"awayTeamNbaId": away_team_id,
+					"homeTeamNbaId": home_team_id,
+					"time": time,
+				})
+			
+			game_days.append(game_day)
 
-	return data
+	return game_days
 
-# convert data into correct db schema
-def game_data(date: str, time: str, away_team: str, home_team: str):
-	game: dict = {}
-	game["day"] = date
-	game["time"] = time
-	game["awayTeam"] = away_team
-	game["homeTeam"] = home_team
-	return game
+###############################################################################
+# HELPER FUNCS
+
+# !generated by ChatGPT
+def convert_nba_date(date_str: str) -> str:
+    # Define the date format
+    date_format = "%A, %B %d"  # "Tuesday, October 22"
+    
+    # Parse the date
+    parsed_date = datetime.strptime(date_str, date_format)
+    
+    # Check the month and adjust the year based on your rule
+    if parsed_date.month >= 10:  # October, November, December
+        parsed_date = parsed_date.replace(year=2024)
+    else:
+        parsed_date = parsed_date.replace(year=2025)
+
+    return parsed_date.isoformat()  # Return as string in ISO format

@@ -3,16 +3,17 @@ from selenium import webdriver
 import requests
 import json
 import os
+import time
 import sys
 
 from lib import keep_loading_more, parse_schedule_weeks
-from lib import alert, success, fail
+from lib import log, success, fail
 
 ###############################################################################
 # CONSTANTS
 
 SERVER_PORT = 3000
-SERVER_URL = f'http://localhost:{SERVER_PORT}/api/game'
+SERVER_URL = f'http://localhost:{SERVER_PORT}/api/game/seed'
 
 SCRIPT_PATH = f'{os.getcwd()}/scripts/scrape_games'
 
@@ -23,6 +24,7 @@ OUT_PATH = f'{SCRIPT_PATH}/{OUT_DATA_FILENAME}'
 NBA_SCHEDULE_LINK = 'https://www.nba.com/schedule?cal=all&pd=false&region=1&season=Regular%20Season'
 
 ###############################################################################
+# MAIN
 
 WEBSCRAPE = False
 POST_DATA = False
@@ -34,11 +36,13 @@ if "-post" in user_args:
 	POST_DATA = True
 
 if WEBSCRAPE:
+	start_time = time.time()
+
 	# define webdriver
 	DRIVER = webdriver.Chrome()
 
 	# open link
-	alert(f"Opening: {NBA_SCHEDULE_LINK}")
+	log(f"Opening: {NBA_SCHEDULE_LINK}")
 	DRIVER.get(NBA_SCHEDULE_LINK)
 	DRIVER.maximize_window()
 
@@ -47,10 +51,15 @@ if WEBSCRAPE:
 
 	GAMES_DATA = parse_schedule_weeks(DRIVER)
 
+	log('Closing driver')
+	DRIVER.quit()
+
 	with open(OUT_PATH, 'w') as file:
 		json.dump(GAMES_DATA, file, indent=4)
 
 	success(f'Success: {OUT_DATA_FILENAME} created!')
+	end_time = time.time()
+	log(f'TIME: {end_time - start_time}')
 
 class ApiError(Exception):
 	pass
@@ -66,13 +75,8 @@ if POST_DATA:
 	GAMES_DATA_JSON = json.dumps(GAMES_DATA)
 
 	try:
-		# drop all from collection
-		response = requests.delete(SERVER_URL)
-		if (response.status_code != 200):
-			raise ApiError('Could not delete documents from collection')
-		
 		# post updated docs to collection
-		response = requests.post(SERVER_URL, data=GAMES_DATA_JSON)
+		response = requests.put(SERVER_URL, data=GAMES_DATA_JSON)
 		if (response.status_code != 200):
 			raise ApiError('Could not post data:', response)
 	

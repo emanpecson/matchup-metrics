@@ -16,12 +16,12 @@ export async function GET(req: NextRequest) {
 
     // stack where conditions
     if (query.name) where.name = { contains: query.name, mode: 'insensitive' };
-    if (query.team) where.team = { contains: query.team };
+    if (query.team) where.team = { abbreviation: { contains: query.team } };
     if (query.position) where.position = { contains: query.position };
 
     const players = await prisma.player.findMany({
       where,
-      orderBy: { fantasyPpg: 'desc' },
+      orderBy: { regularStats: { ppg: 'desc' } },
       skip: Number(query.skip),
       take: Number(query.take),
     });
@@ -32,34 +32,5 @@ export async function GET(req: NextRequest) {
   } catch (error) {
     console.error('Error:', error);
     return NextResponse.json(null, { status: 500 });
-  }
-}
-
-export async function POST(req: NextRequest) {
-  try {
-    const players: Player[] = await req.json();
-    console.log('data count:', players.length);
-    const createdPlayers = await prisma.player.createMany({
-      data: players,
-    });
-
-    console.log('Success:', createdPlayers);
-    return NextResponse.json(createdPlayers, { status: 200 });
-  } catch (error) {
-    console.error('Error:', error);
-    return NextResponse.json(null, { status: 500 });
-  }
-}
-
-// may need some typa security arg to prevent delete access from public
-export async function DELETE() {
-  try {
-    const res = await prisma.player.deleteMany({});
-
-    console.log('Success:', res);
-    return NextResponse.json(null, { status: 200 }); // correct status code? 204?
-  } catch (error) {
-    console.error('Error:', error);
-    return NextResponse.json('Server Error', { status: 500 });
   }
 }
