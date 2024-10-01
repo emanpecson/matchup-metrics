@@ -27,7 +27,7 @@ export default function RosterSlot(props: RosterSlotProps) {
   const [isHovering, setIsHovering] = useState(false);
 
   const p = props.player;
-  const teamLogoUrl = p ? getTeamLogoUrl(p.team) : '';
+  const teamLogoUrl = p ? getTeamLogoUrl(p.teamAbbreviation) : '';
 
   return (
     <div className="space-y-1 w-fit">
@@ -57,7 +57,7 @@ export default function RosterSlot(props: RosterSlotProps) {
           <div className="absolute rounded-full bg-neutral-300 dark:bg-neutral-700 -bottom-3 -left-3 bg-opacity-70 backdrop-blur-lg">
             <Image
               src={teamLogoUrl}
-              alt={p.team}
+              alt={p.teamAbbreviation}
               height={24}
               width={24}
               className="h-10 w-10 object-cover flex justify-center place-items-center"

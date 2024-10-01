@@ -1,21 +1,19 @@
-import { Player } from '@prisma/client';
-import { Dialog, DialogContent, DialogHeader, DialogTrigger } from '../../ui/dialog';
+import { Dialog, DialogContent } from '../../ui/dialog';
 import { Dispatch, SetStateAction } from 'react';
 import teams from '@/data/teams';
 import PlayerDialogHeader from './PlayerDialogHeader';
 import PlayerDialogFooter from './PlayerDialogFooter';
 import PlayerDialogContent from './PlayerDialogContent';
+import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
 
 interface PlayerDialogProps {
-  player: Player | null;
-  setPlayer: Dispatch<SetStateAction<Player | null>>;
+  player: PlayerIncludeRegularStats | null;
+  setPlayer: Dispatch<SetStateAction<PlayerIncludeRegularStats | null>>;
   FooterElement?: () => JSX.Element;
 }
 
 export default function PlayerDialog(props: PlayerDialogProps) {
-  const teamInfo = teams[props.player?.team as keyof typeof teams];
-  const primaryColor = props.player ? teamInfo.colors[0] : '';
-  const secondaryColor = props.player ? teamInfo.colors[1] : '';
+  const teamInfo = teams[props.player?.teamAbbreviation as keyof typeof teams];
 
   const headerHeight = '10rem';
   const footerHeight = '4rem';
@@ -34,14 +32,14 @@ export default function PlayerDialog(props: PlayerDialogProps) {
               player={props.player}
               headerHeight={headerHeight}
               teamInfo={teamInfo}
-              primaryColor={primaryColor}
+              primaryColor={teamInfo.primaryColor}
             />
 
             <PlayerDialogContent player={props.player} headerHeight={headerHeight} footerHeight={footerHeight} />
 
             <PlayerDialogFooter
               footerHeight={footerHeight}
-              primaryColor={primaryColor}
+              primaryColor={teamInfo.primaryColor}
               FooterElement={props.FooterElement}
             />
           </div>

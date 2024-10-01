@@ -3,8 +3,12 @@ import { Player } from '@prisma/client';
 import Image from 'next/image';
 import { reformatPosition } from '@/utils/reformatString';
 import positions from '@/data/positions';
+import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
+import { yahooFantasyPpg } from '@/utils/fantasyConverter';
 
-export default function PlayerStaged({ player }: { player: Player }) {
+export default function PlayerStaged({ player }: { player: PlayerIncludeRegularStats }) {
+  const rs = player.regularStats;
+
   return (
     <div className="border rounded-2xl p-3.5 shadow-md dark:shadow-neutral-800 dark:border-neutral-700 w-fit bg-white dark:bg-neutral-900">
       <div className="flex space-x-1 place-items-center">
@@ -20,8 +24,8 @@ export default function PlayerStaged({ player }: { player: Player }) {
 
           <div className="absolute rounded-full bg-neutral-300 dark:bg-neutral-700 -bottom-6 -left-6 bg-opacity-70 backdrop-blur-lg">
             <Image
-              src={getTeamLogoUrl(player.team)}
-              alt={player.team}
+              src={getTeamLogoUrl(player.teamAbbreviation)}
+              alt={player.teamAbbreviation}
               height={24}
               width={24}
               className="h-10 w-10 object-cover flex justify-center place-items-center"
@@ -43,22 +47,22 @@ export default function PlayerStaged({ player }: { player: Player }) {
               <tbody>
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-bold">FTSY</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{player.fantasyPpg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{yahooFantasyPpg(rs)}</td>
                 </tr>
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-bold">PPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{player.ppg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{rs.ppg}</td>
                 </tr>
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-bold">APG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{player.apg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{rs.apg}</td>
                 </tr>
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">RPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{player.rpg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{rs.rpg}</td>
                 </tr>
               </tbody>
             </table>
@@ -67,22 +71,22 @@ export default function PlayerStaged({ player }: { player: Player }) {
               <tbody>
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">BPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{player.bpg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{rs.bpg}</td>
                 </tr>
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">SPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{player.spg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{rs.spg}</td>
                 </tr>
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">TPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{player.tpg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{rs.tpg}</td>
                 </tr>
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">MPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{player.mpg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{rs.mpg}</td>
                 </tr>
               </tbody>
             </table>

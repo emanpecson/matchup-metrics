@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { Player, Prisma, PrismaClient } from '@prisma/client';
+import { Prisma } from '@prisma/client';
 import prisma from '@/lib/prisma';
+
+const includeRegularStats: Prisma.PlayerInclude = { regularStats: true };
 
 export async function GET(req: NextRequest) {
   try {
@@ -24,6 +26,7 @@ export async function GET(req: NextRequest) {
       orderBy: { regularStats: { ppg: 'desc' } },
       skip: Number(query.skip),
       take: Number(query.take),
+      include: includeRegularStats,
     });
 
     const playersCount = await prisma.player.count({ where });

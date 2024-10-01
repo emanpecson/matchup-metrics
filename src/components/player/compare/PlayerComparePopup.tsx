@@ -2,17 +2,20 @@
 
 import StatCompare from '@/components/player/compare/StatCompare';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import { Player } from '@prisma/client';
+import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
+import { yahooFantasyPpg } from '@/utils/fantasyConverter';
 import React, { useState } from 'react';
 
 interface PlayerComparePopupProps {
   children: React.ReactNode;
-  thisPlayer: Player;
-  thatPlayer: Player;
+  thisPlayer: PlayerIncludeRegularStats;
+  thatPlayer: PlayerIncludeRegularStats;
 }
 
 export default function PlayerComparePopup(props: PlayerComparePopupProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const thisRs = props.thisPlayer.regularStats;
+  const thatRs = props.thatPlayer.regularStats;
 
   return (
     <TooltipProvider>
@@ -26,33 +29,36 @@ export default function PlayerComparePopup(props: PlayerComparePopupProps) {
               <tbody>
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-bold">FTSY</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{props.thisPlayer.fantasyPpg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{yahooFantasyPpg(thisRs)}</td>
                   <td>
-                    <StatCompare thisStat={props.thisPlayer.fantasyPpg} thatStat={props.thatPlayer.fantasyPpg} />
+                    <StatCompare
+                      thisStat={yahooFantasyPpg(thisRs) as unknown as number}
+                      thatStat={yahooFantasyPpg(thatRs) as unknown as number}
+                    />
                   </td>
                 </tr>
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-bold">PPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{props.thisPlayer.ppg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.ppg}</td>
                   <td>
-                    <StatCompare thisStat={props.thisPlayer.ppg} thatStat={props.thatPlayer.ppg} />
+                    <StatCompare thisStat={thisRs.ppg} thatStat={thatRs.ppg} />
                   </td>
                 </tr>
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-bold">APG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{props.thisPlayer.apg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.apg}</td>
                   <td>
-                    <StatCompare thisStat={props.thisPlayer.apg} thatStat={props.thatPlayer.apg} />
+                    <StatCompare thisStat={thisRs.apg} thatStat={thatRs.apg} />
                   </td>
                 </tr>
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">RPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{props.thisPlayer.rpg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.rpg}</td>
                   <td>
-                    <StatCompare thisStat={props.thisPlayer.rpg} thatStat={props.thatPlayer.rpg} />
+                    <StatCompare thisStat={thisRs.rpg} thatStat={thatRs.rpg} />
                   </td>
                 </tr>
               </tbody>
@@ -62,33 +68,33 @@ export default function PlayerComparePopup(props: PlayerComparePopupProps) {
               <tbody>
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">BPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{props.thisPlayer.bpg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.bpg}</td>
                   <td>
-                    <StatCompare thisStat={props.thisPlayer.bpg} thatStat={props.thatPlayer.bpg} />
+                    <StatCompare thisStat={thisRs.bpg} thatStat={thatRs.bpg} />
                   </td>
                 </tr>
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">SPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{props.thisPlayer.spg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.spg}</td>
                   <td>
-                    <StatCompare thisStat={props.thisPlayer.spg} thatStat={props.thatPlayer.spg} />
+                    <StatCompare thisStat={thisRs.spg} thatStat={thatRs.spg} />
                   </td>
                 </tr>
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">TPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{props.thisPlayer.tpg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.tpg}</td>
                   <td>
-                    <StatCompare thisStat={props.thisPlayer.tpg} thatStat={props.thatPlayer.tpg} reverse />
+                    <StatCompare thisStat={thisRs.tpg} thatStat={thatRs.tpg} reverse />
                   </td>
                 </tr>
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">MPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{props.thisPlayer.mpg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.mpg}</td>
                   <td>
-                    <StatCompare thisStat={props.thisPlayer.mpg} thatStat={props.thatPlayer.mpg} />
+                    <StatCompare thisStat={thisRs.mpg} thatStat={thatRs.mpg} />
                   </td>
                 </tr>
               </tbody>

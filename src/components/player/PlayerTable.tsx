@@ -1,20 +1,21 @@
 import { cn } from '@/lib/utils';
-import { Player } from '@prisma/client';
 import SkeletonPlayerTable from '../skeleton/SkeletonPlayerTable';
 import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
 import InlineImage from '../InlineImage';
 import { TriangleAlertIcon } from 'lucide-react';
 import { useState } from 'react';
 import { RosterBuilder } from '@/types/RosterBuilder';
+import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
+import { yahooFantasyPpg } from '@/utils/fantasyConverter';
 
 export const playerTableColumns = ['player', 'fantasy', 'pts', 'ast', 'reb', 'stl', 'blk', 'to', 'team', 'pos'];
 export interface PlayerTableProps {
-  players: Player[]; // arr of players currently displayed
+  players: PlayerIncludeRegularStats[]; // arr of players currently displayed
   isLoading: boolean;
   page: number;
   rowCount: number; // count of players currently displayed
   playersCount: number; // total players
-  onRowClick: (player: Player) => void;
+  onRowClick: (player: PlayerIncludeRegularStats) => void;
   roster?: RosterBuilder;
 }
 
@@ -22,7 +23,7 @@ export default function PlayerTable(props: PlayerTableProps) {
   const loadCount = props.playersCount - props.page * props.rowCount;
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
 
-  const handleRowClick = (onRoster: boolean, player: Player) => {
+  const handleRowClick = (onRoster: boolean, player: PlayerIncludeRegularStats) => {
     if (!onRoster) props.onRowClick(player);
   };
 
@@ -57,7 +58,9 @@ export default function PlayerTable(props: PlayerTableProps) {
             </tr>
           </thead>
           <tbody className="divide-y relative">
-            {props.players.map((player: Player, i: number) => {
+            {props.players.map((player: PlayerIncludeRegularStats, i: number) => {
+              const rs = player.regularStats;
+
               let onRoster = false;
               if (props.roster)
                 for (const slot of props.roster.getRoster())
@@ -81,16 +84,16 @@ export default function PlayerTable(props: PlayerTableProps) {
                       <p>{player.name}</p>
                     </InlineImage>
                   </td>
-                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-wrap')}>{player.fantasyPpg}</td>
-                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>{player.ppg}</td>
-                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>{player.apg}</td>
-                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>{player.rpg}</td>
-                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>{player.spg}</td>
-                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>{player.bpg}</td>
-                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>{player.tpg}</td>
+                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-wrap')}>{yahooFantasyPpg(rs)}</td>
+                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>{rs.ppg.toFixed(1)}</td>
+                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>{rs.apg.toFixed(1)}</td>
+                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>{rs.rpg.toFixed(1)}</td>
+                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>{rs.spg.toFixed(1)}</td>
+                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>{rs.bpg.toFixed(1)}</td>
+                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>{rs.tpg.toFixed(1)}</td>
                   <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>
-                    <InlineImage src={getTeamLogoUrl(player.team)} alt={player.team}>
-                      <p>{player.team}</p>
+                    <InlineImage src={getTeamLogoUrl(player.teamAbbreviation)} alt={player.teamAbbreviation}>
+                      <p>{player.teamAbbreviation}</p>
                     </InlineImage>
                   </td>
                   <td className={cn(conditionalStyles, 'px-4 py-1.5 text-right rounded-r-lg')}>{player.position}</td>

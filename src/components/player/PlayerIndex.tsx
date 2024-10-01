@@ -12,6 +12,7 @@ import { RosterBuilder } from '@/types/RosterBuilder';
 import { Player } from '@prisma/client';
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import CreateButton from '../button/CreateButton';
+import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
 
 interface PlayerIndexProps {
   rowCount: number;
@@ -22,14 +23,14 @@ interface PlayerIndexProps {
 }
 
 export default function PlayerIndex(props: PlayerIndexProps) {
-  const [players, setPlayers] = useState<Player[]>([]);
+  const [players, setPlayers] = useState<PlayerIncludeRegularStats[]>([]);
   const [playersCount, setPlayersCount] = useState(0);
   const [isLoadingPlayers, setIsLoadingPlayers] = useState(false);
   const [filterTeam, setFilterTeam] = useState('');
   const [filterPosition, setFilterPosition] = useState('');
   const [filterName, setFilterName] = useState('');
   const [page, setPage] = useState(0);
-  const [focusPlayer, setFocusPlayer] = useState<Player | null>(null);
+  const [focusPlayer, setFocusPlayer] = useState<PlayerIncludeRegularStats | null>(null);
 
   const handleFilterReset = () => {
     setFilterTeam('');
@@ -37,14 +38,14 @@ export default function PlayerIndex(props: PlayerIndexProps) {
     setFilterPosition('');
   };
 
-  const handleRowClick = (player: Player) => {
+  const handleRowClick = (player: PlayerIncludeRegularStats) => {
     setFocusPlayer(player);
     if (!!props.setFocusPlayer) props.setFocusPlayer(player);
   };
 
   useLoadData({
     endpoint: `/api/player?name=${filterName}&team=${filterTeam}&position=${filterPosition}&skip=${page * props.rowCount}&take=${props.rowCount}`,
-    onDataLoaded: ({ players, playersCount }) => {
+    onDataLoaded: ({ players, playersCount }: { players: PlayerIncludeRegularStats[]; playersCount: number }) => {
       setPlayers(players);
       setPlayersCount(playersCount);
     },

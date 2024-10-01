@@ -20,7 +20,8 @@ model Player {
   country      String
   lastAttended String
   regularStats PlayerStats?
-  // last7DaysStats PlayerStats?
+  // last7GamesStats PlayerStats?
+  // careerStats PlayerStats?
   jersey       String?
   rosterIds    String[]     @db.ObjectId
   rosters      Roster[]     @relation(fields: [rosterIds], references: [id])
