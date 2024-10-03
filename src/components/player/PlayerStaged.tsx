@@ -52,17 +52,17 @@ export default function PlayerStaged({ player }: { player: PlayerIncludeRegularS
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-bold">PPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{rs.ppg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{rs.ppg.toFixed(1)}</td>
                 </tr>
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-bold">APG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{rs.apg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{rs.apg.toFixed(1)}</td>
                 </tr>
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">RPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{rs.rpg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{rs.rpg.toFixed(1)}</td>
                 </tr>
               </tbody>
             </table>
@@ -71,22 +71,22 @@ export default function PlayerStaged({ player }: { player: PlayerIncludeRegularS
               <tbody>
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">BPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{rs.bpg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{rs.bpg.toFixed(1)}</td>
                 </tr>
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">SPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{rs.spg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{rs.spg.toFixed(1)}</td>
                 </tr>
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">TPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{rs.tpg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{rs.tpg.toFixed(1)}</td>
                 </tr>
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">MPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{rs.mpg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{rs.mpg.toFixed(1)}</td>
                 </tr>
               </tbody>
             </table>

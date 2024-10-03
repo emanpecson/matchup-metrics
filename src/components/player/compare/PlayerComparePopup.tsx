@@ -40,7 +40,7 @@ export default function PlayerComparePopup(props: PlayerComparePopupProps) {
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-bold">PPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.ppg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.ppg.toFixed(1)}</td>
                   <td>
                     <StatCompare thisStat={thisRs.ppg} thatStat={thatRs.ppg} />
                   </td>
@@ -48,7 +48,7 @@ export default function PlayerComparePopup(props: PlayerComparePopupProps) {
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-bold">APG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.apg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.apg.toFixed(1)}</td>
                   <td>
                     <StatCompare thisStat={thisRs.apg} thatStat={thatRs.apg} />
                   </td>
@@ -56,7 +56,7 @@ export default function PlayerComparePopup(props: PlayerComparePopupProps) {
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">RPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.rpg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.rpg.toFixed(1)}</td>
                   <td>
                     <StatCompare thisStat={thisRs.rpg} thatStat={thatRs.rpg} />
                   </td>
@@ -68,7 +68,7 @@ export default function PlayerComparePopup(props: PlayerComparePopupProps) {
               <tbody>
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">BPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.bpg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.bpg.toFixed(1)}</td>
                   <td>
                     <StatCompare thisStat={thisRs.bpg} thatStat={thatRs.bpg} />
                   </td>
@@ -76,7 +76,7 @@ export default function PlayerComparePopup(props: PlayerComparePopupProps) {
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">SPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.spg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.spg.toFixed(1)}</td>
                   <td>
                     <StatCompare thisStat={thisRs.spg} thatStat={thatRs.spg} />
                   </td>
@@ -84,7 +84,7 @@ export default function PlayerComparePopup(props: PlayerComparePopupProps) {
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">TPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.tpg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.tpg.toFixed(1)}</td>
                   <td>
                     <StatCompare thisStat={thisRs.tpg} thatStat={thatRs.tpg} reverse />
                   </td>
@@ -92,7 +92,7 @@ export default function PlayerComparePopup(props: PlayerComparePopupProps) {
 
                 <tr>
                   <td className="text-left uppercase text-xs text-neutral-500 font-semibold">MPG</td>
-                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.mpg}</td>
+                  <td className="text-right text-sm pl-2 pr-0.5">{thisRs.mpg.toFixed(1)}</td>
                   <td>
                     <StatCompare thisStat={thisRs.mpg} thatStat={thatRs.mpg} />
                   </td>

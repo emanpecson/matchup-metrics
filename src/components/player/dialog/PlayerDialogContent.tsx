@@ -21,18 +21,18 @@ export default function PlayerDialogContent(props: PlayerDialogContentProps) {
         <div className="pb-4 space-y-4">
           <div className="flex space-x-3">
             <MainStat label={'Fantasy'} stat={yahooFantasyPpg(rs)} />
-            <MainStat label={'PPG'} stat={rs.ppg} />
-            <MainStat label={'APG'} stat={rs.apg} />
-            <MainStat label={'RPG'} stat={rs.rpg} />
+            <MainStat label={'PPG'} stat={rs.ppg.toFixed(1)} />
+            <MainStat label={'APG'} stat={rs.apg.toFixed(1)} />
+            <MainStat label={'RPG'} stat={rs.rpg.toFixed(1)} />
           </div>
           <div className="divide-y">
-            <Stat label="Steals (SPG)" stat={rs.spg} />
-            <Stat label="Blocks (BPG)" stat={rs.bpg} />
-            <Stat label="Turnovers (TPG)" stat={rs.tpg} />
-            <Stat label="Minutes (MPG)" stat={rs.mpg} />
-            <Stat label="Field Goal Pct. (FG%)" stat={`${rs.fgPct}%`} />
-            <Stat label="Three Point Pct. (3P%)" stat={`${rs.fg3Pct}%`} />
-            <Stat label="Free Throw Pct. (FT%)" stat={`${rs.ftPct}%`} />
+            <Stat label="Steals (SPG)" stat={rs.spg.toFixed(1)} />
+            <Stat label="Blocks (BPG)" stat={rs.bpg.toFixed(1)} />
+            <Stat label="Turnovers (TPG)" stat={rs.tpg.toFixed(1)} />
+            <Stat label="Minutes (MPG)" stat={rs.mpg.toFixed(1)} />
+            <Stat label="Field Goal Pct. (FG%)" stat={`${rs.fgPct.toFixed(1)}%`} />
+            <Stat label="Three Point Pct. (3P%)" stat={`${rs.fg3Pct.toFixed(1)}%`} />
+            <Stat label="Free Throw Pct. (FT%)" stat={`${rs.ftPct.toFixed(1)}%`} />
           </div>
         </div>
         {/* bio info */}

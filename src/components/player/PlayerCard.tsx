@@ -25,15 +25,15 @@ export default function PlayerCard({ player }: { player: PlayerIncludeRegularSta
         <ul className="border rounded-md divide-y mt-3 mx-1.5 dark:text-neutral-300 text-neutral-600">
           <li className="flex justify-between px-2 pt-1">
             <label>PPG</label>
-            <p>{rs.ppg}</p>
+            <p>{rs.ppg.toFixed(1)}</p>
           </li>
           <li className="flex justify-between px-2 py-1">
             <label>APG</label>
-            <p>{rs.apg}</p>
+            <p>{rs.apg.toFixed(1)}</p>
           </li>
           <li className="flex justify-between px-2 pb-1">
             <label>RPG</label>
-            <p>{rs.rpg}</p>
+            <p>{rs.rpg.toFixed(1)}</p>
           </li>
         </ul>
       </div>
