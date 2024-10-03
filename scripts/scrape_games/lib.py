@@ -7,6 +7,9 @@ from datetime import datetime
 ###############################################################################
 # CONSTANTS
 
+SEASON_YEAR_START=2024
+SEASON_YEAR_END=2025
+
 BLUE = '\033[34m'
 GREEN = '\033[92m'
 RED = '\033[91m'
@@ -161,8 +164,8 @@ def convert_nba_date(date_str: str) -> str:
     
     # Check the month and adjust the year based on your rule
     if parsed_date.month >= 10:  # October, November, December
-        parsed_date = parsed_date.replace(year=2024)
+        parsed_date = parsed_date.replace(year=SEASON_YEAR_START)
     else:
-        parsed_date = parsed_date.replace(year=2025)
+        parsed_date = parsed_date.replace(year=SEASON_YEAR_END)
 
     return parsed_date.isoformat()  # Return as string in ISO format
