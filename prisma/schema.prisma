@@ -50,6 +50,7 @@ model Roster {
   id        String   @id @default(auto()) @map("_id") @db.ObjectId
   playerIds String[] @db.ObjectId
   players   Player[] @relation(fields: [playerIds], references: [id])
+	createdAt DateTime @default(now())
 }
 
 model Game {
