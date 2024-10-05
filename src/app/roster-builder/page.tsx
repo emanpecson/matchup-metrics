@@ -5,14 +5,14 @@ import RosterDialog from '@/components/roster/dialog/RosterDialog';
 import RosterSlot, { RosterSlotState } from '@/components/roster/slot/RosterSlot';
 import { Button } from '@/components/ui/button';
 import { DialogClose } from '@/components/ui/dialog';
+import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
 import { RosterBuilder, RosterBuilderSlot } from '@/types/RosterBuilder';
-import { Player } from '@prisma/client';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 export default function RosterBuilderPage() {
   const [rosterInstance, setRosterInstance] = useState(new RosterBuilder());
-  const [playerToAdd, setPlayerToAdd] = useState<Player | null>(null);
+  const [playerToAdd, setPlayerToAdd] = useState<PlayerIncludeRegularStats | null>(null);
   const [rosterDialogIsOpen, setRosterDialogIsOpen] = useState(false);
   const router = useRouter();
 
@@ -78,7 +78,7 @@ export default function RosterBuilderPage() {
         setRoster={setRosterInstance}
         isOpen={rosterDialogIsOpen}
         setIsOpen={setRosterDialogIsOpen}
-        playerToAdd={playerToAdd as Player}
+        playerToAdd={playerToAdd as PlayerIncludeRegularStats}
       />
     </>
   );

@@ -17,7 +17,7 @@ import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerInclude
 interface PlayerIndexProps {
   rowCount: number;
   FooterElement?: () => JSX.Element;
-  setFocusPlayer?: Dispatch<SetStateAction<Player | null>>;
+  setFocusPlayer?: Dispatch<SetStateAction<PlayerIncludeRegularStats | null>>;
   roster?: RosterBuilder;
   handleCreateRoster?: () => void;
 }
