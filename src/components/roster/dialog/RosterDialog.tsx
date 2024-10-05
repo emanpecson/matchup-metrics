@@ -1,4 +1,3 @@
-import { Player } from '@prisma/client';
 import { Dialog, DialogContent } from '../../ui/dialog';
 import RosterSlot, { RosterSlotState } from '../slot/RosterSlot';
 import { RosterBuilder, RosterBuilderSlot } from '@/types/RosterBuilder';
@@ -6,13 +5,14 @@ import { Dispatch, SetStateAction } from 'react';
 import PlayerComparePopup from '@/components/player/compare/PlayerComparePopup';
 import StagedPlayer from '../../player/PlayerStaged';
 import Tip from '@/components/Tip';
+import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
 
 interface RosterDialogProps {
   roster: RosterBuilder;
   setRoster: Dispatch<SetStateAction<RosterBuilder>>;
   isOpen: boolean;
   setIsOpen: Dispatch<SetStateAction<boolean>>;
-  playerToAdd: Player | null;
+  playerToAdd: PlayerIncludeRegularStats | null;
 }
 
 export default function RosterDialog(props: RosterDialogProps) {

@@ -6,9 +6,10 @@ import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { useState } from 'react';
 import ActionPrompt from './ActionPrompt';
+import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
 
 interface RosterSlotProps {
-  player: Player | null;
+  player: PlayerIncludeRegularStats | null;
   position: keyof typeof positions;
   state: RosterSlotState;
   onClick?: () => void;

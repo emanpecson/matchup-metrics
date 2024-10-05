@@ -1,8 +1,8 @@
 import positions from '@/data/positions';
-import { Player } from '@prisma/client';
+import { PlayerIncludeRegularStats } from './response/player/PlayerIncludeRegularStats';
 
 export interface RosterBuilderSlot {
-  player: Player | null;
+  player: PlayerIncludeRegularStats | null;
   rosterPosition: keyof typeof positions;
   id: number;
 }
@@ -26,7 +26,7 @@ export class RosterBuilder {
     return [this.guard1, this.guard2, this.forward1, this.forward2, this.center];
   };
 
-  public updateBySlotId = (slotId: number, player: Player | null) => {
+  public updateBySlotId = (slotId: number, player: PlayerIncludeRegularStats | null) => {
     for (const slot of this.getRoster()) {
       if (slot.id === slotId) {
         slot.player = player;
