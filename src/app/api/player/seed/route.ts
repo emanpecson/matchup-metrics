@@ -32,6 +32,9 @@ interface SeededPlayer {
 }
 
 export async function PUT(req: NextRequest) {
+  let createdPlayerCount = 0;
+  let updatedPlayerCount = 0;
+
   try {
     const seedData: SeededPlayer[] = await req.json();
 
@@ -68,7 +71,11 @@ export async function PUT(req: NextRequest) {
             },
           },
         });
-        console.log('Updated player:', updatedPlayer.name);
+
+        updatedPlayerCount++;
+        console.log(
+          `[${updatedPlayerCount + createdPlayerCount}/${seedData.length}] Updated player: ${updatedPlayer.name}`
+        );
       } else {
         const createdPlayer = await prisma.player.create({
           data: {
@@ -101,12 +108,16 @@ export async function PUT(req: NextRequest) {
             },
           },
         });
-        console.log('Created player:', createdPlayer.name);
+
+        createdPlayerCount++;
+        console.log(
+          `[${createdPlayerCount + updatedPlayerCount}/${seedData.length}] Created player: ${createdPlayer.name}`
+        );
       }
     }
-    console.log(`Successfully seeded ${seedData.length} players`);
 
-    return NextResponse.json(null, { status: 200 });
+    console.log(`Successfully seeded ${createdPlayerCount + updatedPlayerCount}/${seedData.length} players`);
+    return NextResponse.json(createdPlayerCount + updatedPlayerCount, { status: 200 });
   } catch (error) {
     console.error('Error:', error);
     return NextResponse.json(null, { status: 500 });

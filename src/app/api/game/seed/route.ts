@@ -14,23 +14,31 @@ interface SeededGame {
 }
 
 export async function PUT(req: NextRequest) {
+  let createdGamesCount = 0;
+  let createdGameDaysCount = 0;
+
   try {
+    // get requested data
     const seedData: SeededGameDay[] = await req.json();
 
-    // overwrite existing game data
+    // remove existing game data
     await prisma.game.deleteMany({});
     await prisma.gameDay.deleteMany({});
 
     for (const seedGameDay of seedData) {
+      // create game day
       const gameDay = await prisma.gameDay.create({
         data: {
           date: new Date(seedGameDay.date),
           day: seedGameDay.day,
         },
       });
-      console.log('Created game-day:', gameDay.date);
+
+      createdGameDaysCount++;
+      console.log(`[${createdGameDaysCount}/${seedData.length}] Created game-day: ${gameDay.date}`);
 
       for (const seedGame of seedGameDay.games) {
+        // create game w/ linked game day
         const game = await prisma.game.create({
           data: {
             time: seedGame.time,
@@ -38,14 +46,23 @@ export async function PUT(req: NextRequest) {
             homeTeamNbaId: seedGame.homeTeamNbaId,
             gameDayId: gameDay.id,
           },
+          include: {
+            homeTeam: { select: { abbreviation: true } },
+            awayTeam: { select: { abbreviation: true } },
+          },
         });
 
-        console.log('Created game:', game.id);
+        createdGamesCount++;
+        const home = game.homeTeam;
+        const away = game.awayTeam;
+        console.log(
+          `[${createdGamesCount}] Created game: ${home ? home.abbreviation : 'TBD'} @ ${away ? away.abbreviation : 'TBD'}`
+        );
       }
     }
 
-    console.log(`Successfully seeded ${seedData.length} games`);
-    return NextResponse.json(null, { status: 200 });
+    console.log(`Successfully seeded ${createdGamesCount} games on ${createdGameDaysCount} days`);
+    return NextResponse.json(createdGamesCount, { status: 200 });
   } catch (error) {
     console.error('Error:', error);
     return NextResponse.json(null, { status: 500 });
