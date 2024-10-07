@@ -4,7 +4,7 @@ import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
 import InlineImage from '../InlineImage';
 import { TriangleAlertIcon } from 'lucide-react';
 import { useState } from 'react';
-import { RosterBuilder } from '@/types/RosterBuilder';
+import { RosterBuilder } from '@/lib/RosterBuilder';
 import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
 import { yahooFantasyPpg } from '@/utils/fantasyConverter';
 

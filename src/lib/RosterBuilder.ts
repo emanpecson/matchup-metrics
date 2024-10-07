@@ -1,5 +1,5 @@
 import positions from '@/data/positions';
-import { PlayerIncludeRegularStats } from './response/player/PlayerIncludeRegularStats';
+import { PlayerIncludeRegularStats } from '../types/response/player/PlayerIncludeRegularStats';
 
 export interface RosterBuilderSlot {
   player: PlayerIncludeRegularStats | null;
@@ -22,11 +22,18 @@ export class RosterBuilder {
     this.center = roster?.center ?? { player: null, rosterPosition: 'C', id: 5 };
   }
 
-  public getRoster = () => {
+  public getRoster = (): RosterBuilderSlot[] => {
     return [this.guard1, this.guard2, this.forward1, this.forward2, this.center];
   };
 
-  public updateBySlotId = (slotId: number, player: PlayerIncludeRegularStats | null) => {
+  public printRoster = (): void => {
+    for (const slot of this.getRoster()) {
+      const prefix = `[${slot.id}][${slot.rosterPosition}]:`;
+      console.log(`${prefix} ${slot.player ? slot.player.name : 'Empty'}`);
+    }
+  };
+
+  public updateBySlotId = (slotId: number, player: PlayerIncludeRegularStats | null): RosterBuilder => {
     for (const slot of this.getRoster()) {
       if (slot.id === slotId) {
         slot.player = player;
@@ -36,12 +43,20 @@ export class RosterBuilder {
     return this;
   };
 
-  public isFull = () => {
+  public isFull = (): boolean => {
     if (!this.guard1.player) return false;
     if (!this.guard2.player) return false;
     if (!this.forward1.player) return false;
     if (!this.forward2.player) return false;
     if (!this.center.player) return false;
     return true;
+  };
+
+  public remainingSlots = (): RosterBuilderSlot[] => {
+    const slots: RosterBuilderSlot[] = [];
+    for (const slot of this.getRoster()) {
+      if (!slot.player) slots.push(slot);
+    }
+    return slots;
   };
 }

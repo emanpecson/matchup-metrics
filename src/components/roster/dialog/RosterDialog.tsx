@@ -1,6 +1,6 @@
 import { Dialog, DialogContent } from '../../ui/dialog';
 import RosterSlot, { RosterSlotState } from '../slot/RosterSlot';
-import { RosterBuilder, RosterBuilderSlot } from '@/types/RosterBuilder';
+import { RosterBuilder, RosterBuilderSlot } from '@/lib/RosterBuilder';
 import { Dispatch, SetStateAction } from 'react';
 import PlayerComparePopup from '@/components/player/compare/PlayerComparePopup';
 import StagedPlayer from '../../player/PlayerStaged';

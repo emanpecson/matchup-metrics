@@ -6,7 +6,7 @@ import RosterSlot, { RosterSlotState } from '@/components/roster/slot/RosterSlot
 import { Button } from '@/components/ui/button';
 import { DialogClose } from '@/components/ui/dialog';
 import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
-import { RosterBuilder, RosterBuilderSlot } from '@/types/RosterBuilder';
+import { RosterBuilder, RosterBuilderSlot } from '@/lib/RosterBuilder';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 

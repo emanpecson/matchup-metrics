@@ -8,7 +8,7 @@ import { TeamCombobox } from '@/components/filter/TeamCombobox';
 import PlayerDialog from '@/components/player/dialog/PlayerDialog';
 import PlayerTable from '@/components/player/PlayerTable';
 import { useLoadData } from '@/hooks/useLoadData';
-import { RosterBuilder } from '@/types/RosterBuilder';
+import { RosterBuilder } from '@/lib/RosterBuilder';
 import { Player } from '@prisma/client';
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import CreateButton from '../button/CreateButton';
