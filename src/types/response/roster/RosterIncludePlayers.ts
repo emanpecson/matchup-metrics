@@ -1,5 +1,6 @@
-import { Player, Roster } from '@prisma/client';
+import { Roster } from '@prisma/client';
+import { PlayerIncludeRegularStats } from '../player/PlayerIncludeRegularStats';
 
 export interface RosterIncludePlayers extends Roster {
-  players: Player[];
+  players: PlayerIncludeRegularStats[];
 }

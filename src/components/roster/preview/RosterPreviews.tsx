@@ -9,6 +9,8 @@ export default function RosterPreviews() {
   const [isLoading, setIsLoading] = useState(false);
   useLoadData({ endpoint: '/api/roster', onDataLoaded: setRosters, setIsLoading, delay: 150 });
 
+  // TODO: add loading + no-data state
+
   return (
     <div>
       {isLoading ? (
