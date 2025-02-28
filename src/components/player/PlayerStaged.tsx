@@ -1,5 +1,4 @@
 import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
-import { Player } from '@prisma/client';
 import Image from 'next/image';
 import { reformatPosition } from '@/utils/reformatString';
 import positions from '@/data/positions';

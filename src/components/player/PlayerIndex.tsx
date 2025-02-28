@@ -9,7 +9,6 @@ import PlayerDialog from '@/components/player/dialog/PlayerDialog';
 import PlayerTable from '@/components/player/PlayerTable';
 import { useLoadData } from '@/hooks/useLoadData';
 import { RosterBuilder } from '@/types/RosterBuilder';
-import { Player } from '@prisma/client';
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import CreateButton from '../button/CreateButton';
 import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
@@ -17,7 +16,7 @@ import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerInclude
 interface PlayerIndexProps {
   rowCount: number;
   FooterElement?: () => JSX.Element;
-  setFocusPlayer?: Dispatch<SetStateAction<Player | null>>;
+  setFocusPlayer?: Dispatch<SetStateAction<PlayerIncludeRegularStats | null>>;
   roster?: RosterBuilder;
   handleCreateRoster?: () => void;
 }
