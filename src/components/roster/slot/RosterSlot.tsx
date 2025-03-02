@@ -1,9 +1,7 @@
 import positions from '@/data/positions';
 import { getTeamLogoUrl } from '@/utils/getPhotoUrl';
 import { reformatPosition, shortName } from '@/utils/reformatString';
-import { Player } from '@prisma/client';
 import Image from 'next/image';
-import { cn } from '@/lib/utils';
 import { useState } from 'react';
 import ActionPrompt from './ActionPrompt';
 import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
@@ -42,18 +40,7 @@ export default function RosterSlot(props: RosterSlotProps) {
           if (!!props.onClick) props.onClick();
         }}
       >
-        {/* player headshot */}
-        {/* <div className="rounded-2xl bg-neutral-200 dark:bg-neutral-800 h-28 w-32">
-          <Image
-            src={getPlayerPhotoUrl(p?.nbaId ?? '')}
-            alt={p?.name ?? ''}
-            height={24}
-            width={24}
-            className={cn(!teamLogoUrl && 'opacity-30', 'h-36 w-32 object-cover absolute bottom-0 rounded-b-2xl')}
-            unoptimized
-          />
-        </div> */}
-        <PlayerHeadshot player={p} teamLogoUrl={teamLogoUrl} />
+        <PlayerHeadshot player={p} />
 
         {/* team logo */}
         {p && (
