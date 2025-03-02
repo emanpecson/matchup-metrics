@@ -17,7 +17,7 @@ interface RosterDialogProps {
 }
 
 export default function RosterDialog(props: RosterDialogProps) {
-  const [playerCompareIsOpen, setPlayerCompareIsOpen] = useState(false);
+  const [hoveringSlotId, setHoveringSlotId] = useState<number | null>(null);
 
   const handleOverwrite = (slotId: number) => {
     const tempRoster = new RosterBuilder(props.roster);
@@ -63,10 +63,10 @@ export default function RosterDialog(props: RosterDialogProps) {
                 if (slot.player && props.playerToAdd && state !== RosterSlotState.DISABLE) {
                   return (
                     <TooltipProvider>
-                      <Tooltip delayDuration={0} open={playerCompareIsOpen}>
+                      <Tooltip delayDuration={0} open={slot.id === hoveringSlotId}>
                         <TooltipTrigger
-                          onMouseOver={() => setPlayerCompareIsOpen(true)}
-                          onMouseLeave={() => setPlayerCompareIsOpen(false)}
+                          onMouseOver={() => setHoveringSlotId(slot.id)}
+                          onMouseLeave={() => setHoveringSlotId(null)}
                           asChild
                         >
                           <div>{Slot()}</div>
