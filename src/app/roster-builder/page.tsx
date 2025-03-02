@@ -20,7 +20,7 @@ export default function RosterBuilderPage() {
    * Button component that opens the roster-dialog to add a new player.
    * @returns {JSX.Element}
    */
-  const addToRoster = (): JSX.Element => {
+  const RosterAddButton = (): JSX.Element => {
     return (
       <DialogClose>
         <Button
@@ -76,7 +76,7 @@ export default function RosterBuilderPage() {
         </div>
         <PlayerIndex
           rowCount={8}
-          FooterElement={addToRoster}
+          FooterElement={RosterAddButton}
           setFocusPlayer={setPlayerToAdd}
           roster={rosterInstance}
           handleCreateRoster={handleCreateRoster}
