@@ -15,18 +15,18 @@ export default function PlayerHeadshot(props: PlayerHeadshotProps) {
     props.size === 'sm'
       ? 'h-28 w-32'
       : props.size === 'md'
-        ? 'h-40 w-48'
+        ? 'h-40 w-44'
         : props.size === 'lg'
-          ? 'h-60 w-72'
+          ? 'h-48 w-52'
           : 'h-28 w-32';
 
   const imageSizeStyle =
     props.size === 'sm'
       ? 'h-36 w-32'
       : props.size === 'md'
-        ? 'h-52 w-48'
+        ? 'h-48 w-44'
         : props.size === 'lg'
-          ? 'h-80 w-72'
+          ? 'h-60 w-52'
           : 'h-36 w-32';
 
   return (
