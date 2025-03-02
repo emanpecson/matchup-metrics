@@ -1,11 +1,12 @@
 import { Dialog, DialogContent } from '../../ui/dialog';
 import RosterSlot, { RosterSlotState } from '../slot/RosterSlot';
 import { RosterBuilder, RosterBuilderSlot } from '@/types/RosterBuilder';
-import { Dispatch, SetStateAction } from 'react';
-import PlayerComparePopup from '@/components/player/compare/PlayerComparePopup';
+import { Dispatch, SetStateAction, useState } from 'react';
 import StagedPlayer from '../../player/PlayerStaged';
 import Tip from '@/components/Tip';
 import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import PlayerStatsCompareSample from '@/components/player/compare/PlayerStatsCompareSample';
 
 interface RosterDialogProps {
   roster: RosterBuilder;
@@ -16,6 +17,8 @@ interface RosterDialogProps {
 }
 
 export default function RosterDialog(props: RosterDialogProps) {
+  const [playerCompareIsOpen, setPlayerCompareIsOpen] = useState(false);
+
   const handleOverwrite = (slotId: number) => {
     const tempRoster = new RosterBuilder(props.roster);
     tempRoster.updateBySlotId(slotId, props.playerToAdd);
@@ -59,9 +62,20 @@ export default function RosterDialog(props: RosterDialogProps) {
 
                 if (slot.player && props.playerToAdd && state !== RosterSlotState.DISABLE) {
                   return (
-                    <PlayerComparePopup thisPlayer={slot.player} thatPlayer={props.playerToAdd}>
-                      <div>{Slot()}</div>
-                    </PlayerComparePopup>
+                    <TooltipProvider>
+                      <Tooltip delayDuration={0} open={playerCompareIsOpen}>
+                        <TooltipTrigger
+                          onMouseOver={() => setPlayerCompareIsOpen(true)}
+                          onMouseLeave={() => setPlayerCompareIsOpen(false)}
+                          asChild
+                        >
+                          <div>{Slot()}</div>
+                        </TooltipTrigger>
+                        <TooltipContent className="mr-12 mb-6">
+                          <PlayerStatsCompareSample thisPlayer={slot.player} thatPlayer={props.playerToAdd} />
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
                   );
                 } else {
                   return Slot();
