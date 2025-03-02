@@ -22,7 +22,7 @@ export default function InlineImage(props: InlineImageProps) {
         )}
         unoptimized
       />
-      {props.children}
+      <span>{props.children}</span>
     </div>
   );
 }
