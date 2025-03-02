@@ -14,14 +14,23 @@ export default function PlayerStatsCompareTable(props: PlayerStatsCompareProps) 
    * @param {Object} props - Stats to compare
    * @returns {JSX.Element}
    */
-  const FormatStat = (props: { stat?: number; vsStat?: number; justifyRight?: boolean }): JSX.Element => {
+  const FormatStat = (props: {
+    stat?: number;
+    vsStat?: number;
+    justifyRight?: boolean;
+    reverse?: boolean;
+  }): JSX.Element => {
     return (
       <div
         className={cn(props.justifyRight ? 'justify-end' : 'justify-start', 'flex space-x-1 place-items-center w-full')}
       >
-        {!props.justifyRight && <StatCompareIcon thisStat={props.stat ?? 0} thatStat={props.vsStat ?? 0} />}
+        {!props.justifyRight && (
+          <StatCompareIcon thisStat={props.stat ?? 0} thatStat={props.vsStat ?? 0} reverse={props.reverse} />
+        )}
         <span className="font-semibold">{props.stat}</span>
-        {props.justifyRight && <StatCompareIcon thisStat={props.stat ?? 0} thatStat={props.vsStat ?? 0} />}
+        {props.justifyRight && (
+          <StatCompareIcon thisStat={props.stat ?? 0} thatStat={props.vsStat ?? 0} reverse={props.reverse} />
+        )}
       </div>
     );
   };
@@ -56,7 +65,7 @@ export default function PlayerStatsCompareTable(props: PlayerStatsCompareProps) 
         <FormatStat stat={p1Stats?.fgPct ?? 0} vsStat={p2Stats?.fgPct ?? 0} justifyRight={props.justifyRight} />
         <FormatStat stat={p1Stats?.fg3Pct ?? 0} vsStat={p2Stats?.fg3Pct ?? 0} justifyRight={props.justifyRight} />
         <FormatStat stat={p1Stats?.ftPct ?? 0} vsStat={p2Stats?.ftPct ?? 0} justifyRight={props.justifyRight} />
-        <FormatStat stat={p1Stats?.tpg ?? 0} vsStat={p2Stats?.tpg ?? 0} justifyRight={props.justifyRight} />
+        <FormatStat stat={p1Stats?.tpg ?? 0} vsStat={p2Stats?.tpg ?? 0} justifyRight={props.justifyRight} reverse />
         <FormatStat stat={p1Stats?.gp ?? 0} vsStat={p2Stats?.gp ?? 0} justifyRight={props.justifyRight} />
       </div>
     );
