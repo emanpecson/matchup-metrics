@@ -16,7 +16,11 @@ export default function RosterBuilderPage() {
   const [rosterDialogIsOpen, setRosterDialogIsOpen] = useState(false);
   const router = useRouter();
 
-  const addToRoster = () => {
+  /**
+   * Button component that opens the roster-dialog to add a new player.
+   * @returns {JSX.Element}
+   */
+  const addToRoster = (): JSX.Element => {
     return (
       <DialogClose>
         <Button
@@ -32,15 +36,21 @@ export default function RosterBuilderPage() {
     );
   };
 
+  /**
+   * Removes a player at a given roster slot id.
+   * @param {number} slotId - Removal position
+   */
   const handleRosterSlotRemove = (slotId: number) => {
     const tempRoster = new RosterBuilder(rosterInstance);
     tempRoster.updateBySlotId(slotId, null);
     setRosterInstance(tempRoster);
   };
 
+  /**
+   * Creates a roster in the database from player ids.
+   */
   const handleCreateRoster = async () => {
-    const playerIds: string[] = [];
-    for (const slot of rosterInstance.getRoster()) if (slot.player) playerIds.push(slot.player.id);
+    const playerIds: string[] = rosterInstance.getRoster().map((slot) => slot.player!.id);
 
     const res = await fetch('/api/roster', { method: 'POST', body: JSON.stringify(playerIds) });
     if (!res.ok) {
