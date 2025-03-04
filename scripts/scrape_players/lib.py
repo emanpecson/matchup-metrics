@@ -27,7 +27,9 @@ STAT_DROPDOWN_XPATH = '//*[@id="__next"]/div[2]/div[2]/div[3]/section[2]/div/div
 
 BIO_LINK = 'https://www.nba.com/players'
 BIO_TABLE_XPATH = '//*[@id="__next"]/div[2]/div[2]/main/div[2]/section/div/div[2]/div[2]/div/div/div/table'
-BIO_DROPDOWN_XPATH = '//*[@id="__next"]/div[2]/div[2]/main/div[2]/section/div/div[2]/div[1]/div[7]/div/div[3]/div/label/div/select'
+# BIO_DROPDOWN_XPATH = '//*[@id="__next"]/div[2]/div[2]/main/div[2]/section/div/div[2]/div[1]/div[7]/div/div[3]/div/label/div/select'
+BIO_DROPDOWN_XPATH = '/html/body/div[1]/div[2]/div[2]/main/div[2]/section/div/div[2]/div[1]/div[7]/div/div[3]/div/label/div/select'
+# /html/body/div[1]/div[2]/div[2]/main/div[2]/section/div/div[2]/div[1]/div[7]/div/div[3]/div/label/div/select
 
 PREFIX = BLUE + f'[scrape-players]: ' + RESET
 
