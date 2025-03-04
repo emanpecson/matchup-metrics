@@ -19,7 +19,7 @@ export const reformatHeight = (h: string) => {
 
 export const shortName = (name: string) => {
   const [firstName, lastName] = name.split(' ');
-  return `${firstName[0]}. ${lastName.length > 15 ? lastName.substring(0, 12) + '...' : lastName}`;
+  return `${firstName[0]}. ${lastName.length > 12 ? lastName.substring(0, 9) + '...' : lastName}`;
 };
 
 export const fullTeamName = (abbreviation: string) => {

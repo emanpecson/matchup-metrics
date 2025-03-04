@@ -8,17 +8,14 @@ import { TeamCombobox } from '@/components/filter/TeamCombobox';
 import PlayerDialog from '@/components/player/dialog/PlayerDialog';
 import PlayerTable from '@/components/player/PlayerTable';
 import { useLoadData } from '@/hooks/useLoadData';
-import { RosterBuilder } from '@/types/RosterBuilder';
 import { Dispatch, SetStateAction, useEffect, useState } from 'react';
-import CreateButton from '../button/CreateButton';
 import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
 
 interface PlayerIndexProps {
   rowCount: number;
   FooterElement?: () => JSX.Element;
   setFocusPlayer?: Dispatch<SetStateAction<PlayerIncludeRegularStats | null>>;
-  roster?: RosterBuilder;
-  handleCreateRoster?: () => void;
+  disabledPlayerIds: string[];
 }
 
 export default function PlayerIndex(props: PlayerIndexProps) {
@@ -57,18 +54,7 @@ export default function PlayerIndex(props: PlayerIndexProps) {
   return (
     <div>
       <div className="flex place-items-center flex-col w-full space-y-1">
-        <div className="flex space-1 w-full">
-          <SearchBar onValueChange={setFilterName} value={filterName} />
-          {props.roster && (
-            <CreateButton
-              label="Complete roster"
-              dialogTitle="Submit roster?"
-              dialogDescription="Confirm that your roster is complete."
-              disabled={!props.roster.isFull()}
-              onConfirm={() => props.handleCreateRoster && props.handleCreateRoster()}
-            />
-          )}
-        </div>
+        <SearchBar onValueChange={setFilterName} value={filterName} />
         <div className="flex space-x-2 justify-between place-items-center w-full">
           <TeamCombobox onValueChange={setFilterTeam} value={filterTeam} />
           <PositionSelect onValueChange={setFilterPosition} value={filterPosition} />
@@ -88,7 +74,7 @@ export default function PlayerIndex(props: PlayerIndexProps) {
           page={page}
           playersCount={playersCount}
           onRowClick={handleRowClick}
-          roster={props.roster}
+          disabledPlayerIds={props.disabledPlayerIds}
         />
       </div>
 

@@ -49,16 +49,16 @@ export default function RosterBuilderPage() {
   /**
    * Creates a roster in the database from player ids.
    */
-  const handleCreateRoster = async () => {
-    const playerIds: string[] = rosterInstance.getRoster().map((slot) => slot.player!.id);
+  // const handleCreateRoster = async () => {
+  //   const playerIds: string[] = rosterInstance.getRoster().map((slot) => slot.player!.id);
 
-    const res = await fetch('/api/roster', { method: 'POST', body: JSON.stringify(playerIds) });
-    if (!res.ok) {
-      console.log('Error');
-    } else {
-      router.push('/');
-    }
-  };
+  //   const res = await fetch('/api/roster', { method: 'POST', body: JSON.stringify(playerIds) });
+  //   if (!res.ok) {
+  //     console.log('Error');
+  //   } else {
+  //     router.push('/');
+  //   }
+  // };
 
   return (
     <>
@@ -78,8 +78,10 @@ export default function RosterBuilderPage() {
           rowCount={8}
           FooterElement={RosterAddButton}
           setFocusPlayer={setPlayerToAdd}
-          roster={rosterInstance}
-          handleCreateRoster={handleCreateRoster}
+          disabledPlayerIds={rosterInstance
+            .getRoster()
+            .filter((slot) => slot.player)
+            .map((slot) => slot.player!.id)}
         />
       </div>
 

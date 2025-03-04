@@ -16,23 +16,23 @@ export interface PlayerTableProps {
   rowCount: number; // count of players currently displayed
   playersCount: number; // total players
   onRowClick: (player: PlayerIncludeRegularStats) => void;
-  roster?: RosterBuilder;
+  disabledPlayerIds: string[];
 }
 
 export default function PlayerTable(props: PlayerTableProps) {
   const loadCount = props.playersCount - props.page * props.rowCount;
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
 
-  const handleRowClick = (onRoster: boolean, player: PlayerIncludeRegularStats) => {
-    if (!onRoster) props.onRowClick(player);
+  const handleRowClick = (disabled: boolean, player: PlayerIncludeRegularStats) => {
+    if (!disabled) props.onRowClick(player);
   };
 
-  const handleMouseOver = (onRoster: boolean, i: number) => {
-    if (!onRoster) setHoverIndex(i);
+  const handleMouseOver = (disabled: boolean, i: number) => {
+    if (!disabled) setHoverIndex(i);
   };
 
-  const handleMouseLeave = (onRoster: boolean) => {
-    if (!onRoster) setHoverIndex(null);
+  const handleMouseLeave = (disabled: boolean) => {
+    if (!disabled) setHoverIndex(null);
   };
 
   return (
@@ -61,12 +61,9 @@ export default function PlayerTable(props: PlayerTableProps) {
             {props.players.map((player: PlayerIncludeRegularStats, i: number) => {
               const rs = player.regularStats;
 
-              let onRoster = false;
-              if (props.roster)
-                for (const slot of props.roster.getRoster())
-                  if (slot.player && slot.player.id === player.id) onRoster = true;
+              let disabled = props.disabledPlayerIds.includes(player.id);
 
-              const disabledStyle = onRoster && 'opacity-40 dark:opacity-20';
+              const disabledStyle = disabled && 'opacity-40 dark:opacity-20';
               const highlightStyle =
                 hoverIndex === i && 'bg-neutral-200 dark:bg-neutral-800 transition-colors duration-150 cursor-pointer';
               const conditionalStyles = highlightStyle + ' ' + disabledStyle;
@@ -75,9 +72,9 @@ export default function PlayerTable(props: PlayerTableProps) {
                 <tr
                   key={i}
                   className="sm:text-base text-sm text-neutral-600 dark:text-neutral-200"
-                  onClick={() => handleRowClick(onRoster, player)}
-                  onMouseOver={() => handleMouseOver(onRoster, i)}
-                  onMouseLeave={() => handleMouseLeave(onRoster)}
+                  onClick={() => handleRowClick(disabled, player)}
+                  onMouseOver={() => handleMouseOver(disabled, i)}
+                  onMouseLeave={() => handleMouseLeave(disabled)}
                 >
                   <td className={cn(conditionalStyles, 'px-4 py-1.5 text-left font-medium rounded-l-lg')}>
                     <InlineImage src={getPlayerPhotoUrl(player.nbaId)} alt={'plyr-img'} rounded>

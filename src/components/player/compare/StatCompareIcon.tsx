@@ -18,7 +18,7 @@ export default function StatCompareIcon(props: StatCompareIconProps) {
           : (props.reverse === undefined && props.thisStat < props.thatStat) ||
               (props.reverse && props.thisStat > props.thatStat)
             ? 'bg-red-400 text-red-700 dark:border-red-700 border-red-500'
-            : 'bg-yellow-400 text-yellow-700 dark:border-yellow-700 border-yellow-500'
+            : 'bg-neutral-200 dark:bg-neutral-800 text-neutral-400 dark:text-neutral-600 border-neutral-300 dark:border-neutral-700'
       )}
     >
       {props.thisStat > props.thatStat ? (
