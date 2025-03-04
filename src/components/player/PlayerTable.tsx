@@ -8,7 +8,22 @@ import { RosterBuilder } from '@/types/RosterBuilder';
 import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
 import { yahooFantasyPpg } from '@/utils/fantasyConverter';
 
-export const playerTableColumns = ['player', 'fantasy', 'pts', 'ast', 'reb', 'stl', 'blk', 'to', 'team', 'pos'];
+export const playerTableColumns = [
+  'player',
+  'ftsy',
+  'pts',
+  'ast',
+  'reb',
+  'stl',
+  'blk',
+  'to',
+  'min',
+  'fg%',
+  'fg3%',
+  'ft%',
+  'team',
+  'pos',
+];
 export interface PlayerTableProps {
   players: PlayerIncludeRegularStats[]; // arr of players currently displayed
   isLoading: boolean;
@@ -44,13 +59,9 @@ export default function PlayerTable(props: PlayerTableProps) {
           <thead>
             <tr className="sm:text-sm text-xs uppercase text-neutral-500">
               {playerTableColumns.map((col: string, i: number) => {
-                const isFirst = i === 0;
                 const isLast = i === playerTableColumns.length - 1;
                 return (
-                  <th
-                    key={i}
-                    className={cn(isFirst ? 'text-left' : isLast ? 'text-right' : 'text-center', 'px-4 pb-2')}
-                  >
+                  <th key={i} className={cn(isLast ? 'text-right' : 'text-left', 'px-4 pb-2')}>
                     {col}
                   </th>
                 );
@@ -81,14 +92,20 @@ export default function PlayerTable(props: PlayerTableProps) {
                       <p>{player.name}</p>
                     </InlineImage>
                   </td>
-                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-wrap')}>{yahooFantasyPpg(rs)}</td>
-                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>{rs.ppg.toFixed(1)}</td>
-                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>{rs.apg.toFixed(1)}</td>
-                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>{rs.rpg.toFixed(1)}</td>
-                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>{rs.spg.toFixed(1)}</td>
-                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>{rs.bpg.toFixed(1)}</td>
-                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>{rs.tpg.toFixed(1)}</td>
-                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-center text-nowrap')}>
+                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-left text-wrap')}>{yahooFantasyPpg(rs)}</td>
+                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-left text-nowrap')}>{rs.ppg.toFixed(1)}</td>
+                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-left text-nowrap')}>{rs.apg.toFixed(1)}</td>
+                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-left text-nowrap')}>{rs.rpg.toFixed(1)}</td>
+                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-left text-nowrap')}>{rs.spg.toFixed(1)}</td>
+                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-left text-nowrap')}>{rs.bpg.toFixed(1)}</td>
+                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-left text-nowrap')}>{rs.tpg.toFixed(1)}</td>
+                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-left text-nowrap')}>{rs.mpg.toFixed(1)}</td>
+                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-left text-nowrap')}>{rs.fgPct.toFixed(1)}%</td>
+                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-left text-nowrap')}>
+                    {rs.fg3Pct.toFixed(1)}%
+                  </td>
+                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-left text-nowrap')}>{rs.ftPct.toFixed(1)}%</td>
+                  <td className={cn(conditionalStyles, 'px-4 py-1.5 text-left text-nowrap')}>
                     <InlineImage src={getTeamLogoUrl(player.teamAbbreviation)} alt={player.teamAbbreviation}>
                       <p>{player.teamAbbreviation}</p>
                     </InlineImage>

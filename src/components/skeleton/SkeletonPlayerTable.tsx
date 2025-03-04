@@ -8,10 +8,9 @@ export default function SkeletonPlayerTable({ rowCount }: { rowCount: number }) 
       <thead>
         <tr className="sm:text-sm text-xs uppercase text-neutral-500">
           {playerTableColumns.map((col: string, i: number) => {
-            const isFirst = i === 0;
             const isLast = i === playerTableColumns.length - 1;
             return (
-              <th key={i} className={cn(isFirst ? 'text-left' : isLast ? 'text-right' : 'text-center', 'px-4 pb-2')}>
+              <th key={i} className={cn(isLast ? 'text-right' : 'text-left', 'px-4 pb-2')}>
                 {col}
               </th>
             );
@@ -30,42 +29,62 @@ export default function SkeletonPlayerTable({ rowCount }: { rowCount: number }) 
               </div>
             </td>
             <td className="h-[39px]">
-              <div className={cn('flex place-items-center justify-center')}>
+              <div className={cn('flex place-items-center justify-start')}>
                 <Skeleton className="w-1/2 mx-2 h-4" />
               </div>
             </td>
             <td className="h-[39px]">
-              <div className={cn('flex place-items-center justify-center')}>
+              <div className={cn('flex place-items-center justify-start')}>
                 <Skeleton className="w-2/3 mx-2 h-4" />
               </div>
             </td>
             <td className="h-[39px]">
-              <div className={cn('flex place-items-center justify-center')}>
+              <div className={cn('flex place-items-center justify-start')}>
                 <Skeleton className="w-2/3 mx-2 h-4" />
               </div>
             </td>
             <td className="h-[39px]">
-              <div className={cn('flex place-items-center justify-center')}>
+              <div className={cn('flex place-items-center justify-start')}>
                 <Skeleton className="w-2/3 mx-2 h-4" />
               </div>
             </td>
             <td className="h-[39px]">
-              <div className={cn('flex place-items-center justify-center')}>
+              <div className={cn('flex place-items-center justify-start')}>
                 <Skeleton className="w-2/3 mx-2 h-4" />
               </div>
             </td>
             <td className="h-[39px]">
-              <div className={cn('flex place-items-center justify-center')}>
+              <div className={cn('flex place-items-center justify-start')}>
                 <Skeleton className="w-2/3 mx-2 h-4" />
               </div>
             </td>
             <td className="h-[39px]">
-              <div className={cn('flex place-items-center justify-center')}>
+              <div className={cn('flex place-items-center justify-start')}>
                 <Skeleton className="w-1/2 mx-2 h-4" />
               </div>
             </td>
             <td className="h-[39px]">
-              <div className={cn('flex space-x-1 place-items-center justify-center')}>
+              <div className={cn('flex place-items-center justify-start')}>
+                <Skeleton className="w-1/2 mx-2 h-4" />
+              </div>
+            </td>
+            <td className="h-[39px]">
+              <div className={cn('flex place-items-center justify-start')}>
+                <Skeleton className="w-1/2 mx-2 h-4" />
+              </div>
+            </td>
+            <td className="h-[39px]">
+              <div className={cn('flex place-items-center justify-start')}>
+                <Skeleton className="w-1/2 mx-2 h-4" />
+              </div>
+            </td>
+            <td className="h-[39px]">
+              <div className={cn('flex place-items-center justify-start')}>
+                <Skeleton className="w-1/2 mx-2 h-4" />
+              </div>
+            </td>
+            <td className="h-[39px]">
+              <div className={cn('flex space-x-1 place-items-center justify-start')}>
                 <Skeleton className="rounded-full w-6 h-6" />
                 <Skeleton className="w-1/2 mx-2 h-4" />
               </div>

@@ -1,5 +1,5 @@
 import PlayerIndex from '@/components/player/PlayerIndex';
 
 export default function PlayerIndexPage() {
-  return <PlayerIndex rowCount={12} />;
+  return <PlayerIndex rowCount={12} disabledPlayerIds={[]} />;
 }
