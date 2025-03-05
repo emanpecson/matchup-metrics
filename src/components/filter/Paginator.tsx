@@ -14,7 +14,7 @@ export default function Paginator(props: PaginatorProps) {
   const disableNext = (props.page + 1) * props.rowCount >= props.totalCount; // 1 * 12 >= 13 (false; prompt 2 pages)
 
   return (
-    <div className="flex space-x-0.5">
+    <div className="flex space-x-1">
       <div className="rounded-md border px-4 flex place-items-center min-w-[7rem] justify-center pointer-events-none">
         <p className="text-neutral-600 dark:text-neutral-400">{`${props.totalCount} rows`}</p>
       </div>

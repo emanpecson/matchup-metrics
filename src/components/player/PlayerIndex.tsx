@@ -28,12 +28,6 @@ export default function PlayerIndex(props: PlayerIndexProps) {
   const [page, setPage] = useState(0);
   const [focusPlayer, setFocusPlayer] = useState<PlayerIncludeRegularStats | null>(null);
 
-  const handleFilterReset = () => {
-    setFilterTeam('');
-    setFilterName('');
-    setFilterPosition('');
-  };
-
   const handleRowClick = (player: PlayerIncludeRegularStats) => {
     setFocusPlayer(player);
     if (!!props.setFocusPlayer) props.setFocusPlayer(player);
@@ -54,11 +48,11 @@ export default function PlayerIndex(props: PlayerIndexProps) {
   return (
     <div>
       <div className="flex place-items-center flex-col w-full space-y-1">
-        <SearchBar onValueChange={setFilterName} value={filterName} />
-        <div className="flex space-x-2 justify-between place-items-center w-full">
+        <div className="flex space-x-1 justify-between place-items-center w-full">
+          <SearchBar onValueChange={setFilterName} value={filterName} />
           <TeamCombobox onValueChange={setFilterTeam} value={filterTeam} />
           <PositionSelect onValueChange={setFilterPosition} value={filterPosition} />
-          <ResetFilters disabled={!filterTeam && !filterName && !filterPosition} onClick={handleFilterReset} />
+          {/* <ResetFilters disabled={!filterTeam && !filterName && !filterPosition} onClick={handleFilterReset} /> */}
           <Paginator
             onPrev={() => setPage((prev) => prev - 1)}
             onNext={() => setPage((prev) => prev + 1)}
