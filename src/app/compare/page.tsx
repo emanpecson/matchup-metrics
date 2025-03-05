@@ -66,7 +66,7 @@ export default function ComparePage() {
             setPlayerToAdd;
           }}
         >
-          <p>Add to roster</p>
+          <p>Add to lineup</p>
         </Button>
       </DialogClose>
     );

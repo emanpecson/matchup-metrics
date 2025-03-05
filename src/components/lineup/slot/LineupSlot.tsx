@@ -12,6 +12,8 @@ interface LineupSlotProps extends PlayerHeadshotProps {
   state: LineupSlotState;
   onClick?: () => void;
   showStats?: boolean;
+  hideCaption?: boolean;
+  hideTeam?: boolean;
 }
 
 export enum LineupSlotState {
@@ -42,7 +44,7 @@ export default function LineupSlot(props: LineupSlotProps) {
         <PlayerHeadshot player={p} size={props.size} />
 
         {/* team logo */}
-        {p && (
+        {p && !props.hideTeam && (
           <div className="absolute rounded-full bg-neutral-300 dark:bg-neutral-700 -bottom-3 -left-3 bg-opacity-70 backdrop-blur-lg">
             <Image
               src={teamLogoUrl}
@@ -59,20 +61,24 @@ export default function LineupSlot(props: LineupSlotProps) {
       </button>
 
       {/* bottom text */}
-      <div className="flex flex-col place-items-center text-center">
-        <p className="font-medium text-sm text-neutral-500 dark:text-neutral-400">{reformatPosition(props.position)}</p>
-        <div>
-          {p ? (
-            <div>
-              <p className="font-semibold text-sm">{shortName(p.name)}</p>
-            </div>
-          ) : (
-            <p className="text-neutral-500 dark:text-neutral-400 font-medium text-sm">
-              {props.state === LineupSlotState.DISABLE ? 'Invalid position' : 'Add player'}
-            </p>
-          )}
+      {!props.hideCaption && (
+        <div className="flex flex-col place-items-center text-center">
+          <p className="font-medium text-sm text-neutral-500 dark:text-neutral-400">
+            {reformatPosition(props.position)}
+          </p>
+          <div>
+            {p ? (
+              <div>
+                <p className="font-semibold text-sm">{shortName(p.name)}</p>
+              </div>
+            ) : (
+              <p className="text-neutral-500 dark:text-neutral-400 font-medium text-sm">
+                {props.state === LineupSlotState.DISABLE ? 'Invalid position' : 'Add player'}
+              </p>
+            )}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
