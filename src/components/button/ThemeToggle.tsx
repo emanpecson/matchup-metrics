@@ -3,9 +3,9 @@
 import * as React from 'react';
 import { MoonIcon, SunIcon } from 'lucide-react';
 import { useTheme } from 'next-themes';
-import SafeIcon from '../SafeIcon';
+import SafeIcon, { SafeIconProps } from '../SafeIcon';
 
-export function ThemeToggle() {
+export function ThemeToggle(props: any) {
   const { setTheme, resolvedTheme } = useTheme();
 
   return (
@@ -13,7 +13,7 @@ export function ThemeToggle() {
       className="w-full h-full flex justify-center place-items-center"
       onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
     >
-      {resolvedTheme === 'dark' ? <SafeIcon Icon={SunIcon} /> : <SafeIcon Icon={MoonIcon} />}
+      {resolvedTheme === 'dark' ? <SafeIcon {...props} Icon={SunIcon} /> : <SafeIcon {...props} Icon={MoonIcon} />}
     </button>
   );
 }

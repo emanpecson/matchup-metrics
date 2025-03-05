@@ -125,7 +125,7 @@ export default function LineupCompare(props: LineupCompareProps) {
   };
 
   return (
-    <div className="flex space-x-2 rounded-xl p-4 w-full border mt-8">
+    <div className="flex space-x-2 rounded-xl p-4 w-full border">
       <DisplayLineup lineup={props.lineup1} setLineup={props.setLineup1} />
       <LineupStatsCompare lineup1={props.lineup1} lineup2={props.lineup2} />
       <DisplayLineup lineup={props.lineup2} setLineup={props.setLineup2} />
