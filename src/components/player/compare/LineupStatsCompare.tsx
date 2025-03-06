@@ -98,7 +98,7 @@ export default function LineupStatsCompare(props: LineupStatsCompareProps) {
           </td>
 
           <td className="text-center divide-y w-full font-bold text-neutral-700 dark:text-neutral-300 uppercase">
-            <p>Fantasy Points</p>
+            <p>Fantasy</p>
             <p>Points</p>
             <p>Assists</p>
             <p>Rebounds</p>

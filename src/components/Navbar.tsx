@@ -11,13 +11,13 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="h-screen left-0 border-l bg-neutral-800 w-16 py-8">
+    <div className="min-h-screen bg-neutral-800 w-16 py-8">
       {/* routes */}
       <div className="flex flex-col place-items-center space-y-6">
-        {routes.map((route: AppRoute) => {
+        {routes.map((route: AppRoute, i: number) => {
           const isActive = pathname === route.path;
           return (
-            <div className="relative w-full">
+            <div className="relative w-full" key={i}>
               {isActive && <div className="bg-white h-full w-1 rounded-r-3xl absolute left-0" />}
               <Link href={route.path} className={cn(isActive && 'font-medium', 'hover:font-medium')}>
                 <div className="w-full flex justify-center">
