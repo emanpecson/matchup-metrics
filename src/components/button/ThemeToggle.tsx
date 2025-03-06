@@ -13,7 +13,7 @@ export function ThemeToggle(props: any) {
       className="w-full h-full flex justify-center place-items-center"
       onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
     >
-      {resolvedTheme === 'dark' ? <SafeIcon {...props} Icon={SunIcon} /> : <SafeIcon {...props} Icon={MoonIcon} />}
+      {resolvedTheme === 'dark' ? <SafeIcon {...props} Icon={MoonIcon} /> : <SafeIcon {...props} Icon={SunIcon} />}
     </button>
   );
 }

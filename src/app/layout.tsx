@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <div className="flex max-sm:flex-col space-x-0 px-0 min-h-screen">
-            <div className="flex-shrink-0 min-h-screen max-sm:hidden block">
+            <div className="flex-shrink-0 min-h-screen max-sm:hidden block z-20">
               <Navbar />
             </div>
             <div className="max-sm:block hidden">
