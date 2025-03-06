@@ -25,7 +25,9 @@ export default function RootLayout({
             <div className="flex-shrink-0 h-full">
               <Navbar />
             </div>
-            <div className="px-8 mx-auto flex justify-center w-full pt-8">{children}</div>
+            <div className="w-full">
+              <div className="px-8 mx-auto flex justify-center pt-8 max-w-[80rem]">{children}</div>
+            </div>
           </div>
         </ThemeProvider>
       </body>

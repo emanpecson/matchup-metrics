@@ -57,7 +57,7 @@ export default function ComparePage() {
   };
 
   return (
-    <>
+    <div className="w-full">
       <div className="space-y-1">
         <LineupCompare lineup1={lineup1} setLineup1={setLineup1} lineup2={lineup2} setLineup2={setLineup2} />
         <PlayerIndex
@@ -77,6 +77,6 @@ export default function ComparePage() {
         setLineup2={setLineup2}
         playerToAdd={playerToAdd!}
       />
-    </>
+    </div>
   );
 }
