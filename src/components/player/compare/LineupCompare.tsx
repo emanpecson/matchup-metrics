@@ -1,14 +1,16 @@
 import { LineupBuilder } from '@/types/LineupBuilder';
 import LineupStatsCompare from './LineupStatsCompare';
 import LineupSlot, { LineupSlotState } from '@/components/lineup/slot/LineupSlot';
-import { Dispatch, SetStateAction } from 'react';
+import { Dispatch, SetStateAction, useState } from 'react';
 import { cn } from '@/lib/utils';
-import { reformatHeight, reformatPosition } from '@/utils/reformatString';
+import { reformatHeight, reformatPosition, shortName } from '@/utils/reformatString';
 import positions from '@/data/positions';
 import Image from 'next/image';
-import { getTeamLogoUrl } from '@/utils/getPhotoUrl';
-import teams, { TeamInfo } from '@/data/teams';
+import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
+import teams from '@/data/teams';
 import PlayerHeadshot from '../PlayerHeadshot';
+import { useWindowResize, widthBreakpoints } from '@/hooks/useWindowResize';
+import InlineImage from '@/components/InlineImage';
 
 interface LineupCompareProps {
   lineup1: LineupBuilder;
@@ -18,6 +20,13 @@ interface LineupCompareProps {
 }
 
 export default function LineupCompare(props: LineupCompareProps) {
+  const [isMobile, setIsMobile] = useState(false);
+  useWindowResize(
+    widthBreakpoints.xl,
+    () => setIsMobile(false),
+    () => setIsMobile(true)
+  );
+
   /**
    * Removes a player at a given lineup slot id.
    * @param {LineupBuilder} lineup - Lineup to perform removal on
@@ -46,10 +55,30 @@ export default function LineupCompare(props: LineupCompareProps) {
   }): JSX.Element => {
     const slots = param.lineup.getLineup().filter((slot) => slot.player);
 
+    // if mobile
+    if (isMobile) {
+      return (
+        <div className="flex flex-col place-items-center justify-center px-1 flex-shrink-0 space-y-2">
+          {slots.map((slot) => (
+            <div key={slot.id} className="w-full">
+              <Image
+                src={getPlayerPhotoUrl(slot.player!.nbaId)}
+                alt="player-img"
+                height={24}
+                width={24}
+                className="w-10 h-10 rounded-full object-cover border"
+                unoptimized
+              />
+            </div>
+          ))}
+        </div>
+      );
+    }
+
     // if no players
     if (param.lineup.getSize() === 0) {
       return (
-        <div className="flex place-items-center px-16">
+        <div className="flex place-items-center sm:px-16">
           <div className="space-y-0.5">
             <PlayerHeadshot player={null} size="lg" />
             <h3 className="font-extrabold text-xl text-center text-neutral-500">Add player</h3>

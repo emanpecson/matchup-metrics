@@ -42,22 +42,8 @@ export default function ComparePage() {
     );
   };
 
-  /**
-   * Removes a player at a given roster slot id.
-   * @param {number} slotId - Removal position
-   */
-  const handleLineupSlotRemove = (
-    lineup: LineupBuilder,
-    setLineup: Dispatch<SetStateAction<LineupBuilder>>,
-    slotId: number
-  ) => {
-    const tempLineup = new LineupBuilder(lineup);
-    tempLineup.updateBySlotId(slotId, null);
-    setLineup(tempLineup);
-  };
-
   return (
-    <div className="w-full">
+    <div className="w-full lg:pl-16">
       <div className="space-y-1">
         <LineupCompare lineup1={lineup1} setLineup1={setLineup1} lineup2={lineup2} setLineup2={setLineup2} />
         <PlayerIndex

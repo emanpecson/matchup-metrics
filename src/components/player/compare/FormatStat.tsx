@@ -12,7 +12,7 @@ export default function FormatStat(props: {
     <div
       className={cn(
         props.justifyRight ? 'justify-end' : 'justify-start',
-        'flex space-x-1 place-items-center w-full px-2'
+        'flex space-x-1 place-items-center w-full px-2 lg:text-base md:text-sm text-xs'
       )}
     >
       {!props.justifyRight && (

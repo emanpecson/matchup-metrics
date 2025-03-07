@@ -46,9 +46,9 @@ export default function PlayerIndex(props: PlayerIndexProps) {
   useEffect(() => setPage(0), [filterTeam, filterPosition, filterName]);
 
   return (
-    <div>
+    <>
       <div className="flex place-items-center flex-col w-full space-y-1">
-        <div className="flex space-x-1 justify-between place-items-center w-full">
+        <div className="flex space-x-1 place-items-center w-full">
           <SearchBar onValueChange={setFilterName} value={filterName} />
           <TeamCombobox onValueChange={setFilterTeam} value={filterTeam} />
           <PositionSelect onValueChange={setFilterPosition} value={filterPosition} />
@@ -61,18 +61,20 @@ export default function PlayerIndex(props: PlayerIndexProps) {
             totalCount={playersCount}
           />
         </div>
-        <PlayerTable
-          players={players}
-          isLoading={isLoadingPlayers}
-          rowCount={props.rowCount}
-          page={page}
-          playersCount={playersCount}
-          onRowClick={handleRowClick}
-          disabledPlayerIds={props.disabledPlayerIds}
-        />
+        <div className="overflow-x-auto w-full">
+          <PlayerTable
+            players={players}
+            isLoading={isLoadingPlayers}
+            rowCount={props.rowCount}
+            page={page}
+            playersCount={playersCount}
+            onRowClick={handleRowClick}
+            disabledPlayerIds={props.disabledPlayerIds}
+          />
+        </div>
       </div>
 
       <PlayerDialog player={focusPlayer} setPlayer={setFocusPlayer} FooterElement={props.FooterElement} />
-    </div>
+    </>
   );
 }

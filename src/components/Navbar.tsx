@@ -11,7 +11,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="min-h-screen bg-neutral-800 w-16 py-8">
+    <div className="min-h-screen bg-neutral-800 w-16 py-8 fixed">
       {/* routes */}
       <div className="flex flex-col place-items-center space-y-6">
         {routes.map((route: AppRoute, i: number) => {

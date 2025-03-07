@@ -22,15 +22,15 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <div className="flex max-sm:flex-col space-x-0 px-0 min-h-screen">
-            <div className="flex-shrink-0 min-h-screen max-sm:hidden block z-20">
+          <div className="flex max-lg:flex-col space-x-0 px-0 min-h-screen max-w-full">
+            <div className="flex-shrink-0 min-h-screen max-lg:hidden block z-20 max-w-full">
               <Navbar />
             </div>
-            <div className="max-sm:block hidden">
+            <div className="max-lg:block hidden">
               <MobileNavbar />
             </div>
             <div className="w-full">
-              <div className="px-8 mx-auto flex justify-center pt-8 max-w-[80rem]">{children}</div>
+              <div className="lg:px-8 px-1 mx-auto flex justify-center pt-8 max-w-[80rem]">{children}</div>
             </div>
           </div>
         </ThemeProvider>

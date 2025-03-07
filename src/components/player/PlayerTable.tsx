@@ -7,6 +7,7 @@ import { useState } from 'react';
 import { RosterBuilder } from '@/types/RosterBuilder';
 import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
 import { yahooFantasyPpg } from '@/utils/fantasyConverter';
+import { shortName } from '@/utils/reformatString';
 
 export const playerTableColumns = [
   'player',
@@ -51,7 +52,7 @@ export default function PlayerTable(props: PlayerTableProps) {
   };
 
   return (
-    <div className="border rounded-xl p-6 min-w-[60rem] w-full">
+    <div className="border rounded-xl p-6 min-w-[60rem] xl:w-full w-fit">
       {props.isLoading ? (
         <SkeletonPlayerTable rowCount={loadCount <= props.rowCount && loadCount != 0 ? loadCount : props.rowCount} />
       ) : props.playersCount > 0 ? (
@@ -89,7 +90,8 @@ export default function PlayerTable(props: PlayerTableProps) {
                 >
                   <td className={cn(conditionalStyles, 'px-4 py-1.5 text-left font-medium rounded-l-lg')}>
                     <InlineImage src={getPlayerPhotoUrl(player.nbaId)} alt={'plyr-img'} rounded>
-                      <p>{player.name}</p>
+                      <p className="xl:block hidden">{player.name}</p>
+                      <p className="xl:hidden block text-nowrap">{shortName(player.name)}</p>
                     </InlineImage>
                   </td>
                   <td className={cn(conditionalStyles, 'px-4 py-1.5 text-left text-wrap')}>{yahooFantasyPpg(rs)}</td>

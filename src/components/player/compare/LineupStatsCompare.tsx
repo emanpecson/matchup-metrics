@@ -97,7 +97,7 @@ export default function LineupStatsCompare(props: LineupStatsCompareProps) {
             <DisplayLineupAverageStats lineup={props.lineup1} vsLineup={props.lineup2} />
           </td>
 
-          <td className="text-center divide-y w-full font-bold text-neutral-700 dark:text-neutral-300 uppercase">
+          <td className="text-center divide-y w-full lg:font-bold font-medium text-neutral-700 dark:text-neutral-300 uppercase lg:text-base md:text-sm text-xs">
             <p>Fantasy</p>
             <p>Points</p>
             <p>Assists</p>

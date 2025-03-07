@@ -1,5 +1,7 @@
+import { useWindowResize, widthBreakpoints } from '@/hooks/useWindowResize';
 import { cn } from '@/lib/utils';
 import { ChevronDownIcon, ChevronUpIcon, MinusIcon } from 'lucide-react';
+import { useState } from 'react';
 
 interface StatCompareIconProps {
   thisStat: number;
@@ -8,6 +10,13 @@ interface StatCompareIconProps {
 }
 
 export default function StatCompareIcon(props: StatCompareIconProps) {
+  const [isMobile, setIsMobile] = useState(false);
+  useWindowResize(
+    widthBreakpoints.md,
+    () => setIsMobile(false),
+    () => setIsMobile(true)
+  );
+
   return (
     <div
       className={cn(
@@ -22,11 +31,11 @@ export default function StatCompareIcon(props: StatCompareIconProps) {
       )}
     >
       {props.thisStat > props.thatStat ? (
-        <ChevronUpIcon size={12} strokeWidth={4} />
+        <ChevronUpIcon size={isMobile ? 8 : 12} strokeWidth={4} />
       ) : props.thisStat < props.thatStat ? (
-        <ChevronDownIcon size={12} strokeWidth={4} />
+        <ChevronDownIcon size={isMobile ? 8 : 12} strokeWidth={4} />
       ) : (
-        <MinusIcon size={12} strokeWidth={4} />
+        <MinusIcon size={isMobile ? 8 : 12} strokeWidth={4} />
       )}
     </div>
   );
