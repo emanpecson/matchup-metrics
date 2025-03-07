@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { Select, SelectContent, SelectTrigger } from '../ui/select';
-import { PuzzlePieceIcon } from '@heroicons/react/24/outline';
 import { cn } from '@/lib/utils';
-import { CheckIcon } from 'lucide-react';
+import { CheckIcon, ShieldIcon } from 'lucide-react';
 import positions from '@/data/positions';
 import CloseButton from '../button/CloseButton';
+import { useWindowResize, widthBreakpoints } from '@/hooks/useWindowResize';
+import { Button } from '../ui/button';
+import { reformatPosition } from '@/utils/reformatString';
 
 interface PositionSelectProps {
   value: string;
@@ -14,10 +16,13 @@ interface PositionSelectProps {
 export default function PositionSelect(props: PositionSelectProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-  const handleSelect = (currValue: string) => {
-    props.onValueChange(currValue);
-  };
+  useWindowResize(
+    widthBreakpoints.lg,
+    () => setIsMobile(false),
+    () => setIsMobile(true)
+  );
 
   const handleReset = () => {
     props.onValueChange('');
@@ -26,37 +31,49 @@ export default function PositionSelect(props: PositionSelectProps) {
   return (
     <Select onOpenChange={setIsOpen} open={isOpen}>
       <div className="relative" onMouseOver={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)}>
-        <div className="absolute left-2 top-2 pointer-events-none">
-          {props.value ? (
-            <CloseButton onClick={handleReset} className="pointer-events-auto" />
-          ) : (
-            <PuzzlePieceIcon
-              className={cn(
-                'w-6 duration-150 transition-colors',
-                isHovering ? 'dark:text-white text-neutral-900' : 'text-neutral-500'
-              )}
-            />
-          )}
-        </div>
-        <SelectTrigger className="min-w-48 space-x-4 font-medium hover:bg-neutral-200 dark:hover:bg-neutral-900 text-neutral-500 dark:hover:text-white hover:text-neutral-800 duration-150 transition-colors">
-          <div
-            className={cn(
-              props.value ? 'dark:text-white text-neutral-800' : '',
-              'flex space-x-1.5 place-items-center text-nowrap'
+        {!isMobile && (
+          <div className="absolute left-3 top-2.5 pointer-events-none">
+            {props.value ? (
+              <CloseButton onClick={handleReset} className="pointer-events-auto" />
+            ) : (
+              <ShieldIcon
+                size={20}
+                strokeWidth={2.5}
+                className={cn(
+                  'duration-150 transition-colors',
+                  isHovering ? 'dark:text-white text-neutral-900' : 'text-neutral-500'
+                )}
+              />
             )}
-          >
-            <label className="cursor-pointer pl-7">
-              {props.value ? positions[props.value as keyof typeof positions] : 'Filter Position'}
-            </label>
           </div>
+        )}
+
+        <SelectTrigger className="lg:min-w-48 w-fit space-x-4 font-medium hover:bg-neutral-200 dark:hover:bg-neutral-900 text-neutral-500 dark:hover:text-white hover:text-neutral-800 duration-150 transition-colors">
+          {isMobile ? (
+            <div>
+              {props.value ? (
+                <div className="font-semibold">{reformatPosition(props.value as keyof typeof positions)}</div>
+              ) : (
+                <ShieldIcon />
+              )}
+            </div>
+          ) : (
+            <div
+              className={cn(
+                props.value ? 'dark:text-white text-neutral-800' : '',
+                'flex space-x-1.5 place-items-center text-nowrap'
+              )}
+            >
+              <label className="cursor-pointer pl-7">
+                {props.value ? positions[props.value as keyof typeof positions] : 'Filter Position'}
+              </label>
+            </div>
+          )}
         </SelectTrigger>
       </div>
 
       <SelectContent>
         {Object.entries(positions).map((entry, i) => {
-          // <SelectItem value={entry[0]} isSelected={entry[0] === value} key={i} className="cursor-pointer">
-          //   {entry[1]}
-          // </SelectItem>
           const isSelected = entry[0] === props.value;
 
           return (

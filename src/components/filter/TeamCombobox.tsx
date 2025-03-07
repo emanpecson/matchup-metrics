@@ -38,12 +38,13 @@ export function TeamCombobox(props: TeamComboboxProps) {
     <Popover open={open} onOpenChange={setOpen}>
       <div className="relative" onMouseOver={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)}>
         {!isMobile && (
-          <div className="absolute left-2 top-2 pointer-events-none">
+          <div className="absolute left-3.5 top-2.5 pointer-events-none">
             {props.value ? (
               <CloseButton onClick={handleReset} className="pointer-events-auto" />
             ) : (
               <UsersIcon
-                size={24}
+                size={20}
+                strokeWidth={2.5}
                 className={cn(
                   'duration-150 transition-colors',
                   isHovering ? 'dark:text-white text-neutral-900' : 'text-neutral-500'
