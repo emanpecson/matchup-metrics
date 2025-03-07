@@ -1,7 +1,6 @@
 'use client';
 
-import { Check, ChevronsUpDown } from 'lucide-react';
-
+import { Check, ChevronsUpDown, UsersIcon } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from '@/components/ui/command';
@@ -9,53 +8,90 @@ import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover
 import { useState } from 'react';
 import teams from '@/data/teams';
 import CloseButton from '../button/CloseButton';
-import { UserGroupIcon } from '@heroicons/react/24/outline';
 import { getTeamLogoUrl } from '@/utils/getPhotoUrl';
 import InlineImage from '../InlineImage';
+import Image from 'next/image';
+import { useWindowResize, widthBreakpoints } from '@/hooks/useWindowResize';
 
-export function TeamCombobox({
-  value,
-  onValueChange,
-}: {
+interface TeamComboboxProps {
   value: string;
   onValueChange: (teamAbbreviation: string) => void;
-}) {
+}
+
+export function TeamCombobox(props: TeamComboboxProps) {
   const [open, setOpen] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useWindowResize(
+    widthBreakpoints.lg,
+    () => setIsMobile(false),
+    () => setIsMobile(true)
+  );
 
   const handleReset = () => {
-    onValueChange('');
+    props.onValueChange('');
     setOpen(false);
   };
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
       <div className="relative" onMouseOver={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)}>
-        <div className="absolute left-2 top-2 pointer-events-none">
-          {value ? (
-            <CloseButton onClick={handleReset} className="pointer-events-auto" />
-          ) : (
-            <UserGroupIcon
-              className={cn(
-                'w-6 duration-150 transition-colors',
-                isHovering ? 'dark:text-white text-neutral-900' : 'text-neutral-500'
-              )}
-            />
-          )}
-        </div>
+        {!isMobile && (
+          <div className="absolute left-2 top-2 pointer-events-none">
+            {props.value ? (
+              <CloseButton onClick={handleReset} className="pointer-events-auto" />
+            ) : (
+              <UsersIcon
+                size={24}
+                className={cn(
+                  'duration-150 transition-colors',
+                  isHovering ? 'dark:text-white text-neutral-900' : 'text-neutral-500'
+                )}
+              />
+            )}
+          </div>
+        )}
 
         <PopoverTrigger asChild>
-          <Button variant="outline" role="combobox" aria-expanded={open} className="min-w-[18rem] text-neutral-500">
-            <div className="flex w-full place-items-center pl-7">
-              {value ? (
-                <InlineImage src={getTeamLogoUrl(value)} alt={value}>
-                  <p className="dark:text-white text-neutral-800">{`${teams[value as keyof typeof teams].city} ${teams[value as keyof typeof teams].name} (${value})`}</p>
-                </InlineImage>
-              ) : (
-                <p>Filter Team</p>
-              )}
-            </div>
-            <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
+          <Button
+            variant="outline"
+            size={isMobile ? 'icon' : 'default'}
+            role="combobox"
+            aria-expanded={open}
+            className="lg:min-w-[18rem] text-neutral-500"
+          >
+            {isMobile ? (
+              <div>
+                {props.value ? (
+                  <div className="w-full">
+                    <Image
+                      src={getTeamLogoUrl(props.value)}
+                      alt={props.value}
+                      height={24}
+                      width={24}
+                      className="w-[26px] h-[26px] object-cover"
+                      unoptimized
+                    />
+                  </div>
+                ) : (
+                  <UsersIcon size={24} />
+                )}
+              </div>
+            ) : (
+              <div className="flex justify-between place-items-center w-full">
+                <div className="pl-7">
+                  {props.value ? (
+                    <InlineImage src={getTeamLogoUrl(props.value)} alt={props.value}>
+                      <p className="dark:text-white text-neutral-800">{`${teams[props.value as keyof typeof teams].city} ${teams[props.value as keyof typeof teams].name} (${props.value})`}</p>
+                    </InlineImage>
+                  ) : (
+                    <p>Filter Team</p>
+                  )}
+                </div>
+                <ChevronsUpDown size={16} className="shrink-0 opacity-50" />
+              </div>
+            )}
           </Button>
         </PopoverTrigger>
       </div>
@@ -68,15 +104,15 @@ export function TeamCombobox({
               {Object.entries(teams).map((entry, i) => {
                 const thisTeam = entry[1];
                 const displayName = `${thisTeam.city} ${thisTeam.name} (${thisTeam.abbreviation})`;
-                const isSelected = value && value === thisTeam.abbreviation;
+                const isSelected = props.value && props.value === thisTeam.abbreviation;
 
                 return (
                   <CommandItem
                     key={i}
                     value={displayName}
                     onSelect={() => {
-                      if (isSelected) onValueChange('');
-                      else onValueChange(thisTeam.abbreviation);
+                      if (isSelected) props.onValueChange('');
+                      else props.onValueChange(thisTeam.abbreviation);
                       setOpen(false);
                     }}
                     className="cursor-pointer"
