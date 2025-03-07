@@ -1,7 +1,8 @@
 import { AppRoute } from '@/types/AppRoute';
-import { GithubIcon, InfoIcon, SwordsIcon, TableIcon } from 'lucide-react';
+import { GithubIcon, HomeIcon, InfoIcon, SwordsIcon, TableIcon } from 'lucide-react';
 
 export const routes: AppRoute[] = [
+  { name: 'Home', path: '/', Icon: HomeIcon },
   { name: 'Compare', path: '/compare', Icon: SwordsIcon },
   // { name: 'Roster Builder', path: '/roster-builder' },
   { name: 'Player Index', path: '/player-index', Icon: TableIcon },
