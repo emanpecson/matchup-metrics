@@ -7,14 +7,12 @@ import { Button } from '@/components/ui/button';
 import { DialogClose } from '@/components/ui/dialog';
 import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
 import { RosterBuilder, RosterBuilderSlot } from '@/types/RosterBuilder';
-import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 export default function RosterBuilderPage() {
   const [rosterInstance, setRosterInstance] = useState(new RosterBuilder());
   const [playerToAdd, setPlayerToAdd] = useState<PlayerIncludeRegularStats | null>(null);
   const [rosterDialogIsOpen, setRosterDialogIsOpen] = useState(false);
-  const router = useRouter();
 
   /**
    * Button component that opens the roster-dialog to add a new player.

@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { DialogClose } from '@/components/ui/dialog';
 import { LineupBuilder } from '@/types/LineupBuilder';
 import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
-import { Dispatch, SetStateAction, useState } from 'react';
+import { useState } from 'react';
 
 export default function ComparePage() {
   const [playerToAdd, setPlayerToAdd] = useState<PlayerIncludeRegularStats | null>(null);
