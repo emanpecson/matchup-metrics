@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "postinstall": "prisma generate",
     "scrape-players -s": "python3 scripts/scrape_players/main.py -scrape",
     "scrape-players -p": "python3 scripts/scrape_players/main.py -post",
     "scrape-players -s -p": "python3 scripts/scrape_players/main.py -scrape -post",
