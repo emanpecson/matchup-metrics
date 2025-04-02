@@ -6,6 +6,6 @@ export const routes: AppRoute[] = [
   { name: 'Matchup', path: '/', Icon: SwordsIcon, external: false },
   // { name: 'Roster Builder', path: '/roster-builder' },
   { name: 'Players', path: '/players', Icon: TableIcon, external: false },
-  { name: 'About', path: 'https://emanpecson.com/projects/nba-fantasy-optimizer', Icon: InfoIcon, external: true },
-  { name: 'GitHub', path: 'https://github.com/emanpecson/nba-fantasy-optimizer', Icon: GithubIcon, external: true },
+  { name: 'About', path: 'https://emanpecson.com/projects/matchup-metrics', Icon: InfoIcon, external: true },
+  { name: 'GitHub', path: 'https://github.com/emanpecson/matchup-metrics', Icon: GithubIcon, external: true },
 ];
