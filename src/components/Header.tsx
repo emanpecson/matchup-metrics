@@ -15,7 +15,7 @@ export default function Header() {
       <div className="w-full flex h-16 justify-between place-items-center px-10 max-w-[100rem]">
         <div className="flex space-x-24">
           {/* app title */}
-          <h1 className="text-xl font-extrabold text-nowrap">{process.env.APP_TITLE ?? 'NBA Project'}</h1>
+          <h1 className="text-xl font-extrabold text-nowrap">{process.env.NEXT_PUBLIC_APP_TITLE}</h1>
 
           {/* routes */}
           <div className="space-x-4 w-full flex place-items-center">
