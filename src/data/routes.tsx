@@ -3,9 +3,9 @@ import { GithubIcon, HomeIcon, InfoIcon, SwordsIcon, TableIcon } from 'lucide-re
 
 export const routes: AppRoute[] = [
   { name: 'Home', path: '/', Icon: HomeIcon },
-  { name: 'Compare', path: '/compare', Icon: SwordsIcon },
+  { name: 'Matchup', path: '/matchup', Icon: SwordsIcon },
   // { name: 'Roster Builder', path: '/roster-builder' },
-  { name: 'Player Index', path: '/player-index', Icon: TableIcon },
+  { name: 'Players', path: '/players', Icon: TableIcon },
   { name: 'About', path: 'https://emanpecson.com/projects/nba-fantasy-optimizer', Icon: InfoIcon },
   { name: 'GitHub', path: 'https://github.com/emanpecson/nba-fantasy-optimizer', Icon: GithubIcon },
 ];
