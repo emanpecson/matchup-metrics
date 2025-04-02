@@ -19,7 +19,12 @@ export default function Navbar() {
           return (
             <div className="relative w-full" key={i}>
               {isActive && <div className="bg-white h-full w-1 rounded-r-3xl absolute left-0" />}
-              <Link href={route.path} className={cn(isActive && 'font-medium', 'hover:font-medium')}>
+              <Link
+                href={route.path}
+                className={cn(isActive && 'font-medium', 'hover:font-medium')}
+                rel={route.external ? 'noopener noreferrer' : undefined}
+                target={route.external ? '_blank' : undefined}
+              >
                 <div className="w-full flex justify-center">
                   <div className={cn(isActive && 'bg-neutral-700', 'p-2 rounded-lg w-fit')}>
                     <route.Icon
