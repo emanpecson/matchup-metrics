@@ -10,7 +10,6 @@ import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
 import teams from '@/data/teams';
 import PlayerHeadshot from '../PlayerHeadshot';
 import { useWindowResize, widthBreakpoints } from '@/hooks/useWindowResize';
-import InlineImage from '@/components/InlineImage';
 
 interface LineupCompareProps {
   lineup1: LineupBuilder;
@@ -108,12 +107,12 @@ export default function LineupCompare(props: LineupCompareProps) {
                 <h3 className="font-extrabold text-xl text-center text-neutral-800 dark:text-neutral-200">
                   {slot.player!.name}
                 </h3>
-                <div className="flex space-x-1 text-center justify-center font-medium text-nowrap">
+                <div className="flex space-x-1 text-center justify-center font-medium text-nowrap text-sm">
                   <span>{reformatHeight(slot.player!.height)},</span>
                   <span>{slot.player!.weight},</span>
                   <span>{reformatPosition(slot.player!.position as keyof typeof positions)}</span>
                 </div>
-                <div className="flex space-x-1 justify-center font-medium place-items-center">
+                <div className="flex space-x-1 justify-center font-medium place-items-center text-sm">
                   <Image
                     src={getTeamLogoUrl(team.abbreviation)}
                     alt={team.abbreviation}
