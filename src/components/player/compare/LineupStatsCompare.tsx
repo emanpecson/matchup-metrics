@@ -1,3 +1,4 @@
+import { JSX } from 'react';
 import { LineupBuilder } from '@/types/LineupBuilder';
 import FormatStat from './FormatStat';
 

@@ -1,3 +1,4 @@
+import { JSX } from 'react';
 import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
 import PlayerHeadshot from '../PlayerHeadshot';
 import { fullTeamName, reformatHeight, reformatPosition } from '@/utils/reformatString';

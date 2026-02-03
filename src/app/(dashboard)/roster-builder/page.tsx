@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { DialogClose } from '@/components/ui/dialog';
 import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
 import { RosterBuilder, RosterBuilderSlot } from '@/types/RosterBuilder';
-import { useState } from 'react';
+import { JSX, useState } from 'react';
 
 export default function RosterBuilderPage() {
   const [rosterInstance, setRosterInstance] = useState(new RosterBuilder());

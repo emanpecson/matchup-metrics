@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Matchup Metrics
+
+An NBA analytics web app for comparing player performances and building custom lineups. Browse player stats, build side-by-side 5-player lineup comparisons, and create rosters — all backed by data scraped from [nba.com](https://www.nba.com).
+
+## Features
+
+- **Lineup Matchups** — Build two 5-player lineups (2G / 2F / 1C) and compare them across stats like PPG, APG, RPG, shooting percentages, and Yahoo Fantasy points
+- **Player Browser** — Search, filter by team/position, and paginate through the full NBA player database with detailed stat breakdowns
+- **Roster Builder** — Assemble position-locked 5-player rosters
+- **Dark/Light Mode** — Theme toggle with system preference support
+- **Responsive Design** — Works on desktop and mobile
+
+## Tech Stack
+
+- **Framework:** Next.js 14 (App Router) with TypeScript
+- **Database:** MongoDB with Prisma ORM
+- **Styling:** Tailwind CSS, Shadcn/UI, Radix UI, Framer Motion
+- **Data:** Python/Selenium scrapers for NBA player stats and game schedules
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (v18+)
+- A MongoDB instance (e.g. MongoDB Atlas)
+- Python 3 with Selenium and ChromeDriver (only needed for scraping)
+
+### Setup
+
+```bash
+git clone https://github.com/emanpecson/matchup-metrics.git
+cd matchup-metrics
+npm install
+```
+
+Create a `.env` file in the project root:
+
+```
+DATABASE_URL=mongodb+srv://<user>:<password>@<cluster>.mongodb.net/<db>?retryWrites=true&w=majority
+NEXT_PUBLIC_APP_TITLE=Matchup Metrics
+```
+
+### Run
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Scraping Data
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Player stats and game schedules are scraped from nba.com using Python scripts. Scrape, post to the database, or both:
 
-## Learn More
+```bash
+# Players
+npm run "scrape-players -s"       # scrape only
+npm run "scrape-players -p"       # post to DB only
+npm run "scrape-players -s -p"    # scrape and post
 
-To learn more about Next.js, take a look at the following resources:
+# Games
+npm run "scrape-games -s"
+npm run "scrape-games -p"
+npm run "scrape-games -s -p"
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Requires Python 3, Selenium, and ChromeDriver installed locally.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+src/
+  app/
+    (dashboard)/          # Main pages: matchup, players, roster-builder
+    api/                  # REST endpoints for players, teams, games, rosters
+  components/             # React components (player cards, lineup slots, filters, nav)
+  types/                  # TypeScript types and builder classes
+  hooks/                  # Custom React hooks
+  data/                   # Static data (routes, NBA teams, positions)
+  utils/                  # Helpers (fantasy scoring, photo URLs, string formatting)
+prisma/
+  schema.prisma           # MongoDB schema (Player, Team, Game, Roster)
+scripts/
+  scrape_players/         # Python scraper for player stats and bios
+  scrape_games/           # Python scraper for game schedules
+```

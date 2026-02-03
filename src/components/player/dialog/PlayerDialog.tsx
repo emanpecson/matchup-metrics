@@ -1,5 +1,5 @@
 import { Dialog, DialogContent } from '../../ui/dialog';
-import { Dispatch, SetStateAction } from 'react';
+import { Dispatch, JSX, SetStateAction } from 'react';
 import teams from '@/data/teams';
 import PlayerDialogHeader from './PlayerDialogHeader';
 import PlayerDialogFooter from './PlayerDialogFooter';

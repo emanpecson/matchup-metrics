@@ -8,7 +8,7 @@ import { TeamCombobox } from '@/components/filter/TeamCombobox';
 import PlayerDialog from '@/components/player/dialog/PlayerDialog';
 import PlayerTable from '@/components/player/PlayerTable';
 import { useLoadData } from '@/hooks/useLoadData';
-import { Dispatch, SetStateAction, useEffect, useState } from 'react';
+import { Dispatch, JSX, SetStateAction, useEffect, useState } from 'react';
 import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
 
 interface PlayerIndexProps {

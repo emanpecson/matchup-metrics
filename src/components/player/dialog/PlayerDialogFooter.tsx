@@ -1,3 +1,5 @@
+import { JSX } from 'react';
+
 export interface PlayerDialogFooterProps {
   footerHeight: string;
   primaryColor: string;

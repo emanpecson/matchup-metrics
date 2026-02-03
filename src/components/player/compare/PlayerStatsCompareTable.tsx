@@ -1,3 +1,4 @@
+import { JSX } from 'react';
 import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
 import StatCompareIcon from './StatCompareIcon';
 import { cn } from '@/lib/utils';
