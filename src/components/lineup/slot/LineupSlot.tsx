@@ -45,7 +45,7 @@ export default function LineupSlot(props: LineupSlotProps) {
 
         {/* team logo */}
         {p && !props.hideTeam && (
-          <div className="absolute rounded-full bg-neutral-300 dark:bg-neutral-700 -bottom-3 -left-3 bg-opacity-70 backdrop-blur-lg">
+          <div className="absolute rounded-full bg-neutral-300/70 dark:bg-neutral-700/70 -bottom-3 -left-3 backdrop-blur-lg">
             <Image
               src={teamLogoUrl}
               alt={p.teamAbbreviation}

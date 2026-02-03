@@ -57,7 +57,7 @@ export default function LineupCompare(props: LineupCompareProps) {
     // if mobile
     if (isMobile) {
       return (
-        <div className="flex flex-col place-items-center justify-center px-1 flex-shrink-0 space-y-2">
+        <div className="flex flex-col place-items-center justify-center px-1 shrink-0 space-y-2">
           {slots.map((slot) => (
             <div key={slot.id} className="w-full">
               <Image

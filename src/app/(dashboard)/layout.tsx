@@ -8,7 +8,7 @@ export default function DashboardLayout({
 }>) {
   return (
     <div className="flex max-lg:flex-col space-x-0 px-0 min-h-screen max-w-full">
-      <div className="flex-shrink-0 min-h-screen max-lg:hidden block z-20 max-w-full">
+      <div className="shrink-0 min-h-screen max-lg:hidden block z-20 max-w-full">
         <Navbar />
       </div>
       <div className="max-lg:block hidden">

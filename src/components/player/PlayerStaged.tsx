@@ -21,7 +21,7 @@ export default function PlayerStaged({ player }: { player: PlayerIncludeRegularS
             unoptimized
           />
 
-          <div className="absolute rounded-full bg-neutral-300 dark:bg-neutral-700 -bottom-6 -left-6 bg-opacity-70 backdrop-blur-lg">
+          <div className="absolute rounded-full bg-neutral-300/70 dark:bg-neutral-700/70 -bottom-6 -left-6 backdrop-blur-lg">
             <Image
               src={getTeamLogoUrl(player.teamAbbreviation)}
               alt={player.teamAbbreviation}
