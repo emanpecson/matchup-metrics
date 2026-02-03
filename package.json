@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "postinstall": "prisma generate",
     "scrape-players -s": "python3 scripts/scrape_players/main.py -scrape",
     "scrape-players -p": "python3 scripts/scrape_players/main.py -post",
@@ -45,6 +45,9 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "autoprefixer": "^10.0.1",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^16.1.6",
+    "eslint-config-prettier": "^10.1.8",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
     "typescript": "^5.8.2"
