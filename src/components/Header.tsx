@@ -22,7 +22,7 @@ export default function Header() {
             {routes.map((route: AppRoute) => {
               const isActive = pathname === route.path;
               return (
-                <Link href={route.path} className={cn(isActive && 'font-medium', 'hover:font-medium')}>
+                <Link key={route.path} href={route.path} className={cn(isActive && 'font-medium', 'hover:font-medium')}>
                   {route.name}
                 </Link>
               );

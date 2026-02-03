@@ -62,7 +62,7 @@ export default function RosterDialog(props: RosterDialogProps) {
 
                 if (slot.player && props.playerToAdd && state !== RosterSlotState.DISABLE) {
                   return (
-                    <TooltipProvider>
+                    <TooltipProvider key={slot.id}>
                       <Tooltip delayDuration={0} open={slot.id === hoveringSlotId}>
                         <TooltipTrigger
                           onMouseOver={() => setHoveringSlotId(slot.id)}

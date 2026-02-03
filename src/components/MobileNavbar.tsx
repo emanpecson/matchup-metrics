@@ -21,14 +21,13 @@ export default function MobileNavbar() {
           <SheetTitle className="text-white">{process.env.NEXT_PUBLIC_APP_TITLE}</SheetTitle>
 
           <div className="w-full">
-            {routes.map((route: AppRoute, i: number) => {
+            {routes.map((route: AppRoute) => {
               const isActive = pathname === route.path;
               return (
-                <SheetClose className="block w-full">
+                <SheetClose key={route.path} className="block w-full">
                   <a
                     href={route.path}
                     className={cn(isActive && 'font-medium', 'hover:font-medium w-full')}
-                    key={i}
                     rel={route.external ? 'noopener noreferrer' : undefined}
                     target={route.external ? '_blank' : undefined}
                   >
