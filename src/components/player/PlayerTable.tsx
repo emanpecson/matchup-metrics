@@ -73,7 +73,7 @@ export default function PlayerTable(props: PlayerTableProps) {
             {props.players.map((player: PlayerIncludeRegularStats, i: number) => {
               const rs = player.regularStats;
 
-              let disabled = props.disabledPlayerIds.includes(player.id);
+              const disabled = props.disabledPlayerIds.includes(player.id);
 
               const disabledStyle = disabled && 'opacity-40 dark:opacity-20';
               const highlightStyle =

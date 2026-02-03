@@ -7,7 +7,7 @@ const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
   prettier,
-  globalIgnores([".next/**", "out/**", "build/**", "dist/**"]),
+  globalIgnores([".next/**", "out/**", "build/**", "dist/**", "src/components/ui/**"]),
   {
     rules: {
       "@typescript-eslint/no-empty-function": "warn",

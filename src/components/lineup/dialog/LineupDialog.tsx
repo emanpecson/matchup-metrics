@@ -104,7 +104,7 @@ export default function LineupDialog(props: LineupDialogProps) {
             <div className="flex justify-between place-items-center space-x-4">
               <div className="flex flex-wrap gap-6 pt-8 w-1/2 justify-center">
                 {props.lineup1.getLineup().map((slot: LineupBuilderSlot) => (
-                  <DisplaySlot lineup={props.lineup1} setLineup={props.setLineup1} slot={slot} />
+                  <DisplaySlot key={slot.id} lineup={props.lineup1} setLineup={props.setLineup1} slot={slot} />
                 ))}
               </div>
 
@@ -112,7 +112,7 @@ export default function LineupDialog(props: LineupDialogProps) {
 
               <div className="flex flex-wrap gap-6 pt-8 w-1/2 justify-center">
                 {props.lineup2.getLineup().map((slot: LineupBuilderSlot) => (
-                  <DisplaySlot lineup={props.lineup2} setLineup={props.setLineup2} slot={slot} />
+                  <DisplaySlot key={slot.id} lineup={props.lineup2} setLineup={props.setLineup2} slot={slot} />
                 ))}
               </div>
             </div>
