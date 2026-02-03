@@ -93,10 +93,9 @@ export default function LineupCompare(props: LineupCompareProps) {
           {slots.map((slot) => {
             const team = teams[slot.player!.teamAbbreviation as keyof typeof teams];
             return (
-              <div className="space-y-0.5">
+              <div key={slot.id} className="space-y-0.5">
                 <LineupSlot
                   player={slot.player}
-                  key={slot.id}
                   position={slot.lineupPosition}
                   state={LineupSlotState.REMOVE}
                   onClick={() => handleLineupSlotRemove(param.lineup, param.setLineup, slot.id)}
