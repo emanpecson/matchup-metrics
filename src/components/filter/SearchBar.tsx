@@ -1,7 +1,7 @@
 import { ChangeEvent, useEffect, useState } from 'react';
 import { useDebounceCallback } from 'usehooks-ts';
 import { Input } from '../ui/input';
-import { SearchIcon, XIcon } from 'lucide-react';
+import { SearchIcon } from 'lucide-react';
 import CloseButton from '../button/CloseButton';
 import { cn } from '@/lib/utils';
 

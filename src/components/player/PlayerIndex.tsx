@@ -2,7 +2,7 @@
 
 import Paginator from '@/components/filter/Paginator';
 import PositionSelect from '@/components/filter/PositionSelect';
-import ResetFilters from '@/components/filter/ResetFilters';
+
 import SearchBar from '@/components/filter/SearchBar';
 import { TeamCombobox } from '@/components/filter/TeamCombobox';
 import PlayerDialog from '@/components/player/dialog/PlayerDialog';

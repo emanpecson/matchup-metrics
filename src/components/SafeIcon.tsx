@@ -1,7 +1,7 @@
 /* Delay icon component from rendering to ensure consistency between client/server */
 
 import { LucideIcon, LucideProps } from 'lucide-react';
-import { useState, useEffect, ForwardRefExoticComponent, RefAttributes } from 'react';
+import { useState, useEffect } from 'react';
 
 export interface SafeIconProps extends LucideProps {
   Icon: LucideIcon;

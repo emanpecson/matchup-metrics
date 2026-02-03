@@ -3,7 +3,7 @@ import { getTeamLogoUrl } from '@/utils/getPhotoUrl';
 import { reformatPosition, shortName } from '@/utils/reformatString';
 import Image from 'next/image';
 import { useState } from 'react';
-import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
+
 import PlayerHeadshot, { PlayerHeadshotProps } from '@/components/player/PlayerHeadshot';
 import ActionPrompt from './ActionPrompt';
 

@@ -1,4 +1,3 @@
-import { Player } from '@prisma/client';
 import Image from 'next/image';
 import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
 import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';

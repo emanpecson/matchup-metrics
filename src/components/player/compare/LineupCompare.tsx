@@ -3,7 +3,7 @@ import LineupStatsCompare from './LineupStatsCompare';
 import LineupSlot, { LineupSlotState } from '@/components/lineup/slot/LineupSlot';
 import { Dispatch, JSX, SetStateAction, useState } from 'react';
 import { cn } from '@/lib/utils';
-import { reformatHeight, reformatPosition, shortName } from '@/utils/reformatString';
+import { reformatHeight, reformatPosition } from '@/utils/reformatString';
 import positions from '@/data/positions';
 import Image from 'next/image';
 import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';

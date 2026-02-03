@@ -1,5 +1,4 @@
 import { useLoadData } from '@/hooks/useLoadData';
-import { Roster } from '@prisma/client';
 import { useState } from 'react';
 import RosterPreviewItem from './RosterPreviewItem';
 import { RosterIncludePlayers } from '@/types/response/roster/RosterIncludePlayers';

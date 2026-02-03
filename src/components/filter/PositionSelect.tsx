@@ -5,7 +5,7 @@ import { CheckIcon, ShieldIcon } from 'lucide-react';
 import positions from '@/data/positions';
 import CloseButton from '../button/CloseButton';
 import { useWindowResize, widthBreakpoints } from '@/hooks/useWindowResize';
-import { Button } from '../ui/button';
+
 import { reformatPosition } from '@/utils/reformatString';
 
 interface PositionSelectProps {

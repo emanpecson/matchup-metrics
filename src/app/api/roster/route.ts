@@ -1,9 +1,8 @@
 import prisma from '@/lib/prisma';
 import { RosterIncludePlayers } from '@/types/response/roster/RosterIncludePlayers';
-import { PrismaClient } from '@prisma/client';
 import { NextRequest, NextResponse } from 'next/server';
 
-export async function GET(req: NextRequest) {
+export async function GET() {
   try {
     const rosters = await prisma.roster.findMany({ include: { players: true } });
     return NextResponse.json(rosters as RosterIncludePlayers[], { status: 200 });

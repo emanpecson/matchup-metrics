@@ -1,7 +1,7 @@
 import InlineImage from '@/components/InlineImage';
 import { RosterIncludePlayers } from '@/types/response/roster/RosterIncludePlayers';
 import { getPlayerPhotoUrl } from '@/utils/getPhotoUrl';
-import { Player, Roster } from '@prisma/client';
+import { Player } from '@prisma/client';
 
 interface RosterPreviewItemProps {
   roster: RosterIncludePlayers;

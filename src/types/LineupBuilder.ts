@@ -1,6 +1,6 @@
 import positions from '@/data/positions';
 import { PlayerIncludeRegularStats } from './response/player/PlayerIncludeRegularStats';
-import { PlayerStats } from '@prisma/client';
+
 import { yahooFantasyPpg } from '@/utils/fantasyConverter';
 
 export interface LineupStats {

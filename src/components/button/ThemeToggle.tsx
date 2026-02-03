@@ -3,7 +3,7 @@
 import * as React from 'react';
 import { MoonIcon, SunIcon } from 'lucide-react';
 import { useTheme } from 'next-themes';
-import SafeIcon, { SafeIconProps } from '../SafeIcon';
+import SafeIcon from '../SafeIcon';
 
 export function ThemeToggle(props: any) {
   const { setTheme, resolvedTheme } = useTheme();

@@ -1,4 +1,4 @@
-import { Player, PlayerStats, Team } from '@prisma/client';
+import { Player, PlayerStats } from '@prisma/client';
 
 export interface PlayerIncludeRegularStats extends Player {
   regularStats: PlayerStats;
