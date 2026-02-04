@@ -18,44 +18,25 @@ interface LineupCompareProps {
   setLineup2: Dispatch<SetStateAction<LineupBuilder>>;
 }
 
-export default function LineupCompare(props: LineupCompareProps) {
-  const [isMobile, setIsMobile] = useState(false);
-  useWindowResize(
-    widthBreakpoints.xl,
-    () => setIsMobile(false),
-    () => setIsMobile(true)
-  );
+function handleLineupSlotRemove(
+  lineup: LineupBuilder,
+  setLineup: Dispatch<SetStateAction<LineupBuilder>>,
+  slotId: number
+) {
+  const tempRoster = new LineupBuilder(lineup);
+  tempRoster.updateBySlotId(slotId, null);
+  setLineup(tempRoster);
+}
 
-  /**
-   * Removes a player at a given lineup slot id.
-   * @param {LineupBuilder} lineup - Lineup to perform removal on
-   * @param {Dispatch<SetStateAction<LineupBuilder>>} setLineup - Updates lineup reactively
-   * @param {number} slotId - Removal position
-   */
-  const handleLineupSlotRemove = (
-    lineup: LineupBuilder,
-    setLineup: Dispatch<SetStateAction<LineupBuilder>>,
-    slotId: number
-  ) => {
-    const tempRoster = new LineupBuilder(lineup);
-    tempRoster.updateBySlotId(slotId, null);
-    setLineup(tempRoster);
-  };
+function DisplayLineup(param: {
+  lineup: LineupBuilder;
+  setLineup: Dispatch<SetStateAction<LineupBuilder>>;
+  isMobile: boolean;
+}): JSX.Element {
+  const slots = param.lineup.getLineup().filter((slot) => slot.player);
 
-  /**
-   * Displays players within lineup dynamically
-   * @param param0 - Lineup to display
-   * @param param1 - Updates lineup
-   * @returns {JSX.Element}
-   */
-  const DisplayLineup = (param: {
-    lineup: LineupBuilder;
-    setLineup: Dispatch<SetStateAction<LineupBuilder>>;
-  }): JSX.Element => {
-    const slots = param.lineup.getLineup().filter((slot) => slot.player);
-
-    // if mobile
-    if (isMobile) {
+  // if mobile
+  if (param.isMobile) {
       return (
         <div className="flex flex-col place-items-center justify-center px-1 flex-shrink-0 space-y-2">
           {slots.map((slot) => (
@@ -149,13 +130,21 @@ export default function LineupCompare(props: LineupCompareProps) {
         ))}
       </div>
     );
-  };
+}
+
+export default function LineupCompare(props: LineupCompareProps) {
+  const [isMobile, setIsMobile] = useState(false);
+  useWindowResize(
+    widthBreakpoints.xl,
+    () => setIsMobile(false),
+    () => setIsMobile(true)
+  );
 
   return (
     <div className="flex space-x-2 rounded-xl p-4 w-full border">
-      <DisplayLineup lineup={props.lineup1} setLineup={props.setLineup1} />
+      <DisplayLineup lineup={props.lineup1} setLineup={props.setLineup1} isMobile={isMobile} />
       <LineupStatsCompare lineup1={props.lineup1} lineup2={props.lineup2} />
-      <DisplayLineup lineup={props.lineup2} setLineup={props.setLineup2} />
+      <DisplayLineup lineup={props.lineup2} setLineup={props.setLineup2} isMobile={isMobile} />
     </div>
   );
 }
