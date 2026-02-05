@@ -29,5 +29,6 @@ export async function useLoadData<T = unknown>(props: useLoadDataProps<T>) {
 
     if (props.halt === undefined) fetchData();
     else if (!props.halt) fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.endpoint, props.halt]);
 }
