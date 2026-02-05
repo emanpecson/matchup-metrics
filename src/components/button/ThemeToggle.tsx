@@ -1,11 +1,11 @@
 'use client';
 
 import * as React from 'react';
-import { MoonIcon, SunIcon } from 'lucide-react';
+import { LucideProps, MoonIcon, SunIcon } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import SafeIcon from '../SafeIcon';
 
-export function ThemeToggle(props: any) {
+export function ThemeToggle(props: LucideProps) {
   const { setTheme, resolvedTheme } = useTheme();
 
   return (

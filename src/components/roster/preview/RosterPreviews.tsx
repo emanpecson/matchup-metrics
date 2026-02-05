@@ -6,7 +6,7 @@ import { RosterIncludePlayers } from '@/types/response/roster/RosterIncludePlaye
 export default function RosterPreviews() {
   const [rosters, setRosters] = useState<RosterIncludePlayers[]>([]);
   const [isLoading, setIsLoading] = useState(false);
-  useLoadData({ endpoint: '/api/roster', onDataLoaded: setRosters, setIsLoading, delay: 150 });
+  useLoadData<RosterIncludePlayers[]>({ endpoint: '/api/roster', onDataLoaded: setRosters, setIsLoading, delay: 150 });
 
   return (
     <div>

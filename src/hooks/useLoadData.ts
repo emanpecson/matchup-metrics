@@ -2,15 +2,15 @@
 
 import { Dispatch, SetStateAction, useEffect } from 'react';
 
-export type useLoadDataProps = {
-  onDataLoaded: (data: any) => void;
+export type useLoadDataProps<T = unknown> = {
+  onDataLoaded: (data: T) => void;
   endpoint: string;
   setIsLoading?: Dispatch<SetStateAction<boolean>>;
   delay?: number;
   halt?: boolean;
 };
 
-export async function useLoadData(props: useLoadDataProps) {
+export async function useLoadData<T = unknown>(props: useLoadDataProps<T>) {
   useEffect(() => {
     const fetchData = async () => {
       try {

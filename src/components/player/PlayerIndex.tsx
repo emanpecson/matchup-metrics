@@ -10,6 +10,7 @@ import PlayerTable from '@/components/player/PlayerTable';
 import { useLoadData } from '@/hooks/useLoadData';
 import { Dispatch, JSX, SetStateAction, useEffect, useState } from 'react';
 import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
+import { PlayerListResponse } from '@/types/response/player/PlayerListResponse';
 
 interface PlayerIndexProps {
   rowCount: number;
@@ -33,9 +34,9 @@ export default function PlayerIndex(props: PlayerIndexProps) {
     if (!!props.setFocusPlayer) props.setFocusPlayer(player);
   };
 
-  useLoadData({
+  useLoadData<PlayerListResponse>({
     endpoint: `/api/player?name=${filterName}&team=${filterTeam}&position=${filterPosition}&skip=${page * props.rowCount}&take=${props.rowCount}`,
-    onDataLoaded: ({ players, playersCount }: { players: PlayerIncludeRegularStats[]; playersCount: number }) => {
+    onDataLoaded: ({ players, playersCount }) => {
       setPlayers(players);
       setPlayersCount(playersCount);
     },
