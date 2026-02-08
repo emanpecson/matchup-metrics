@@ -10,7 +10,7 @@ export type useLoadDataProps<T = unknown> = {
   halt?: boolean;
 };
 
-export async function useLoadData<T = unknown>(props: useLoadDataProps<T>) {
+export function useLoadData<T = unknown>(props: useLoadDataProps<T>) {
   useEffect(() => {
     const fetchData = async () => {
       try {
