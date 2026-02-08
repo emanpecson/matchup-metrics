@@ -31,10 +31,7 @@ export default function ComparePage() {
       <DialogClose>
         <Button
           variant={'outline'}
-          onClick={() => {
-            setDialogIsOpen(true);
-            setPlayerToAdd;
-          }}
+          onClick={() => setDialogIsOpen(true)}
         >
           <p>Add to lineup</p>
         </Button>

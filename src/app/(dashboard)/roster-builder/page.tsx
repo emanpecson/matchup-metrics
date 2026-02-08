@@ -23,10 +23,7 @@ export default function RosterBuilderPage() {
       <DialogClose>
         <Button
           variant={'outline'}
-          onClick={() => {
-            setRosterDialogIsOpen(true);
-            setPlayerToAdd;
-          }}
+          onClick={() => setRosterDialogIsOpen(true)}
         >
           <p>Add to roster</p>
         </Button>
