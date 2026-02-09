@@ -6,6 +6,7 @@ import positions from '@/data/positions';
 import PlayerStatsCompareTable from './PlayerStatsCompareTable';
 import Image from 'next/image';
 import { getTeamLogoUrl } from '@/utils/getPhotoUrl';
+import { useTheme } from 'next-themes';
 
 interface PlayerCompareProps {
   player1: PlayerIncludeRegularStats | null;
@@ -13,6 +14,8 @@ interface PlayerCompareProps {
 }
 
 function PlayerProfile(props: { player: PlayerIncludeRegularStats | null }): JSX.Element {
+  const { resolvedTheme } = useTheme();
+
   return (
     <div className="space-y-2 px-4">
       <div className="flex justify-center">
@@ -23,7 +26,7 @@ function PlayerProfile(props: { player: PlayerIncludeRegularStats | null }): JSX
           <p className="font-extrabold text-neutral-800 dark:text-neutral-200 text-nowrap">{props.player.name}</p>
           <p className="inline-flex place-items-center space-x-1.5">
             <Image
-              src={getTeamLogoUrl(props.player.teamAbbreviation)}
+              src={getTeamLogoUrl(props.player.teamAbbreviation, resolvedTheme === 'dark')}
               height={40}
               width={40}
               alt={props.player.teamAbbreviation}

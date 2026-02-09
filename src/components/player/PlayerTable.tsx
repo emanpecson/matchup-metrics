@@ -4,6 +4,7 @@ import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
 import InlineImage from '../InlineImage';
 import { TriangleAlertIcon } from 'lucide-react';
 import { useState } from 'react';
+import { useTheme } from 'next-themes';
 
 import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
 import { yahooFantasyPpg } from '@/utils/fantasyConverter';
@@ -38,6 +39,7 @@ export interface PlayerTableProps {
 export default function PlayerTable(props: PlayerTableProps) {
   const loadCount = props.playersCount - props.page * props.rowCount;
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
+  const { resolvedTheme } = useTheme();
 
   const handleRowClick = (disabled: boolean, player: PlayerIncludeRegularStats) => {
     if (!disabled) props.onRowClick(player);
@@ -108,7 +110,7 @@ export default function PlayerTable(props: PlayerTableProps) {
                   </td>
                   <td className={cn(conditionalStyles, 'px-4 py-1.5 text-left text-nowrap')}>{rs.ftPct.toFixed(1)}%</td>
                   <td className={cn(conditionalStyles, 'px-4 py-1.5 text-left text-nowrap')}>
-                    <InlineImage src={getTeamLogoUrl(player.teamAbbreviation)} alt={player.teamAbbreviation}>
+                    <InlineImage src={getTeamLogoUrl(player.teamAbbreviation, resolvedTheme === 'dark')} alt={player.teamAbbreviation}>
                       <p>{player.teamAbbreviation}</p>
                     </InlineImage>
                   </td>

@@ -10,6 +10,7 @@ import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
 import teams from '@/data/teams';
 import PlayerHeadshot from '../PlayerHeadshot';
 import { useWindowResize, widthBreakpoints } from '@/hooks/useWindowResize';
+import { useTheme } from 'next-themes';
 
 interface LineupCompareProps {
   lineup1: LineupBuilder;
@@ -33,6 +34,7 @@ function DisplayLineup(param: {
   setLineup: Dispatch<SetStateAction<LineupBuilder>>;
   isMobile: boolean;
 }): JSX.Element {
+  const { resolvedTheme } = useTheme();
   const slots = param.lineup.getLineup().filter((slot) => slot.player);
 
   // if mobile
@@ -94,7 +96,7 @@ function DisplayLineup(param: {
                 </div>
                 <div className="flex space-x-1 justify-center font-medium place-items-center text-sm">
                   <Image
-                    src={getTeamLogoUrl(team.abbreviation)}
+                    src={getTeamLogoUrl(team.abbreviation, resolvedTheme === 'dark')}
                     alt={team.abbreviation}
                     height={28}
                     width={28}

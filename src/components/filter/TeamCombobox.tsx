@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from '@/components/ui/command';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { useState } from 'react';
+import { useTheme } from 'next-themes';
 import teams from '@/data/teams';
 import CloseButton from '../button/CloseButton';
 import { getTeamLogoUrl } from '@/utils/getPhotoUrl';
@@ -22,6 +23,7 @@ export function TeamCombobox(props: TeamComboboxProps) {
   const [open, setOpen] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const { resolvedTheme } = useTheme();
 
   useWindowResize(
     widthBreakpoints.lg,
@@ -67,7 +69,7 @@ export function TeamCombobox(props: TeamComboboxProps) {
                 {props.value ? (
                   <div className="w-full">
                     <Image
-                      src={getTeamLogoUrl(props.value)}
+                      src={getTeamLogoUrl(props.value, resolvedTheme === 'dark')}
                       alt={props.value}
                       height={24}
                       width={24}
@@ -83,7 +85,7 @@ export function TeamCombobox(props: TeamComboboxProps) {
               <div className="flex justify-between place-items-center w-full">
                 <div className="pl-7">
                   {props.value ? (
-                    <InlineImage src={getTeamLogoUrl(props.value)} alt={props.value}>
+                    <InlineImage src={getTeamLogoUrl(props.value, resolvedTheme === 'dark')} alt={props.value}>
                       <p className="dark:text-white text-neutral-800">{`${teams[props.value as keyof typeof teams].city} ${teams[props.value as keyof typeof teams].name} (${props.value})`}</p>
                     </InlineImage>
                   ) : (
@@ -119,7 +121,7 @@ export function TeamCombobox(props: TeamComboboxProps) {
                     className="cursor-pointer"
                   >
                     <Check className={cn('mr-2 h-4 w-4', isSelected ? 'opacity-100' : 'opacity-0')} />
-                    <InlineImage src={getTeamLogoUrl(thisTeam.abbreviation)} alt={thisTeam.abbreviation}>
+                    <InlineImage src={getTeamLogoUrl(thisTeam.abbreviation, resolvedTheme === 'dark')} alt={thisTeam.abbreviation}>
                       <p
                         className={cn(
                           isSelected

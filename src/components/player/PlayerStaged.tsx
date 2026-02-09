@@ -1,4 +1,5 @@
 import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
+import { useTheme } from 'next-themes';
 import Image from 'next/image';
 import { reformatPosition } from '@/utils/reformatString';
 import positions from '@/data/positions';
@@ -6,6 +7,7 @@ import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerInclude
 import { yahooFantasyPpg } from '@/utils/fantasyConverter';
 
 export default function PlayerStaged({ player }: { player: PlayerIncludeRegularStats }) {
+  const { resolvedTheme } = useTheme();
   const rs = player.regularStats;
 
   return (
@@ -23,7 +25,7 @@ export default function PlayerStaged({ player }: { player: PlayerIncludeRegularS
 
           <div className="absolute rounded-full bg-neutral-300 dark:bg-neutral-700 -bottom-6 -left-6 bg-opacity-70 backdrop-blur-lg">
             <Image
-              src={getTeamLogoUrl(player.teamAbbreviation)}
+              src={getTeamLogoUrl(player.teamAbbreviation, resolvedTheme === 'dark')}
               alt={player.teamAbbreviation}
               height={24}
               width={24}

@@ -1,8 +1,10 @@
 import Image from 'next/image';
 import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
+import { useTheme } from 'next-themes';
 import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
 
 export default function PlayerCard({ player }: { player: PlayerIncludeRegularStats }) {
+  const { resolvedTheme } = useTheme();
   const rs = player.regularStats;
 
   return (
@@ -39,7 +41,7 @@ export default function PlayerCard({ player }: { player: PlayerIncludeRegularSta
 
       {/* team logo */}
       <Image
-        src={getTeamLogoUrl(player.teamAbbreviation)}
+        src={getTeamLogoUrl(player.teamAbbreviation, resolvedTheme === 'dark')}
         alt={player.teamAbbreviation}
         height={24}
         width={24}

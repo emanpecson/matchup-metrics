@@ -3,6 +3,7 @@ import { getTeamLogoUrl } from '@/utils/getPhotoUrl';
 import { reformatPosition, shortName } from '@/utils/reformatString';
 import Image from 'next/image';
 import { useState } from 'react';
+import { useTheme } from 'next-themes';
 
 import PlayerHeadshot, { PlayerHeadshotProps } from '@/components/player/PlayerHeadshot';
 import ActionPrompt from './ActionPrompt';
@@ -26,9 +27,10 @@ export enum LineupSlotState {
 
 export default function LineupSlot(props: LineupSlotProps) {
   const [isHovering, setIsHovering] = useState(false);
+  const { resolvedTheme } = useTheme();
 
   const p = props.player;
-  const teamLogoUrl = p ? getTeamLogoUrl(p.teamAbbreviation) : '';
+  const teamLogoUrl = p ? getTeamLogoUrl(p.teamAbbreviation, resolvedTheme === 'dark') : '';
 
   return (
     <div className="space-y-1 w-fit">

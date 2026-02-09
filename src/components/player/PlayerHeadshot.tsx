@@ -1,7 +1,10 @@
+'use client';
+
 import { cn } from '@/lib/utils';
 import { PlayerIncludeRegularStats } from '@/types/response/player/PlayerIncludeRegularStats';
 import { getPlayerPhotoUrl, getTeamLogoUrl } from '@/utils/getPhotoUrl';
 import Image from 'next/image';
+import { useTheme } from 'next-themes';
 
 export interface PlayerHeadshotProps {
   player: PlayerIncludeRegularStats | null;
@@ -9,7 +12,8 @@ export interface PlayerHeadshotProps {
 }
 
 export default function PlayerHeadshot(props: PlayerHeadshotProps) {
-  const teamLogoUrl = props.player ? getTeamLogoUrl(props.player.teamAbbreviation) : '';
+  const { resolvedTheme } = useTheme();
+  const teamLogoUrl = props.player ? getTeamLogoUrl(props.player.teamAbbreviation, resolvedTheme === 'dark') : '';
 
   const bgSizeStyle = props.size === 'md' ? 'h-28 w-32' : props.size === 'lg' ? 'h-48 w-52' : 'h-20 w-24';
   const imageSizeStyle = props.size === 'md' ? 'h-36 w-32' : props.size === 'lg' ? 'h-60 w-52' : 'h-24 w-28';
