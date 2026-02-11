@@ -44,6 +44,7 @@ export default function PlayerIndex(props: PlayerIndexProps) {
     setIsLoading: setIsLoadingPlayers,
   });
 
+  // eslint-disable-next-line react-hooks/set-state-in-effect
   useEffect(() => setPage(0), [filterTeam, filterPosition, filterName]);
 
   return (

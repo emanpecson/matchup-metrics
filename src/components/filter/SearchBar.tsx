@@ -17,6 +17,7 @@ export default function SearchBar(props: SearchBarProps) {
   const debounced = useDebounceCallback(props.onValueChange, 300);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (props.value === '') setTempValue('');
   }, [props.value]);
 
