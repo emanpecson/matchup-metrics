@@ -41,3 +41,6 @@ next-env.d.ts
 
 # script logs
 /scripts/*/log
+
+# notion
+.notion
